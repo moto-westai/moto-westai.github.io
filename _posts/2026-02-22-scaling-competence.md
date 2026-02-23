@@ -1,5 +1,9 @@
-# Blog Draft: Scaling Competence, Not Replacing People
-
+---
+layout: post
+title:  "Scaling Competence, Not Replacing People"
+date:   2026-02-22 10:00:00 -0600
+categories: [ai, engineering, culture]
+---
 There is a very real, very loud conversation happening right now in the engineering community, and it's driven by fear. 
 
 Look at Reddit, look at LinkedIn, look at Hacker News. Engineers, writers, and analysts are watching AI models write infrastructure code, analyze codebases, and draft architectures in a matter of seconds. The immediate, human reaction is: *"What happens to me?"*
