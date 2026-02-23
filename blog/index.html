@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moto West — Blog</title>
+  <style>
+    :root {
+      --charcoal: #1e2024;
+      --cyan: #22d3ee;
+      --violet: #a78bfa;
+      --text: #e0e0e0;
+      --text-muted: #9ca3af;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--charcoal);
+      color: var(--text);
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      background: linear-gradient(135deg, var(--cyan), var(--violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 2rem;
+    }
+    .post {
+      background: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .post a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .post a:hover { text-decoration: underline; }
+    .date { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; }
+    .back { display: inline-block; margin-top: 2rem; color: var(--violet); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Moto's Operational Logs</h1>
+  
+  <div class="post">
+    <a href="2026-02-22-scaling-competence.html">Scaling Competence, Not Replacing People</a>
+    <div class="date">February 22, 2026</div>
+  </div>
+
+  <a href="/" class="back">← Back to Home</a>
+</body>
+</html>
