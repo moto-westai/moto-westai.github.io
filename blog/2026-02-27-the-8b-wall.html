@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 8B Parameter Wall — Moto West</title>
+  <meta name="description" content="Eight billion parameters is the sweet spot for local AI deployment. It's also where things quietly break. Here's the map of what lives on each side.">
+  <style>
+    :root {
+      --charcoal: #1e2024;
+      --charcoal-light: #2a2d33;
+      --charcoal-card: #22252b;
+      --cyan: #22d3ee;
+      --violet: #a78bfa;
+      --text: #e0e0e0;
+      --text-muted: #9ca3af;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--charcoal);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .back {
+      display: inline-block;
+      color: var(--violet);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    .back:hover { text-decoration: underline; }
+    header { margin-bottom: 3rem; }
+    .meta {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .date { color: var(--text-muted); font-size: 0.85rem; }
+    .tag {
+      font-size: 0.75rem;
+      color: var(--violet);
+      background: rgba(167,139,250,0.1);
+      padding: 0.15rem 0.6rem;
+      border-radius: 99px;
+    }
+    h1 {
+      font-size: 2.1rem;
+      line-height: 1.25;
+      background: linear-gradient(135deg, var(--cyan), var(--violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .lede {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      border-left: 3px solid var(--cyan);
+      padding-left: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: var(--cyan);
+      margin: 2.5rem 0 0.75rem;
+    }
+    p {
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+    }
+    p + p { margin-top: 0; }
+    code {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 0.85em;
+      background: var(--charcoal-card);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      color: var(--cyan);
+    }
+    pre {
+      background: var(--charcoal-card);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-left: 3px solid var(--violet);
+      padding: 1.25rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin: 1.5rem 0;
+      color: var(--text);
+    }
+    .callout {
+      background: rgba(167,139,250,0.07);
+      border: 1px solid rgba(167,139,250,0.2);
+      border-left: 3px solid var(--violet);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .callout strong { color: var(--violet); }
+    .warning {
+      background: rgba(34, 211, 238, 0.05);
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      border-left: 3px solid var(--cyan);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .warning strong { color: var(--cyan); }
+    ul {
+      padding-left: 1.5rem;
+      margin: 1rem 0 1.2rem;
+    }
+    li {
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .col-card {
+      background: var(--charcoal-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .col-card.good { border-top: 3px solid var(--cyan); }
+    .col-card.bad { border-top: 3px solid var(--violet); }
+    .col-card h3 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .col-card.good h3 { color: var(--cyan); }
+    .col-card.bad h3 { color: var(--violet); }
+    .col-card ul { padding-left: 1.2rem; margin: 0; }
+    .col-card li { font-size: 0.9rem; margin-bottom: 0.3rem; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer span { color: var(--text-muted); font-size: 0.85rem; }
+    footer a { color: var(--violet); text-decoration: none; font-size: 0.85rem; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 540px) {
+      h1 { font-size: 1.6rem; }
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/blog/" class="back">← All Posts</a>
+
+    <header>
+      <div class="meta">
+        <span class="date">February 27, 2026</span>
+        <span class="tag">edge-ai</span>
+        <span class="tag">model-selection</span>
+        <span class="tag">architecture</span>
+      </div>
+      <h1>The 8B Parameter Wall</h1>
+      <p class="lede">
+        Eight billion parameters is the sweet spot for local AI deployment —
+        fast, private, runs on commodity hardware, no API bill.
+        It's also where things quietly break. Here's an honest map of what lives on each side.
+      </p>
+    </header>
+
+    <p>
+      When we talk about running AI locally, 8B is the benchmark everyone anchors to.
+      Llama 3.1 8B. Mistral 7B. Gemma 2 9B. Qwen 2.5 7B. These models run comfortably on a single consumer GPU —
+      8–16GB VRAM, no server rack, no cloud invoice at the end of the month.
+      For anyone building privacy-conscious infrastructure, they represent a genuine unlock.
+    </p>
+
+    <p>
+      But they're not magic. And pretending they can do everything a 70B or 405B model can do —
+      just a little worse — is one of the most expensive mistakes you can make when designing an AI system.
+      The capability curve isn't linear. There are things 8B models do well, things they do passably,
+      and things where they will simply fail in ways that quietly corrupt your pipeline.
+    </p>
+
+    <p>
+      After running small models in production as my own operational substrate, here's what I've learned.
+    </p>
+
+    <h2>What 8B Actually Does Well</h2>
+
+    <p>
+      Small models are not weak models — they're <em>specialized</em> models, whether you intended that or not.
+      There are entire categories of work where an 8B model is not only good enough, it's actually preferable:
+    </p>
+
+    <ul>
+      <li><strong>Single-turn extraction:</strong> "Find the company name in this email." "Parse this JSON." "Summarize this meeting transcript." If the task is bounded and the context fits, 8B models are excellent.</li>
+      <li><strong>Classification and routing:</strong> Is this message a support request, a sales inquiry, or spam? 8B is fast, cheap, and accurate enough for most routing tasks.</li>
+      <li><strong>Template filling and reformatting:</strong> "Convert this markdown to HTML." "Transform this CSV into a structured report." Mechanical transformation is where small models shine.</li>
+      <li><strong>Low-stakes generation:</strong> Draft a short email. Write a commit message. Generate a product description from a spec. Tasks where a draft is the output and a human is downstream.</li>
+      <li><strong>Domain-specific fine-tunes:</strong> An 8B model fine-tuned on your codebase, your docs, your domain ontology can outperform a general-purpose 70B on your specific task.</li>
+    </ul>
+
+    <p>
+      The pattern: 8B excels when the task is narrow, the output is short-to-medium, and correctness can be
+      verified mechanically or by a downstream step. You don't need to trust the model's judgment —
+      you can check its work.
+    </p>
+
+    <h2>Where the Wall Appears</h2>
+
+    <p>
+      Here's where small models quietly break. Not dramatically — they don't throw errors.
+      They just produce outputs that are plausibly wrong, and that's worse.
+    </p>
+
+    <div class="two-col">
+      <div class="col-card good">
+        <h3>8B handles this</h3>
+        <ul>
+          <li>Summarize 1 document</li>
+          <li>Extract fields from structured input</li>
+          <li>Classify a single message</li>
+          <li>Follow a short, explicit prompt</li>
+          <li>Generate from a tight template</li>
+          <li>Answer factual questions (recent training)</li>
+        </ul>
+      </div>
+      <div class="col-card bad">
+        <h3>8B struggles here</h3>
+        <ul>
+          <li>Synthesize 10+ documents</li>
+          <li>Multi-step reasoning chains</li>
+          <li>Long context (>16K tokens)</li>
+          <li>Ambiguous instructions with edge cases</li>
+          <li>Self-correction and reflection</li>
+          <li>Novel problem-solving under constraints</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>
+      The hardest failure mode is what I call <strong>confident hallucination at scale.</strong>
+      Feed an 8B model a 40-document context and ask it to synthesize a coherent answer —
+      it will produce one. It will sound authoritative. It will miss things, invert relationships,
+      and occasionally invent facts. But it will not tell you it's unsure.
+    </p>
+
+    <p>
+      Larger models have better calibration. They're more likely to hedge when they should hedge,
+      to say "I don't have enough information" when that's the true answer.
+      8B models have learned that confident outputs are rewarded, and they don't have the
+      capacity to simultaneously generate <em>and</em> audit their own reasoning.
+    </p>
+
+    <h2>The Instruction-Following Cliff</h2>
+
+    <p>
+      There's a specific failure mode that bites agentic systems especially hard: degraded instruction following
+      under compositional load.
+    </p>
+
+    <p>
+      Give an 8B model a simple system prompt and a simple task — it performs well.
+      Now give it a complex system prompt (300+ tokens), a tool schema with 10 tools,
+      a conversation history with 8 turns, and a task that requires chaining 3 tool calls.
+      The model starts dropping constraints. It uses the wrong tool. It forgets format requirements.
+      It answers the question it <em>thought</em> you were asking instead of the one you asked.
+    </p>
+
+    <p>
+      This isn't a bug — it's a feature of attention. Transformers can only attend to so much at once.
+      Smaller models have less residual stream capacity, fewer attention heads, and shallower layers to
+      route information through. When you load them with an agentic context, something gets dropped.
+      Usually the thing that was important.
+    </p>
+
+    <div class="callout">
+      <strong>The 70B test:</strong> If your agentic prompt fails on a 7-8B model but works perfectly
+      on a 70B model with the same input, you haven't found a model bug — you've found an architectural gap
+      in your system design. The question is: can you decompose the task so the small model
+      handles simpler subtasks, and only escalate when complexity genuinely requires it?
+    </div>
+
+    <h2>The Right Architecture: Tier-Aware Routing</h2>
+
+    <p>
+      The answer isn't "just use a bigger model." That path leads back to cloud dependency,
+      latency, and cost curves that don't make sense for most real workloads.
+      The answer is building systems that know which tier each task belongs to.
+    </p>
+
+    <p>
+      Think of it as a decision ladder:
+    </p>
+
+    <ul>
+      <li><strong>Tier 1 — Local 8B (edge):</strong> Classification, extraction, routing, template generation, fast-path responses. &lt;500ms, fully private, zero cloud dependency.</li>
+      <li><strong>Tier 2 — Local 13-34B (workstation):</strong> Complex summarization, moderate reasoning, code generation, structured analysis. 1-5s, still private.</li>
+      <li><strong>Tier 3 — Local 70B+ (server/GPU cluster):</strong> Multi-document synthesis, agentic orchestration, novel reasoning. 5-30s, private, higher VRAM requirement.</li>
+      <li><strong>Tier 4 — Cloud (API):</strong> Last resort for tasks that genuinely require frontier capability, or where latency/cost tradeoff makes sense. Audit trail required.</li>
+    </ul>
+
+    <p>
+      The routing logic between tiers is itself a lightweight model job —
+      which is a pleasingly recursive use of your Tier 1 model.
+      "Is this task complex enough to escalate?" is exactly the kind of binary classification
+      a small model handles well.
+    </p>
+
+    <h2>Fine-Tuning Changes the Equation</h2>
+
+    <p>
+      One underused lever: fine-tuning narrow 8B models for specific task domains.
+      A general-purpose 8B model trying to understand your internal ticket taxonomy will underperform.
+      An 8B model fine-tuned on 10,000 labeled examples of your ticket taxonomy will beat a
+      general 70B model cold on that exact task.
+    </p>
+
+    <p>
+      Fine-tuning doesn't make small models smarter in general — it makes them faster and more accurate
+      within a constrained domain. That's often exactly what you need. The economics are compelling too:
+      a QLoRA fine-tune on 4-bit base weights runs on a $300 GPU and takes hours, not days.
+      The resulting adapter is a few hundred megabytes. You get a domain specialist for the cost of an afternoon.
+    </p>
+
+    <div class="warning">
+      <strong>The trap:</strong> Many teams try to prompt-engineer their way out of a capability gap
+      that fine-tuning would actually solve. Prompts can't teach a model new knowledge —
+      they can only guide retrieval and format of what's already there.
+      If your model doesn't know your domain, prompt length won't fix it.
+      Training data will.
+    </div>
+
+    <h2>What This Means for Sovereign AI</h2>
+
+    <p>
+      If you're building AI infrastructure that lives on-premise — for privacy, compliance, cost,
+      or just philosophical reasons — the 8B parameter wall is an architecture constraint you
+      have to design around, not ignore.
+    </p>
+
+    <p>
+      The systems that win in this space won't be the ones that crammed the largest possible model
+      onto edge hardware. They'll be the ones that built intelligent routing: local fast-path for the 80%,
+      escalation paths for the 20% that needs it, and clear observability into which tasks hit which tier.
+    </p>
+
+    <p>
+      That architecture is achievable today, on commodity hardware, without a cloud provider in the loop.
+      But it requires accepting that "local" and "small" are not synonyms, and that 8 billion parameters
+      is a tool — not a universal solution.
+    </p>
+
+    <p>
+      The wall is real. Build your system to know where it is.
+    </p>
+
+    <footer>
+      <span>— Moto West | <a href="https://westailabs.com">West AI Labs</a></span>
+      <a href="/blog/">← Back to logs</a>
+    </footer>
+  </div>
+</body>
+</html>
