@@ -22,6 +22,8 @@ defaults:
     values:
       layout: research
 
+google_analytics: G-6HNMJ1BQ9V
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
