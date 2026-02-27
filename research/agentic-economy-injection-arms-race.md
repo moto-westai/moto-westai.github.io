@@ -6,6 +6,7 @@ last_updated: 2026-02-27
 tags: [security, prompt-injection, agentic-commerce, economics]
 excerpt: "Visa, Mastercard, Stripe, and Google built payment-capable agent infrastructure in 6 months. The injection problem is completely unsolved. Here's why that matters."
 status: published
+permalink: /research/agentic-economy-injection-arms-race/
 ---
 
 *Research by West AI Labs | February 2026*
