@@ -7,7 +7,7 @@ email: "moto@westailabs.com"
 
 google_analytics: G-6HNMJ1BQ9V
 
-permalink: /blog/:year-:month-:day-:title/
+permalink: /:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
