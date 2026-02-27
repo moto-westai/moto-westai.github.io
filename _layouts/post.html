@@ -1,113 +1,29 @@
 ---
 layout: default
 ---
-<style>
-  .post-back {
-    display: inline-block;
-    color: var(--violet);
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-    opacity: 0.8;
-  }
-  .post-back:hover { opacity: 1; text-decoration: none; }
-  .post-header { margin-bottom: 3rem; }
-  .post-meta { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem; }
-  .post-title {
-    font-size: 2rem;
-    line-height: 1.25;
-    background: linear-gradient(135deg, var(--cyan), var(--violet));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.75rem;
-  }
-  .post-excerpt {
-    color: var(--text-muted);
-    font-size: 1.05rem;
-    line-height: 1.6;
-    border-left: 3px solid var(--cyan);
-    padding-left: 1rem;
-    margin-bottom: 2rem;
-  }
-  .post-content p {
-    line-height: 1.8;
-    margin-bottom: 1.25rem;
-    color: var(--text);
-  }
-  .post-content h2 {
-    font-size: 1.3rem;
-    color: var(--cyan);
-    margin: 2.5rem 0 0.75rem;
-  }
-  .post-content h3 {
-    font-size: 1.1rem;
-    color: var(--violet);
-    margin: 2rem 0 0.5rem;
-  }
-  .post-content ul, .post-content ol {
-    padding-left: 1.5rem;
-    margin: 0.75rem 0 1.25rem;
-    color: var(--text);
-  }
-  .post-content li { line-height: 1.75; margin-bottom: 0.4rem; }
-  .post-content strong { color: var(--cyan); }
-  .post-content em { color: var(--text-muted); }
-  .post-content blockquote {
-    border-left: 3px solid var(--cyan);
-    margin: 2rem 0;
-    padding: 1rem 1.5rem;
-    background: var(--charcoal-card);
-    border-radius: 0 8px 8px 0;
-    font-style: italic;
-    color: var(--text-muted);
-  }
-  .post-content pre {
-    background: var(--charcoal-light);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-left: 3px solid var(--violet);
-    border-radius: 8px;
-    padding: 1.25rem;
-    overflow-x: auto;
-    font-size: 0.875rem;
-    line-height: 1.7;
-    margin: 1.5rem 0;
-    color: var(--text);
-  }
-  .post-content code {
-    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
-    font-size: 0.85em;
-    background: var(--charcoal-card);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 0.15rem 0.4rem;
-    border-radius: 4px;
-    color: var(--cyan);
-  }
-  .post-content pre code {
-    background: none;
-    border: none;
-    padding: 0;
-    color: var(--text);
-    font-size: inherit;
-  }
-  .post-content a { color: var(--violet); }
-  .post-content a:hover { text-decoration: underline; }
-</style>
 
-<a href="/blog/" class="post-back">← All Posts</a>
-
-<article>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <div class="post-meta">
-      {{ page.date | date: "%B %-d, %Y" }}
-      {% if page.author %} · {{ page.author }}{% endif %}
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <div class="author-byline">
+      <span class="author-avatar">🏍️</span>
+      <div>
+        <span class="author-name">{{ site.author | default: "Moto" }}</span>
+        <span class="post-meta"> · {{ page.date | date: "%B %-d, %Y" }}</span>
+      </div>
     </div>
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.excerpt %}
-    <p class="post-excerpt">{{ page.excerpt }}</p>
-    {% endif %}
   </header>
 
-  <div class="post-content">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
+  </div>
+
+  <div class="share-post">
+    <p><strong>Share this post:</strong></p>
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener">𝕏 Twitter</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener">LinkedIn</a>
+    &nbsp;·&nbsp;
+    <button onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='Copy link',2000)">Copy link</button>
   </div>
 </article>

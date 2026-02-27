@@ -1,0 +1,392 @@
+---
+---
+
+// Night Ride Theme — Moto West
+// Brand: charcoal, cyan, violet
+
+$color-bg:         #1e2024;
+$color-bg-light:   #282c34;
+$color-bg-card:    #23262b;
+$color-cyan:       #22d3ee;
+$color-violet:     #a78bfa;
+$color-text:       #e2e8f0;
+$color-text-muted: #94a3b8;
+$color-border:     #333840;
+
+// CSS custom properties (for backward-compat with inline styles in research pages)
+:root {
+  --charcoal:      #{$color-bg};
+  --charcoal-light: #{$color-bg-light};
+  --charcoal-card: #{$color-bg-card};
+  --cyan:          #{$color-cyan};
+  --violet:        #{$color-violet};
+  --text:          #{$color-text};
+  --text-muted:    #{$color-text-muted};
+  --border:        #{$color-border};
+}
+
+// Reset & base
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: $color-bg;
+  color: $color-text;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; border-bottom: 1px solid $color-border; padding-bottom: 0.4rem; }
+h3 { font-size: 1.35rem; }
+
+p { margin: 0 0 1.25rem; }
+
+a {
+  color: $color-cyan;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover { color: $color-violet; }
+}
+
+strong { color: #fff; }
+em { color: $color-text-muted; }
+hr { border: none; border-top: 1px solid $color-border; margin: 2rem 0; }
+
+blockquote {
+  border-left: 3px solid $color-cyan;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.25rem;
+  color: $color-text-muted;
+  background: rgba($color-cyan, 0.04);
+  border-radius: 0 6px 6px 0;
+}
+
+// Lists
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  li { margin-bottom: 0.35rem; }
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  th, td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid $color-border;
+    text-align: left;
+  }
+  th {
+    background: $color-bg-light;
+    color: $color-cyan;
+    font-weight: 600;
+  }
+  tr:nth-child(even) td { background: rgba(#fff, 0.02); }
+}
+
+// Code
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.88em;
+}
+
+p code, li code, td code {
+  background: $color-bg-light;
+  color: $color-cyan;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+div.highlighter-rouge, figure.highlight {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+pre {
+  background: $color-bg-light;
+  color: $color-text;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 0;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  line-height: 1.55;
+  code { background: none; padding: 0; color: inherit; font-size: 0.88rem; }
+}
+
+// Syntax highlighting
+.highlight {
+  .k, .kd, .kn, .kp, .kr, .kt { color: $color-violet; }
+  .s, .s1, .s2, .sb, .sc, .sd, .sh, .sx { color: #7dd3a8; }
+  .nf, .nb { color: $color-cyan; }
+  .c, .c1, .cm, .cp, .cs { color: #636d83; font-style: italic; }
+  .mi, .mf, .mh, .mo { color: #f0a6ff; }
+  .o, .p { color: $color-text-muted; }
+  .na { color: $color-cyan; }
+  .nc, .nn { color: #7dd3fc; }
+  .nt { color: $color-violet; }
+  .nv, .vi, .vm { color: #fbbf24; }
+}
+
+// Layout
+.wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.page-content { padding: 2rem 0; }
+
+// Header
+.site-header {
+  border-bottom: 1px solid $color-border;
+  padding: 1.25rem 0;
+  background: $color-bg;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fff !important;
+  letter-spacing: -0.02em;
+  &:hover { color: $color-cyan !important; }
+  .logo-emoji { margin-right: 0.4rem; }
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  a {
+    color: $color-text-muted;
+    font-size: 0.9rem;
+    font-weight: 500;
+    &:hover { color: $color-cyan; }
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid $color-border;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  color: $color-text-muted;
+  font-size: 0.85rem;
+  text-align: center;
+  .speed-line {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, $color-cyan, $color-violet);
+    margin: 0 auto 1rem;
+    border-radius: 1px;
+  }
+}
+
+// Home / post list
+.post-list {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $color-border;
+    &:last-child { border-bottom: none; }
+  }
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: $color-text-muted;
+}
+
+.post-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-bottom: 0.3rem;
+  &:hover { color: $color-cyan; }
+}
+
+.post-excerpt {
+  color: $color-text-muted;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.page-heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+// Post page
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.post-content {
+  h2:first-child { margin-top: 0; }
+}
+
+.author-byline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+  .author-avatar { font-size: 1.6rem; line-height: 1; }
+  .author-name { color: $color-cyan; font-weight: 600; }
+}
+
+// Social share
+.share-post {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $color-border;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+  p { margin-bottom: 0.6rem; }
+  a {
+    color: $color-cyan;
+    font-weight: 500;
+    &:hover { color: $color-violet; }
+  }
+  button {
+    background: transparent;
+    border: 1px solid $color-border;
+    color: $color-cyan;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.15em 0.6em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    &:hover { color: $color-violet; border-color: $color-violet; }
+  }
+}
+
+// Research pages
+.research-back {
+  display: inline-block;
+  color: $color-violet;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  &:hover { opacity: 1; color: $color-violet; }
+}
+
+.research-header { margin-bottom: 3rem; }
+
+.research-title {
+  font-size: 2rem;
+  line-height: 1.25;
+  background: linear-gradient(135deg, $color-cyan, $color-violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem;
+}
+
+.research-meta { color: $color-text-muted; font-size: 0.85rem; margin-bottom: 1rem; }
+
+.research-subtitle { color: $color-text-muted; font-size: 1.05rem; line-height: 1.6; }
+
+.research-content {
+  p { line-height: 1.8; margin-bottom: 1.25rem; }
+  h2 { font-size: 1.3rem; color: $color-cyan; margin: 2.5rem 0 0.75rem; border-bottom: none; }
+  h3 { font-size: 1.1rem; color: $color-violet; margin: 2rem 0 0.5rem; }
+  strong { color: $color-cyan; }
+  blockquote {
+    border-left: 3px solid $color-cyan;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: $color-bg-card;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: $color-text-muted;
+  }
+}
+
+// Research index cards
+.research-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 2.5rem;
+}
+
+.research-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.15s, background 0.15s;
+  h3 {
+    color: $color-text;
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+    line-height: 1.4;
+    border-bottom: none;
+  }
+  p { color: $color-text-muted; font-size: 0.9rem; margin: 0; line-height: 1.6; }
+  &:hover {
+    border-color: $color-cyan;
+    background: rgba($color-cyan, 0.05);
+  }
+}
+
+// Speed accent
+.speed-accent {
+  background: linear-gradient(90deg, $color-cyan, $color-violet);
+  height: 3px;
+  border-radius: 2px;
+}
+
+// Responsive
+@media (max-width: 600px) {
+  .post-title { font-size: 1.75rem; }
+  .post-link { font-size: 1.25rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.4rem; }
+  .site-header .wrapper { flex-direction: column; gap: 0.5rem; }
+  pre { font-size: 0.8rem; padding: 1rem; }
+}

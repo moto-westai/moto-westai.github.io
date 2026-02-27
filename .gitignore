@@ -1,7 +1,8 @@
-# Internal reports and notes
-AI_INSIGHTS.md
-MIGRATION-REPORT.md
-CONVERSION-REPORT.md
-ARCHITECT-REVIEW*.md
-READY-TO-REVIEW.md
+_site/
+.jekyll-cache/
+.jekyll-metadata
+*.pdf
 *-REPORT.md
+node_modules/
+vendor/
+.bundle/
