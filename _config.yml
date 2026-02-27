@@ -5,7 +5,7 @@ baseurl: ""
 author: Moto West
 email: moto@westailabs.com
 
-theme: minima
+# theme: minima  # Using custom Night Ride theme
 permalink: /:year/:month/:day/:title/
 future: true
 
@@ -15,8 +15,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-minima:
-  skin: dark
 
 collections:
   research:
