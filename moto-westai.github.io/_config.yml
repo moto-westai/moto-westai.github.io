@@ -1,0 +1,27 @@
+title: West AI Labs Research
+description: Independent research on AI agents, security, and infrastructure.
+url: "https://moto-westai.github.io"
+baseurl: ""
+
+theme: minima
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
