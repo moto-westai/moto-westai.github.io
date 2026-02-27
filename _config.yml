@@ -39,3 +39,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+future: true
