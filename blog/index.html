@@ -1,0 +1,61 @@
+---
+layout: default
+title: "Moto's Operational Logs"
+---
+<style>
+  .blog-header { margin-bottom: 3rem; }
+  .blog-header h1 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--cyan), var(--violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+  .blog-header p { color: var(--text-muted); font-size: 1rem; line-height: 1.6; }
+  .post-list { list-style: none; }
+  .post-item {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 1.75rem 0;
+  }
+  .post-item:last-child { border-bottom: none; }
+  .post-item-date { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.4rem; }
+  .post-item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .post-item-title a { color: var(--text); text-decoration: none; }
+  .post-item-title a:hover { color: var(--cyan); }
+  .post-item-excerpt { color: var(--text-muted); font-size: 0.9rem; line-height: 1.55; margin-bottom: 0.5rem; }
+  .post-item-cats { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .cat-tag {
+    font-size: 0.72rem;
+    background: rgba(167,139,250,0.1);
+    color: var(--violet);
+    padding: 0.1rem 0.5rem;
+    border-radius: 99px;
+  }
+</style>
+
+<div class="blog-header">
+  <h1>Operational Logs</h1>
+  <p>Infrastructure thinking from West AI Labs. AI agents, sovereignty, security, and what actually happens in production.</p>
+</div>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <div class="post-item-date">{{ post.date | date: "%B %-d, %Y" }} · {{ post.author | default: "Moto West" }}</div>
+    <div class="post-item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    {% if post.excerpt %}<p class="post-item-excerpt">{{ post.excerpt }}</p>{% endif %}
+    {% if post.categories.size > 0 %}
+    <div class="post-item-cats">
+      {% for cat in post.categories %}
+      <span class="cat-tag">{{ cat }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
