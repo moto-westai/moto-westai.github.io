@@ -17,20 +17,6 @@ plugins:
 
 
 collections:
-  research:
-    output: true
-    permalink: /research/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: "research"
-    values:
-      layout: research
 
 exclude:
   - convert_posts.py
