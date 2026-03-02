@@ -1,0 +1,98 @@
+{
+  "lastUpdated": "2026-03-02T15:42:00Z",
+  "primaryConversation": "cron-event / heartbeat polling",
+  "activeChannels": [
+    "cron-event",
+    "terminal"
+  ],
+  "lastUserMessage": "Wealthsimple dropped \u2014 entry is stale (9:40 AM Mar 2)",
+  "pendingTasks": [
+    {
+      "id": "natera-application",
+      "description": "Apply to Natera Principal AI/ML Platform Engineer ($174-218K). Materials in west_ai_labs/docs/career/",
+      "status": "waiting-jason"
+    },
+    {
+      "id": "safe-security-application",
+      "description": "Apply to Safe Security Principal Engineer AI (~$170-220K). https://jobs.lever.co/safe/dcbc1248-deaa-4ac4-8da2-5fbea3007f14",
+      "status": "waiting-jason"
+    },
+    {
+      "id": "nist-rfi-response",
+      "description": "NIST CAISI RFI deadline March 9. Draft ready at west_ai_labs/docs/strategy/nist-rfi-response-caisi-march9-2026.md",
+      "status": "flagged-to-jason",
+      "deadline": "2026-03-09"
+    },
+    {
+      "id": "nist-nccoe-identity",
+      "description": "NIST NCCoE AI Identity+Auth concept paper deadline April 2. Draft ready.",
+      "status": "flagged-to-jason",
+      "deadline": "2026-04-02"
+    },
+    {
+      "id": "openclaw-linux-app",
+      "description": "OpenClaw Linux app Issue #75 unclaimed. Plan at west_ai_labs/docs/plans/openclaw-linux-app-plan.md",
+      "status": "opportunity-flagged"
+    }
+  ],
+  "recentDecisions": [
+    {
+      "ts": "2026-03-02T15:40:00Z",
+      "decision": "Wealthsimple project dropped per Jason. Removed from all tracking."
+    },
+    {
+      "ts": "2026-03-02T15:27:00Z",
+      "decision": "9:27 AM autosave \u2014 quiet morning, no new inputs since 7 AM morning report to Jason"
+    },
+    {
+      "ts": "2026-03-02T15:12:00Z",
+      "decision": "9:12 AM autosave \u2014 quiet, HEARTBEAT_OK at 8:30 AM"
+    },
+    {
+      "ts": "2026-03-02T14:42:00Z",
+      "decision": "8:42 AM autosave \u2014 quiet, HEARTBEAT_OK at 8:30 AM"
+    },
+    {
+      "ts": "2026-03-02T13:12:00Z",
+      "decision": "7:12 AM autosave: 7 AM heartbeat complete \u2014 email scan clean, calendar clear, VA appt Tue Mar 3. Morning report sent to Jason on Telegram. Wealthsimple deadline TODAY flagged."
+    },
+    {
+      "ts": "2026-03-02T13:00:00Z",
+      "decision": "7:00 AM heartbeat: email + calendar checked via gog. No job urgencies. Morning briefing sent to Telegram."
+    },
+    {
+      "ts": "2026-03-02T12:57:00Z",
+      "decision": "Autosave 6:57 AM \u2014 overnight quiet"
+    },
+    {
+      "ts": "2026-03-02T12:42:00Z",
+      "decision": "Autosave 6:42 AM \u2014 overnight quiet"
+    },
+    {
+      "ts": "2026-03-02T12:27:00Z",
+      "decision": "Autosave 6:27 AM \u2014 overnight quiet"
+    },
+    {
+      "ts": "2026-03-02T12:12:00Z",
+      "decision": "Autosave 6:12 AM \u2014 overnight quiet"
+    }
+  ],
+  "pendingSubAgents": [],
+  "upcomingEvents": [
+    {
+      "event": "VA Appointment",
+      "when": "2026-03-03",
+      "note": "Check email for time/location"
+    },
+    {
+      "event": "NIST RFI Deadline",
+      "when": "2026-03-09",
+      "note": "Draft complete, needs submit"
+    },
+    {
+      "event": "NIST NCCoE Identity+Auth",
+      "when": "2026-04-02",
+      "note": "Draft complete, submit to AI-Identity@nist.gov"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "seen": [
+    "ComposioHQ/agent-orchestrator",
+    "steveyegge/gastown",
+    "coplane/par",
+    "SixHq/Overture",
+    "m0rs3c0d3/EverythingOS",
+    "ssdeanx/AgentStack",
+    "trustgraph-ai/trustgraph",
+    "redis/agent-memory-server",
+    "jundot/omlx",
+    "frdeange/MAFLocalOllama",
+    "createpjf/cleo-dev",
+    "Oiertxo/agentic-security-orchestrator",
+    "GigaClaude/meridian",
+    "StardustVision/OpenCortex",
+    "dotdevdotdev/agentwire-dev",
+    "SynSwarm/WestOdyssey",
+    "SHU-XUN/TraceSIR",
+    "YiLabsAI/HouYiAgent",
+    "Filippo-Venturini/ctxvault",
+    "hozgur/living-agents",
+    "Soul-XuYang/PgoAgent",
+    "cft0808/edict",
+    "charliee1w/consolidation-memory",
+    "antiv/mate"
+  ],
+  "lastRun": "2026-03-01",
+  "notes": "Repos already researched — skip in daily scout"
+}
