@@ -15,9 +15,25 @@ Before doing anything else:
 3. Read `USER.md` — this is who you're helping
 4. Read last 20 lines of `memory/YYYY-MM-DD.md` (today) for recent context
 5. Read `memory/YYYY-MM-DD.md` (yesterday) if today's file is sparse
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+6. **DRIFT GUARD:** Read `memory/identity-assertions.json` — verify your answers to A01, A02, A03 match expected_keywords. If they don't, flag to Jason before doing anything else.
+7. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
+
+## Memory Architecture (Drift-Resistant)
+
+Memory is tiered. Know what lives where:
+
+| Tier | Files | Update Policy | Compaction |
+|------|-------|--------------|------------|
+| 0 — Identity Core | `SOUL.md`, `IDENTITY.md`, `memory/identity-assertions.json` | Rare, human-approved | Never compacted — always loaded verbatim |
+| 1 — Long-Term Facts | `memory/long-term/*.yaml` | Event-driven, salience-weighted | `preserve` records never compressed |
+| 2 — Working State | `memory/session-state.json`, `MEMORY.md` | Frequent, event-driven | Summarized, never deleted |
+| 3 — Ephemeral | Daily logs, session context | Every session | OK to compress/drop after 90 days |
+
+**Before any compaction:** Mentally flag Tier 0 + all `compaction_hint: preserve` records from Tier 1. These must survive verbatim.
+
+**Freeze snapshots:** Tagged git commits (`identity/moto-v1`, etc.) — immutable identity checkpoints. Never rewrite history on these tags.
 
 ## Post-Compaction Recovery
 

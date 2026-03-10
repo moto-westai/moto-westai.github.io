@@ -1,0 +1,28 @@
+id: "rec-0005"
+created_at: "2026-03-10T06:48:00Z"
+category: "infrastructure"
+subcategory: "primary-host"
+title: "shurtugal-lnx — Primary OpenClaw Host"
+content: |
+  Host: shurtugal-lnx
+  OS: Ubuntu 24.04 (bare metal)
+  User: jlwestsr
+  Workspace: /home/jlwestsr/.openclaw/workspace
+  
+  OpenClaw service name: openclaw.service (NOT openclaw-gateway.service)
+  Port: 18789
+  Config: /home/jlwestsr/.openclaw/openclaw.json — edit via Claude Code only
+  
+  Security notes:
+    - Port 8000 exposed on 0.0.0.0 — needs UFW
+    - Port 19999 (Netdata) exposed on 0.0.0.0 — needs UFW
+    - No UFW currently active (as of Mar 2026)
+  
+  Moto SSH key: /home/jlwestsr/.ssh/id_ed25519_moto
+  Push with: GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto"
+linked_concepts: ["shurtugal-lnx", "openclaw", "infrastructure", "ubuntu", "systemd"]
+salience: 0.9
+decay_class: "slow"
+compaction_hint: "preserve"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"
