@@ -1,0 +1,36 @@
+id: "rec-0010"
+created_at: "2026-03-10T06:48:00Z"
+category: "infrastructure"
+subcategory: "web-dev"
+title: "Websites and Dev Environment"
+content: |
+  All repos under: /home/jlwestsr/projects/west_ai_labs/
+  
+  Repositories:
+    moto-westai-blog/     → github: moto-westai/blog (blog, /blog/ path)
+    moto-westai.github.io/ → github: moto-westai/moto-westai.github.io (main site)
+    westailabs.com/       → github: westailabs/westailabs.com
+    jlwestsr.github.io/  → github: jlwestsr/jlwestsr.github.io
+  
+  Dev environment:
+    Config: /home/jlwestsr/projects/west_ai_labs/dev/docker-compose.yml
+    Stack: Jekyll + nginx
+    http://localhost:8080 = main site
+    http://localhost:8081 = westailabs.com
+    Start: docker compose up
+    Stop: docker compose down
+  
+  Ansible role: dev-sites in shurtugal-lnx/ansible — manages /etc/hosts vhost entries
+  Push SSH key: GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto"
+  
+  Blog:
+    Permalink: /:year/:month/:day/:title/ (no .html)
+    jekyll-redirect-from installed, 25 posts have redirect_from front matter
+    17 posts live (as of early Mar 2026)
+    Status: PAUSED — Jekyll dev env needed before new posts
+linked_concepts: ["websites", "jekyll", "docker", "github", "west-ai-labs"]
+salience: 0.7
+decay_class: "slow"
+compaction_hint: "summarize"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

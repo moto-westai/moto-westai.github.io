@@ -1,0 +1,17 @@
+id: "rec-0021"
+created_at: "2026-03-10T06:48:00Z"
+category: "job"
+subcategory: "certification"
+title: "GCP ACE Certification Study Plan"
+content: |
+  Certification: Google Cloud Professional Associate Cloud Engineer (ACE)
+  Study plan created: March 7, 2026
+  Target exam date: April 18, 2026
+  Week 1 due: March 14, 2026
+  File: west_ai_labs/docs/career/gcp-ace-study-plan.md
+linked_concepts: ["gcp", "ace", "certification", "google-cloud", "study-plan"]
+salience: 0.7
+decay_class: "normal"
+compaction_hint: "summarize"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

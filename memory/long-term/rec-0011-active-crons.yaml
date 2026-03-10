@@ -1,0 +1,27 @@
+id: "rec-0011"
+created_at: "2026-03-10T06:48:00Z"
+category: "infrastructure"
+subcategory: "crons"
+title: "Active Cron Jobs"
+content: |
+  Active cron job IDs and schedules:
+  
+  196c88a2 — 15-min autosave
+  ff038e0a — Morning report, 08:00 CST daily
+  a6e9f301 — Job search, 07:00 CST daily
+  fbf41c6f — Upstream OpenClaw check, 09:00 CST daily
+  7e4a2c91 — GitHub repo scouting, 8PM CST daily
+  
+  Config file: /home/jlwestsr/.openclaw/cron/jobs.json
+  
+  Cron rules:
+    - Absolute paths only (never ~/ or relative paths)
+    - Channel IDs only, never user IDs
+    - New/modified cron prompts → post in #jlwestsr-office for Jason's review first
+    - Weekly audit every Monday: how many fired, how many errored
+linked_concepts: ["cron", "autosave", "morning-report", "job-search", "github-scouting"]
+salience: 0.8
+decay_class: "slow"
+compaction_hint: "preserve"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

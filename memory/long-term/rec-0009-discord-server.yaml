@@ -1,0 +1,38 @@
+id: "rec-0009"
+created_at: "2026-03-10T06:48:00Z"
+category: "infrastructure"
+subcategory: "discord"
+title: "Discord Server — IDs and Channels"
+content: |
+  Guild ID: 1473761760115953738
+  Bot: Moto (App ID: 1473764695717445785)
+  
+  Channels:
+    #jlwestsr-office: 1475994576668852254
+      - Jason Sr. + Moto only
+      - requireMention: false
+      - model: opus (claude-opus-4 via modelByChannel)
+    #schmibb-office: 1475997091791896657
+      - Jason Jr. + Moto
+    #cael-office: 1476368504767905845
+      - Cael's workspace
+  
+  DM Channels:
+    Jason Sr. DM: 1473776378876006698
+    Jason Jr. DM: 1473818142898917487
+  
+  User IDs:
+    Jason Sr.: 496853770068557842
+    Jason Jr.: 97289488627138560
+    Nephar: 180396704879607808
+  
+  Roles:
+    Jason Sr.: 1475995991101669549
+    Jr.: 1475995993131581561
+    InfoSec: 1477007204421865503
+linked_concepts: ["discord", "guild", "channels", "jlwestsr-office", "bot"]
+salience: 0.9
+decay_class: "slow"
+compaction_hint: "preserve"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

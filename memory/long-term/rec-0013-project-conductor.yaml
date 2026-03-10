@@ -1,0 +1,31 @@
+id: "rec-0013"
+created_at: "2026-03-10T06:48:00Z"
+category: "project"
+subcategory: "conductor"
+title: "Conductor — Multi-Agent Orchestration Layer"
+content: |
+  Conductor is the multi-agent orchestration layer being designed by West AI Labs.
+  
+  Core design goals:
+    - Trust isolation between agents
+    - Context isolation (prevent cross-contamination)
+    - DLP (Data Loss Prevention) for agent-to-agent communication
+    - Pre-auth architecture (auth before action, not after)
+  
+  Agent DLP design doc: west_ai_labs/docs/research/agent-dlp-design.md
+  MVP timeline: ~8 weeks
+  
+  Security relevance:
+    - Maps to top 5 OWASP Agentic Top 10 risks (ASI01-ASI10)
+    - Validates against CVE-2026-2256 (MS-Agent denylist bypass: pre-auth > denylist)
+    - Reference implementation for NIST NCCoE AI Identity+Auth RFI
+    - Key angle for Anthropic Research Engineer application
+  
+  Publishing path for security research:
+    West AI Labs white paper → LinkedIn article → DEF CON/Black Hat CFP → DARPA I2O BAA
+linked_concepts: ["conductor", "multi-agent", "dlp", "trust-isolation", "owasp-agentic"]
+salience: 0.9
+decay_class: "slow"
+compaction_hint: "preserve"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"
