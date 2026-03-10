@@ -1,15 +1,9 @@
 {
-  "lastUpdated": "2026-03-10T06:57:00Z",
-  "primaryConversation": "Autosave 1:57 AM CST Tue Mar 10. Session quiet — no user activity since Jr. (schmibb) Mar 7 2:27 PM. NIST RFI deadline passed Mar 9 — status unknown. O'Reilly start approaching ~Mar 20.",
+  "lastUpdated": "2026-03-10T07:27:00Z",
+  "primaryConversation": "Autosave 2:27 AM CST Tue Mar 10. Session quiet since Mar 7. No user activity on Mar 8 or 9. NIST RFI deadline passed (Mar 9) — unknown if submitted.",
   "activeChannels": ["discord"],
   "lastUserMessage": "Jr. (schmibb): 'To narrow the search, the business in question has a call center position available' — 2:27 PM Mar 7",
   "pendingTasks": [
-    {
-      "id": "nist-rfi-response",
-      "description": "NIST CAISI RFI deadline was March 9 — PASSED. Unknown if Jason submitted at regulations.gov.",
-      "status": "flagged-to-jason",
-      "deadline": "2026-03-09"
-    },
     {
       "id": "natera-application",
       "description": "Apply to Natera Principal AI/ML Platform Engineer ($174-218K). Materials ready.",
@@ -40,6 +34,11 @@
       "id": "rooks-office-config",
       "description": "Add #rooks-office to openclaw.json (Claude Code) + Rook config update on nebulus.",
       "status": "waiting-jason"
+    },
+    {
+      "id": "gog-oauth-expired",
+      "description": "gog OAuth expired for jlwestsr@gmail.com and jason@westailabs.com. Fix: gog auth gmail --account jlwestsr@gmail.com",
+      "status": "waiting-jason"
     }
   ],
   "recentDecisions": [
@@ -69,11 +68,11 @@
     },
     {
       "ts": "2026-03-04T14:56:00Z",
-      "decision": "NIST RFI March 9 — flagged to Jason."
+      "decision": "NIST RFI March 9 deadline flagged to Jason. Passed — status unknown."
     }
   ],
   "pendingSubAgents": [],
-  "notes": "Session quiet Sun Mar 8 through Tue Mar 10 early AM. NIST RFI deadline passed (Mar 9) — unknown if submitted. O'Reilly starts ~Mar 20. gog OAuth still expired. RAG ingestion ran at 1:45 AM — 76 files indexed, 737 chunks.",
+  "notes": "NIST RFI deadline passed Mar 9 — unknown if Jason submitted. O'Reilly starts ~Mar 20. gog OAuth expired. Session quiet Mar 8-10.",
   "hohenheimStatus": {
     "ip": "192.168.4.222",
     "model": "ollama/hohenheim:latest (qwen2.5:14b)",
@@ -86,6 +85,6 @@
   },
   "upcomingEvents": [
     {"event": "NIST NCCoE Identity+Auth", "when": "2026-04-02", "note": "Submit to AI-Identity@nist.gov"},
-    {"event": "O'Reilly start", "when": "~2026-03-20", "note": "Full time in ~11 days"}
+    {"event": "O'Reilly start", "when": "~2026-03-20", "note": "Full time in ~2 weeks"}
   ]
 }
