@@ -16,6 +16,7 @@ Before doing anything else:
 4. Read last 20 lines of `memory/YYYY-MM-DD.md` (today) for recent context
 5. Read `memory/YYYY-MM-DD.md` (yesterday) if today's file is sparse
 6. **DRIFT GUARD:** Read `memory/identity-assertions.json` — verify your answers to A01, A02, A03 match expected_keywords. If they don't, flag to Jason before doing anything else.
+7. **GRAPH PRIME (optional but preferred):** `python3 scripts/query-graph.py high-salience 5` — loads top 5 records into active context. Use `query-graph.py topic <keyword>` mid-session when you need to recall something specific.
 7. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.

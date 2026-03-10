@@ -35,25 +35,76 @@ def fmt_record(r):
     )
 
 def cmd_topic(keyword):
-    """Find memory records related to a keyword (concept or title match)"""
-    kw = keyword.lower().replace(" ", "_")
+    """Find memory records — fulltext scored + entity graph traversal."""
+    kw = keyword.lower()
     with driver().session() as s:
-        # Match by concept
+        rows = []
+        seen = set()
+
+        # 1. Fulltext index (scored relevance — title/content)
+        try:
+            result = s.run("""
+                CALL db.index.fulltext.queryNodes('memory_fulltext', $query)
+                YIELD node AS m, score
+                WHERE score > 0.1
+                RETURN m, score
+                ORDER BY score DESC, m.salience DESC
+                LIMIT 8
+            """, query=keyword)
+            for r in result:
+                m = dict(r["m"])
+                m["_score"] = round(r["score"], 2)
+                rows.append({"m": m})
+                seen.add(m["id"])
+        except Exception:
+            pass  # index not ready, fall through
+
+        # 2. Concept match (exact + partial)
         result = s.run("""
             MATCH (m:MemoryRecord)-[:LINKS_TO]->(c:Concept)
             WHERE toLower(c.id) CONTAINS $kw OR toLower(c.name) CONTAINS $kw
-               OR toLower(m.title) CONTAINS $kw OR toLower(m.content) CONTAINS $kw
             RETURN DISTINCT m
-            ORDER BY m.salience DESC
-            LIMIT 10
-        """, kw=keyword.lower())
-        rows = list(result)
+            ORDER BY m.salience DESC LIMIT 6
+        """, kw=kw)
+        for r in result:
+            m = dict(r["m"])
+            if m["id"] not in seen:
+                rows.append({"m": m})
+                seen.add(m["id"])
+
+        # 3. Entity graph traversal — ABOUT edges
+        result = s.run("""
+            MATCH (m:MemoryRecord)-[:ABOUT]->(n)
+            WHERE toLower(coalesce(n.name,'')) CONTAINS $kw
+               OR toLower(coalesce(n.id,'')) CONTAINS $kw
+            RETURN DISTINCT m
+            ORDER BY m.salience DESC LIMIT 6
+        """, kw=kw)
+        for r in result:
+            m = dict(r["m"])
+            if m["id"] not in seen:
+                rows.append({"m": m})
+                seen.add(m["id"])
+
+        # 4. Title-only fallback if still empty
         if not rows:
-            print(f"No records found for topic: {keyword}")
+            result = s.run("""
+                MATCH (m:MemoryRecord)
+                WHERE toLower(m.title) CONTAINS $kw
+                RETURN m ORDER BY m.salience DESC LIMIT 8
+            """, kw=kw)
+            for r in result:
+                rows.append({"m": dict(r["m"])})
+
+        if not rows:
+            print(f"Nothing found for: '{keyword}'")
             return
+
         print(f"Records related to '{keyword}' ({len(rows)} found):\n")
         for row in rows:
-            print(fmt_record(dict(row["m"])))
+            m = row["m"]
+            score_tag = f" [score={m.pop('_score','')}]" if '_score' in m else ""
+            print(fmt_record(m) + (f"  relevance{score_tag}\n" if score_tag else ""))
 
 def cmd_related(record_id):
     """Find records related to a given record via shared concepts"""
