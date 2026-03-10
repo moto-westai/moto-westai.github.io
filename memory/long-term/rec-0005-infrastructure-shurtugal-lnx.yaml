@@ -20,6 +20,8 @@ content: |
   
   Moto SSH key: /home/jlwestsr/.ssh/id_ed25519_moto
   Push with: GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto"
+
+  Gitea git server: http://192.168.4.208:3001 (Docker, port 3001, data at /home/jlwestsr/gitea/data/)
 linked_concepts: ["shurtugal-lnx", "openclaw", "infrastructure", "ubuntu", "systemd"]
 salience: 0.9
 decay_class: "slow"

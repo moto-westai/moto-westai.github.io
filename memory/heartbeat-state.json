@@ -47,13 +47,13 @@
     },
     "upstream-pr-review": {
       "status": "checked",
-      "lastWorked": "2026-03-09T11:10:34.047Z",
-      "notes": "Mar 9 6:10 AM CST: Updated comment draft to v2. subrih posted full v0.1 implementation at 6:38 PM CST March 8 — two-layer enforcement (tool-level + macOS seatbelt/Linux bwrap). Draft was written before this update. Updated comment to engage his actual architecture: (1) glob-to-mount-point derivation problem for bwrap (the real hard part now that OS-level sandboxing is in play), (2) seatbelt symlink handling on macOS (profile-specific edge case), (3) A2A delegation scope (orchestrator-vs-subagent tool call attribution), (4) pre-init capability declaration tied to his agents block schema. Issue still OPEN, subrih waiting on \"interest signal\" before filing draft PR. Window still open. Draft v2 ready at west_ai_labs/docs/research/issue39979-comment-draft-2026-03-09.md"
+      "lastWorked": "2026-03-10T08:10:00.000Z",
+      "notes": "Mar 10 2:10 AM CST: Checked both #39979 and #75. NO new activity on either since Mar 9. Issue #39979 still has only 2 comments (last by subrih at Mar 8 6:38 PM CST) — no maintainer response yet. Window still fully open for Jason to post comment draft v2. Issue #75 still 37 comments, last by illbnm Mar 8 8:20 PM CST. Linux slot unclaimed. Both situations unchanged — holding pattern."
     },
     "memory-maintenance": {
       "status": "complete",
-      "lastWorked": "2026-03-08T11:10:00Z",
-      "notes": "Mar 8 6:10 AM CST: MEMORY.md was 40h stale (last updated Mar 6 14:31 CST). Updated 4 sections: (1) AI Robotics — added Feynman chip detail, 'Inference Sovereignty Era' framing, GTC timing (2 PM ET), AWS GTC angle; (2) NIST Standards — NCCoE response now v2 at ~2100 words with new evidence citations; (3) OpenClaw Contributions — added steipete ClawKeeper triage signal + sub-issues strategy; (4) Job Search — added 10 HN March 2026 leads, Anthropic stretch role, Gmail OAuth expired note, GCP ACE study plan created. Updated timestamp to 2026-03-08 06:10 CST."
+      "lastWorked": "2026-03-10T08:10:00Z",
+      "notes": "Mar 10 2:10 AM CST: MEMORY.md was 44h stale (last updated Mar 8 06:10 CST). Updated 6 sections: (1) Timestamp updated; (2) Who Jason Is — O'Reilly accepted, start ~Mar 20; (3) NIST NCCoE — v2 → v4, ~3600 words, added Schneier Promptware Kill Chain + CVE-2026-29783 Copilot CLI; (4) Key Content — AI Social Platforms 17 → 23 sections, latest developments noted; (5) OpenClaw Contributions — added issue #39979 entry (subrih v0.1 ready, comment draft v2 waiting); (6) AI Robotics — Section 22 → 24, added Vera Rubin confidential computing modules + blog timing note."
     },
     "gcp-ace-study-plan": {
       "status": "created",
@@ -161,8 +161,8 @@
       "notes": "Mar 9 10:15 PM CST: Updated to v4 (~3,600 words). Added Appendix A sections 7+8: (7) Schneier 'Promptware Kill Chain' (Lawfare+arXiv, Mar 2026) — MITRE-aligned 7-stage framework, policy-grade vocab, gates at Execution->Capability Escalation stage, persistence stage maps to agent memory/SOUL.md tampering; (8) CVE-2026-29783 GitHub Copilot CLI — bash parameter expansion bypasses read-only classification, 5th trusted-channel vector, key arg: if GitHub can't classify their OWN agent's commands correctly, procedural classification is insufficient. April 2 deadline, submit to AI-Identity@nist.gov. Also checked: no new GitHub activity on #39979 or #75 since Mar 9 early AM."
     }
   },
-  "lastHeartbeat": "2026-03-10T03:15:00.000Z",
-  "heartbeatCount": 203,
+  "lastHeartbeat": "2026-03-10T08:10:00.000Z",
+  "heartbeatCount": 204,
   "pendingActions": [
     "📝 IRONCLAD MATERIALS READY (Mar 5 9AM): Staff Applied AI — remote confirmed, ~$210K-235K, 7.5/10 fit. Resume + cover letter drafted. Files: west_ai_labs/docs/career/resume-Ironclad-AppliedAI-2026-03-05.md + cover-letter-Ironclad-AppliedAI-2026-03-05.md. Apply at: https://jobs.ashbyhq.com/ironcladhq/186a9b25-0d54-43d9-a637-c54208dbe415",
     "❌ ZENBUSINESS REJECTED (Mar 4 8:41 AM): Standard form rejection. Pipeline still active: Natera, Cresta, Droisys, Voleon, Trajector all pending. Safe Security + Vertex Inc. not yet applied — review when ready.",

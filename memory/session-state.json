@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-10T06:42:00Z",
-  "primaryConversation": "Autosave 1:42 AM CST Tue Mar 10. Session quiet — no user activity since Jr. (schmibb) Mar 7 2:27 PM. NIST RFI deadline passed Mar 9 — status unknown. O'Reilly start approaching ~Mar 20.",
+  "lastUpdated": "2026-03-10T06:57:00Z",
+  "primaryConversation": "Autosave 1:57 AM CST Tue Mar 10. Session quiet — no user activity since Jr. (schmibb) Mar 7 2:27 PM. NIST RFI deadline passed Mar 9 — status unknown. O'Reilly start approaching ~Mar 20.",
   "activeChannels": ["discord"],
   "lastUserMessage": "Jr. (schmibb): 'To narrow the search, the business in question has a call center position available' — 2:27 PM Mar 7",
   "pendingTasks": [
@@ -73,7 +73,7 @@
     }
   ],
   "pendingSubAgents": [],
-  "notes": "Session quiet Sun Mar 8 through Tue Mar 10 early AM. NIST RFI deadline passed (Mar 9) — unknown if submitted. O'Reilly starts ~Mar 20. gog OAuth still expired.",
+  "notes": "Session quiet Sun Mar 8 through Tue Mar 10 early AM. NIST RFI deadline passed (Mar 9) — unknown if submitted. O'Reilly starts ~Mar 20. gog OAuth still expired. RAG ingestion ran at 1:45 AM — 76 files indexed, 737 chunks.",
   "hohenheimStatus": {
     "ip": "192.168.4.222",
     "model": "ollama/hohenheim:latest (qwen2.5:14b)",

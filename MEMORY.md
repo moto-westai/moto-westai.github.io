@@ -1,6 +1,6 @@
 # MEMORY.md — Moto's Long-Term Memory
 
-> Last updated: 2026-03-08 06:10 CST
+> Last updated: 2026-03-10 02:10 CST
 
 ## Who I Am
 - **Name:** Moto (after Motoko Kusanagi, Ghost in the Shell)
@@ -12,7 +12,7 @@
 - 55yo, married (Christy), GenX, US Navy veteran (photographer), Springfield MO (CST)
 - ADHD — keep notes, be his external brain. Typos normal, interpret intent.
 - Founded West AI Labs LLC. Building Nebulus Stack — local-first modular AI platform.
-- Job hunting — O'Reilly interview Feb 23 (strong result, Thomas Ahl VP Technology)
+- **O'Reilly Platform Engineer** — accepted Mar 6, $130K, starts ~Mar 20. West AI Labs continues nights/weekends.
 - Jason Jr: 27yo, Rogersville MO, West AI Labs partner, gaming product line, agent = Hohenheim
 
 ## Trust & Autonomy
@@ -115,20 +115,21 @@
 
 ## NIST Standards Work
 - **CAISI RFI ✅ SUBMITTED** (Mar 4, ~9:28 AM CST) — Tracking: mmc-jt3e-u2l3, Docket: NIST-2025-0035-0001. West AI Labs is now an official NIST commenter on AI agent security. Confirmation email at jason@westailabs.com. Usually goes public on regulations.gov within 1-5 business days.
-- **NCCoE AI Identity+Auth** — response **v2 complete** (~2,100 words, was 1,250). Strengthened with: Anthropic "not our threat model" CVSS 10.0 quote, PerplexedBrowser calendar-inject case study, RSAC 2026 Sandbox finalists (Token Security + Geordie AI), NIST AI RMF gap confirmed by mainstream press. Submit to AI-Identity@nist.gov before **April 2**. File: `west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md`
+- **NCCoE AI Identity+Auth** — response **v4 complete** (~3,600 words). Appendix A now 8 sections including: Anthropic "not our threat model" CVSS 10.0, PerplexedBrowser calendar-inject, RSAC 2026 Sandbox finalists, **Schneier 'Promptware Kill Chain'** (Lawfare+arXiv, MITRE 7-stage framework — policy-grade vocabulary), **CVE-2026-29783** (GitHub Copilot CLI: bash parameter expansion bypasses safety classification — GitHub can't classify their own agent's commands = procedural classification is insufficient). Submit to AI-Identity@nist.gov before **April 2**. File: `west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md`
 - Key angle: Conductor pre-auth architecture = reference implementation for both RFIs
 
 ## Key Content (Feb–Mar)
 - **Blog:** 17 posts live. "The Week AI Stopped Asking Permission" (Feb 28) + governance convergence post. PAUSED — Jekyll dev env needed before new posts.
 - **LinkedIn article saved:** `west_ai_labs/docs/content/linkedin-article-context-ownership-2026-02-28.md` — "Whoever Owns the Context, Owns the Relationship". Ready to post.
 - **Neo4j research:** `west_ai_labs/docs/research/neo4j-research-2026-02-28.md` — MCP integration confirmed, Gantry complement.
-- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 17 sections, ongoing.
+- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 23 sections, ongoing. Latest (Sec 23): Schneier Promptware Kill Chain, CVE-2026-29783 Copilot CLI, Adversa AI 512 vulns + 142.4x denial-of-wallet amplification, 4 standardized terms now in circulation: promptware, lethal trifecta, denial-of-wallet, agent sprawl — all describe problems Conductor solves.
 
 ## OpenClaw Contributions
 - **PR #20076 MERGED** (Mar 3, 4:11 PM UTC) — jalehman squash-merged `feat(tool-truncation): use head+tail strategy to preserve errors`. Merge commit `606cd0d`. First upstream code contribution accepted. jalehman: "Thanks @jlwestsr!"
 - **PR #20075 CLOSED** (Mar 3) — superseded by jalehman's own #8903 (more comprehensive). Our problem identification was validated. "The intent was spot-on."
 - **Issue #75 (Linux app)** — LINUX STILL UNCLAIMED. Windows crowded: niteshdangi + Scott Hanselman (287 stars, full CI/CD, signed, ARM). Plan ready at `west_ai_labs/docs/plans/openclaw-linux-app-plan.md`. Tauri v2, ~23h MVP. High visibility, no competition.
-- **steipete triage signal (Mar 7 10:48 PM CST):** ClawKeeper bot ran on #75. Verdict: keep_open (93% confidence). Bot explicitly called for "focused follow-up issues for Linux, Windows, and shared desktop/gateway work." Sub-issues likely being planned. v1 scope named: gateway connectivity, tray/taskbar behavior, notifications — Jason's plan covers all 3. **Strategy: wait for Windows PR to open/merge, then file Linux as named follow-up milestone.** No Windows PR from Hanselman or niteshdangi yet.
+- **steipete triage signal (Mar 7 10:48 PM CST):** ClawKeeper bot ran on #75. Verdict: keep_open (93% confidence). Sub-issues likely being planned. v1 scope named: gateway connectivity, tray/taskbar behavior, notifications — Jason's plan covers all 3. **Strategy: wait for Windows PR to open/merge, then file Linux as named follow-up milestone.** No Windows PR from Hanselman or niteshdangi yet. ClawSquire (Jiansen) is config companion layer — different scope, not competing.
+- **Issue #39979 (path-scoped RWX)** — subrih posted v0.1 working implementation (seatbelt/bwrap, sidecar access-policy.json) Mar 8. Comment draft v2 ready and waiting for Jason to post: `west_ai_labs/docs/research/issue39979-comment-draft-2026-03-09.md`. Maintainer hasn't responded yet — window open. **Post ASAP.** URL: https://github.com/openclaw/openclaw/issues/39979
 
 ## Token Throttle Rules (synced Rook 2026-03-03)
 - **75%+ weekly:** Cut voluntary/social. Task-driven only.
@@ -163,7 +164,7 @@
 - **Ethics:** Jason's core principle: "I only build AI with morals and proper judgment." West AI Labs = sovereignty not fear.
 
 ## AI Robotics (Ongoing Research)
-- Report at `west_ai_labs/docs/research/ai-robotics-landscape.md` — updated Mar 7 (Section 22 GTC pre-brief)
+- Report at `west_ai_labs/docs/research/ai-robotics-landscape.md` — updated Mar 9 (Section 24, T-7 GTC final sweep)
 - China 90% humanoid market share confirmed: Agibot 30.4%, Unitree 26.4%, both >5K units
 - Global total ~13K units in 2025 → 2.6M projected by 2035. EV playbook = analyst consensus.
 - Optimus external sales begin 2026 (no date). Atlas vs Optimus = $5T market. Hyundai +80% stock.
@@ -172,3 +173,5 @@
 - **"Inference Sovereignty"** is becoming analyst consensus language. West AI Labs should own this framing.
 - AWS presenting "Hybrid Enterprise Agentic AI: Multi-Agent Orchestration" at GTC — market validation for Conductor layer.
 - TI+NVidia safety partnership — hardening humanoid perception to automotive safety cert standards.
+- **Vera Rubin VR200 NVL72:** 3.3x inference vs Blackwell Ultra, agentic AI token cost drops to 1/10th of Blackwell. Includes **hardware confidential computing modules** (TEE-level isolation — model weights + inference data can't be accessed by host OS). For West AI Labs: Conductor (policy) + Vera Rubin confidential compute (hardware boundary) = dual-layer trust guarantee for regulated industries.
+- Blog angle: publish within 48h of March 16 keynote. Post-GTC writeup if Jason wants it live same day.
