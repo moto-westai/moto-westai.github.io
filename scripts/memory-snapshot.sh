@@ -64,3 +64,10 @@ fi
 if source /home/jlwestsr/.openclaw/secrets/gitea.env 2>/dev/null; then
   git push gitea master --tags --quiet 2>/dev/null && echo "[${TIMESTAMP}] Pushed to Gitea." || echo "[${TIMESTAMP}] Gitea push failed (non-fatal)."
 fi
+
+# Sync memory records to Neo4j graph
+if python3 /home/jlwestsr/.openclaw/workspace/scripts/ingest-memory-graph.py > /tmp/neo4j-ingest.log 2>&1; then
+  echo "[${TIMESTAMP}] Neo4j synced: $(grep 'MemoryRecord' /tmp/neo4j-ingest.log | tail -1)"
+else
+  echo "[${TIMESTAMP}] Neo4j sync failed (non-fatal). Check /tmp/neo4j-ingest.log"
+fi

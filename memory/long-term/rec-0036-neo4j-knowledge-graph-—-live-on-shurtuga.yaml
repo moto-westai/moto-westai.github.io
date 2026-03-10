@@ -1,0 +1,33 @@
+id: rec-0036
+created_at: '2026-03-10T07:37:14Z'
+category: infrastructure
+subcategory: ''
+title: Neo4j Knowledge Graph — Live on shurtugal-lnx
+content: 'Neo4j 5.26.21 running in Docker on shurtugal-lnx.
+
+  Port 7687 (Bolt), 7474 (HTTP browser).
+
+  Credentials: neo4j / WestAILabs2026! (also in /home/jlwestsr/.openclaw/secrets/neo4j.env)
+
+  Docker compose: /home/jlwestsr/neo4j/docker-compose.yml
+
+  Scripts: ingest-memory-graph.py, graph-enrich.py, graph-add.py, query-graph.py,
+  graph-schema.py
+
+  Nodes: MemoryRecord(35), Concept(152), Agent(3), Person(9), Org(9), Project(8),
+  Product(4), Event(8), Decision(6), Infrastructure(7)
+
+  Total edges: 304
+
+  Ingest on cron: daily 5AM snapshot reruns ingest after git commit.'
+linked_concepts:
+- neo4j
+- graph-database
+- infrastructure
+- memory-architecture
+- shurtugal-lnx
+salience: 0.85
+decay_class: slow
+compaction_hint: preserve
+last_reinforced: '2026-03-10T07:37:14Z'
+source: graph-add 2026-03-10T07:37:14Z
