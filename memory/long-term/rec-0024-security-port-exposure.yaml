@@ -1,0 +1,18 @@
+id: "rec-0024"
+created_at: "2026-03-10T06:48:00Z"
+category: "security"
+subcategory: "host-security"
+title: "Open Ports — Needs UFW (shurtugal-lnx)"
+content: |
+  Exposed ports on shurtugal-lnx (as of Mar 2026):
+    - Port 8000: exposed on 0.0.0.0
+    - Port 19999 (Netdata): exposed on 0.0.0.0
+  
+  Status: No UFW currently active
+  Action needed: Enable UFW and restrict these ports
+linked_concepts: ["ufw", "ports", "netdata", "shurtugal-lnx", "host-security"]
+salience: 0.7
+decay_class: "normal"
+compaction_hint: "ephemeral"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

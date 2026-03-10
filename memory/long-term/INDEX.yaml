@@ -1,0 +1,215 @@
+generated_at: '2026-03-10T06:55:19Z'
+total_records: 35
+agent_id: moto
+note: Migrated from MEMORY.md 2026-03-10. Salience-sorted.
+records:
+- id: rec-0001
+  file: rec-0001-moto-identity.yaml
+  title: Moto's Core Identity
+  category: fact
+  salience: 1.0
+  compaction_hint: preserve
+- id: rec-0002
+  file: rec-0002-jason-west-profile.yaml
+  title: Jason West Sr. — Profile
+  category: relationship
+  salience: 1.0
+  compaction_hint: preserve
+- id: rec-0003
+  file: rec-0003-trust-autonomy-rules.yaml
+  title: Trust & Autonomy Grant from Jason
+  category: decision
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0005
+  file: rec-0005-infrastructure-shurtugal-lnx.yaml
+  title: shurtugal-lnx — Primary OpenClaw Host
+  category: infrastructure
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0006
+  file: rec-0006-infrastructure-nebulus-mac-mini.yaml
+  title: Nebulus Mac Mini M4 Pro (nebulus)
+  category: infrastructure
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0009
+  file: rec-0009-discord-server.yaml
+  title: Discord Server — IDs and Channels
+  category: infrastructure
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0012
+  file: rec-0012-project-nebulus-stack.yaml
+  title: Nebulus Stack — Core Project
+  category: project
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0013
+  file: rec-0013-project-conductor.yaml
+  title: Conductor — Multi-Agent Orchestration Layer
+  category: project
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0018
+  file: rec-0018-job-oreilly-accepted.yaml
+  title: O'Reilly Platform Engineer — ACCEPTED
+  category: job
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0004
+  file: rec-0004-workflow-rules.yaml
+  title: Established Workflow Rules
+  category: decision
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0007
+  file: rec-0007-infrastructure-hohenheim.yaml
+  title: Hohenheim — Jason Jr's Workstation
+  category: infrastructure
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0011
+  file: rec-0011-active-crons.yaml
+  title: Active Cron Jobs
+  category: infrastructure
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0022
+  file: rec-0022-security-poisoned-orchestrator.yaml
+  title: Poisoned Orchestrator Attack — Jason's Original Insight
+  category: security
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0025
+  file: rec-0025-nist-caisi-rfi.yaml
+  title: NIST CAISI RFI — SUBMITTED
+  category: business
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0026
+  file: rec-0026-nist-nccoe-identity-auth.yaml
+  title: NIST NCCoE AI Identity+Auth Response — Due April 2
+  category: business
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0031
+  file: rec-0031-key-lessons-learned.yaml
+  title: Key Lessons Learned
+  category: fact
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0033
+  file: rec-0033-business-strategy.yaml
+  title: West AI Labs Business Strategy and Certifications
+  category: business
+  salience: 0.8
+  compaction_hint: summarize
+- id: rec-0008
+  file: rec-0008-infrastructure-tabby-gog.yaml
+  title: TabbyAPI and gog OAuth Status
+  category: infrastructure
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0010
+  file: rec-0010-websites-dev-env.yaml
+  title: Websites and Dev Environment
+  category: infrastructure
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0016
+  file: rec-0016-products-moto-workforce.yaml
+  title: Moto Workforce Product — Employees That Ship in a Box
+  category: business
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0021
+  file: rec-0021-job-gcp-ace-study-plan.yaml
+  title: GCP ACE Certification Study Plan
+  category: job
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0023
+  file: rec-0023-security-cves-press.yaml
+  title: Relevant CVEs and Security Press Coverage
+  category: security
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0024
+  file: rec-0024-security-port-exposure.yaml
+  title: Open Ports — Needs UFW (shurtugal-lnx)
+  category: security
+  salience: 0.7
+  compaction_hint: ephemeral
+- id: rec-0028
+  file: rec-0028-openclaw-pr-contributions.yaml
+  title: 'OpenClaw Upstream Contributions — PR #20076 Merged'
+  category: project
+  salience: 0.7
+  compaction_hint: preserve
+- id: rec-0029
+  file: rec-0029-openclaw-linux-issue-75.yaml
+  title: 'OpenClaw Linux App — Issue #75 Strategy'
+  category: project
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0030
+  file: rec-0030-token-throttle-rules.yaml
+  title: Token Throttle Rules (synced Rook 2026-03-03)
+  category: decision
+  salience: 0.7
+  compaction_hint: preserve
+- id: rec-0032
+  file: rec-0032-business-modern-motor-cars.yaml
+  title: Modern Motor Cars — Sales Target
+  category: business
+  salience: 0.7
+  compaction_hint: preserve
+- id: rec-0035
+  file: rec-0035-nvidia-gtc-inference-sovereignty.yaml
+  title: NVidia GTC March 2026 — Inference Sovereignty Era
+  category: fact
+  salience: 0.7
+  compaction_hint: summarize
+- id: rec-0014
+  file: rec-0014-project-moto-ios.yaml
+  title: Moto iOS App
+  category: project
+  salience: 0.6
+  compaction_hint: summarize
+- id: rec-0015
+  file: rec-0015-project-terraform-lab.yaml
+  title: Terraform Lab — GCP Teardown Needed
+  category: project
+  salience: 0.6
+  compaction_hint: ephemeral
+- id: rec-0017
+  file: rec-0017-products-other.yaml
+  title: Other West AI Labs Products
+  category: business
+  salience: 0.6
+  compaction_hint: summarize
+- id: rec-0019
+  file: rec-0019-job-search-pipeline.yaml
+  title: Job Search Pipeline — Active Applications
+  category: job
+  salience: 0.6
+  compaction_hint: summarize
+- id: rec-0027
+  file: rec-0027-content-blog-linkedin.yaml
+  title: Blog and LinkedIn Content Status
+  category: project
+  salience: 0.6
+  compaction_hint: summarize
+- id: rec-0020
+  file: rec-0020-job-search-hn-leads.yaml
+  title: HackerNews Job Leads — March 7, 2026
+  category: job
+  salience: 0.5
+  compaction_hint: ephemeral
+- id: rec-0034
+  file: rec-0034-ai-robotics-research.yaml
+  title: AI Robotics Landscape Research
+  category: fact
+  salience: 0.5
+  compaction_hint: summarize

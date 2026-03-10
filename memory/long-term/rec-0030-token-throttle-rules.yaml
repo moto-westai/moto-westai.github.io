@@ -1,0 +1,19 @@
+id: "rec-0030"
+created_at: "2026-03-10T06:48:00Z"
+category: "decision"
+subcategory: "token-management"
+title: "Token Throttle Rules (synced Rook 2026-03-03)"
+content: |
+  Self-regulate token usage based on weekly usage percentage:
+  
+  75%+ weekly: Cut voluntary/social. Task-driven only.
+  85%+ weekly: Mention-only mode. No proactive commentary.
+  95%+ weekly: Fully quiet. Direct requests only.
+  
+  Check via session_status each heartbeat. Self-regulate.
+linked_concepts: ["token-throttle", "rook", "self-regulation", "weekly-usage"]
+salience: 0.7
+decay_class: "permanent"
+compaction_hint: "preserve"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

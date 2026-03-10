@@ -1,0 +1,33 @@
+id: "rec-0029"
+created_at: "2026-03-10T06:48:00Z"
+category: "project"
+subcategory: "openclaw-upstream"
+title: "OpenClaw Linux App — Issue #75 Strategy"
+content: |
+  Issue #75 (Linux desktop app) — LINUX STILL UNCLAIMED as of Mar 7, 2026
+  
+  Windows competition:
+    - niteshdangi: full CI/CD, signed, ARM
+    - Scott Hanselman: 287 stars, comprehensive
+  
+  Plan: wait for Windows PR to open/merge, then file Linux as named follow-up milestone.
+  No Windows PR from Hanselman or niteshdangi yet (as of Mar 7).
+  
+  Plan file: west_ai_labs/docs/plans/openclaw-linux-app-plan.md
+  Tech: Tauri v2, ~23h MVP
+  Visibility: High, no competition for Linux
+  
+  steipete triage signal (Mar 7, 10:48 PM CST):
+    ClawKeeper bot verdict: keep_open (93% confidence)
+    Bot called for "focused follow-up issues for Linux, Windows, and shared
+    desktop/gateway work."
+    v1 scope named: gateway connectivity, tray/taskbar behavior, notifications
+    All 3 covered by Jason's plan.
+  
+  Strategy: High visibility opportunity, first-mover for Linux desktop.
+linked_concepts: ["openclaw", "linux-app", "tauri", "issue-75", "steipete"]
+salience: 0.7
+decay_class: "slow"
+compaction_hint: "summarize"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

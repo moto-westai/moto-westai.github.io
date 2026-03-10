@@ -1,0 +1,28 @@
+id: "rec-0023"
+created_at: "2026-03-10T06:48:00Z"
+category: "security"
+subcategory: "cves"
+title: "Relevant CVEs and Security Press Coverage"
+content: |
+  OpenClaw CVE-2026-25253:
+    Type: 1-click RCE (token theft + WebSocket hijacking)
+    Press: Dark Reading + SecurityWeek
+    Status: We are PATCHED (OpenClaw v2026.3.2)
+    Significance: First mainstream press for AI agent framework CVEs.
+    Timing: NIST submissions perfectly timed with this coverage.
+  
+  CVE-2026-2256 (MS-Agent denylist bypass):
+    Type: pre-auth bypasses denylist
+    Significance: Validates Conductor pre-auth architecture approach
+  
+  HackerBot-Claw (Mar 3 TLDR InfoSec):
+    AI bot scanned 47K repos, actually exploited them.
+    Compromised: DataDog, Microsoft, Aqua Security repos.
+    Aqua made Trivy private after incident.
+    Significance: Security positioning matters; validates our research direction.
+linked_concepts: ["cve", "openclaw-cve", "security-press", "hackerbot", "rce"]
+salience: 0.7
+decay_class: "slow"
+compaction_hint: "summarize"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

@@ -1,0 +1,28 @@
+id: "rec-0027"
+created_at: "2026-03-10T06:48:00Z"
+category: "project"
+subcategory: "content"
+title: "Blog and LinkedIn Content Status"
+content: |
+  Blog:
+    Posts live: 17 (as of early Mar 2026)
+    Latest: "The Week AI Stopped Asking Permission" (Feb 28)
+    Also: governance convergence post
+    Status: PAUSED — Jekyll dev env needed before new posts
+  
+  LinkedIn Article (ready to post):
+    Title: "Whoever Owns the Context, Owns the Relationship"
+    File: west_ai_labs/docs/content/linkedin-article-context-ownership-2026-02-28.md
+    Status: Saved, not yet posted
+  
+  Research docs:
+    Neo4j research: west_ai_labs/docs/research/neo4j-research-2026-02-28.md
+      - MCP integration confirmed, complement to Gantry
+    AI Social Platforms research: west_ai_labs/docs/research/ai-social-platforms.md
+      - 17 sections, ongoing
+linked_concepts: ["blog", "linkedin", "content", "neo4j", "ai-social-platforms"]
+salience: 0.6
+decay_class: "normal"
+compaction_hint: "summarize"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"

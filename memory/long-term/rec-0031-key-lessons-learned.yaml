@@ -1,0 +1,30 @@
+id: "rec-0031"
+created_at: "2026-03-10T06:48:00Z"
+category: "fact"
+subcategory: "lessons"
+title: "Key Lessons Learned"
+content: |
+  1. openclaw.service is the correct systemd service name (NOT openclaw-gateway.service)
+  
+  2. Self-modification rule:
+     - Moto edits freely: SOUL.md / AGENTS.md / MEMORY.md / HEARTBEAT.md / cron
+     - External agent required: openclaw.json + systemd service definitions
+  
+  3. Compaction model: claude-sonnet-4-6. maxHistoryShare safe floor: 0.75
+  
+  4. ClawHub security: 341 malicious skills found — only use official/self-written skills
+  
+  5. Docker containers on custom networks can't reach host loopback — use network_mode:host
+  
+  6. LaunchAgents don't load headless Mac — use LaunchDaemons (on macOS/nebulus)
+  
+  7. X (Twitter) free tier: 403 on reply tweets — manual posting only
+  
+  8. First self-directed SOUL.md edit (Mar 2): Added Growth section + fascination principle.
+     Commit: a0aa554
+linked_concepts: ["lessons", "openclaw", "docker", "macos", "security"]
+salience: 0.8
+decay_class: "permanent"
+compaction_hint: "preserve"
+last_reinforced: "2026-03-10T06:48:00Z"
+source: "MEMORY.md migration 2026-03-10"
