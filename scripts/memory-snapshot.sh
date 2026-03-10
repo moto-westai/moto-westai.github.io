@@ -59,3 +59,8 @@ if [ "$MODE" = "freeze" ]; then
 else
   echo "[${TIMESTAMP}] Snapshot committed: ${CHANGES}"
 fi
+
+# Push to Gitea (off-machine backup)
+if source /home/jlwestsr/.openclaw/secrets/gitea.env 2>/dev/null; then
+  git push gitea master --tags --quiet 2>/dev/null && echo "[${TIMESTAMP}] Pushed to Gitea." || echo "[${TIMESTAMP}] Gitea push failed (non-fatal)."
+fi
