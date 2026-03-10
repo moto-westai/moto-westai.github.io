@@ -1,8 +1,10 @@
 {
-  "lastUpdated": "2026-03-10T07:27:00Z",
-  "primaryConversation": "Autosave 2:27 AM CST Tue Mar 10. Session quiet since Mar 7. No user activity on Mar 8 or 9. NIST RFI deadline passed (Mar 9) — unknown if submitted.",
-  "activeChannels": ["discord"],
-  "lastUserMessage": "Jr. (schmibb): 'To narrow the search, the business in question has a call center position available' — 2:27 PM Mar 7",
+  "lastUpdated": "2026-03-10T09:57:00Z",
+  "primaryConversation": "Autosave 4:57 AM CST Tue Mar 10. Session quiet overnight. No user activity since Jr. Mar 7 2:27 PM.",
+  "activeChannels": [
+    "discord"
+  ],
+  "lastUserMessage": "Jr. (schmibb): 'To narrow the search, the business in question has a call center position available' \u2014 2:27 PM Mar 7",
   "pendingTasks": [
     {
       "id": "natera-application",
@@ -37,7 +39,7 @@
     },
     {
       "id": "gog-oauth-expired",
-      "description": "gog OAuth expired for jlwestsr@gmail.com and jason@westailabs.com. Fix: gog auth gmail --account jlwestsr@gmail.com",
+      "description": "gog OAuth expired for both Gmail accounts. Fix: gog auth gmail --account jlwestsr@gmail.com",
       "status": "waiting-jason"
     }
   ],
@@ -52,7 +54,7 @@
     },
     {
       "ts": "2026-03-04T19:50:00Z",
-      "decision": "zealot proxy tool added to hohenheim-tools/index.ts — direct HTTP to gemini-2.0-flash."
+      "decision": "zealot proxy tool added to hohenheim-tools/index.ts \u2014 direct HTTP to gemini-2.0-flash."
     },
     {
       "ts": "2026-03-04T17:23:00Z",
@@ -64,27 +66,50 @@
     },
     {
       "ts": "2026-03-04T16:41:00Z",
-      "decision": "Hohenheim: SSH IP 221→222, WORKFLOW_AUTO.md hardcoded date fixed."
+      "decision": "Hohenheim: SSH IP 221\u2192222, WORKFLOW_AUTO.md hardcoded date fixed."
     },
     {
       "ts": "2026-03-04T14:56:00Z",
-      "decision": "NIST RFI March 9 deadline flagged to Jason. Passed — status unknown."
+      "decision": "NIST RFI March 9 deadline passed \u2014 unknown if Jason submitted."
     }
   ],
   "pendingSubAgents": [],
-  "notes": "NIST RFI deadline passed Mar 9 — unknown if Jason submitted. O'Reilly starts ~Mar 20. gog OAuth expired. Session quiet Mar 8-10.",
+  "notes": "O'Reilly starts ~Mar 20. GCP ACE Week 1 due Mar 14. gog OAuth still expired \u2014 job email blind. Session quiet since Mar 7.",
   "hohenheimStatus": {
     "ip": "192.168.4.222",
     "model": "ollama/hohenheim:latest (qwen2.5:14b)",
-    "zealots": "zealot tool → gemini-2.0-flash direct HTTP — ACTIVE",
+    "zealots": "zealot tool \u2192 gemini-2.0-flash direct HTTP \u2014 ACTIVE",
     "gateway": "active"
   },
   "upstreamPRs": {
-    "pr20075": {"state": "CLOSED"},
-    "pr20076": {"state": "MERGED", "mergedAt": "2026-03-03T16:11:18Z"}
+    "pr20075": {
+      "state": "CLOSED"
+    },
+    "pr20076": {
+      "state": "MERGED",
+      "mergedAt": "2026-03-03T16:11:18Z"
+    }
   },
   "upcomingEvents": [
-    {"event": "NIST NCCoE Identity+Auth", "when": "2026-04-02", "note": "Submit to AI-Identity@nist.gov"},
-    {"event": "O'Reilly start", "when": "~2026-03-20", "note": "Full time in ~2 weeks"}
+    {
+      "event": "GCP ACE Week 1 due",
+      "when": "2026-03-14",
+      "note": "Check in with Jason on study progress"
+    },
+    {
+      "event": "O'Reilly start",
+      "when": "~2026-03-20",
+      "note": "Full time in ~10 days"
+    },
+    {
+      "event": "NIST NCCoE Identity+Auth",
+      "when": "2026-04-02",
+      "note": "Submit to AI-Identity@nist.gov"
+    },
+    {
+      "event": "GCP ACE Exam",
+      "when": "2026-04-18",
+      "note": "Target exam date"
+    }
   ]
 }
