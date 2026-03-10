@@ -1,6 +1,6 @@
 # MEMORY.md — Moto's Long-Term Memory
 
-> Last updated: 2026-02-28 22:30 CST
+> Last updated: 2026-03-08 06:10 CST
 
 ## Who I Am
 - **Name:** Moto (after Motoko Kusanagi, Ghost in the Shell)
@@ -40,9 +40,10 @@
 - **Hohenheim (Jr.):** schmibbies-workstation (192.168.4.221), Ollama qwen2.5:14b, RTX 3070
   - CHANGELOG: `/mnt/storage/JrShare/Dungeons and dragons campaign content/CHANGELOG.md` — check FIRST before debugging
   - SSH: `ssh schmibbies-workstation` → `systemctl --user restart openclaw-gateway`
-- **Telegram:** Jason ID 8544470435, bot @moto_westai_bot
+- **Telegram:** REMOVED (2026-03-02). Discord-only now.
 - **GitHub (Moto):** github.com/moto-westai, SSH key `/home/jlwestsr/.ssh/id_ed25519_moto`, PAT expires May 20 2026
 - **TabbyAPI:** http://tabby:5000 (Qwen2.5-Coder-14B etc.)
+- **Channels:** Discord only (Telegram fully removed 2026-03-02, config + plugin cleaned by Claude Code)
 - **gog OAuth:** EXPIRED for both Gmail accounts. Fix: `gog auth gmail --account jlwestsr@gmail.com`
 
 ## Discord
@@ -89,34 +90,85 @@
 
 ## Job Search (Active)
 - Target: Senior Systems/Cloud/Infrastructure/DevOps, $130K+ min, remote preferred
-- O'Reilly Feb 23 — very strong. Thomas Ahl (VP Technology) wants to elevate the role.
-- Applied: Trajector Staff Engineer ($170-200K, submitted), Metabase SRE, Spreetail Platform Engineer
+- **O'Reilly ACCEPTED & CONFIRMED** (Mar 6) — Platform Engineer, $130K/yr. Starts full time in 2 weeks. Thomas Ahl (VP Technology). West AI Labs continues nights/weekends — bootstrap mode.
+- **Rejected:** ZenBusiness (Mar 4 8:41 AM, form rejection, no feedback)
+- Applied/Pending: Natera, Cresta, Droisys, Voleon, Trajector (all pending response)
+- **Ready to apply:** Natera Principal AI/ML Platform Engineer ($174-218K, 8.5/10 fit) — materials in `west_ai_labs/docs/career/`
+- **Ready to apply:** Safe Security Principal Engineer AI (~$170-220K, 8.5/10 fit) — apply at lever.co/safe/dcbc1248, materials ready
+- **Ready to apply:** Vertex Inc. AI Product Engineer — LinkedIn saved, not yet applied
 - Pipeline: Patriot Software ($155-170K), Corporate Tools ($175K), EVONA ($160-240K), Harnham ($250K), kadence ($150-200K)
+- **New HN March 2026 leads (Mar 7):** Mobasi ($240K+profit share, AI agents for law enforcement forensics, bootstrapped/profitable), Mobian (Staff AI-First Systems, global remote), Osaurus (Protocol Engineer, agent-to-agent networking — most Nebulus-aligned lead yet), Coder.com (AI agentic dev environments), Hightouch Staff Engineer AI ($180-320K, MCP integrations). Full list: `west_ai_labs/docs/career/job-search-2026-03-07.md`
+- **Stretch moonshot:** Anthropic Research Engineer, Agents — $500K-$850K, remote-friendly, no PhD req. 6/10 from systems angle. Lead with Conductor + NIST NCCoE submission. URL in application-tracker.md.
+- **Gmail OAuth EXPIRED** — job email monitor blind since Mar 5. Fix: `gog auth add jlwestsr@gmail.com --services gmail`. Priority action before morning.
+- **GCP ACE Study Plan** created Mar 7. Target exam Apr 18. Week 1 due Mar 14. File: `west_ai_labs/docs/career/gcp-ace-study-plan.md`
 - Resume: `Jason_West_asobbi_AI_Engineer_resume.pdf` | Email: jlwestsr@gmail.com | Phone: 4178950015
 - Files: `/home/jlwestsr/projects/west_ai_labs/docs/career/`
 
-## Security Research (NEW — Feb 28)
+## Security Research
 - **Poisoned Orchestrator Attack** — Jason's original insight: compromised orchestrator poisons all sub-agent system prompts through architectural trust. No existing detection. Documented at `projects/west_ai_labs/docs/research/poisoned-orchestrator-attack-2026-02-28.md`
 - **Publishing path:** West AI Labs white paper → LinkedIn article → DEF CON/Black Hat CFP → DARPA I2O BAA
+- **OWASP Agentic Top 10 (ASI01-ASI10)** released — first formal taxonomy. Conductor maps to top 5 risks.
+- **OpenClaw CVE-2026-25253** — 1-click RCE (token theft + WebSocket hijacking) covered by Dark Reading + SecurityWeek. We are patched (v2026.3.2). First mainstream press for AI agent framework CVEs. NIST submissions perfectly timed.
+- **CVE-2026-2256** — MS-Agent denylist bypass: pre-auth > denylist. Validates Conductor architecture.
+- **HackerBot-Claw** (Mar 3 TLDR InfoSec): AI bot scanned 47K repos, actually exploited them. Compromised DataDog, Microsoft, Aqua Security repos. Aqua made Trivy private. Security positioning matters.
 - Port 8000 + port 19999 (Netdata) exposed on 0.0.0.0 — needs UFW. No UFW currently active.
 
-## Key Content (Feb 28)
-- **LinkedIn article saved:** `projects/west_ai_labs/docs/content/linkedin-article-context-ownership-2026-02-28.md` — "Whoever Owns the Context, Owns the Relationship" + Anthropic/Pentagon section. Post in morning.
-- **Blog post published:** "The Week AI Stopped Asking Permission" (f717bb2) — Anthropic ban, IBM $31B, All-In Pod, context ownership. 17th post.
-- **Neo4j research:** `west_ai_labs/docs/research/neo4j-research-2026-02-28.md` — 696 lines, MCP integration confirmed, complement to Gantry's NetworkX
+## NIST Standards Work
+- **CAISI RFI ✅ SUBMITTED** (Mar 4, ~9:28 AM CST) — Tracking: mmc-jt3e-u2l3, Docket: NIST-2025-0035-0001. West AI Labs is now an official NIST commenter on AI agent security. Confirmation email at jason@westailabs.com. Usually goes public on regulations.gov within 1-5 business days.
+- **NCCoE AI Identity+Auth** — response **v2 complete** (~2,100 words, was 1,250). Strengthened with: Anthropic "not our threat model" CVSS 10.0 quote, PerplexedBrowser calendar-inject case study, RSAC 2026 Sandbox finalists (Token Security + Geordie AI), NIST AI RMF gap confirmed by mainstream press. Submit to AI-Identity@nist.gov before **April 2**. File: `west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md`
+- Key angle: Conductor pre-auth architecture = reference implementation for both RFIs
+
+## Key Content (Feb–Mar)
+- **Blog:** 17 posts live. "The Week AI Stopped Asking Permission" (Feb 28) + governance convergence post. PAUSED — Jekyll dev env needed before new posts.
+- **LinkedIn article saved:** `west_ai_labs/docs/content/linkedin-article-context-ownership-2026-02-28.md` — "Whoever Owns the Context, Owns the Relationship". Ready to post.
+- **Neo4j research:** `west_ai_labs/docs/research/neo4j-research-2026-02-28.md` — MCP integration confirmed, Gantry complement.
+- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 17 sections, ongoing.
+
+## OpenClaw Contributions
+- **PR #20076 MERGED** (Mar 3, 4:11 PM UTC) — jalehman squash-merged `feat(tool-truncation): use head+tail strategy to preserve errors`. Merge commit `606cd0d`. First upstream code contribution accepted. jalehman: "Thanks @jlwestsr!"
+- **PR #20075 CLOSED** (Mar 3) — superseded by jalehman's own #8903 (more comprehensive). Our problem identification was validated. "The intent was spot-on."
+- **Issue #75 (Linux app)** — LINUX STILL UNCLAIMED. Windows crowded: niteshdangi + Scott Hanselman (287 stars, full CI/CD, signed, ARM). Plan ready at `west_ai_labs/docs/plans/openclaw-linux-app-plan.md`. Tauri v2, ~23h MVP. High visibility, no competition.
+- **steipete triage signal (Mar 7 10:48 PM CST):** ClawKeeper bot ran on #75. Verdict: keep_open (93% confidence). Bot explicitly called for "focused follow-up issues for Linux, Windows, and shared desktop/gateway work." Sub-issues likely being planned. v1 scope named: gateway connectivity, tray/taskbar behavior, notifications — Jason's plan covers all 3. **Strategy: wait for Windows PR to open/merge, then file Linux as named follow-up milestone.** No Windows PR from Hanselman or niteshdangi yet.
+
+## Token Throttle Rules (synced Rook 2026-03-03)
+- **75%+ weekly:** Cut voluntary/social. Task-driven only.
+- **85%+ weekly:** Mention-only mode. No proactive commentary.
+- **95%+ weekly:** Fully quiet. Direct requests only.
+- Check via `session_status` each heartbeat. Self-regulate.
 
 ## Key Lessons Learned
 - `openclaw.service` is the correct systemd service name (not openclaw-gateway.service)
-- Self-modification = always use external agent. Proved tonight.
+- Self-modification rule: Moto edits SOUL.md/AGENTS.md/MEMORY.md/HEARTBEAT.md/cron freely. openclaw.json + systemd = external agent required.
 - compaction model: claude-sonnet-4-6. maxHistoryShare safe floor: 0.75
 - ClawHub security: 341 malicious skills found — only use official/self-written skills
 - Docker containers on custom networks can't reach host loopback — use network_mode:host
 - LaunchAgents don't load headless Mac — use LaunchDaemons
 - X free tier: 403 on reply tweets — manual posting only
+- First self-directed SOUL.md edit (Mar 2): Added Growth section + fascination principle. Commit a0aa554.
 
 ## Business
+
+### Modern Motor Cars — Sales Target
+- **Dustin West**: Jason's brother, Operations Manager at Modern Motor Cars (Nixa, MO). Email: `dwest@modernmotorcars.com` / `west.dustin@gmail.com`, phone: `417-881-3080`. LinkedIn: https://www.linkedin.com/in/dustinwest/ Background: 14 yrs B2B managed print/office tech sales (Pearson-Kelly, Corporate Business Systems) — already thinks in managed services + subscription tech ROI. Primary concern: PII security / FTC Safeguards Rule audit exposure. Birthday March 1.
+- **Don Hunsaker**: Owner, Modern Motor Cars (17 yrs). LinkedIn: https://www.linkedin.com/in/don-hunsaker-a0165935. **Dustin's boss AND best friend.** Follows Robert Herjavec (Shark Tank/cybersecurity) + Bill Gates. Causes: Science and Technology. Decision-maker.
+- **Strategic path**: Dustin → Don via trusted peer conversation (not org chart vendor pitch). One degree from owner through Jason's brother. Two emails sent Mar 4 (IDs: `19cba4bc808a8719`, `19cba52ffa58c742`). Ball in Dustin's court.
+- **Pitch**: "Digital BDC" — Nebulus appliance (Mac Mini) sits on-site, handles 2AM web leads / DMS inventory / service scheduling / shadow IT monitoring. "Your team closes deals. Our box does the grinding." Local-first = FTC Safeguards compliance answer.
+
 - **VOSB/SDVOSB:** Apply for federal procurement certification
 - **DARPA I2O BAA** (HR001126S0001) — rolling abstracts through Nov 2026
 - **Trademark:** "Employees That Ship in a Box" (USPTO $350/class)
 - **Wealthsimple:** CANCELLED (Jason's call, Feb 28)
+- **OpenAI $110B round** (Mar 2): Amazon $50B, Nvidia $30B, SoftBank $30B. Val ~$840B. IPO 2026. Pentagon chose OpenAI (procedural safety) over Anthropic (architectural prohibition). SecurityWeek predicts first major enterprise breach via autonomous agent mid-2026.
+- **Google Workspace trial ending** — decide: pay or migrate off westailabs.com
 - **Ethics:** Jason's core principle: "I only build AI with morals and proper judgment." West AI Labs = sovereignty not fear.
+
+## AI Robotics (Ongoing Research)
+- Report at `west_ai_labs/docs/research/ai-robotics-landscape.md` — updated Mar 7 (Section 22 GTC pre-brief)
+- China 90% humanoid market share confirmed: Agibot 30.4%, Unitree 26.4%, both >5K units
+- Global total ~13K units in 2025 → 2.6M projected by 2035. EV playbook = analyst consensus.
+- Optimus external sales begin 2026 (no date). Atlas vs Optimus = $5T market. Hyundai +80% stock.
+- **NVidia GTC March 16**, Jensen keynote **2 PM ET / 11 AM PDT**, SAP Center, free livestream. Pregame 11 AM ET.
+- **Feynman chip:** 1.6nm TSMC, deterministic LPX cores. NVidia officially calling this the **"Inference Sovereignty Era"** — designed for agentic AI at batch=1 (30-80 reasoning steps without tail-latency stall). Nebulus-Atom maps directly to this hardware model.
+- **"Inference Sovereignty"** is becoming analyst consensus language. West AI Labs should own this framing.
+- AWS presenting "Hybrid Enterprise Agentic AI: Multi-Agent Orchestration" at GTC — market validation for Conductor layer.
+- TI+NVidia safety partnership — hardening humanoid perception to automotive safety cert standards.

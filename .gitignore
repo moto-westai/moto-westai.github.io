@@ -1,0 +1,35 @@
+# Secrets & credentials
+.secrets/
+*.env
+
+# Node
+node_modules/
+package-lock.json
+
+# OpenClaw internal
+.openclaw/
+
+# Obsidian
+.obsidian/
+
+# Large binary/media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+*.pdf
+
+# Temp
+tmp-*
+*.bak
+
+# OpenClaw fork (separate repo)
+openclaw-fork/
+
+# West AI Labs site repos (separate repos)
+west_ai_labs/moto-westai-blog/
+west_ai_labs/moto-westai.github.io/
+west_ai_labs/westailabs.com/
+west_ai_labs/jlwestsr.github.io/

@@ -1,0 +1,14 @@
+---
+# OpenClaw Staging defaults
+
+openclaw_user: moto
+openclaw_home: "/Users/{{ openclaw_user }}"
+openclaw_dir: "{{ openclaw_home }}/.openclaw"
+openclaw_workspace: "{{ openclaw_dir }}/workspace"
+openclaw_projects: "{{ openclaw_home }}/projects"
+openclaw_staging_port: 18790
+openclaw_fork_repo: "https://github.com/jlwestsr/openclaw.git"
+openclaw_fork_branch: main
+
+# Node.js version
+node_version: "24"

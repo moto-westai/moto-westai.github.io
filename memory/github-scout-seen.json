@@ -23,8 +23,26 @@
     "Soul-XuYang/PgoAgent",
     "cft0808/edict",
     "charliee1w/consolidation-memory",
-    "antiv/mate"
+    "antiv/mate",
+    "EnderMio/Centaur",
+    "JArchitectMPlus/codifierMcp",
+    "thienzz/Kite",
+    "rhohndorf/beezle-bug",
+    "mariotrerotola/aioagent",
+    "Nerikko/semantic-memory-kit",
+    "drchinca/cemaf",
+    "Gamingstein/Project-Aether",
+    "john-b-rush/agent-streams",
+    "abwaters/mcp-zero",
+    "topoteretes/cognee",
+    "llcortex/CortexLog",
+    "yablokolabs/jnaapakam",
+    "srijansk/agent-relay",
+    "danielnewman09/workflow-engine",
+    "gaborkukucska/TrippleEffect",
+    "ltngt-ai/mind-swarm",
+    "Mattbusel/agent-runtime"
   ],
-  "lastRun": "2026-03-01",
+  "lastRun": "2026-03-09",
   "notes": "Repos already researched — skip in daily scout"
 }

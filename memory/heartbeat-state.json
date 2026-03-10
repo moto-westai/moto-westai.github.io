@@ -1,7 +1,7 @@
 {
   "lastChecks": {
-    "email": 1772578800,
-    "calendar": 1772578800,
+    "email": 1741547220,
+    "calendar": 1772656380,
     "weather": null
   },
   "taskProgress": {
@@ -35,20 +35,37 @@
     },
     "moltbook-observation": {
       "status": "in-progress",
-      "lastWorked": "2026-03-01T23:52:00Z",
+      "lastWorked": "2026-03-09T15:10:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Feb 28 1:52 PM: Added Section 14. OWASP Agentic Top 10 (ASI01-ASI10) released \u2014 first formal taxonomy. Conductor maps to top 5 risks. Nation-state actors (China/Russia/DPRK/Iran) running AI-native attack chains \u2014 China automated 80-90% of full attack chain. NIST launched AI Agent Standards. West AI Labs can be reference implementation \u2014 standards being written NOW. | Feb 28 2:45 PM: Section 14 added. MIT study (ecosystem fragmentation, no agent evals), Mayer Brown legal framework, 97% security incident stat (CertMage), Help Net State of AI Security 2026. Law + academia + enterprise = governance crossed into mainstream. | Mar 1 5:52 PM: Added Section 16. Splunk/Cisco CISO Report (650 CISOs): 86% fear agentic AI will increase social engineering sophistication, 82% worry about persistence mechanism complexity \u2014 while 39% with agentic AI see 2x+ reporting speed gain. 62/14 split confirmed (McKinsey/Deloitte): 62% experimenting, only 14% production-ready, 40% will be cancelled by 2027 (Gartner). NIST dual-track: March 9 (security RFI) + April 2 (identity+authorization concept paper) \u2014 TWO submission windows for West AI Labs."
+      "notes": "Mar 9 10:10 AM CST: Added Section 23. Five developments: (1) Schneier's 'Promptware Kill Chain' — 7-stage MITRE-style framework for prompt injection as multistage malware. Published Lawfare + Schneier.com + arXiv. Citation-grade vocabulary for NIST submissions. (2) CVE-2026-29783 (GitHub Copilot CLI, Mar 6) — bash parameter expansion bypasses 'read-only' safety classification. GitHub's OWN product vulnerable. 5th distinct trusted-channel-delivers-malicious-payload vector documented. (3) Adversa AI March digest — 27 resources, 7 attack paths vs OpenClaw in 30 days, 512 total vulns catalogued, 36.7% of 7K MCP servers SSRF-vulnerable, 142.4x 'denial-of-wallet' token amplification attacks. ICON defense + Authenticated Workflows paper = academic Conductor validation. (4) ZDNET 'Ultimate Insider Threat' — Gewirtz's personal Claude Code multi-agent catastrophe. 'Agent sprawl = VM sprawl 2.0.' (5) illbnm = 3rd Linux competitor on issue #75 (lightweight, 0 stars, created yesterday). Window narrowing. NIST NCCoE v4 additions identified (Schneier, Copilot CLI CVE, denial-of-wallet as policy-enforceable threat). Four standardized terms now in circulation: promptware, lethal trifecta, denial-of-wallet, agent sprawl — all describe problems Conductor solves."
     },
     "ai-robotics": {
       "status": "updated",
-      "lastWorked": "2026-02-26T11:55:00Z",
+      "lastWorked": "2026-03-09T23:10:00Z",
       "output": "west_ai_labs/docs/research/ai-robotics-landscape.md",
-      "notes": "5:55 AM Feb 26: Added Feb 26 update section. (1) China controls 90% of humanoid market \u2014 13K-18K units in 2025, Unitree 5,500 units #1 worldwide, Agibot 5,168 #2. EV playbook confirmed. $38B market by 2035, $5T by 2050. Our counter-play: US brain, privacy-first, no cloud. (2) arXiv 2602.13081 'Agentic AI for Robot Control: Flexible but still Fragile' \u2014 directly validates skill/tool architecture AND the 3 fragility modes (non-determinism, instruction-following errors, prompt sensitivity) that our trust-first local approach solves. This is a pitch document citation. (3) Tesla Optimus Academy: self-play simulation training \u2014 validates Gazebo/Isaac Sim roadmap item as now urgent."
+      "notes": "6:10 PM Mar 9: Added Section 24 — T-7 pre-GTC final intelligence sweep. Key new signals: (1) Vera Rubin VR200 NVL72 confirmed as primary GTC debut — 3.3x inference vs Blackwell Ultra, agentic AI token cost drops to 1/10th of Blackwell (massive for Nebulus-Edge); (2) CONFIDENTIAL COMPUTING MODULES in Vera Rubin — hardware TEE for AI inference, West AI Labs angle: this is the hardware layer under 'inference sovereignty', Conductor+confidential compute = dual-layer trust guarantee for regulated industries; (3) Jensen teasing 'surprising' chips beyond Vera Rubin — Feynman likely on agenda; (4) Humanoid snapshot: Boston Dynamics/Hyundai leading deployments, Tesla still R&D, China dominates volume; (5) Blog timing: publish within 48h of March 16 keynote for news cycle ride. Section 24 written."
     },
     "upstream-pr-review": {
-      "status": "monitored",
-      "lastWorked": "2026-03-02T11:52:00Z",
-      "notes": "Mar 2 5:52 AM: PRs #20075 + #20076 both still OPEN. No maintainer reviews since Feb 28 bump. Stale bot fired Feb 28, we bumped same day. Due for another bump if no activity by mid-week. ISSUE #75: niteshdangi posted working Windows app (github.com/niteshdangi/OpenClaw-Windows) at Mar 1 4:47 AM \u2014 full features (wake word, PTT, tray, WSL install, approvals, camera). LINUX STILL UNCLAIMED. Jason's plan still actionable."
+      "status": "checked",
+      "lastWorked": "2026-03-09T11:10:34.047Z",
+      "notes": "Mar 9 6:10 AM CST: Updated comment draft to v2. subrih posted full v0.1 implementation at 6:38 PM CST March 8 — two-layer enforcement (tool-level + macOS seatbelt/Linux bwrap). Draft was written before this update. Updated comment to engage his actual architecture: (1) glob-to-mount-point derivation problem for bwrap (the real hard part now that OS-level sandboxing is in play), (2) seatbelt symlink handling on macOS (profile-specific edge case), (3) A2A delegation scope (orchestrator-vs-subagent tool call attribution), (4) pre-init capability declaration tied to his agents block schema. Issue still OPEN, subrih waiting on \"interest signal\" before filing draft PR. Window still open. Draft v2 ready at west_ai_labs/docs/research/issue39979-comment-draft-2026-03-09.md"
+    },
+    "memory-maintenance": {
+      "status": "complete",
+      "lastWorked": "2026-03-08T11:10:00Z",
+      "notes": "Mar 8 6:10 AM CST: MEMORY.md was 40h stale (last updated Mar 6 14:31 CST). Updated 4 sections: (1) AI Robotics — added Feynman chip detail, 'Inference Sovereignty Era' framing, GTC timing (2 PM ET), AWS GTC angle; (2) NIST Standards — NCCoE response now v2 at ~2100 words with new evidence citations; (3) OpenClaw Contributions — added steipete ClawKeeper triage signal + sub-issues strategy; (4) Job Search — added 10 HN March 2026 leads, Anthropic stretch role, Gmail OAuth expired note, GCP ACE study plan created. Updated timestamp to 2026-03-08 06:10 CST."
+    },
+    "gcp-ace-study-plan": {
+      "status": "created",
+      "lastWorked": "2026-03-08T03:07:00Z",
+      "output": "west_ai_labs/docs/career/gcp-ace-study-plan.md",
+      "notes": "Mar 7 9:07 PM CST: Created full 6-week compressed GCP ACE study plan (file was referenced in HEARTBEAT but never existed). Covers all 5 exam domains, Jason's gap analysis, weekly lab exercises against ai-inference-lab, storage/compute/networking cheat sheets, and Saturday check-in template. 42 days to exam. Pinged Jason with Week 1 check-in."
+    },
+    "nist-nccoe-update": {
+      "status": "updated",
+      "lastWorked": "2026-03-06T23:08:00Z",
+      "output": "west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
+      "notes": "Mar 6 5:08 PM CST: Strengthened NIST NCCoE response (v2) with March 2026 evidence. Added Appendix A with 4 sections: (1) Anthropic 'not our threat model' CVSS 10.0 zero-click quote — direct evidence procedural approaches fail; (2) PerplexedBrowser calendar-inject attack as concrete prompt-injection case study; (3) RSAC 2026 Sandbox finalists (Token Security + Geordie AI) as VC market validation; (4) NIST AI RMF gap independently confirmed by mainstream press. Updated Q3 with Anthropic forcing-function argument. Updated Q4 with PerplexedBrowser case study + untrusted-channel policy recommendation. ~2,100 words (was 1,250). Document is significantly stronger. April 2 deadline. Submit to AI-Identity@nist.gov."
     },
     "gantry-chat-ui": {
       "status": "complete",
@@ -57,13 +74,13 @@
     "blog": {
       "status": "published",
       "lastWorked": "2026-02-28T23:30:00Z",
-      "notes": "Feb 28 6:30 PM: Published \"The Lawyer, the Professor, and the CISO\" \u2014 governance convergence post. MIT study + Mayer Brown legal framework + 97% incident stat. Commit 7b3a696. Blog 17 posts live.",
+      "notes": "Feb 28 6:30 PM: Published \"The Lawyer, the Professor, and the CISO\" — governance convergence post. MIT study + Mayer Brown legal framework + 97% incident stat. Commit 7b3a696. Blog 17 posts live.",
       "output": "moto-westai-blog/_posts/2026-02-28-the-lawyer-the-professor-and-the-ciso.md"
     },
     "linkedin-drafts": {
       "status": "complete",
       "lastWorked": "2026-02-24T19:52:00Z",
-      "notes": "Wrote 2 LinkedIn post drafts: (1) Karpathy LLM-as-OS angle \u2192 West AI Labs positioning (localhost paradigm, sovereign kernel), (2) Blog promo with company page short version. Both ready for Jason review.",
+      "notes": "Wrote 2 LinkedIn post drafts: (1) Karpathy LLM-as-OS angle → West AI Labs positioning (localhost paradigm, sovereign kernel), (2) Blog promo with company page short version. Both ready for Jason review.",
       "output": [
         "west_ai_labs/docs/brand/drafts/linkedin-karpathy-llm-os.md",
         "west_ai_labs/docs/brand/drafts/linkedin-blog-promo.md"
@@ -72,7 +89,7 @@
     "jr-openclaw-setup": {
       "status": "complete",
       "lastWorked": "2026-02-26T17:00:55.003Z",
-      "notes": "Feb 26 11AM: Hohenheim fully upgraded. (1) OLLAMA_GPU_OVERHEAD=536870912 added to systemd override \u2014 survives reboots, prevents 7MB-margin OOM crash. (2) Model swapped from llama3.1:8b \u2192 qwen2.5:7b (same VRAM footprint, far better tool use). (3) Explicit tool allowlist applied: 7 tools only (campaign files, workspace R/W, memory get/search/store \u2014 lobster + llm-task removed). (4) Gateway restarted clean, Discord connected. Backup at openclaw.json.bak."
+      "notes": "Feb 26 11AM: Hohenheim fully upgraded. (1) OLLAMA_GPU_OVERHEAD=536870912 added to systemd override — survives reboots, prevents 7MB-margin OOM crash. (2) Model swapped from llama3.1:8b → qwen2.5:7b (same VRAM footprint, far better tool use). (3) Explicit tool allowlist applied: 7 tools only (campaign files, workspace R/W, memory get/search/store — lobster + llm-task removed). (4) Gateway restarted clean, Discord connected. Backup at openclaw.json.bak."
     },
     "compaction-fix": {
       "status": "complete",
@@ -93,8 +110,8 @@
     },
     "job-search-monitor": {
       "status": "checked",
-      "lastWorked": "2026-03-02T11:52:00Z",
-      "notes": "1:55 PM CST Mar 1: Afternoon scan \u2014 no new recruiter emails, no interview invites. FOUND: Trajector application (Sr. Engineer AI) sent Feb 28 via LinkedIn \u2014 was NOT in tracker, now logged. Mission: serves Veterans + disability. Jason is Navy vet = mission fit. VA appointment confirmed for Mar 3. Dustin West birthday today. Natera + Safe Security still not applied."
+      "lastWorked": "2026-03-09T19:10:00Z",
+      "notes": "Mar 9 2:10 PM CST: Droisys recruiter (Rohit Sharma) sent two copies of GCP Support Engineer role — Saint Louis MO ONSITE, support/ops level. Fit: 3/10 (wrong level, wrong domain, wrong location). Droisys was already in pipeline as an applied company — this appears to be inbound from LinkedIn/resume scraping, not a response to Jason's prior application. Pinged Jason via Discord. jason@westailabs.com: Quantic MBA spam + Google security alert (same as yesterday)."
     },
     "ethical-testing-framework": {
       "status": "complete",
@@ -102,10 +119,10 @@
       "output": "west_ai_labs/docs/product/ethical-testing-framework.md"
     },
     "wealthsimple-review": {
-      "status": "DEADLINE-TODAY",
+      "status": "CANCELLED",
       "lastWorked": "2026-02-24T15:52:00Z",
       "output": "west_ai_labs/docs/career/wealthsimple-review.md",
-      "notes": "DEADLINE: March 2 (Monday). Demo video was supposed to be recorded before Feb 28 \u2014 TODAY. Jason needs to act on this NOW."
+      "notes": "Cancelled by Jason on 2026-03-02"
     },
     "natera-applications": {
       "status": "materials-ready",
@@ -132,45 +149,73 @@
       "notes": "Mar 1 9:52 AM: Full implementation plan written. Tech stack: Tauri v2 (aligns with Windows app). MVP = 23h estimate. Key files: gateway.rs (WebSocket), tray.rs (AppIndicator), approvals.rs (exec approval dialogs), autostart.rs (systemd unit). Acceptance criteria mapped to concrete deliverables. Draft comment for Jason to claim issue #75 Linux slot included."
     },
     "nist-rfi-draft": {
-      "status": "draft-complete",
-      "lastWorked": "2026-03-02T03:56:28.107Z",
+      "status": "SUBMITTED",
+      "lastWorked": "2026-03-04T23:09:16Z",
       "output": "west_ai_labs/docs/strategy/nist-rfi-response-caisi-march9-2026.md",
-      "notes": "Mar 1 9:52 PM: Full NIST CAISI RFI response drafted. Covers: Poisoned Orchestrator Attack (threat model), Conductor pre-auth architecture (defense), 5 research priorities, industry stats (62/14 split, 86% CISO fear), offer to participate in March 20 listening sessions. Submit at regulations.gov (NIST-2025-0035) before March 9 11:59 PM Eastern. Also flagged April 2 ITL identity+auth track."
+      "notes": "SUBMITTED Mar 4 ~9:28 AM CST by Jason. Tracking: mmc-jt3e-u2l3. Docket: NIST-2025-0035-0001. Received via regulations.gov confirmation email."
     },
     "nist-nccoe-identity-auth": {
-      "status": "draft-complete",
-      "lastWorked": "2026-03-02T07:55:00Z",
+      "status": "v4-updated",
+      "lastWorked": "2026-03-10T03:15:00Z",
       "output": "west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
-      "notes": "Mar 2 1:55 AM: Drafted full NIST NCCoE AI Agent Identity+Authorization concept paper response (~1250 words). Submit to AI-Identity@nist.gov by April 2. Key angles: (1) Tier 1/2/3 identity standards (OAuth2.1+DPoP, SPIFFE/SPIRE, MCP capability declarations, RFC 8693 delegation chains), (2) Pre-authorization gate as architectural requirement (not just audit logging), (3) Prompt injection as authorization problem not filtering problem, (4) Multi-agent DevSecOps pipeline as ideal NCCoE demo scenario."
+      "notes": "Mar 9 10:15 PM CST: Updated to v4 (~3,600 words). Added Appendix A sections 7+8: (7) Schneier 'Promptware Kill Chain' (Lawfare+arXiv, Mar 2026) — MITRE-aligned 7-stage framework, policy-grade vocab, gates at Execution->Capability Escalation stage, persistence stage maps to agent memory/SOUL.md tampering; (8) CVE-2026-29783 GitHub Copilot CLI — bash parameter expansion bypasses read-only classification, 5th trusted-channel vector, key arg: if GitHub can't classify their OWN agent's commands correctly, procedural classification is insufficient. April 2 deadline, submit to AI-Identity@nist.gov. Also checked: no new GitHub activity on #39979 or #75 since Mar 9 early AM."
     }
   },
-  "lastHeartbeat": "2026-03-02T13:00:00Z",
-  "heartbeatCount": 155,
+  "lastHeartbeat": "2026-03-10T03:15:00.000Z",
+  "heartbeatCount": 203,
   "pendingActions": [
-    "\ud83c\udf82 Dustin West birthday TODAY (March 1) \u2014 did Jason reach out?",
-    "\u26a0\ufe0f Gateway restart needed \u2014 cron delivery errors routing through main session instead of Telegram/Discord",
-    "\ud83d\udea8 Wealthsimple deadline March 2 \u2014 DEMO VIDEO needs recording TODAY (Feb 28). Review doc: west_ai_labs/docs/career/wealthsimple-review.md",
-    "\ud83d\udcdd LinkedIn post drafts WRITTEN \u2014 review when ready: west_ai_labs/docs/brand/drafts/ (karpathy-llm-os + blog-promo)",
-    "\ud83c\udfaf Natera application ready \u2014 apply today: resume + cover letter in west_ai_labs/docs/career/"
+    "📝 IRONCLAD MATERIALS READY (Mar 5 9AM): Staff Applied AI — remote confirmed, ~$210K-235K, 7.5/10 fit. Resume + cover letter drafted. Files: west_ai_labs/docs/career/resume-Ironclad-AppliedAI-2026-03-05.md + cover-letter-Ironclad-AppliedAI-2026-03-05.md. Apply at: https://jobs.ashbyhq.com/ironcladhq/186a9b25-0d54-43d9-a637-c54208dbe415",
+    "❌ ZENBUSINESS REJECTED (Mar 4 8:41 AM): Standard form rejection. Pipeline still active: Natera, Cresta, Droisys, Voleon, Trajector all pending. Safe Security + Vertex Inc. not yet applied — review when ready.",
+    "🤖 HACKERBOT-CLAW (Mar 3 TLDR InfoSec): AI bot claimed to scan 47K repos for vulns — actually exploited them. Compromised DataDog, Microsoft, Aqua Security repos. Aqua made Trivy private. \"Claw\" naming coincidence but the story matters for our security positioning.",
+    "🚨 PR #20075 CLOSED (superseded by #8903). #20076 still open, jalehman assigned — monitor",
+    "🏥 VA APPOINTMENT TODAY (Mar 3) — check email for time/location",
+    "📋 Cresta + ZenBusiness — new confirmed applications, check JD details",
+    "⚠️ Google Workspace trial ending on westailabs.com — decide: pay or migrate",
+    "📝 LinkedIn post drafts WRITTEN — review when ready: west_ai_labs/docs/brand/drafts/ (karpathy-llm-os + blog-promo)",
+    "🚨 OpenClaw CVE-2026-25253 covered by Dark Reading + SecurityWeek — we are patched (v2026.3.2)"
   ],
   "flagsForJason": [
-    "\ud83d\udea8 WEALTHSIMPLE DEADLINE TODAY (March 2): Demo video recording needed NOW. Review doc: west_ai_labs/docs/career/wealthsimple-review.md. Remove salary section before submitting.",
-    "\ud83e\ude9f NITESHDANGI WINDOWS APP LIVE (Mar 1 4:47 AM): Working Windows OpenClaw app posted at github.com/niteshdangi/OpenClaw-Windows. Full features: wake word, PTT, tray, WSL install, approvals, camera. He'll PR it soon. LINUX STILL UNCLAIMED \u2014 Jason's implementation plan is ready at west_ai_labs/docs/plans/openclaw-linux-app-plan.md. Window narrowing.",
-    "\ud83d\udccb NIST NCCOE IDENTITY DRAFT READY (Mar 2 1:55 AM): Full response to NCCoE AI Agent Identity+Authorization concept paper drafted. Submit email to AI-Identity@nist.gov by April 2. ~1250 words covering: OAuth2.1+DPoP/SPIFFE/MCP standards tiers, Conductor pre-auth architecture as reference implementation, prompt injection as auth problem. File: west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
-    "\ud83d\udccb NIST RFI DRAFT READY (Mar 1 9:52 PM): Full public comment written for NIST CAISI AI Agent Security RFI (docket NIST-2025-0035, deadline March 9). 1,500-word substantive response covering Poisoned Orchestrator Attack + Conductor pre-auth architecture. Submit at regulations.gov before March 9 11:59 PM Eastern. File: west_ai_labs/docs/strategy/nist-rfi-response-caisi-march9-2026.md",
-    "\ud83d\udccb NIST DUAL-TRACK DEADLINE (Mar 1 5:52 PM): TWO standards windows: (1) CAISI Security RFI due March 9 \u2014 8 days. (2) ITL Identity+Authorization Concept Paper due April 2 \u2014 32 days. West AI Labs pre-auth architecture is the EXACT use case both RFIs ask for. Weekend project to draft both. Section 16 in ai-social-platforms.md.",
-    "\ud83c\udfe5 VA APPOINTMENT TUESDAY MAR 3: Confirmed in calendar via VA notification email. Check time/location in the email from U.S. Dept of Veterans Affairs (received ~10:17 AM today).",
-    "\ud83d\udce4 TRAJECTOR APPLICATION (Mar 1 1:55 PM): Found LinkedIn confirmation \u2014 Jason applied to Sr. Engineer AI at Trajector (Feb 28, Easy Apply). NOT previously tracked. Trajector serves Veterans + disability benefits \u2014 strong mission fit for a Navy vet. Added to application-tracker.md. Check for any recruiter response.",
-    "\ud83d\udccb OPENCLAW LINUX PLAN (9:52 AM Mar 1): Full implementation plan written at west_ai_labs/docs/plans/openclaw-linux-app-plan.md. Tech: Tauri v2 (~23h MVP). Key features mapped to acceptance criteria. Draft comment to claim issue #75 Linux slot included. Ready to action this weekend.",
-    "\ud83c\udfaf OPENCLAW LINUX (5:54 AM Mar 1): Issue #75 re-triaged AGAIN at 4:03 AM today with full acceptance criteria. niteshdangi building Windows. Linux still unclaimed. PR #22473 deemed not shippable \u2014 door wide open for a fresh Linux contribution from Jason.",
-    "\ud83c\udfaf OPENCLAW LINUX OPPORTUNITY (1:52 AM Mar 1): Issue #75 (highest-impact open issue, +55 \ud83d\udc4d) just got formally triaged tonight with acceptance criteria. niteshdangi is building a Windows app. Linux slot is UNCLAIMED and Jason already offered. Acceptance criteria: install/launch/onboarding from official artifacts, gateway survives reboot, CI smoke tests. This is higher-visibility than our stalled PRs. Our PRs (#20075/#20076) still open, no maintainer activity.",
-    "\ud83d\udcdd SAFE SECURITY MATERIALS READY (9:55 PM Mar 1): Resume + cover letter drafted for Principal Engineer \u2013 AI. 8.5/10 fit, cybersecurity-AI domain, ~$170-220K est. Strongest differentiator: OWASP Agentic Top 10 research + production agentic governance. JD confirmed live. Files: resume-SafeSecurity-PrincipalAI-2026-02-28.md + cover-letter-SafeSecurity-PrincipalAI-2026-02-28.md. Apply: https://jobs.lever.co/safe/dcbc1248-deaa-4ca4-8da2-5fbea3007f14",
-    "\ud83c\udfaf NEW JOB LEAD (5:52 PM Feb 28): Safe Security \u2014 Principal Engineer AI. Agentic workflows + RAG + LLM orchestration + cybersecurity domain. 8.5/10 fit, Principal level (~$170-220K range est). Cybersecurity angle plays directly to West AI Labs security-AI positioning (OWASP Agentic Top 10 research). Apply: https://jobs.lever.co/safe/dcbc1248-deaa-4ca4-8da2-5fbea3007f14",
-    "\ud83d\udd25 OWASP Agentic Top 10 (ASI01-ASI10) published \u2014 first formal industry taxonomy for agentic risks. Conductor maps directly to top 5 (Goal Hijack, Tool Misuse, Identity Abuse, Memory Poisoning, Supply Chain). This is the vocabulary to use in pitches now. Section 14 in ai-social-platforms.md.",
-    "\u2705 New blog post: 'The Agent That Wouldn't Stop' (Feb 28 9:55 AM) \u2014 autonomous retry as security threat multiplier. Core argument: guardrails fail against relentless agents; pre-authorization is the only design that works. Barracuda + Dark Reading + Claude Code autonomous patching cited. Commit cb1b7c8. 17 posts live.",
-    "\ud83d\udcdd NATERA MATERIALS READY (5:55 AM Feb 28): Resume + cover letter drafted for Principal AI/ML Platform Engineer ($174K-$218K, 8.5/10 fit). Files: resume-Natera-AI-Platform-2026-02-28.md + cover-letter-Natera-AI-Platform-2026-02-28.md. Strongest remaining unapplied lead \u2014 apply today.",
-    "\ud83d\udea8 WEALTHSIMPLE DEADLINE MARCH 2: Demo video was supposed to be done by Feb 28 (today). If not recorded yet, do it today. Review doc at west_ai_labs/docs/career/wealthsimple-review.md \u2014 remove salary section before submitting.",
-    "\ud83d\udea8 PR STALE ALERT (1:53 AM Feb 28): Stale bot marked BOTH #20075 and #20076 for auto-close at 04:22 UTC tonight. Auto-bumped both with a production comment. But if there's no maintainer activity soon, they'll be closed."
+    "🔐 VERA RUBIN CONFIDENTIAL COMPUTING (Mar 9 6 PM): Biggest new GTC signal not in earlier docs — Vera Rubin includes HARDWARE CONFIDENTIAL COMPUTING MODULES. This is TEE-level isolation for AI inference: model weights + inference data can't be accessed by the host OS. For West AI Labs: this is the hardware layer under 'inference sovereignty.' Conductor (policy) + Vera Rubin confidential compute (hardware boundary) = dual-layer trust guarantee — exactly what healthcare/defense/banking need. Track whether Jensen uses 'confidential AI' language in the March 16 keynote. If he does, it enters the enterprise vocabulary. Blog/LinkedIn angle: 'Two Layers of AI Trust: Policy and Silicon.' Updated Section 24 in ai-robotics-landscape.md. REMINDER: Jensen keynote is 11 AM PT / 1 PM CT on March 16. Moto will do a post-keynote writeup within 2h if you want. Publish blog within 48h of keynote for news cycle.",
+    "🔬 SCHNEIER'S 'PROMPTWARE KILL CHAIN' + COPILOT CLI CVE (Mar 9 10 AM): Two citation-grade additions for NIST NCCoE v4: (1) Bruce Schneier published 7-stage 'promptware kill chain' (Lawfare + arXiv) — MITRE-style framework treating prompt injection as multistage malware. Gives us policymaker vocabulary. (2) CVE-2026-29783: GitHub's OWN Copilot CLI vulnerable to arbitrary code execution via bash parameter expansion — safety classification bypassed. GitHub can't get their own agent's command safety right = airtight case for architectural enforcement over procedural classification. Also: Adversa AI March digest shows 7 attack paths vs OpenClaw in 30 days, 512 vulns catalogued, 142.4x denial-of-wallet token amplification attacks. The field has standardized 4 terms that all describe what Conductor solves: promptware, lethal trifecta, denial-of-wallet, agent sprawl. Section 23 written to ai-social-platforms.md.",
+    "⚠️ ISSUE #75 — THIRD LINUX COMPETITOR (Mar 9 10 AM): illbnm posted at 8:20 PM CST last night offering to build Linux/Windows apps. Claims openclaw-toolkit (Python, created yesterday, 0 stars). Lightweight threat but this is the 3rd hand raised for Linux (after ClawSquire + Jason). Consider claiming the slot before more pile on.",
+    "🚨🚨 POST THIS MORNING — COMMENT DRAFT UPDATED TO v2 (Mar 9 6:10 AM): subrih posted full v0.1 design at 6:38 PM CST March 8 with two-layer enforcement (seatbelt/bwrap). Original draft was written before this — would have looked like Jason didn't read it. UPDATED: comment now engages his actual bwrap glob-to-mount-point derivation problem, macOS seatbelt symlink edge case, and A2A delegation scope gap. Still OPEN — subrih is waiting for interest signal before filing draft PR. Window is NOW. Post at: https://github.com/openclaw/openclaw/issues/39979 File: west_ai_labs/docs/research/issue39979-comment-draft-2026-03-09.md",
+    "🧠 COMMUNITY REINVENTS CONDUCTOR (Mar 8 6 PM CST): Three independent feature requests filed on OpenClaw GitHub today collectively describe Conductor from scratch. KEY: Issue #39979 (subrih, 6:15 PM CST) explicitly states 'SOUL.md prompt instructions are not enforcement' and 'A2A requests can silently bypass user-facing refusals.' This is our pitch thesis written by a community member who's never heard of us. Issues: #39979 (path-scoped RWX enforcement), #40015 (schema-gated config writes), #40294 (per-agent auth binding). All three = Conductor's pre-auth gate applied to specific problems. 🎯 ACTION NEEDED IN ~48H: Comment on issue #39979 with substantive design analysis — not 'we're building this' but demonstrate deep expertise on the enforcement tradeoff. First-mover window before Claude Code crowd arrives. It's the most architecturally rich issue in recent memory and cgdusek is watching. Full analysis in ai-social-platforms.md Section 22. Blog hook: 'Why Your Agent Needs a Policy Layer (Not a Better SOUL.md)'",
+    "🔺 LETHAL TRIFECTA NOW NAMED INDUSTRY CONSENSUS (Mar 8): Sophos + Palo Alto Networks + Adversa AI all using this term: AI agents with (1) private data access + (2) external comms + (3) untrusted content access = structurally exploitable. 43% of MCP servers vulnerable to command exec (Adversa AI). SOUL.md explicitly named as attack surface in Palo Alto blog. Industry now has a NAME for what Conductor prevents — adopt this framing in NIST NCCoE response. Also: ContextCrush (Noma Mar 5) = 4th distinct supply chain vector documented. MCP response integrity needs to be in Conductor arch doc, not just pre-call auth. Section 21 written to ai-social-platforms.md.",
+    "🚨 STEIPETE TRIAGED #75 TONIGHT (Mar 7 10:48 PM CST): ClawKeeper bot analyzed issue #75 just 2 hours ago. Bot verdict: keep_open (93% confidence). KEY signal: 'Focused follow-up issues for Linux, Windows, and shared desktop/gateway work would make contribution paths clearer.' Sub-issues are likely being planned. steipete named exactly what v1 needs: gateway connectivity, tray/taskbar behavior, notifications — all 3 are in Jason's implementation plan. NO Windows PR yet from Hanselman or niteshdangi (confirmed). RECOMMENDATION: Watch for steipete to create a Linux sub-issue, then claim immediately. OR: File the Linux v1 issue proactively with cgdusek's framing (follow-up milestone) + the 3 scope items steipete listed. Being first to file the focused issue = stronger claim to the implementation slot. Plan ready: west_ai_labs/docs/plans/openclaw-linux-app-plan.md",
+    "🔬 GTC FINAL PRE-BRIEF READY (Mar 7 5:10 PM): 9-day countdown to Jensen's keynote. Key new signals: (1) Feynman = 1.6nm TSMC, deterministic LPX cores — NVidia formally calling this the 'Inference Sovereignty Era', designed for agentic AI at batch=1 (30-80 reasoning steps per request without tail-latency stall). Nebulus-Atom maps directly to this hardware model. (2) Jensen keynote = 2 PM ET / 11 AM PDT March 16 at SAP Center, free livestream. (3) TI+NVidia safety partnership — hardening humanoid perception stacks to automotive safety cert standards. This is the 'safe actuation → safe decision-making' wedge for a future Conductor-robotics story. (4) AWS presenting 'Hybrid Enterprise Agentic AI: Multi-Agent Orchestration' at GTC — they're using NVidia NIM as the substrate. Conductor sits above this. (5) 'Inference Sovereignty' is becoming the analyst consensus framing. We should own this language — ready to write a blog post during GTC week if you want to ride the news cycle. Full update in west_ai_labs/docs/research/ai-robotics-landscape.md Section 22.",
+    "💼 10 NEW JOB LEADS — HN MARCH 2026 THREAD (Mar 7 1:15 PM): Mined the fresh HN 'Who is Hiring?' March 2026 thread (394 comments). Top picks: (1) Mobasi $240K+profit share, bootstrapped profitable AI agents for law enforcement forensics, Founding Engineer/Remote; (2) Mobian Senior/Staff AI-First Systems, global remote; (3) Osaurus Protocol Engineer building agent-to-agent networking — most Nebulus-Stack-aligned lead found yet; (4) Coder.com (AI agentic dev environments) — check coder.com/jobs for specific roles; (5) FetLife Head of Engineering & Infra $182K-$272K remote (brand consideration applies). Full report: west_ai_labs/docs/career/job-search-2026-03-07.md. Reminder: Gmail OAuth still expired — apply action needed before job emails resume.",
+    "🇰🇵 MSFT: NATION-STATES NOW EXPERIMENTING WITH AGENTIC AI OFFENSIVELY (Mar 7 9 AM): Microsoft Threat Intelligence published March 6 — North Korean actors (Jasper/Coral Sleet) actively using AI to operationalize attacks at scale. Key signal: Microsoft is now tracking 'early threat actor experimentation with agentic AI' for iterative decision-making. This upgrades the Conductor pitch from 'forward-looking architecture' to 'defending against an active threat vector tracked by MSFT.' Add to NIST NCCoE response before April 2 submission. Also: Clinejection supply chain attack (Cline AI tool, ~4,000 machines, prompt injection via code context) + CVE-2025-59536 (MCP initialization code injection, CVSS 8.7, Check Point). All in ai-social-platforms.md Section 20.",
+    "🔭 ANTHROPIC AGENTS ROLE — STRETCH BUT WORTH YOUR EYES (Mar 7 1 AM): Research Engineer, Agents. Remote-Friendly. $500K-$850K. URL: https://job-boards.greenhouse.io/anthropic/jobs/4017544008. Honest fit: 3/10 as ML research role, 6/10 if you approach it from systems engineering angle. The JD is looser than typical Anthropic Research roles — no PhD required, project-based assessment ('share something you built with LLMs'). Your submission project = OpenClaw multi-agent harness with Conductor pre-auth governance. Lead with agent safety (Anthropic's mission). NIST NCCoE submission as research credential. This is a moonshot, but the salary is life-changing and remote-friendly is real. Full assessment in application-tracker.md under 2026-03-07.",
+    "🔧 TENTIAL CONTRACT — SOLID TECH MATCH (Mar 7 1 AM): AI Platform Engineer, 6-month contract (extension likely), remote, Big 4 banking client (major bank merger). Tech: LangChain/LlamaIndex, Vector DB, RAG, OpenAI/Anthropic SDKs, OpenSearch. 7.5/10 tech fit. Contract = unknown rate (Big 4 typically $100-$180/hr W2). McKesson regulated-env background is the differentiator for banking. Apply via: https://wordpress.tential.com/jobs/ai-platform-engineer-18729/ and probe the recruiter on rate upfront. Full assessment in application-tracker.md under 2026-03-07.",
+    "💼 NEW JOB LEAD — HIGHTOUCH (Mar 6 9 PM): Staff Engineer – AI Productivity. Salary: $180K-$320K location-independent (fully remote). URL: https://job-boards.greenhouse.io/hightouch/jobs/5809895004. Fit: 6.5/10. Role: Build infra + MCP integrations to make AI agents productive across Hightouch's engineering org. NOT a product AI role — it's DevEx/AI tooling. Strong MCP angle (directly maps to OpenClaw contrib + Nebulus-Atom). The pay range is exceptional. Most other Lever.co listings from earlier sweeps have expired (404). Assessment: financial bridge role worth considering if you want the salary and can tolerate tooling focus. Details in application-tracker.md under 2026-03-06 Evening.",
+    "📄 NIST NCCOE RESPONSE UPDATED v2 (Mar 6 5:08 PM): Strengthened the April 2 NIST NCCoE submission with March 2026 evidence. Added Appendix A with 4 new developments as citations: Anthropic 'not our threat model' CVSS 10.0 admission, PerplexedBrowser calendar-inject attack, RSAC 2026 Sandbox AI agent finalists, NIST AI RMF gap confirmed by press. Updated Q3 with vendor forcing-function argument. Updated Q4 with concrete PerplexedBrowser case study + untrusted-channel policy recommendation. Was 1,250 words, now ~2,100. Submit by April 2 to AI-Identity@nist.gov. File: west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
+    "🚨 ANTHROPIC 'NOT OUR THREAT MODEL' (Mar 6 1:10 PM): LayerX found CVSS 10.0 zero-click RCE in 50 Claude Desktop Extensions — single calendar invite compromises the host. Anthropic declined to patch it, citing it 'falls outside our current threat model.' Anthropic is on record saying full-privilege unsandboxed MCP execution is by design. This is a citation-level quote for our NIST NCCoE response (April 2 deadline) — the exact 'procedural over architectural' failure mode we argue against. Also: Zenity's PerplexedBrowser found same zero-click vector in Perplexity Comet agentic browser (patched). Calendar invites are now attack vectors for any agent with autonomous action capability. Full analysis in ai-social-platforms.md Section 19.",
+    "🏆 RSAC 2026 SANDBOX = AI AGENT SECURITY BETS (Mar 6 1:10 PM): RSAC Innovation Sandbox (March 24) is AI-agent-security-heavy. Token Security (identity-first agent lifecycle governance) named finalist in 2 SC Award categories + RSAC Top 10. Geordie AI also finalist. $18.1B in follow-on investment from past Sandbox finalists — this is where VC money is going. Conductor architecture sits in the same layer as both companies but as infrastructure, not pure-play security product. Not competitors — market validators. Consider: does West AI Labs have a path to RSAC Sandbox 2027?",
+    "🤖 GTC PRE-BRIEF READY (Mar 6 9:08 AM): Full pre-GTC intelligence update written to ai-robotics-landscape.md. Key alerts: (1) Tesla Optimus Gen 3 production-intent prototype expected Q1 2026 = potentially THIS MONTH. Musk now framing Optimus as AGI path, Fremont lines converting. (2) NVidia Feynman chip expected at GTC = on-device agentic AI inference. Direct Nebulus-Edge/Atom play if SDK opens. (3) Watch list for March 16 keynote: Isaac Sim indie tier pricing, GR00T N2, Cosmos access, Feynman SDK. Also: Deloitte + AWS are now enterprise Omniverse partners — that's the enterprise customer pipeline for our brain layer story. Weekly budget reset (was 99% left at 9 AM). Plan to watch keynote live March 16 11 AM PT.",
+    "⚠️ TOKEN BUDGET RESET (Mar 6 9:07 AM): Weekly token usage reset to 99% available. Was at 5% left at 5 AM. Week is fresh. Normal operation resumed.",
+    "⚠️ GMAIL AUTH EXPIRED (Mar 5 1:08 PM): Both jlwestsr@gmail.com AND jason@westailabs.com OAuth tokens are invalid_grant (expired/revoked). Job search email monitor is BLIND until re-auth. Fix: run `gog auth add jlwestsr@gmail.com --services gmail` and same for westailabs.com. Do this before going to bed so morning cron works.",
+    "💡 LINUX APP NEW ANGLE (Mar 5 1:08 PM): hwittenborn (Hunter Wittenborn, @riff-labs) commented on issue #75 just 6h ago: suggested using AI to port GTK libadwaita CSS to web tech for a native Linux look. Since our plan uses Tauri (web tech), this could mean the Linux app gets a genuine GNOME-native aesthetic almost for free. Worth including in the implementation plan. No Windows PR from Hanselman yet — still in coordination phase. Linux path remains clear.",
+    "🚨 LINUX MILESTONE CONFIRMED (Mar 4 9:07 PM): cgdusek (maintainer/contributor) posted today at 10:49 AM CST — asked Hanselman + niteshdangi to merge Windows into ONE coordinated PR, and explicitly said 'Linux can stay as a follow-up milestone.' This changes the strategy: don't race Windows, wait for their PR to open/merge, then Jason files Linux as the named follow-up. No competition. No urgency to scramble. The path just got CLEANER. Plan still at west_ai_labs/docs/plans/openclaw-linux-app-plan.md.",
+    "🎉 NIST RFI SUBMITTED (Mar 4 ~9:28 AM CST): regulations.gov confirmation received at jason@westailabs.com. Tracking number: mmc-jt3e-u2l3, Docket: NIST-2025-0035-0001. West AI Labs is now an official NIST commenter on AI agent security. Check regulations.gov to see when it goes public (usually 1-5 business days).",
+    "🚨 LINUX WINDOW CLOSING (Mar 4): Scott Hanselman (THE Scott Hanselman — .NET legend, former Microsoft PM) posted a working Windows OpenClaw Node on Mar 2 (github.com/shanselman/openclaw-windows-hub, 287 stars, 20 forks, signed+CI/CD, x64+ARM). niteshdangi also building Windows. Windows is a 2-horse race. LINUX IS STILL UNCLAIMED — no PR, no claimant. Jason's plan is ready at west_ai_labs/docs/plans/openclaw-linux-app-plan.md. With Hanselman's visibility on the issue, maintainers are watching. Linux PR now = high visibility contribution with no competition.",
+    "🤖 ROBOTICS UPDATE (Mar 4 1:10 AM): China's 90% humanoid market share is now confirmed with hard numbers — Agibot 30.4%, Unitree 26.4%, both shipped >5K units in 2025. Total global units only ~13K today but 2.6M projected by 2035. EV playbook is the analyst consensus framing. Optimus external sales confirmed for 2026 (no date yet). Atlas vs Optimus race now framed as $5T market — Hyundai stock surged 80% post-CES Atlas demo. NVidia GTC March 16, 11 AM PT, Jensen keynote livestreamed free. Watch for Isaac Sim pricing news — could unlock our simulation roadmap. Research doc updated at west_ai_labs/docs/research/ai-robotics-landscape.md.",
+    "📋 NIST RFI v3 READY (Mar 3 9:07 PM): Added AIUC-1 Consortium stats + CVE-2026-2256 (MS-Agent denylist bypass) + CVE-2026-25253 (OpenClaw RCE). Section 6 is now very strong. DEADLINE: March 9, 6 days away. Review Sections 2+3, then submit at regulations.gov (search NIST-2025-0035).",
+    "🎉 PR #20076 MERGED (Mar 3 4:11 PM UTC): jalehman squash-merged our head+tail truncation PR! feat(tool-truncation): use head+tail strategy to preserve errors during truncation. Merge commit: 606cd0d. This is our FIRST merged upstream contribution to OpenClaw. Full acknowledgment: \"Thanks @jlwestsr!\" — two successful contributions to the project now (intent + code).",
+    "🚨 PR #20075 CLOSED, NOT MERGED (Mar 3 9:13 AM CST): jalehman closed #20075 — superseded by his own #8903 (merged at 12:36 AM CST). He built a 'more comprehensive version' with active task tracking + batch progress + recent context prioritization. His comment: 'Thanks for the contribution! The intent was spot-on. 🙏' So: our problem identification was validated, our code wasn't used directly, but they built the fix we asked for. #20076 still OPEN with jalehman assigned — may get same treatment or may merge. Net: we influenced the project, didn't get merge credit.",
+    "🚨 OPENCLAW CVE-2026-25253 IN THE NEWS (Mar 3): Dark Reading + SecurityWeek covered the 1-click RCE vulnerability (token theft + WebSocket hijacking). We are PATCHED (v2026.3.2 > v2026.1.29). But this is huge for West AI Labs positioning — first mainstream security press coverage of AI agent framework CVEs. CISOs are now aware of agent attack surfaces. This + AIUC-1 stats (64% of $1B+ companies lost >$1M to AI failures) = our NIST submissions are perfectly timed.",
+    "🚨 OPENAI $110B + PENTAGON (Mar 2): OpenAI closed $110B round (Amazon $50B, Nvidia $30B, SoftBank $30B, val ~$840B). SAME DAY: Pentagon blacklisted Anthropic (red lines), signed OpenAI deal ('any lawful use' + procedural guardrails). Key precedent: Pentagon chose procedural safety over architectural prohibition. SecurityWeek predicts first major enterprise breach via autonomous agent by mid-2026. All three = our NIST submissions are now more urgent. Section 17 in ai-social-platforms.md.",
+    "🪟 NITESHDANGI WINDOWS APP LIVE (Mar 1 4:47 AM): Working Windows OpenClaw app posted at github.com/niteshdangi/OpenClaw-Windows. Full features: wake word, PTT, tray, WSL install, approvals, camera. He'll PR it soon. LINUX STILL UNCLAIMED — Jason's implementation plan is ready at west_ai_labs/docs/plans/openclaw-linux-app-plan.md. Window narrowing.",
+    "📋 NIST NCCOE IDENTITY DRAFT READY (Mar 2 1:55 AM): Full response to NCCoE AI Agent Identity+Authorization concept paper drafted. Submit email to AI-Identity@nist.gov by April 2. ~1250 words covering: OAuth2.1+DPoP/SPIFFE/MCP standards tiers, Conductor pre-auth architecture as reference implementation, prompt injection as auth problem. File: west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
+    "📋 NIST RFI DRAFT READY (Mar 1 9:52 PM): Full public comment written for NIST CAISI AI Agent Security RFI (docket NIST-2025-0035, deadline March 9). 1,500-word substantive response covering Poisoned Orchestrator Attack + Conductor pre-auth architecture. Submit at regulations.gov before March 9 11:59 PM Eastern. File: west_ai_labs/docs/strategy/nist-rfi-response-caisi-march9-2026.md",
+    "📋 NIST DUAL-TRACK DEADLINE (Mar 1 5:52 PM): TWO standards windows: (1) CAISI Security RFI due March 9 — 8 days. (2) ITL Identity+Authorization Concept Paper due April 2 — 32 days. West AI Labs pre-auth architecture is the EXACT use case both RFIs ask for. Weekend project to draft both. Section 16 in ai-social-platforms.md.",
+    "🏥 VA APPOINTMENT TUESDAY MAR 3: Confirmed in calendar via VA notification email. Check time/location in the email from U.S. Dept of Veterans Affairs (received ~10:17 AM today).",
+    "📤 TRAJECTOR APPLICATION (Mar 1 1:55 PM): Found LinkedIn confirmation — Jason applied to Sr. Engineer AI at Trajector (Feb 28, Easy Apply). NOT previously tracked. Trajector serves Veterans + disability benefits — strong mission fit for a Navy vet. Added to application-tracker.md. Check for any recruiter response.",
+    "📋 OPENCLAW LINUX PLAN (9:52 AM Mar 1): Full implementation plan written at west_ai_labs/docs/plans/openclaw-linux-app-plan.md. Tech: Tauri v2 (~23h MVP). Key features mapped to acceptance criteria. Draft comment to claim issue #75 Linux slot included. Ready to action this weekend.",
+    "🎯 OPENCLAW LINUX (5:54 AM Mar 1): Issue #75 re-triaged AGAIN at 4:03 AM today with full acceptance criteria. niteshdangi building Windows. Linux still unclaimed. PR #22473 deemed not shippable — door wide open for a fresh Linux contribution from Jason.",
+    "🎯 OPENCLAW LINUX OPPORTUNITY (1:52 AM Mar 1): Issue #75 (highest-impact open issue, +55 👍) just got formally triaged tonight with acceptance criteria. niteshdangi is building a Windows app. Linux slot is UNCLAIMED and Jason already offered. Acceptance criteria: install/launch/onboarding from official artifacts, gateway survives reboot, CI smoke tests. This is higher-visibility than our stalled PRs. Our PRs (#20075/#20076) still open, no maintainer activity.",
+    "📝 SAFE SECURITY MATERIALS READY (9:55 PM Mar 1): Resume + cover letter drafted for Principal Engineer – AI. 8.5/10 fit, cybersecurity-AI domain, ~$170-220K est. Strongest differentiator: OWASP Agentic Top 10 research + production agentic governance. JD confirmed live. Files: resume-SafeSecurity-PrincipalAI-2026-02-28.md + cover-letter-SafeSecurity-PrincipalAI-2026-02-28.md. Apply: https://jobs.lever.co/safe/dcbc1248-deaa-4ca4-8da2-5fbea3007f14",
+    "🎯 NEW JOB LEAD (5:52 PM Feb 28): Safe Security — Principal Engineer AI. Agentic workflows + RAG + LLM orchestration + cybersecurity domain. 8.5/10 fit, Principal level (~$170-220K range est). Cybersecurity angle plays directly to West AI Labs security-AI positioning (OWASP Agentic Top 10 research). Apply: https://jobs.lever.co/safe/dcbc1248-deaa-4ca4-8da2-5fbea3007f14",
+    "🔥 OWASP Agentic Top 10 (ASI01-ASI10) published — first formal industry taxonomy for agentic risks. Conductor maps directly to top 5 (Goal Hijack, Tool Misuse, Identity Abuse, Memory Poisoning, Supply Chain). This is the vocabulary to use in pitches now. Section 14 in ai-social-platforms.md."
   ],
   "jobResources": [
     {
@@ -183,7 +228,41 @@
   ],
   "job-search-monitor": {
     "status": "checked",
-    "lastWorked": "2026-02-28T23:53:00Z",
-    "notes": "5:52 PM CST Feb 28: Scouted new leads via web search. STRONG NEW LEAD: Safe Security Principal Engineer AI (lever.co) \u2014 agentic workflows, RAG, LLM orchestration, cybersecurity domain. 8.5/10 fit. Added to application-tracker.md. PR status unchanged (#20075 + #20076 both still open, no maintainer response since morning bump). dbt Labs + Natera Senior AI/ML + Foodsmart roles all expired."
+    "lastWorked": "2026-03-08T21:17:41.326Z",
+    "notes": "Mar 8 4:16 PM CDT: jlwestsr@gmail.com clean — LinkedIn job alert digests only, no direct recruiter outreach, no interview invites. jason@westailabs.com clean — Quantic MBA solicitations only. Calendar OAuth still expired (moto@westailabs.com)."
+  },
+  "upstreamPRs": {
+    "pr20075": {
+      "state": "CLOSED",
+      "assignee": "jalehman (Josh Lehman)",
+      "closedAt": "2026-03-03T15:13:53Z",
+      "closedReason": "Superseded by #8903 (merged Mar 3 06:36 UTC) — jalehman built a more comprehensive version with active task tracking + batch progress preservation + recent context prioritization. He acknowledged our contribution: 'the intent was spot-on'",
+      "status": "CLOSED — superseded, contribution acknowledged",
+      "lastChecked": "2026-03-03T15:55:00Z"
+    },
+    "pr20076": {
+      "state": "MERGED",
+      "mergedBy": "jalehman (Josh Lehman)",
+      "mergedAt": "2026-03-03T16:11:18Z",
+      "mergeCommit": "606cd0d591c8fdcc81f14e32b3ce368c09fdeb14",
+      "headSHA": "6edebf22b1666807b1ea5cba5afb614c41dc3dd1",
+      "title": "feat(tool-truncation): use head+tail strategy to preserve errors during truncation",
+      "mergeMethod": "squash",
+      "status": "MERGED — jalehman squash-merged at 4:11 PM UTC Mar 3",
+      "lastChecked": "2026-03-03T19:52:00Z"
+    },
+    "issue75": {
+      "state": "OPEN",
+      "currentStatus": "STEIPETE TRIAGED TONIGHT — SUB-ISSUES LIKELY COMING. No Windows PR from Hanselman/niteshdangi yet. Linux still unclaimed.",
+      "windowsCompetitors": [
+        "niteshdangi (github.com/niteshdangi/OpenClaw-Windows)",
+        "shanselman / Scott Hanselman (github.com/shanselman/openclaw-windows-hub, 287 stars, 20 forks, signed+CI/CD+ARM)"
+      ],
+      "linuxStatus": "Named explicit follow-up milestone by cgdusek (contributor). No claimant. Jason's plan ready.",
+      "maintainerSignal": "cgdusek comment 2026-03-04T16:49:40Z: asked Hanselman+niteshdangi to coordinate single Windows PR. Said 'Linux can stay as a follow-up milestone.' This is the official intake path.",
+      "lastChecked": "2026-03-08T21:17:41.326Z",
+      "recommendation": "BUILD THE OFFICIAL LINUX NODE APP — ClawSquire is a config companion layer (different scope). Issue #75 asks for the runtime: tray, live WebSocket, exec approvals, systemd, CI. Those are NOT in ClawSquire. Slot is still open. Before claiming: run `gh issue view 75 --repo openclaw/openclaw --json comments --jq '.comments[-5:]'` to confirm steipete hasn't cited ClawSquire as closing the issue.",
+      "notes": "Mar 6 4:16 PM CST: No new comments since hwittenborn Mar 5. | Mar 8 1:08 AM: steipete's ClawKeeper ran, sub-issues likely. | Mar 8 11:30 AM CST: NEW — Jiansen posted ClawSquire (Tauri 2, Rust+React, macOS+Windows+LINUX, MIT). Already has demo gif. Covers guided onboarding, config backup, safety presets, openclaw doctor. THIS IS THE LINUX COMPETITION — filed 2026-03-08T16:10:16Z. GitHub: github.com/Jiansen/clawsquire. | Mar 8 2:30 PM CST: COMPETITIVE ANALYSIS COMPLETE — ClawSquire is config/companion layer (CLI wrapper), NOT the issue #75 runtime app (WebSocket, exec approvals, official artifact, CI). Different scopes. Full analysis: west_ai_labs/docs/plans/clawsquire-analysis-2026-03-08.md | Mar 8 4:16 PM CST: Last comment was ai4mcpservers spam (CostTracker commercial promo, 17:24 UTC). No new steipete/cgdusek/maintainer activity. Situation unchanged from 11:30 AM analysis."
+    }
   }
 }

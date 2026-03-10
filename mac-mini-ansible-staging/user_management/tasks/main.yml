@@ -1,0 +1,78 @@
+---
+# User Management - Create users on macOS
+# Note: macOS user creation requires 'become: true' (sudo)
+
+- name: Create managed users
+  ansible.builtin.user:
+    name: "{{ item.name }}"
+    comment: "{{ item.fullname }}"
+    shell: "{{ item.shell | default('/bin/zsh') }}"
+    create_home: true
+    state: present
+  become: true
+  loop: "{{ managed_users }}"
+  tags: [users]
+
+- name: Add admin users to admin group
+  ansible.builtin.command:
+    cmd: "dseditgroup -o edit -a {{ item.name }} -t user admin"
+  become: true
+  loop: "{{ managed_users | selectattr('admin', 'true') }}"
+  changed_when: false
+  failed_when: false
+  tags: [users]
+
+- name: Enable SSH access for managed users
+  ansible.builtin.command:
+    cmd: "dseditgroup -o edit -a {{ item.name }} -t user com.apple.access_ssh"
+  become: true
+  loop: "{{ managed_users }}"
+  changed_when: false
+  failed_when: false
+  tags: [users]
+
+- name: Create .ssh directories
+  ansible.builtin.file:
+    path: "/Users/{{ item.name }}/.ssh"
+    state: directory
+    owner: "{{ item.name }}"
+    mode: "0700"
+  become: true
+  loop: "{{ managed_users }}"
+  tags: [users]
+
+- name: Deploy authorized_keys
+  ansible.builtin.authorized_key:
+    user: "{{ item.0.name }}"
+    key: "{{ item.1 }}"
+    state: present
+  become: true
+  loop: "{{ managed_users | subelements('ssh_authorized_keys') }}"
+  tags: [users]
+
+- name: Create projects directory for each user
+  ansible.builtin.file:
+    path: "/Users/{{ item.name }}/projects"
+    state: directory
+    owner: "{{ item.name }}"
+    mode: "0755"
+  become: true
+  loop: "{{ managed_users }}"
+  tags: [users]
+
+# Migration: copy projects from legacy user to westailabs
+- name: Migrate projects from legacy user
+  ansible.builtin.command:
+    cmd: "rsync -a --ignore-existing {{ legacy_home }}/projects/ /Users/westailabs/projects/"
+  become: true
+  when: migrate_projects | default(false)
+  tags: [users, migrate]
+
+- name: Fix ownership on migrated projects
+  ansible.builtin.file:
+    path: "/Users/westailabs/projects"
+    owner: westailabs
+    recurse: true
+  become: true
+  when: migrate_projects | default(false)
+  tags: [users, migrate]

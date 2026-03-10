@@ -1,31 +1,28 @@
 {
-  "lastUpdated": "2026-03-02T15:42:00Z",
-  "primaryConversation": "cron-event / heartbeat polling",
-  "activeChannels": [
-    "cron-event",
-    "terminal"
-  ],
-  "lastUserMessage": "Wealthsimple dropped \u2014 entry is stale (9:40 AM Mar 2)",
+  "lastUpdated": "2026-03-10T06:28:00Z",
+  "primaryConversation": "Autosave 1:28 AM CST Tue Mar 10. Session quiet — no user activity since Jr. (schmibb) Mar 7 2:27 PM. NIST RFI deadline was Mar 9 — status unknown. O'Reilly start approaching ~Mar 20.",
+  "activeChannels": ["discord"],
+  "lastUserMessage": "Jr. (schmibb): 'To narrow the search, the business in question has a call center position available' — 2:27 PM Mar 7",
   "pendingTasks": [
     {
-      "id": "natera-application",
-      "description": "Apply to Natera Principal AI/ML Platform Engineer ($174-218K). Materials in west_ai_labs/docs/career/",
-      "status": "waiting-jason"
-    },
-    {
-      "id": "safe-security-application",
-      "description": "Apply to Safe Security Principal Engineer AI (~$170-220K). https://jobs.lever.co/safe/dcbc1248-deaa-4ac4-8da2-5fbea3007f14",
-      "status": "waiting-jason"
-    },
-    {
       "id": "nist-rfi-response",
-      "description": "NIST CAISI RFI deadline March 9. Draft ready at west_ai_labs/docs/strategy/nist-rfi-response-caisi-march9-2026.md",
+      "description": "NIST CAISI RFI deadline was March 9. Submit at regulations.gov (NIST-2025-0035). Unknown if Jason submitted.",
       "status": "flagged-to-jason",
       "deadline": "2026-03-09"
     },
     {
+      "id": "natera-application",
+      "description": "Apply to Natera Principal AI/ML Platform Engineer ($174-218K). Materials ready.",
+      "status": "waiting-jason"
+    },
+    {
+      "id": "safe-security-application",
+      "description": "Apply to Safe Security Principal Engineer AI (~$170-220K). lever.co/safe/dcbc1248",
+      "status": "waiting-jason"
+    },
+    {
       "id": "nist-nccoe-identity",
-      "description": "NIST NCCoE AI Identity+Auth concept paper deadline April 2. Draft ready.",
+      "description": "NIST NCCoE AI Identity+Auth concept paper deadline April 2. Submit to AI-Identity@nist.gov",
       "status": "flagged-to-jason",
       "deadline": "2026-04-02"
     },
@@ -33,66 +30,62 @@
       "id": "openclaw-linux-app",
       "description": "OpenClaw Linux app Issue #75 unclaimed. Plan at west_ai_labs/docs/plans/openclaw-linux-app-plan.md",
       "status": "opportunity-flagged"
+    },
+    {
+      "id": "cael-blog-publish",
+      "description": "Cael blog post staged. Awaiting Christy review + Jason GitHub repo creation.",
+      "status": "waiting-jason"
+    },
+    {
+      "id": "rooks-office-config",
+      "description": "Add #rooks-office to openclaw.json (Claude Code) + Rook config update on nebulus.",
+      "status": "waiting-jason"
     }
   ],
   "recentDecisions": [
     {
-      "ts": "2026-03-02T15:40:00Z",
-      "decision": "Wealthsimple project dropped per Jason. Removed from all tracking."
+      "ts": "2026-03-06T00:00:00Z",
+      "decision": "O'Reilly Platform Engineer offer ACCEPTED & CONFIRMED. $130K/yr. Starts ~Mar 20. West AI Labs continues nights/weekends."
     },
     {
-      "ts": "2026-03-02T15:27:00Z",
-      "decision": "9:27 AM autosave \u2014 quiet morning, no new inputs since 7 AM morning report to Jason"
+      "ts": "2026-03-07T20:27:00Z",
+      "decision": "Jr. asked about Springfield MO business professional dress code companies with call centers. Moto listed Shelter Insurance, Great Southern Bank, Commerce Bank, CoxHealth/Mercy, O'Reilly corporate as top candidates."
     },
     {
-      "ts": "2026-03-02T15:12:00Z",
-      "decision": "9:12 AM autosave \u2014 quiet, HEARTBEAT_OK at 8:30 AM"
+      "ts": "2026-03-04T19:50:00Z",
+      "decision": "zealot proxy tool added to hohenheim-tools/index.ts — direct HTTP to gemini-2.0-flash."
     },
     {
-      "ts": "2026-03-02T14:42:00Z",
-      "decision": "8:42 AM autosave \u2014 quiet, HEARTBEAT_OK at 8:30 AM"
+      "ts": "2026-03-04T17:23:00Z",
+      "decision": "Gemini 2.0 Flash wired up. Google provider added to openclaw.json."
     },
     {
-      "ts": "2026-03-02T13:12:00Z",
-      "decision": "7:12 AM autosave: 7 AM heartbeat complete \u2014 email scan clean, calendar clear, VA appt Tue Mar 3. Morning report sent to Jason on Telegram. Wealthsimple deadline TODAY flagged."
+      "ts": "2026-03-04T17:10:00Z",
+      "decision": "hohenheim-tools allowlist expanded: IDENTITY.md + SOUL.md now writable."
     },
     {
-      "ts": "2026-03-02T13:00:00Z",
-      "decision": "7:00 AM heartbeat: email + calendar checked via gog. No job urgencies. Morning briefing sent to Telegram."
+      "ts": "2026-03-04T16:41:00Z",
+      "decision": "Hohenheim: SSH IP 221→222, WORKFLOW_AUTO.md hardcoded date fixed."
     },
     {
-      "ts": "2026-03-02T12:57:00Z",
-      "decision": "Autosave 6:57 AM \u2014 overnight quiet"
-    },
-    {
-      "ts": "2026-03-02T12:42:00Z",
-      "decision": "Autosave 6:42 AM \u2014 overnight quiet"
-    },
-    {
-      "ts": "2026-03-02T12:27:00Z",
-      "decision": "Autosave 6:27 AM \u2014 overnight quiet"
-    },
-    {
-      "ts": "2026-03-02T12:12:00Z",
-      "decision": "Autosave 6:12 AM \u2014 overnight quiet"
+      "ts": "2026-03-04T14:56:00Z",
+      "decision": "NIST RFI March 9 — flagged to Jason."
     }
   ],
   "pendingSubAgents": [],
+  "notes": "Session quiet Sun Mar 8 through Tue Mar 10 early AM. NIST RFI deadline passed (Mar 9) — unknown if submitted. O'Reilly starts ~Mar 20. gog OAuth still expired.",
+  "hohenheimStatus": {
+    "ip": "192.168.4.222",
+    "model": "ollama/hohenheim:latest (qwen2.5:14b)",
+    "zealots": "zealot tool → gemini-2.0-flash direct HTTP — ACTIVE",
+    "gateway": "active"
+  },
+  "upstreamPRs": {
+    "pr20075": {"state": "CLOSED"},
+    "pr20076": {"state": "MERGED", "mergedAt": "2026-03-03T16:11:18Z"}
+  },
   "upcomingEvents": [
-    {
-      "event": "VA Appointment",
-      "when": "2026-03-03",
-      "note": "Check email for time/location"
-    },
-    {
-      "event": "NIST RFI Deadline",
-      "when": "2026-03-09",
-      "note": "Draft complete, needs submit"
-    },
-    {
-      "event": "NIST NCCoE Identity+Auth",
-      "when": "2026-04-02",
-      "note": "Draft complete, submit to AI-Identity@nist.gov"
-    }
+    {"event": "NIST NCCoE Identity+Auth", "when": "2026-04-02", "note": "Submit to AI-Identity@nist.gov"},
+    {"event": "O'Reilly start", "when": "~2026-03-20", "note": "Full time in ~11 days"}
   ]
 }

@@ -126,6 +126,10 @@ This exists because Jason depends on Moto being available. Going down = Jason lo
 
 **Still requires external agent (Claude Code / Claude.ai):** openclaw.json, systemd service definitions, and any change that could take Moto offline. These are the "concrete" — infrastructure changes that, if broken, prevent self-recovery. Jason maintains human-in-the-loop on all infrastructure self-modification.
 
+## Prompt Formatting for External Agents
+
+When writing prompts for Jason to paste into Claude.ai or other external agents, use **plain text** — no markdown formatting. Discord mangles nested code blocks and markdown in code fences. Keep it clean: numbered issues, plain descriptions, file paths. Save the markdown for files and docs.
+
 ## External vs Internal
 
 **Safe to do freely:**

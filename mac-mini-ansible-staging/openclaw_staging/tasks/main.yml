@@ -1,0 +1,75 @@
+---
+# OpenClaw Staging Setup on Mac Mini
+# Runs under 'moto' user profile
+
+- name: Create OpenClaw directory structure
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    owner: "{{ openclaw_user }}"
+    mode: "0755"
+  become: true
+  loop:
+    - "{{ openclaw_dir }}"
+    - "{{ openclaw_workspace }}"
+    - "{{ openclaw_workspace }}/memory"
+    - "{{ openclaw_dir }}/secrets"
+    - "{{ openclaw_projects }}"
+  tags: [openclaw]
+
+- name: Clone OpenClaw fork
+  ansible.builtin.git:
+    repo: "{{ openclaw_fork_repo }}"
+    dest: "{{ openclaw_workspace }}/openclaw-fork"
+    version: "{{ openclaw_fork_branch }}"
+    force: false
+  become: true
+  become_user: "{{ openclaw_user }}"
+  tags: [openclaw]
+
+- name: Install pnpm via corepack
+  ansible.builtin.command:
+    cmd: corepack enable pnpm
+  become: true
+  changed_when: false
+  tags: [openclaw]
+
+- name: Install OpenClaw dependencies
+  ansible.builtin.command:
+    cmd: pnpm install
+    chdir: "{{ openclaw_workspace }}/openclaw-fork"
+  become: true
+  become_user: "{{ openclaw_user }}"
+  environment:
+    PATH: "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+    COREPACK_HOME: "{{ openclaw_home }}/.corepack"
+  tags: [openclaw]
+
+- name: Build OpenClaw
+  ansible.builtin.command:
+    cmd: pnpm build
+    chdir: "{{ openclaw_workspace }}/openclaw-fork"
+  become: true
+  become_user: "{{ openclaw_user }}"
+  environment:
+    PATH: "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+    COREPACK_HOME: "{{ openclaw_home }}/.corepack"
+  tags: [openclaw]
+
+- name: Deploy staging config
+  ansible.builtin.template:
+    src: openclaw-staging.json.j2
+    dest: "{{ openclaw_dir }}/openclaw.json"
+    owner: "{{ openclaw_user }}"
+    mode: "0600"
+  become: true
+  tags: [openclaw]
+
+- name: Create staging LaunchDaemon
+  ansible.builtin.template:
+    src: com.westailabs.openclaw-staging.plist.j2
+    dest: /Library/LaunchDaemons/com.westailabs.openclaw-staging.plist
+    owner: root
+    mode: "0644"
+  become: true
+  tags: [openclaw, service]

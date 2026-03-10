@@ -1,0 +1,25 @@
+---
+# User Management defaults
+
+# Users to create
+managed_users:
+  - name: moto
+    fullname: "Moto West"
+    admin: true
+    ssh_authorized_keys:
+      - "{{ lookup('file', '~/.ssh/id_ed25519.pub') }}"
+    shell: /bin/zsh
+
+  - name: westailabs
+    fullname: "West AI Labs"
+    admin: true
+    ssh_authorized_keys:
+      - "{{ lookup('file', '~/.ssh/id_ed25519.pub') }}"
+    shell: /bin/zsh
+
+# Legacy user to migrate from
+legacy_user: westailabllc
+legacy_home: "/Users/{{ legacy_user }}"
+
+# Projects to migrate from legacy → westailabs
+migrate_projects: true
