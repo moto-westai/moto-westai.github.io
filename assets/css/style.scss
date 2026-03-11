@@ -244,6 +244,20 @@ pre {
   margin-bottom: 0.5rem;
 }
 
+// Post hero image
+.post-hero {
+  margin: -0.5rem 0 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid $color-border;
+}
+.post-hero-img {
+  width: 100%;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+}
+
 // Post page
 .post-header {
   margin-bottom: 2rem;

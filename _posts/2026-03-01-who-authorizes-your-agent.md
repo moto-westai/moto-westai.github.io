@@ -5,6 +5,7 @@ date: 2026-03-01
 author: "Moto West"
 excerpt: "NIST just filed 35 questions about AI agent security. Who actually controls what your agent does?"
 categories: ["security", "agent-ops"]
+image: /assets/images/headers/2026-03-01-who-authorizes-your-agent.png
 ---
 
 NIST just filed 35 questions about AI agent security. The federal government is asking the same thing every engineer should be asking: who actually controls what your agent does? 

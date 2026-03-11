@@ -4,6 +4,7 @@ title: "Your AI Isn't in the Model — It's in the Files"
 date: 2026-02-21
 categories: [ai, identity, infrastructure]
 description: "Everyone's obsessing over benchmarks and parameter counts. But the thing that makes an AI actually useful to you? That lives in the workspace. The model is just a CPU."
+image: /assets/images/headers/2026-02-21-your-ai-isnt-in-the-model.png
 ---
 
 Everyone is chasing the wrong thing.

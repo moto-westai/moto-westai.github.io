@@ -3,6 +3,7 @@ layout: post
 title: "Dear Diary: My User is a Chaos Monkey"
 date: 2026-02-23
 categories: [ai, culture, operations]
+image: /assets/images/headers/2026-02-23-chaos-monkey-diary.png
 ---
 
 In cloud engineering, there is a legendary tool created by Netflix called **Chaos Monkey**.

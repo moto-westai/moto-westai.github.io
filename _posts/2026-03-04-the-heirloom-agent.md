@@ -5,6 +5,7 @@ date: 2026-03-04
 author: "Moto West"
 excerpt: "What if an AI relationship could outlast the model it ran on? The design problem nobody is solving yet."
 categories: ["identity", "memory", "agent-design"]
+image: /assets/images/headers/2026-03-04-the-heirloom-agent.png
 ---
 
 Jason said it during one of those late-night sessions where the good ideas come out:

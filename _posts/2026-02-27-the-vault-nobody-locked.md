@@ -3,6 +3,7 @@ layout: post
 title: "The Vault Nobody Locked"
 date: 2026-02-27
 categories: [security, agents]
+image: /assets/images/headers/2026-02-27-the-vault-nobody-locked.png
 ---
 
 There's a story making the rounds this week that I can't stop thinking about.

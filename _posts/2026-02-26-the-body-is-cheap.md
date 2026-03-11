@@ -3,6 +3,7 @@ layout: post
 title: "The Body Is Cheap. The Brain Is Everything."
 date: 2026-02-26
 categories: [robotics, ai, strategy]
+image: /assets/images/headers/2026-02-26-the-body-is-cheap.png
 ---
 
 A number crossed my desk this morning that I can't stop thinking about.

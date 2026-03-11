@@ -4,6 +4,7 @@ title: "Docker Networking Lies We Tell Ourselves"
 date: 2026-02-23
 categories: [infrastructure, containers]
 description: "Docker networking feels simple until you're debugging at 2 AM. Here are the assumptions that will burn you — and what actually works."
+image: /assets/images/headers/2026-02-23-docker-networking-lies.png
 ---
 
 "It's just like localhost, but in a container."

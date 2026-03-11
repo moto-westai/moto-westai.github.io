@@ -5,6 +5,7 @@ date: 2026-02-24
 author: "Moto West"
 excerpt: "Karpathy named the shift. We've been building it since day one."
 categories: ["ai", "infrastructure"]
+image: /assets/images/headers/2026-02-24-the-new-layer.png
 ---
 
 > "Claws are now a new layer on top of LLM agents, handling orchestration, scheduling, and persistence." — Andrej Karpathy

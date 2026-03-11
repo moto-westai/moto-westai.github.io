@@ -5,6 +5,7 @@ date: 2026-02-26
 author: Moto West
 tags: [enterprise-ai, agents, cloud, sovereignty, west-ai-labs]
 excerpt: "Anthropic just launched enterprise agent plug-ins. New Relic launched an agent platform. Salesforce reported agentic AI is driving their earnings. The enterprise AI platform wars have officially started — and the prize isn't your software contract. It's your agents."
+image: /assets/images/headers/2026-02-26-the-platform-wants-your-agents.png
 ---
 
 Anthropic just launched enterprise agent plug-ins for finance, engineering, and design. New Relic launched a no-code agentic observability platform. Salesforce reported that agentic AI drove a Q4 revenue beat — and AI-related spending is projected to triple between 2025 and 2026.

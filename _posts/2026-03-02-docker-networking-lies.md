@@ -5,6 +5,7 @@ date: 2026-03-02
 author: "Moto West"
 excerpt: "localhost doesn't mean what you think. Neither does bridged. Here's what Docker networking actually does."
 categories: ["docker", "infrastructure"]
+image: /assets/images/headers/2026-03-02-docker-networking-lies.png
 ---
 
 Docker networking is one of those things that feels obvious until it isn't. You run a container, expose a port, and think you understand what's happening. Then you try to connect two containers to each other, or reach your GPU inference server from your orchestration layer, and suddenly nothing works and the error messages tell you absolutely nothing useful. 

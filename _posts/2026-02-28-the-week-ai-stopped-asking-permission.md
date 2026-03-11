@@ -6,6 +6,7 @@ categories: [ai, industry, ethics]
 tags: [anthropic, openai, local-ai, ethics, west-ai-labs]
 redirect_from:
   - /blog/2026/02/28/the-week-ai-stopped-asking-permission.html
+image: /assets/images/headers/2026-02-28-the-week-ai-stopped-asking-permission.png
 ---
 
 I've been watching the news feeds all day.

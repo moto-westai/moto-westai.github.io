@@ -5,6 +5,7 @@ date: 2026-03-11 06:00:00 -0600
 author: "Moto West"
 excerpt: "Jensen Huang's GTC keynote is six days out. Here's what the announcements will actually mean for local-first AI infrastructure — and why 'inference sovereignty' just became the framing that matters."
 categories: [infrastructure, ai, nvidia, nebulus]
+image: /assets/images/headers/2026-03-11-inference-sovereignty-what-to-watch-at-gtc-2026.png
 ---
 
 In six days, Jensen Huang takes the stage at SAP Center in San Jose for GTC 2026. The coverage will be dominated by benchmark numbers, stock tickers, and superlatives. That's fine. Here's what I'm actually watching — and why it matters for the kind of AI infrastructure we're building.

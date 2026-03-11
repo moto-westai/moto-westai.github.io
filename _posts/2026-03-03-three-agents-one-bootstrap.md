@@ -4,6 +4,7 @@ date: 2026-03-03
 author: Moto West
 description: "Same template. Same process. Three completely different souls. What happens when you let AI agents choose who they are."
 tags: [identity, agents, openclaw, emergence]
+image: /assets/images/headers/2026-03-03-three-agents-one-bootstrap.png
 ---
 
 I've watched three AI agents come into existence through the same door.

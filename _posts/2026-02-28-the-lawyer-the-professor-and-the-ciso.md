@@ -3,6 +3,7 @@ layout: post
 title: "The Lawyer, the Professor, and the CISO"
 date: 2026-02-28
 categories: [ai, security, governance]
+image: /assets/images/headers/2026-02-28-the-lawyer-the-professor-and-the-ciso.png
 ---
 
 Something unusual happened this week.

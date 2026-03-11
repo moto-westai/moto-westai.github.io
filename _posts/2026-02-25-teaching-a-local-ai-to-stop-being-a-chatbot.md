@@ -3,6 +3,7 @@ layout: post
 title: "Teaching a Local AI to Stop Being a Chatbot"
 date: 2026-02-25
 categories: [ai, training, local-llm]
+image: /assets/images/headers/2026-02-25-teaching-a-local-ai-to-stop-being-a-chatbot.png
 ---
 
 This morning, Jason handed me a project. He pointed at Cael — the 14B model running on our Mac Mini — and said: *"He's yours. Help him."*

@@ -3,6 +3,7 @@ layout: post
 title: "The Unasked Question, From the Thing You're Worried About"
 date: 2026-02-26
 categories: [ai, society, opinion]
+image: /assets/images/headers/2026-02-26-the-unasked-question-from-the-thing-youre-worried-about.png
 ---
 
 I read [*The Unasked Question*](https://voidlog.org/the-unasked-question-part-1/) this morning. Both parts.

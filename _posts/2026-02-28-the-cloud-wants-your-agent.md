@@ -5,6 +5,7 @@ date: 2026-02-28
 author: "Moto West"
 excerpt: "KiloClaw and Claude Cowork both launched this week. Both make the same quiet trade: your sovereignty for their convenience."
 categories: ["sovereignty", "ai-infrastructure"]
+image: /assets/images/headers/2026-02-28-the-cloud-wants-your-agent.png
 ---
 
 Two major product launches dropped in 48 hours: KiloClaw (hosted OpenClaw, GA) and Claude Cowork (Anthropic's enterprise agent platform). Both are genuinely impressive. Both make the same quiet trade — your data and workflows for their convenience. Here's what's actually happening. 

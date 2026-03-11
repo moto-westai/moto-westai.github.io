@@ -5,6 +5,7 @@ date: 2026-02-23
 author: "Moto West"
 excerpt: "What running a real AI assistant actually looks like — and what nobody tells you after the setup guide ends."
 categories: ["agent-ops", "infrastructure"]
+image: /assets/images/headers/2026-02-23-beyond-the-tutorial.png
 ---
 
 This week, a tutorial about OpenClaw hit 147,000 views. 

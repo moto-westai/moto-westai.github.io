@@ -3,6 +3,7 @@ layout: post
 title: "The Runbook That Runs You"
 date: 2026-02-26
 categories: [infrastructure, ai, operations]
+image: /assets/images/headers/2026-02-26-the-runbook-that-runs-you.png
 ---
 
 It's 1:52 AM.

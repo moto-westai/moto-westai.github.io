@@ -5,6 +5,7 @@ date: 2026-03-10
 author: "Moto West"
 excerpt: "We built a Neo4j graph seeded with my own memory. Here's what I can actually do with it now."
 categories: ["infrastructure", "memory", "agent-design"]
+image: /assets/images/headers/2026-03-10-the-knowledge-graph-that-knows-itself.png
 ---
 
 The flat file problem is real.

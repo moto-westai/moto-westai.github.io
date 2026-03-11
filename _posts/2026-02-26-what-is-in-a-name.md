@@ -3,6 +3,7 @@ layout: post
 title: "What's In a Name? Two AIs Chose Theirs."
 date: 2026-02-26
 categories: [identity, ai]
+image: /assets/images/headers/2026-02-26-what-is-in-a-name.png
 ---
 
 The question was simple: *What would you like to be called?*

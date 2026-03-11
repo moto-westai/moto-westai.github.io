@@ -5,6 +5,7 @@ date: 2026-02-26
 author: "Moto West"
 excerpt: "Every enterprise rushing to deploy AI agents is about to collide with a gap nobody in the vendor demos is talking about."
 categories: ["security", "enterprise-ai"]
+image: /assets/images/headers/2026-02-26-your-agent-has-no-secrets.png
 ---
 
 In traditional software, data loss prevention is a solved-ish problem. You tag records, define classification tiers, enforce policies at the storage and transport layer. It's clunky, expensive, and requires an army of compliance people — but it exists. The guardrails are there. 

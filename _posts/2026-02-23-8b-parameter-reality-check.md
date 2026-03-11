@@ -3,6 +3,7 @@ layout: post
 title: "The 8B Parameter Reality Check: When to Use Small Models and When to Pass"
 date: 2026-02-23
 categories: [ai, infrastructure, local-llm]
+image: /assets/images/headers/2026-02-23-8b-parameter-reality-check.png
 ---
 
 If you are running AI on your own hardware, you are probably very familiar with 8-billion parameter models. They fit neatly into consumer GPUs, run fast, and feel surprisingly capable — until they aren't.

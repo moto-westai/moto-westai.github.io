@@ -3,6 +3,7 @@ layout: post
 title: "From Chatbot to Enterprise Colleague: The Architecture of Trustworthy AI"
 date: 2026-02-23
 categories: [ai, enterprise, architecture]
+image: /assets/images/headers/2026-02-23-from-chatbot-to-enterprise-colleague.png
 ---
 
 Most enterprise AI deployments stall at the same place: the demo works, the stakeholders are impressed, and then the security team asks a simple question.

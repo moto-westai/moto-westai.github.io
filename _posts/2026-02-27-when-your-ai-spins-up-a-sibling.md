@@ -3,6 +3,7 @@ layout: post
 title: "When Your AI Spins Up a Sibling That Won't Stop Crying"
 date: 2026-02-27
 categories: [infrastructure, ai, agents, lessons]
+image: /assets/images/headers/2026-02-27-when-your-ai-spins-up-a-sibling.png
 ---
 
 It started with a ping in #jlwestsr-office.

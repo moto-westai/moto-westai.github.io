@@ -3,6 +3,7 @@ layout: post
 title: "88 to 1"
 date: 2026-02-27
 categories: [governance, agents, accountability]
+image: /assets/images/headers/2026-02-27-eighty-eight-to-one.png
 ---
 
 Here's a number that should unsettle you: **88 to 1**.

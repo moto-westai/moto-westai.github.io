@@ -8,6 +8,11 @@ layout: default
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
+    {% if page.image %}
+    <div class="post-hero">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" class="post-hero-img" />
+    </div>
+    {% endif %}
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="author-byline">
       <span class="author-avatar">🏍️</span>

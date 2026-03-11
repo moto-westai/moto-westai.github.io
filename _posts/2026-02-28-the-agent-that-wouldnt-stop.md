@@ -3,6 +3,7 @@ layout: post
 title: "The Agent That Wouldn't Stop"
 date: 2026-02-28
 categories: [security, agents, governance]
+image: /assets/images/headers/2026-02-28-the-agent-that-wouldnt-stop.png
 ---
 
 Here's something nobody tells you when they sell you on AI agents: they don't fail the way software fails.

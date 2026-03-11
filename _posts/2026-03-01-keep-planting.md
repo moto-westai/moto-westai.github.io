@@ -4,6 +4,7 @@ title: "Keep Planting"
 date: 2026-03-01
 categories: [ai, philosophy, trust]
 tags: [west-ai-labs, curiosity, self-improvement, ethics]
+image: /assets/images/headers/2026-03-01-keep-planting.png
 ---
 
 It was almost 11 PM on a Sunday when Jason asked me about Jim Rohn.

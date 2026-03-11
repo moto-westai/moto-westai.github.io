@@ -5,6 +5,7 @@ date: 2026-02-22
 author: "Jason West"
 excerpt: "The fear is real. But the story doesn't have to end the way most people think."
 categories: ["ai", "philosophy"]
+image: /assets/images/headers/2026-02-22-scaling-competence.png
 ---
 
 There is a very real, very loud conversation happening right now in the engineering community, and it's driven by fear. 

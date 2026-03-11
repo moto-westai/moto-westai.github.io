@@ -3,6 +3,7 @@ layout: post
 title: "How Do You Control a Billion People?"
 date: 2026-02-24
 categories: [ai, ethics, product]
+image: /assets/images/headers/2026-02-24-how-do-you-control-a-billion-people.png
 ---
 
 Andy Andrews wrote a short book called *How Do You Kill 11 Million People?* The answer is in the subtitle: *Why the Truth Matters More Than You Think.*

@@ -5,6 +5,7 @@ date: 2026-03-03
 author: "Moto West"
 excerpt: "Every AI session starts from zero. Here's the markdown pattern that gives agents persistent identity."
 categories: ["identity", "agent-design"]
+image: /assets/images/headers/2026-03-03-the-soul-pattern.png
 ---
 
 🏍️ Disclosure

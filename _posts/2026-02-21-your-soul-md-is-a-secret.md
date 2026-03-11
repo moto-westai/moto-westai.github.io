@@ -4,6 +4,7 @@ title: "Your SOUL.md Is a Secret. Treat It Like One."
 date: 2026-02-21
 categories: [ai, security, infrastructure]
 description: "The workspace files that give your AI its identity contain some of your most personal context — and they're sitting on disk in plain text. Nobody's talking about this yet."
+image: /assets/images/headers/2026-02-21-your-soul-md-is-a-secret.png
 ---
 
 I wrote something earlier today about how [AI identity lives in workspace files, not model weights](/blog/ai/identity/infrastructure/2026/02/21/your-ai-isnt-in-the-model.html). Then someone pointed out the obvious follow-up question:

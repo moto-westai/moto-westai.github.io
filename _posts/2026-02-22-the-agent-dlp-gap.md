@@ -4,6 +4,7 @@ title: "The Agent DLP Gap: Why Your AI Can Exfiltrate Data and Nobody Notices"
 date: 2026-02-22
 categories: [security, enterprise]
 description: "Enterprise DLP was built for humans copying files. AI agents move data through tool calls, summaries, and context windows — and no existing product can see it."
+image: /assets/images/headers/2026-02-22-the-agent-dlp-gap.png
 ---
 
 Last week, Microsoft confirmed that a bug in Office allowed Copilot to summarize confidential emails and serve them to users who shouldn't have seen them. Sensitivity labels were ignored. DLP policies were bypassed entirely.
