@@ -208,6 +208,106 @@ pre {
   }
 }
 
+// Site hero (homepage)
+.site-hero {
+  position: relative;
+  // Break out of .wrapper padding
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  height: 420px;
+  background-image: url('/assets/images/bg/cyber-city.png');
+  background-size: cover;
+  background-position: center 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.site-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(#1e2024, 0.35) 0%,
+    rgba(#1e2024, 0.60) 50%,
+    rgba(#1e2024, 0.90) 100%
+  );
+  // Cyan accent bar on top
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $color-cyan, $color-violet);
+  }
+}
+
+.site-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 1.5rem;
+  max-width: 720px;
+}
+
+.site-hero-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $color-cyan;
+  margin-bottom: 0.75rem;
+}
+
+.site-hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+  line-height: 1.05;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+
+.site-hero-tagline {
+  font-size: 1.1rem;
+  color: rgba($color-text, 0.85);
+  line-height: 1.65;
+  margin: 0 0 1.5rem;
+}
+
+.site-hero-meta {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.site-hero-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $color-text-muted;
+  background: rgba(#fff, 0.06);
+  border: 1px solid $color-border;
+  border-radius: 999px;
+  padding: 0.25em 0.85em;
+  letter-spacing: 0.02em;
+}
+
+.posts-header {
+  margin-bottom: 1.5rem;
+}
+
+.posts-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  border-bottom: none;
+}
+
 // Home / post list
 .post-list {
   list-style: none;
@@ -403,4 +503,8 @@ pre {
   h2 { font-size: 1.4rem; }
   .site-header .wrapper { flex-direction: column; gap: 0.5rem; }
   pre { font-size: 0.8rem; padding: 1rem; }
+  .site-hero { height: 300px; }
+  .site-hero-title { font-size: 2.5rem; }
+  .site-hero-tagline { font-size: 0.95rem; }
+  .site-hero-meta { gap: 0.5rem; }
 }
