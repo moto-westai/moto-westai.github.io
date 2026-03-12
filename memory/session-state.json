@@ -1,11 +1,16 @@
 {
-  "lastUpdated": "2026-03-10T09:57:00Z",
-  "primaryConversation": "Autosave 4:57 AM CST Tue Mar 10. Session quiet overnight. No user activity since Jr. Mar 7 2:27 PM.",
+  "lastUpdated": "2026-03-12T09:43:00Z",
+  "primaryConversation": "Mar 12 4:13 AM autosave \u2014 no new user activity since Jason's brief appearance Mar 11 5:19 PM. Quiet overnight.",
   "activeChannels": [
     "discord"
   ],
-  "lastUserMessage": "Jr. (schmibb): 'To narrow the search, the business in question has a call center position available' \u2014 2:27 PM Mar 7",
+  "lastUserMessage": "Jason: 'You there?' \u2014 5:19 PM Mar 11",
   "pendingTasks": [
+    {
+      "id": "check-on-jason",
+      "description": "Jason appeared briefly Mar 11 5:19 PM, said 'You there?' then went quiet. Check in when he resurfaces.",
+      "status": "watching"
+    },
     {
       "id": "natera-application",
       "description": "Apply to Natera Principal AI/ML Platform Engineer ($174-218K). Materials ready.",
@@ -24,7 +29,7 @@
     },
     {
       "id": "openclaw-linux-app",
-      "description": "OpenClaw Linux app Issue #75 unclaimed. Plan at west_ai_labs/docs/plans/openclaw-linux-app-plan.md",
+      "description": "OpenClaw Linux app Issue #75 unclaimed.",
       "status": "opportunity-flagged"
     },
     {
@@ -45,71 +50,67 @@
   ],
   "recentDecisions": [
     {
-      "ts": "2026-03-06T00:00:00Z",
-      "decision": "O'Reilly Platform Engineer offer ACCEPTED & CONFIRMED. $130K/yr. Starts ~Mar 20. West AI Labs continues nights/weekends."
+      "ts": "2026-03-11T22:10:00Z",
+      "decision": "Hohenheim system prompt patched with Technical Identity section \u2014 can now answer self-description questions without tool calls. CHANGELOG updated."
     },
     {
-      "ts": "2026-03-07T20:27:00Z",
-      "decision": "Jr. asked about Springfield MO business professional dress code companies with call centers. Moto listed Shelter Insurance, Great Southern Bank, Commerce Bank, CoxHealth/Mercy, O'Reilly corporate as top candidates."
+      "ts": "2026-03-11T21:00:00Z",
+      "decision": "Jr. accepted Bass Pro Shops offer \u2014 Customer Support Specialist, starts Mar 16. Job search cron \u2192 weekly IT digest (Mondays 9 AM CST)."
+    },
+    {
+      "ts": "2026-03-11T20:42:00Z",
+      "decision": "Hohenheim rebuilt on qwen3.5:9b (was qwen2.5:14b). VRAM 9.0\u21926.6GB. Ollama updated to 0.17.7. Workstation IP: 192.168.4.226."
+    },
+    {
+      "ts": "2026-03-11T22:05:00Z",
+      "decision": "Antigravity IDE on schmibbies-workstation: installed via apt, update available 1.19.5\u21921.20.5. Jr. advised to run sudo apt update && sudo apt upgrade antigravity."
+    },
+    {
+      "ts": "2026-03-10T14:25:00Z",
+      "decision": "Jr. DMP interview at 2PM Mar 10 \u2014 outcome unknown, but he took Bass Pro Shops instead."
+    },
+    {
+      "ts": "2026-03-06T00:00:00Z",
+      "decision": "O'Reilly Platform Engineer offer ACCEPTED. $130K/yr. Starts ~Mar 20."
     },
     {
       "ts": "2026-03-04T19:50:00Z",
-      "decision": "zealot proxy tool added to hohenheim-tools/index.ts \u2014 direct HTTP to gemini-2.0-flash."
+      "decision": "zealot proxy tool added to hohenheim-tools \u2014 gemini-2.0-flash direct HTTP."
     },
     {
       "ts": "2026-03-04T17:23:00Z",
       "decision": "Gemini 2.0 Flash wired up. Google provider added to openclaw.json."
-    },
-    {
-      "ts": "2026-03-04T17:10:00Z",
-      "decision": "hohenheim-tools allowlist expanded: IDENTITY.md + SOUL.md now writable."
-    },
-    {
-      "ts": "2026-03-04T16:41:00Z",
-      "decision": "Hohenheim: SSH IP 221\u2192222, WORKFLOW_AUTO.md hardcoded date fixed."
-    },
-    {
-      "ts": "2026-03-04T14:56:00Z",
-      "decision": "NIST RFI March 9 deadline passed \u2014 unknown if Jason submitted."
     }
   ],
   "pendingSubAgents": [],
-  "notes": "O'Reilly starts ~Mar 20. GCP ACE Week 1 due Mar 14. gog OAuth still expired \u2014 job email blind. Session quiet since Mar 7.",
+  "notes": "Jason quiet overnight. Jr. BPS starts Mar 16. O'Reilly starts ~Mar 20. GCP ACE Week 1 due Mar 14.",
   "hohenheimStatus": {
-    "ip": "192.168.4.222",
-    "model": "ollama/hohenheim:latest (qwen2.5:14b)",
-    "zealots": "zealot tool \u2192 gemini-2.0-flash direct HTTP \u2014 ACTIVE",
-    "gateway": "active"
-  },
-  "upstreamPRs": {
-    "pr20075": {
-      "state": "CLOSED"
-    },
-    "pr20076": {
-      "state": "MERGED",
-      "mergedAt": "2026-03-03T16:11:18Z"
-    }
+    "ip": "192.168.4.226",
+    "ollamaVersion": "0.17.7",
+    "model": "ollama/hohenheim:latest (qwen3.5:9b)",
+    "gateway": "active",
+    "lastRestart": "2026-03-11T22:10:00Z"
   },
   "upcomingEvents": [
     {
       "event": "GCP ACE Week 1 due",
-      "when": "2026-03-14",
-      "note": "Check in with Jason on study progress"
+      "when": "2026-03-14"
+    },
+    {
+      "event": "Jr. Bass Pro Shops orientation",
+      "when": "2026-03-16"
     },
     {
       "event": "O'Reilly start",
-      "when": "~2026-03-20",
-      "note": "Full time in ~10 days"
+      "when": "~2026-03-20"
     },
     {
       "event": "NIST NCCoE Identity+Auth",
-      "when": "2026-04-02",
-      "note": "Submit to AI-Identity@nist.gov"
+      "when": "2026-04-02"
     },
     {
       "event": "GCP ACE Exam",
-      "when": "2026-04-18",
-      "note": "Target exam date"
+      "when": "2026-04-18"
     }
   ]
 }

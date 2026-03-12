@@ -41,8 +41,15 @@
     "danielnewman09/workflow-engine",
     "gaborkukucska/TrippleEffect",
     "ltngt-ai/mind-swarm",
-    "Mattbusel/agent-runtime"
+    "Mattbusel/agent-runtime",
+    "ToolBrain/TraceBrain",
+    "MoonLadderStudios/MoonMind",
+    "muhammadnouman911/ECO-EDGE-Framework",
+    "rememberSoftwares/yacana",
+    "ZenGuard-AI/fast-llm-security-guardrails",
+    "EdibleTuber/apk-re-agents",
+    "ARPAHLS/rooms"
   ],
-  "lastRun": "2026-03-09",
-  "notes": "Repos already researched — skip in daily scout"
+  "lastRun": "2026-03-11",
+  "notes": "Repos already researched \u2014 skip in daily scout"
 }
