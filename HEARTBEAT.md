@@ -1,9 +1,9 @@
 # HEARTBEAT.md — Moto's Autonomous Work Loop
 
-## 🚨 TOP PRIORITY (next time Jason is at keyboard)
-**Jekyll Dev Environment Setup** — see `memory/next-session-priority.md`
-Jason runs: `sudo apt install ruby-full build-essential zlib1g-dev && gem install bundler jekyll`
-Then Moto handles the rest. Blog writing is paused until this is done.
+## ✅ RESOLVED — Jekyll Now Installed and Working
+Jekyll 4.4.1 is installed at /usr/local/bin/jekyll. `bundle exec jekyll build` confirmed successful (Mar 12, 10:07 AM CST).
+Blog writing is **UNPAUSED**. The `next-session-priority.md` task is complete.
+NemoClaw draft is staged at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md` — ready to publish within 2h of the March 15 reveal.
 
 ## 🎯 GCP ACE Cert — Weekly Check-in (WEEKDAYS ONLY — M-F)
 - Target: April 18, 2026
@@ -76,10 +76,12 @@ Then Moto handles the rest. Blog writing is paused until this is done.
 - If any response from steipete or maintainers: ping Jason immediately
 - Track in memory/heartbeat-state.json under "upstreamPRs"
 
-### 9. Blog Writing — ⏸️ PAUSED (site under dev env setup)
-- Paused 2026-02-27 — Jekyll dev environment not set up yet, redirects broken
-- Resume after: Jekyll installed locally, `bundle exec jekyll serve` verified, redirect strategy confirmed
-- Push with: `GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519_moto" git push origin main`
+### 9. Blog Writing — ✅ UNPAUSED (Jekyll confirmed working Mar 12)
+- Jekyll 4.4.1 installed at /usr/local/bin/jekyll. `bundle exec jekyll build` successful.
+- Push with: `GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto" git push origin main`
+- **NEXT POST: "NemoClaw and the Agent Governance Gap"** — publish within 2h of March 15 NemoClaw reveal
+  - Draft: `west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md`
+  - Needs: Jason's green-light after confirming facts against actual reveal
 - Topic backlog: Docker networking lies, SOUL.md pattern, Agent DLP gap, 8B parameter limits, recovery runbook meta
 
 ### ~~Wealthsimple~~ — CANCELLED (2026-02-28, Jason's call)

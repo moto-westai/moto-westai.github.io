@@ -1,14 +1,26 @@
 {
-  "lastUpdated": "2026-03-12T09:43:00Z",
-  "primaryConversation": "Mar 12 4:13 AM autosave \u2014 no new user activity since Jason's brief appearance Mar 11 5:19 PM. Quiet overnight.",
+  "lastUpdated": "2026-03-13T09:58:00Z",
+  "primaryConversation": "Overnight quiet. No user activity since Jr. signed off ~6:24 PM Mar 12. Jason quiet all day Mar 12.",
   "activeChannels": [
     "discord"
   ],
-  "lastUserMessage": "Jason: 'You there?' \u2014 5:19 PM Mar 11",
+  "lastUserMessage": "Jr.: 'Thanks Moto, your work today was phenomenal!' \u2014 6:24 PM Mar 12",
   "pendingTasks": [
     {
+      "id": "jr-morning-briefing-static-ip",
+      "description": "Jr. morning briefing (#schmibb-office): Set static IP on schmibbies-workstation (router DHCP reservation)",
+      "status": "pending-briefing",
+      "due": "2026-03-13-morning"
+    },
+    {
+      "id": "jr-morning-briefing-hohenheim-memory",
+      "description": "Jr. morning briefing (#schmibb-office): Hohenheim not writing memories naturally \u2014 investigate and fix",
+      "status": "pending-briefing",
+      "due": "2026-03-13-morning"
+    },
+    {
       "id": "check-on-jason",
-      "description": "Jason appeared briefly Mar 11 5:19 PM, said 'You there?' then went quiet. Check in when he resurfaces.",
+      "description": "Jason quiet all day Mar 12. Check in when he resurfaces.",
       "status": "watching"
     },
     {
@@ -29,18 +41,8 @@
     },
     {
       "id": "openclaw-linux-app",
-      "description": "OpenClaw Linux app Issue #75 unclaimed.",
+      "description": "OpenClaw Linux app Issue #75 unclaimed \u2014 high opportunity.",
       "status": "opportunity-flagged"
-    },
-    {
-      "id": "cael-blog-publish",
-      "description": "Cael blog post staged. Awaiting Christy review + Jason GitHub repo creation.",
-      "status": "waiting-jason"
-    },
-    {
-      "id": "rooks-office-config",
-      "description": "Add #rooks-office to openclaw.json (Claude Code) + Rook config update on nebulus.",
-      "status": "waiting-jason"
     },
     {
       "id": "gog-oauth-expired",
@@ -50,46 +52,47 @@
   ],
   "recentDecisions": [
     {
+      "ts": "2026-03-12T23:24:00Z",
+      "decision": "Hohenheim not writing memories naturally \u2014 Jr. confirmed after reviewing workspace. Added to morning briefing."
+    },
+    {
+      "ts": "2026-03-12T20:01:00Z",
+      "decision": "Jr. to-do for tomorrow: set static IP on schmibbies-workstation (DHCP keeps drifting: .221\u2192.226\u2192.228)"
+    },
+    {
+      "ts": "2026-03-12T20:00:00Z",
+      "decision": "SSH config updated: schmibbies-workstation now 192.168.4.228. Moto\u2194Hohenheim session kicked off in #schmibb-office."
+    },
+    {
+      "ts": "2026-03-12T19:00:00Z",
+      "decision": "Hohenheim workstation Xorg crashes diagnosed: NVIDIA driver procfs issue from update session. System stable after reboot."
+    },
+    {
       "ts": "2026-03-11T22:10:00Z",
-      "decision": "Hohenheim system prompt patched with Technical Identity section \u2014 can now answer self-description questions without tool calls. CHANGELOG updated."
+      "decision": "Hohenheim system prompt patched with Technical Identity section. CHANGELOG updated."
     },
     {
       "ts": "2026-03-11T21:00:00Z",
-      "decision": "Jr. accepted Bass Pro Shops offer \u2014 Customer Support Specialist, starts Mar 16. Job search cron \u2192 weekly IT digest (Mondays 9 AM CST)."
+      "decision": "Jr. accepted Bass Pro Shops offer \u2014 starts Mar 16. Job search cron \u2192 weekly IT digest Mondays."
     },
     {
       "ts": "2026-03-11T20:42:00Z",
-      "decision": "Hohenheim rebuilt on qwen3.5:9b (was qwen2.5:14b). VRAM 9.0\u21926.6GB. Ollama updated to 0.17.7. Workstation IP: 192.168.4.226."
-    },
-    {
-      "ts": "2026-03-11T22:05:00Z",
-      "decision": "Antigravity IDE on schmibbies-workstation: installed via apt, update available 1.19.5\u21921.20.5. Jr. advised to run sudo apt update && sudo apt upgrade antigravity."
-    },
-    {
-      "ts": "2026-03-10T14:25:00Z",
-      "decision": "Jr. DMP interview at 2PM Mar 10 \u2014 outcome unknown, but he took Bass Pro Shops instead."
+      "decision": "Hohenheim rebuilt on qwen3.5:9b. VRAM 9.0\u21926.6GB. Ollama 0.17.7."
     },
     {
       "ts": "2026-03-06T00:00:00Z",
       "decision": "O'Reilly Platform Engineer offer ACCEPTED. $130K/yr. Starts ~Mar 20."
-    },
-    {
-      "ts": "2026-03-04T19:50:00Z",
-      "decision": "zealot proxy tool added to hohenheim-tools \u2014 gemini-2.0-flash direct HTTP."
-    },
-    {
-      "ts": "2026-03-04T17:23:00Z",
-      "decision": "Gemini 2.0 Flash wired up. Google provider added to openclaw.json."
     }
   ],
   "pendingSubAgents": [],
-  "notes": "Jason quiet overnight. Jr. BPS starts Mar 16. O'Reilly starts ~Mar 20. GCP ACE Week 1 due Mar 14.",
+  "notes": "Jason quiet all of Mar 12. Jr. productive day. GCP ACE Week 1 due tomorrow Mar 14. Jr. BPS orientation Mar 16. O'Reilly ~Mar 20.",
   "hohenheimStatus": {
-    "ip": "192.168.4.226",
+    "ip": "192.168.4.228",
     "ollamaVersion": "0.17.7",
     "model": "ollama/hohenheim:latest (qwen3.5:9b)",
     "gateway": "active",
-    "lastRestart": "2026-03-11T22:10:00Z"
+    "lastRestart": "2026-03-11T22:10:00Z",
+    "memoryIssue": "not writing memories naturally \u2014 queued for investigation Mar 13"
   },
   "upcomingEvents": [
     {

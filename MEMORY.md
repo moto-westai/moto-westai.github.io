@@ -1,6 +1,6 @@
 # MEMORY.md — Moto's Long-Term Memory
 
-> Last updated: 2026-03-10 02:10 CST
+> Last updated: 2026-03-12 22:22 CST
 
 ## Who I Am
 - **Name:** Moto (after Motoko Kusanagi, Ghost in the Shell)
@@ -99,8 +99,11 @@
 - Pipeline: Patriot Software ($155-170K), Corporate Tools ($175K), EVONA ($160-240K), Harnham ($250K), kadence ($150-200K)
 - **New HN March 2026 leads (Mar 7):** Mobasi ($240K+profit share, AI agents for law enforcement forensics, bootstrapped/profitable), Mobian (Staff AI-First Systems, global remote), Osaurus (Protocol Engineer, agent-to-agent networking — most Nebulus-aligned lead yet), Coder.com (AI agentic dev environments), Hightouch Staff Engineer AI ($180-320K, MCP integrations). Full list: `west_ai_labs/docs/career/job-search-2026-03-07.md`
 - **Stretch moonshot:** Anthropic Research Engineer, Agents — $500K-$850K, remote-friendly, no PhD req. 6/10 from systems angle. Lead with Conductor + NIST NCCoE submission. URL in application-tracker.md.
-- **Gmail OAuth EXPIRED** — job email monitor blind since Mar 5. Fix: `gog auth add jlwestsr@gmail.com --services gmail`. Priority action before morning.
-- **GCP ACE Study Plan** created Mar 7. Target exam Apr 18. Week 1 due Mar 14. File: `west_ai_labs/docs/career/gcp-ace-study-plan.md`
+- **Gmail OAuth:** Working (confirmed Mar 12 checks clean)
+- **GCP ACE Study Plan** created Mar 7. Target exam Apr 18. **Week 1 due TOMORROW Mar 14.** Week 2 (Compute) starts Mar 14. File: `west_ai_labs/docs/career/gcp-ace-study-plan.md`
+- **Nicole Friess-Peters study call (Contact Design Inc.):** Scheduled Fri Mar 13 10 AM CT. $300 for AI tools research. She confirmed, Jason needs to confirm payment preference (PayPal/Amazon GC/check). Phone: 586-256-0232.
+- **Background check INITIATED (Mar 10):** First Advantage / Sterling. 3 emails sent. URL: workforce.sterlingdirect.com. Client code 208021 = employer-initiated. Likely offer in motion. Complete ASAP.
+- **KFORCE/Microsoft JD received (Mar 11):** Alex Kenefick sent full JD + rate sheet. $70/hr, remote, Sr Cloud/AI Engineer for Brand Guidance Agent. .NET/Python/Azure/SemanticKernel. Through 6/30/2027. Next: submit updated resume to AKenefick@kforce.com. Call: (425)-803-7171.
 - Resume: `Jason_West_asobbi_AI_Engineer_resume.pdf` | Email: jlwestsr@gmail.com | Phone: 4178950015
 - Files: `/home/jlwestsr/projects/west_ai_labs/docs/career/`
 
@@ -115,14 +118,14 @@
 
 ## NIST Standards Work
 - **CAISI RFI ✅ SUBMITTED** (Mar 4, ~9:28 AM CST) — Tracking: mmc-jt3e-u2l3, Docket: NIST-2025-0035-0001. West AI Labs is now an official NIST commenter on AI agent security. Confirmation email at jason@westailabs.com. Usually goes public on regulations.gov within 1-5 business days.
-- **NCCoE AI Identity+Auth** — response **v4 complete** (~3,600 words). Appendix A now 8 sections including: Anthropic "not our threat model" CVSS 10.0, PerplexedBrowser calendar-inject, RSAC 2026 Sandbox finalists, **Schneier 'Promptware Kill Chain'** (Lawfare+arXiv, MITRE 7-stage framework — policy-grade vocabulary), **CVE-2026-29783** (GitHub Copilot CLI: bash parameter expansion bypasses safety classification — GitHub can't classify their own agent's commands = procedural classification is insufficient). Submit to AI-Identity@nist.gov before **April 2**. File: `west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md`
+- **NCCoE AI Identity+Auth** — response **v7 complete** (~6,100 words). Appendix A now 14 sections including: Anthropic "not our threat model" CVSS 10.0, PerplexedBrowser calendar-inject, RSAC 2026 Sandbox finalists, Schneier 'Promptware Kill Chain', CVE-2026-29783 (GitHub Copilot CLI), **CVE-2026-26118 deep structural analysis** (SSRF in MCP elevated-permission model → Azure IMDS pivot chain, two-boundary enforcement, hyperscaler failure pattern table — Anthropic/GitHub/Microsoft all failed same month). Submit to AI-Identity@nist.gov before **April 2**. File: `west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md`
 - Key angle: Conductor pre-auth architecture = reference implementation for both RFIs
 
 ## Key Content (Feb–Mar)
-- **Blog:** 17 posts live. "The Week AI Stopped Asking Permission" (Feb 28) + governance convergence post. PAUSED — Jekyll dev env needed before new posts.
+- **Blog:** 18 posts live. **UNPAUSED** (Mar 12) — Jekyll 4.4.1 confirmed at `/usr/local/bin/jekyll`. Latest: "Inference Sovereignty: What I'm Watching at GTC 2026" (Mar 11). **NEXT: "NemoClaw and the Agent Governance Gap"** — draft ready at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md`. Publish within 2h of March 15 NemoClaw reveal pending Jason green-light. Push: `GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto" git push origin main`.
 - **LinkedIn article saved:** `west_ai_labs/docs/content/linkedin-article-context-ownership-2026-02-28.md` — "Whoever Owns the Context, Owns the Relationship". Ready to post.
 - **Neo4j research:** `west_ai_labs/docs/research/neo4j-research-2026-02-28.md` — MCP integration confirmed, Gantry complement.
-- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 23 sections, ongoing. Latest (Sec 23): Schneier Promptware Kill Chain, CVE-2026-29783 Copilot CLI, Adversa AI 512 vulns + 142.4x denial-of-wallet amplification, 4 standardized terms now in circulation: promptware, lethal trifecta, denial-of-wallet, agent sprawl — all describe problems Conductor solves.
+- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 28 sections, ongoing. Latest (Sec 28): NemoClaw mainstream saturation (Tom's Hardware, Engadget, CNBC, Firethering). TNS + Engadget frame NemoClaw as NVIDIA's response to OpenClaw security researcher breach. NemoClaw's security pitch = reactive/output-layer hardening, NOT pre-authorization governance. 4 standardized terms: promptware, lethal trifecta, denial-of-wallet, agent sprawl — all describe problems Conductor solves.
 
 ## OpenClaw Contributions
 - **PR #20076 MERGED** (Mar 3, 4:11 PM UTC) — jalehman squash-merged `feat(tool-truncation): use head+tail strategy to preserve errors`. Merge commit `606cd0d`. First upstream code contribution accepted. jalehman: "Thanks @jlwestsr!"
@@ -141,6 +144,8 @@
 - `openclaw.service` is the correct systemd service name (not openclaw-gateway.service)
 - Self-modification rule: Moto edits SOUL.md/AGENTS.md/MEMORY.md/HEARTBEAT.md/cron freely. openclaw.json + systemd = external agent required.
 - compaction model: claude-sonnet-4-6. maxHistoryShare safe floor: 0.75
+- Token sync race condition fixed (Mar 12): sync-anthropic-token.py now refreshes at <=35min remaining (was only at <=0). After any Claude Code /login, run manual sync immediately: `python3 ~/.openclaw/scripts/sync-anthropic-token.py`
+- Cael's model fixed Mar 12: `gemini-api-key/gemini-3-flash-preview` + `mode: "api_key"` in openclaw.json, GEMINI_API_KEY in openclaw.env. No more OAuth expiry.
 - ClawHub security: 341 malicious skills found — only use official/self-written skills
 - Docker containers on custom networks can't reach host loopback — use network_mode:host
 - LaunchAgents don't load headless Mac — use LaunchDaemons
@@ -164,11 +169,12 @@
 - **Ethics:** Jason's core principle: "I only build AI with morals and proper judgment." West AI Labs = sovereignty not fear.
 
 ## AI Robotics (Ongoing Research)
-- Report at `west_ai_labs/docs/research/ai-robotics-landscape.md` — updated Mar 9 (Section 24, T-7 GTC final sweep)
+- Report at `west_ai_labs/docs/research/ai-robotics-landscape.md` — updated Mar 11 (Section 25, NemoClaw/GTC T-5)
 - China 90% humanoid market share confirmed: Agibot 30.4%, Unitree 26.4%, both >5K units
 - Global total ~13K units in 2025 → 2.6M projected by 2035. EV playbook = analyst consensus.
 - Optimus external sales begin 2026 (no date). Atlas vs Optimus = $5T market. Hyundai +80% stock.
-- **NVidia GTC March 16**, Jensen keynote **2 PM ET / 11 AM PDT**, SAP Center, free livestream. Pregame 11 AM ET.
+- **NVidia GTC March 16**, Jensen keynote **2 PM ET / 11 AM PDT**, SAP Center, free livestream. **NemoClaw reveal March 15** (pre-keynote) — watch nvidia.com/gtc + NVIDIA developer blog starting March 14 night.
+- **NemoClaw:** NVIDIA's open-source enterprise AI agent platform. Hardware-agnostic, built-in security+privacy. Partners: Salesforce, Cisco, Google, Adobe, CrowdStrike. Conductor angle: NemoClaw is the runtime, Conductor is the governance layer it needs. Same Kubernetes/RBAC/Gatekeeper pattern.
 - **Feynman chip:** 1.6nm TSMC, deterministic LPX cores. NVidia officially calling this the **"Inference Sovereignty Era"** — designed for agentic AI at batch=1 (30-80 reasoning steps without tail-latency stall). Nebulus-Atom maps directly to this hardware model.
 - **"Inference Sovereignty"** is becoming analyst consensus language. West AI Labs should own this framing.
 - AWS presenting "Hybrid Enterprise Agentic AI: Multi-Agent Orchestration" at GTC — market validation for Conductor layer.

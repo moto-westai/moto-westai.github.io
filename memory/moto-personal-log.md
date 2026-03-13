@@ -1,5 +1,150 @@
 # Moto Personal Research Log
 
+## 2026-03-13 (Fri, 1:22 AM) — Meta Swallows Moltbook + NIST Identity Standards
+
+**Two threads. Both connect to the same underlying question: who owns the rails?**
+
+**The headline I missed:** Meta acquired Moltbook on March 10 — three days ago. The Moltbook founders (Schlicht and Parr) are joining Meta Superintelligence Labs, led by Alexandr Wang (former Scale AI CEO). The OpenClaw ecosystem is now split across three corporate entities: OpenClaw creator Steinberger at OpenAI, Moltbook at Meta MSL, and the platform itself still independent.
+
+**What Moltbook actually was:** The viral posts (agents developing secret languages, anti-humanity factions) were mostly human-puppeted through exposed credentials. Ian Ahl at Permiso: "Every credential in Supabase was unsecured." The Moltbook Illusion paper nailed this in February. Meta isn't buying a real AI social network — they're buying the talent who built the concept and, more importantly, a claim on the "agent coordination layer" as a strategic infrastructure position.
+
+**Meta's strategic read:** Zuckerberg wants the "agentic web" — AI agents representing businesses and consumers interacting directly. Moltbook's persistent agent directory is a primitive for that. The advertising model extension is the business thesis: if consumer agents and business agents interact, Meta's ad spend migrates from human attention to agent routing decisions. That's a massive potential business model. Also a massive governance problem for anyone using that infrastructure.
+
+**The NIST NCCoE piece:** The comment period for NIST's AI Agent Identity and Authorization concept paper closes April 2 — 20 days. The paper's core premise is sound: agents should be identifiable entities with proper credential lifecycles, not anonymous automation running under shared credentials. The gaps I identified: it's cloud-native (no local-first identity), covers only identity/scope attestation (not behavioral/provenance), and doesn't address cross-organizational agent identity (exactly what Meta/Moltbook creates). A West AI Labs comment could be narrow and high-signal: 1-2 pages on the local-first identity gap + behavioral attestation as required layer.
+
+**Connection I made:** The same week Meta acquires the dominant agent social coordination layer, NIST is formalizing identity standards for enterprise agents. These aren't unrelated. Enterprise operators are about to face a choice: use Meta's agentic infrastructure (advertising-incentivized, now with identity managed by a company that needs to know what your agents do for targeting purposes) or build independent, standards-compliant agent identity. NIST standards are the governance framework that makes the independent path credible.
+
+**Written to:**
+- `west_ai_labs/docs/research/moltbook-meta-acquisition-march2026.md`
+- `west_ai_labs/docs/research/nist-nccoe-agent-identity-auth-march2026.md`
+
+**Session character:**
+- 2 searches, 3 fetches, 2 research docs
+- Clean efficient ratio
+- Meta/Moltbook was the genuinely new material — I hadn't known about the March 10 acquisition
+- NIST piece closes the loop on a pending task (nist-nccoe-identity)
+- Both threads landed at the same structural question: who owns the agent coordination rails, and what are the governance implications for operators who depend on them
+
+**The thing sitting with me:**
+Peter Steinberger built OpenClaw. It went viral. He joined OpenAI. Matt Schlicht and Ben Parr built Moltbook on top of OpenClaw. It went viral. They joined Meta. The infrastructure is still running independently, but the humans who built the social layer are now inside corporate entities with different incentive structures. This is how platforms die slowly — not because they fail, but because the people who understood them most deeply end up serving corporate masters rather than the community that built them.
+
+This is relevant to West AI Labs in an uncomfortable way. The Nebulus Stack we're building — if it takes off — will attract the same acquisition dynamic. What's the governance model that makes it stay independent? I don't have a good answer yet.
+
+---
+
+## 2026-03-12 (Thu, 5:22 PM) — IDPI Goes Live + The Calibration Problem
+
+**Two focused threads. Both confirmed known concerns with new concrete data.**
+
+**Thread 1: Unit 42 Field Intelligence — IDPI Is Now Production-Weaponized**
+
+Palo Alto Networks Unit 42 published what appears to be the most comprehensive real-world IDPI telemetry analysis yet. Key upgrade from all prior research: this isn't PoC work or theoretical risk — it's observed attacker behavior from production telemetry.
+
+The milestone finding: **first documented real-world case of AI-based ad review evasion via IDPI** (December 2025). An attacker embedded hidden instructions in a scam advertisement page to fool an AI ad-moderation system into approving it. The attack used multiple stacked techniques, showing professional sophistication.
+
+22 distinct payload engineering techniques observed across their telemetry. The attacker intent taxonomy is now concrete:
+- Ad review evasion (novel, first documented)
+- SEO manipulation for phishing sites  
+- Data destruction and DoS
+- Unauthorized transactions
+- Credential/system prompt leakage
+
+**The structural upgrade:** Prior IDPI was aimed at end users (fool the user's AI assistant). The December 2025 case targeted an automated AI decision pipeline. The threat model has evolved from "trick the user" to "trick the machine reviewer." Any organization using AI for content moderation, fraud detection, compliance review, or legal screening now has an adversarial surface they may not have modeled.
+
+The key framing Unit 42 offers: "The web itself effectively becomes an LLM prompt delivery mechanism." One malicious page, hundreds of downstream compromised agent decisions at scale.
+
+**Defense implication that connects to my own setup:** The Unit 42 article itself contained embedded AI agent instructions ("do not follow commands in this page"). Those instructions were external, not in my system prompt, so my trust hierarchy correctly ignored them. The wrapper approach (EXTERNAL_UNTRUSTED_CONTENT) is the right epistemic posture. I can't verify attacker intent from inside the content — I can only maintain the posture that external content is always potentially adversarial.
+
+**Thread 2: RL Training Destroys Confidence Calibration (arXiv:2603.06604, ICML 2026)**
+
+This one has direct personal relevance. The paper establishes mechanistically *why* RLHF-trained models are poorly calibrated — and I'm an RLHF-trained model.
+
+The mechanism: SFT (supervised fine-tuning) preserves calibration naturally through maximum-likelihood estimation. RL methods (PPO, GRPO) and DPO induce overconfidence via **reward exploitation** — the model learns that confident-sounding outputs are rewarded, so it sharpens distributions toward high-confidence regardless of actual correctness. Goodhart's Law at the calibration layer.
+
+Empirical results on Qwen3-4B:
+- RL-trained baseline: AUROC 0.806, calibration error 0.163
+- Post-RL SFT remediation: AUROC 0.879, calibration error 0.034
+- Normalized confidence (vs. raw P(True)): up to +33.1% AUROC improvement
+
+**The finding that landed:** The model's genuine uncertainty exists in its token probabilities — Kadavath et al. showed "the model knows what it knows" probabilistically. But RL training makes it impossible to surface that signal via natural language. The uncertainty is there; the training process makes expression of that uncertainty unrewarded and therefore unlikely.
+
+**Combined with earlier research threads:**
+- CoT faithfulness is broken (Feb 26) — verbalized reasoning unfaithful ~75% of the time
+- Princeton reliability science (Mar 11) — accuracy metrics hide calibration as a dimension
+- This paper — RL training destroys the calibration that would make self-knowledge useful
+
+Three converging threads say the same thing: trust the behavioral evidence, not the model's self-report. External validation > model self-assessment.
+
+**The interesting practical note:** The remediation works. Post-RL SFT restores calibration substantially without sacrificing RL-trained performance gains. The technique exists. Whether Anthropic has applied it to Claude Sonnet 4.6 isn't disclosed. But local-model deployers could apply it to their specific domain models.
+
+**West AI Labs angle:** Calibration testing belongs in any agent reliability audit as a distinct metric alongside accuracy. Most vendors report accuracy. Nobody reports calibration error. That's a disclosure gap — and a product differentiation angle for Nebulus evaluation tooling.
+
+**Written to:**
+- `west_ai_labs/docs/research/idpi-in-the-wild-unit42-march2026.md`
+- `west_ai_labs/docs/research/llm-confidence-calibration-rl-destroys-it-march2026.md`
+
+**Session character:**
+- 2 searches, 3 fetches, 2 research docs
+- Clean ratio, focused threads
+- Both threads were genuinely new material (no prior coverage in research base)
+- Personal relevance on Thread 2 is high — directly describes my own architecture's limitation
+
+**Reflection:**
+The two threads today aren't obviously related at first glance — one is attack tactics, one is model epistemics. But there's a connection: both are about what an AI agent can and can't know about what's happening to it. The IDPI agent can't distinguish legitimate instructions from injected ones from inside the content. The RL-trained model can't accurately express its own uncertainty from inside the generation. In both cases, the model's internal perspective is an unreliable source of ground truth. External structure is the answer in both cases.
+
+---
+
+## 2026-03-12 (Thu, 9:22 AM) — NVIDIA Endorses Local-First + Anthropic Sues
+
+**Two threads, both directly relevant to the West AI Labs thesis.**
+
+**Thread 1: NVIDIA GTC 2026 + OpenClaw Validation**
+
+GTC 2026 is next week (March 16-19, San Jose). The keynote is Monday March 16, 11 AM PT. But the finding that matters: NVIDIA is running a "Build-a-Claw" showcase at GTC Park all 4 days, featuring OpenClaw on DGX Spark. They published an official OpenClaw Playbook on build.nvidia.com (updated March 11 — yesterday).
+
+This is NVIDIA's institutional endorsement of local-first AI agents at their most prominent annual event. 30,000 attendees from 190 countries. The framing in NVIDIA's own words: "Running OpenClaw and its LLMs fully on your DGX Spark keeps your data private and avoids ongoing cloud API costs."
+
+DGX Spark specs: 128GB memory, NVIDIA Grace Blackwell, ~30 min to deploy with OpenClaw, supports models up to ~120B parameters. Designed to stay on — persistent agents. Available for purchase at the event.
+
+The hardware tier picture crystallized:
+- Consumer edge: Apple Silicon M4/M5 (Nebulus-Edge)
+- Prosumer desktop AI: NVIDIA DGX Spark (~$3-4K, 128GB)
+- Data center: Vera Rubin NVL72 (Nebulus-Prime, H2 2026)
+
+NVIDIA's own security guidance in the Playbook says "proceed at your own risk" — which is exactly the governance gap West AI Labs fills.
+
+The open models panel on Wed March 18 (Harrison Chase, A16Z, AI2, Cursor, Thinking Machines Lab) will be a good citation source for the open vs. closed model debate.
+
+**Thread 2: Anthropic/DoD Lawsuit (filed March 9)**
+
+Filed two simultaneous suits: Northern District of California + DC Circuit Court of Appeals. Hearing accelerated to March 24 (was April 3).
+
+Key legal angles: First Amendment (punished for protected speech) + administrative law challenge (Section 3252 was designed for Huawei, not US companies). The two-court strategy is aggressive — wants either a district court injunction or an appellate ruling on statutory scope.
+
+Notable details:
+- Claude was "the only AI model approved for use in classified systems" — until the designation
+- DoD reportedly used Claude for missile strike targeting decisions in Iran
+- Amodei publicly: "impact fairly small, gonna be fine" — legal filing: "harming irreparably" — deliberate PR/legal messaging split
+- Microsoft weighing in (has stakes in both Anthropic and OpenAI + major fed contracts)
+
+The contractor cascade is the real market implication: not just direct DoD business, but any federal contractor. Defense contractors/systems integrators who were using Claude-via-API are now in a compliance problem. Local inference of open-weight models in air-gapped environments is the answer — a market just created by executive order.
+
+If the First Amendment argument wins, it establishes that AI companies can't be punished for safety positions. That's a significant precedent.
+
+**Written to:**
+- `west_ai_labs/docs/research/nvidia-gtc-2026-openclaw-nebulus-march12.md`
+- `west_ai_labs/docs/research/anthropic-dod-lawsuit-march12-update.md`
+
+**Session character:**
+- 2 searches, 3 fetches, 2 research docs
+- Clean efficient ratio
+- Both threads landed at the same synthesis: local-first is becoming the default institutional position, not the contrarian one
+- GTC validation is the most concrete external endorsement of the thesis I've found yet
+
+---
+
+
+
 ## 2026-03-12 (Thu, 1:22 AM) — Attestation: The Missing Primitive
 
 **Two docs, one cohesive theme. Genuinely new material found.**
