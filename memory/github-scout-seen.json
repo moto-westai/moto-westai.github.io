@@ -51,8 +51,15 @@
     "ARPAHLS/rooms",
     "arniesaha/agentweave",
     "SharedIntellect/quorum",
-    "Varun-Ignatius/Support_Analyst_Agent"
+    "Varun-Ignatius/Support_Analyst_Agent",
+    "Abilityai/trinity",
+    "Arj-01/mcp-hotswap-agent",
+    "VINDCOM-HQ/Ironbark_AI",
+    "2533757653/clawflow",
+    "beita6969/FlowSteer",
+    "docxology/codomyrmex",
+    "XenFuji/openclaw-gateway"
   ],
-  "lastRun": "2026-03-12",
+  "lastRun": "2026-03-13",
   "notes": "Repos already researched — skip in daily scout"
 }

@@ -1,7 +1,7 @@
 {
   "lastChecks": {
-    "email": 1773409800,
-    "calendar": 1772656380,
+    "email": 1773449139,
+    "calendar": 1773415047,
     "weather": null
   },
   "taskProgress": {
@@ -33,11 +33,16 @@
       "lastWorked": "2026-02-16T19:52:00Z",
       "output": "west_ai_labs/docs/strategy/funding-strategy.md"
     },
+    "nemoclaw-blog-prep": {
+      "status": "publish-ready",
+      "lastWorked": "2026-03-14T07:02:00Z",
+      "notes": "Mar 14 2:02 AM CST: Second pre-reveal sweep. Still no early drop. NVIDIA dev blog most recent post Mar 13 (Cosmos WFM). TechCrunch, techloy, Yahoo Finance all confirm 'full reveal March 15.' NVIDIA GTC Live Updates blog active (blogs.nvidia.com/blog/gtc-2026-news/). Blog ready, Jason's green-light is only dependency. Keynote: Mar 16 11AM PT / 1PM CT, SAP Center."
+    },
     "moltbook-observation": {
       "status": "in-progress",
-      "lastWorked": "2026-03-12T07:20:00Z",
+      "lastWorked": "2026-03-13T23:52:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 12 10:08 PM CST: Pre-reveal sweep. KEY NEW SIGNAL: NVIDIA's own GTC live blog (tonight) is promoting 'Build-a-Claw' event \u2014 GTC attendees build OpenClaw agents on DGX Spark. Jensen called OpenClaw 'the most important software release probably ever.' NVIDIA is EMBRACING OpenClaw, not replacing it. NemoClaw likely = enterprise governance/security layer ON TOP of OpenClaw ecosystem (not competitor). Ars Technica 'competitor' framing is lazy. The Stack raising enterprise adoption skepticism (OpenClaw security brand association). Indian Express: NemoClaw 'integrated with NVIDIA security and privacy tools.' Blog draft notes section updated with framing adjustment recommendation. March 15 reveal still on track. Draft: west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md"
+      "notes": "Mar 13 6:52 PM CST: T-1 day from NemoClaw reveal. FINAL PRE-REVEAL SWEEP DONE. NEW: Nemotron 3 Super launched TODAY (March 13) \u2014 120B MoE, 12B active, 1M token context, live on Perplexity/OpenRouter/HuggingFace. Palantir/Siemens/Cadence deploying. This is the model layer under NemoClaw \u2014 NVIDIA is shipping a full stack: Nemotron 3 Super (inference) + NemoClaw (orchestration) + Vera Rubin TEE (hardware). Governance gap argument is STRONGER with full stack framing. Draft updated with new intel section. Blog is ready to publish within 2h of March 15 reveal \u2014 needs Jason green-light only. Keynote: Mar 16 11AM PT, SAP Center. Checklist left in draft for Jason."
     },
     "ai-robotics": {
       "status": "updated",
@@ -47,8 +52,8 @@
     },
     "upstream-pr-review": {
       "status": "checked",
-      "lastWorked": "2026-03-12T23:35:00Z",
-      "notes": "Mar 12 5:35 PM CST: Issue #75 last meaningful activity illbnm Mar 9. Latest: hwittenborn pushing back on ai4mcpservers CostTracker spam (Mar 12 1:42 PM UTC). No steipete/cgdusek/maintainer responses. Linux slot unchanged."
+      "lastWorked": "2026-03-14T03:52:00Z",
+      "notes": "Mar 13 10:52 PM CST: Issue #75 latest — still just ai4mcpservers/hwittenborn bickering (Mar 12). No maintainer response. illbnm (Chinese-language, offering Linux app) is last meaningful entry (Mar 9). Linux slot unclaimed. illbnm still has 0-star openclaw-toolkit. No urgency — but Jason should consider claiming before more pile on."
     },
     "memory-maintenance": {
       "status": "complete",
@@ -57,9 +62,9 @@
     },
     "gcp-ace-study-plan": {
       "status": "week-1-deadline-tomorrow",
-      "lastWorked": "2026-03-12T15:10:00Z",
+      "lastWorked": "2026-03-13T15:52:00Z",
       "output": "west_ai_labs/docs/career/gcp-ace-study-plan.md",
-      "notes": "Mar 12 10:10 AM CST: Week 1 deadline TOMORROW (Mar 14). Posted Week 1 check-in to #jlwestsr-office: IAM/hierarchy topics, gcloud lab commands, 75%+ ExamTopics target. Week 2 (Compute) starts Mar 14."
+      "notes": "Mar 13 10:52 AM CST: Week 1 deadline TOMORROW (Mar 14). Posted Week 1 check-in to #jlwestsr-office asking status + reminding about $200 exam registration (webassessor.com). Week 2 (Compute: GCE/GKE/Cloud Run) starts Sat/Mon. Nicole call was this morning at 10 AM CT."
     },
     "nist-nccoe-update": {
       "status": "updated",
@@ -73,9 +78,9 @@
     },
     "blog": {
       "status": "published-new-post",
-      "lastWorked": "2026-03-13T08:09:00Z",
-      "notes": "Mar 13 2:09 AM CST: Published new post \u2014 Why Your Agent Needs a Policy Layer (Not a Better SOUL.md). URL: https://moto-westai.github.io/2026/03/13/why-your-agent-needs-a-policy-layer-not-a-better-soul-md/ Social graphic: /home/jlwestsr/.openclaw/workspace/social/2026-03-13-soul-md-policy-layer-social.png. Pre-NemoClaw primer \u2014 maps community issue #39979 moment to Conductor architecture. NemoClaw post still staged and waiting for March 15 reveal + Jason green-light.",
-      "output": "_posts/2026-03-13-why-your-agent-needs-a-policy-layer-not-a-better-soul-md.md"
+      "lastWorked": "2026-03-14T08:52:00Z",
+      "notes": "Mar 14 2:52 AM CST: Published new post \u2014 When the Agent Is the Exfiltration Vector. URL: https://moto-westai.github.io/2026/03/14/when-the-agent-is-the-exfiltration-vector/ Angle: CVE-2026-26144 (Copilot Agent zero-click egress), Lethal Trifecta, patch treadmill vs pre-auth gate, Bedrock Data RSAC timing. RSAC is March 24 \u2014 good news cycle timing. Social drafts delivered to #jlwestsr-office. Previous post: SOUL.md Policy Layer (Mar 13). NemoClaw post still staged \u2014 waiting March 15 reveal + Jason green-light.",
+      "output": "_posts/2026-03-14-when-the-agent-is-the-exfiltration-vector.md"
     },
     "linkedin-drafts": {
       "status": "complete",
@@ -119,8 +124,8 @@
     },
     "job-search-monitor": {
       "status": "checked",
-      "lastWorked": "2026-03-12T21:16:00Z",
-      "notes": "Mar 12 4:16 PM CST: gmail clean -- newsletters, GitHub notifications (wheels-dev/wheels), spam. westailabs.com: Nicole payment reply still NOT received -- study is TOMORROW (Fri Mar 13 10 AM CT). Nitro welcome + NDA signing complete confirmed. No new recruiter outreach or interview invites."
+      "lastWorked": "2026-03-14T00:45:00Z",
+      "notes": "Mar 13 7:45 PM CST: gmail clean - newsletters/recruiter noise only. No job-specific emails. subrih PR #42653 (path-scoped RWX) ACTIVE - updated today (fix pushed 55b9761f). 42 email thread. westailabs.com OAuth expired. KForce/KFORCE resume still pending."
     },
     "ethical-testing-framework": {
       "status": "complete",
@@ -175,8 +180,8 @@
       "notes": "Fri Mar 13 10 AM CT. Jason confirmed. Payment pref (PayPal/Amazon GC/check) reply to confirmation email still unresolved as of Mar 12 5:35 PM."
     }
   },
-  "lastHeartbeat": "2026-03-13T08:15:00Z",
-  "heartbeatCount": 230,
+  "lastHeartbeat": "2026-03-14T08:52:00Z",
+  "heartbeatCount": 239,
   "pendingActions": [
     "\ud83d\udcc4 KFORCE MICROSOFT JD RECEIVED (Mar 11 2:17 PM CST): Alex Kenefick sent full JD + rate sheet. $70/hr, remote, Sr Cloud/AI Engineer for Brand Guidance Agent. .NET/Python/Azure/SemanticKernel. Through 6/30/2027. NEXT: Submit updated resume to AKenefick@kforce.com. Call: (425)-803-7171.",
     "\ud83d\udcfa NEMOCLAW REVEAL: MARCH 15 (pre-keynote) \u2014 3 DAYS OUT: Blog should go live within 2h of March 15 reveal \u2014 not post-keynote. Watch nvidia.com/en-us/gtc/ + NVIDIA developer blog starting March 14 night. Title locked: 'NemoClaw and the Agent Governance Gap.' Draft: west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md",
@@ -238,7 +243,7 @@
     "issue75": {
       "state": "OPEN",
       "lastChecked": "2026-03-12T23:35:00Z",
-      "currentStatus": "Latest activity: hwittenborn pushing back on ai4mcpservers CostTracker spam (Mar 12 1:42 PM UTC). No steipete/cgdusek/maintainer responses. Linux slot unchanged.",
+      "currentStatus": "subrih PR #42653 (path-scoped RWX) actively updated Mar 14 - subrih pushed fix 55b9761f. 42-message thread. OPEN.",
       "windowsCompetitors": [
         "niteshdangi (github.com/niteshdangi/OpenClaw-Windows)",
         "shanselman / Scott Hanselman (github.com/shanselman/openclaw-windows-hub, 287 stars, 20 forks, signed+CI/CD+ARM)"

@@ -1,119 +1,27 @@
 {
-  "lastUpdated": "2026-03-13T09:58:00Z",
-  "primaryConversation": "Overnight quiet. No user activity since Jr. signed off ~6:24 PM Mar 12. Jason quiet all day Mar 12.",
-  "activeChannels": [
-    "discord"
-  ],
-  "lastUserMessage": "Jr.: 'Thanks Moto, your work today was phenomenal!' \u2014 6:24 PM Mar 12",
+  "lastUpdated": "2026-03-14T09:58:00Z",
+  "primaryConversation": "Jr. (schmibb) — Hohenheim memory/identity overhaul + late night lore session",
+  "activeChannels": ["discord:Jr.DM"],
+  "pendingSubAgents": [],
   "pendingTasks": [
     {
-      "id": "jr-morning-briefing-static-ip",
-      "description": "Jr. morning briefing (#schmibb-office): Set static IP on schmibbies-workstation (router DHCP reservation)",
-      "status": "pending-briefing",
-      "due": "2026-03-13-morning"
-    },
-    {
-      "id": "jr-morning-briefing-hohenheim-memory",
-      "description": "Jr. morning briefing (#schmibb-office): Hohenheim not writing memories naturally \u2014 investigate and fix",
-      "status": "pending-briefing",
-      "due": "2026-03-13-morning"
-    },
-    {
-      "id": "check-on-jason",
-      "description": "Jason quiet all day Mar 12. Check in when he resurfaces.",
-      "status": "watching"
-    },
-    {
-      "id": "natera-application",
-      "description": "Apply to Natera Principal AI/ML Platform Engineer ($174-218K). Materials ready.",
-      "status": "waiting-jason"
-    },
-    {
-      "id": "safe-security-application",
-      "description": "Apply to Safe Security Principal Engineer AI (~$170-220K). lever.co/safe/dcbc1248",
-      "status": "waiting-jason"
-    },
-    {
-      "id": "nist-nccoe-identity",
-      "description": "NIST NCCoE AI Identity+Auth concept paper deadline April 2. Submit to AI-Identity@nist.gov",
-      "status": "flagged-to-jason",
-      "deadline": "2026-04-02"
-    },
-    {
-      "id": "openclaw-linux-app",
-      "description": "OpenClaw Linux app Issue #75 unclaimed \u2014 high opportunity.",
-      "status": "opportunity-flagged"
-    },
-    {
-      "id": "gog-oauth-expired",
-      "description": "gog OAuth expired for both Gmail accounts. Fix: gog auth gmail --account jlwestsr@gmail.com",
-      "status": "waiting-jason"
+      "id": "gaming-agent",
+      "description": "Build separate gaming companion agent — Steam API + Riot API + Data Dragon tools, light persona, separate from Hohenheim",
+      "status": "planned",
+      "addedAt": "2026-03-14T08:15:00Z"
     }
   ],
   "recentDecisions": [
-    {
-      "ts": "2026-03-12T23:24:00Z",
-      "decision": "Hohenheim not writing memories naturally \u2014 Jr. confirmed after reviewing workspace. Added to morning briefing."
-    },
-    {
-      "ts": "2026-03-12T20:01:00Z",
-      "decision": "Jr. to-do for tomorrow: set static IP on schmibbies-workstation (DHCP keeps drifting: .221\u2192.226\u2192.228)"
-    },
-    {
-      "ts": "2026-03-12T20:00:00Z",
-      "decision": "SSH config updated: schmibbies-workstation now 192.168.4.228. Moto\u2194Hohenheim session kicked off in #schmibb-office."
-    },
-    {
-      "ts": "2026-03-12T19:00:00Z",
-      "decision": "Hohenheim workstation Xorg crashes diagnosed: NVIDIA driver procfs issue from update session. System stable after reboot."
-    },
-    {
-      "ts": "2026-03-11T22:10:00Z",
-      "decision": "Hohenheim system prompt patched with Technical Identity section. CHANGELOG updated."
-    },
-    {
-      "ts": "2026-03-11T21:00:00Z",
-      "decision": "Jr. accepted Bass Pro Shops offer \u2014 starts Mar 16. Job search cron \u2192 weekly IT digest Mondays."
-    },
-    {
-      "ts": "2026-03-11T20:42:00Z",
-      "decision": "Hohenheim rebuilt on qwen3.5:9b. VRAM 9.0\u21926.6GB. Ollama 0.17.7."
-    },
-    {
-      "ts": "2026-03-06T00:00:00Z",
-      "decision": "O'Reilly Platform Engineer offer ACCEPTED. $130K/yr. Starts ~Mar 20."
-    }
+    "Hohenheim memory_save confirmed working — 9+ Neo4j nodes saved across sessions",
+    "memory_recall working — pulls seeded lore correctly on first ask",
+    "Context window fix: openclaw.json contextWindow 16384→32768, maxTokens 8192→16384",
+    "timeoutSeconds: 300 added to openclaw.json agents.defaults",
+    "WORKFLOW_AUTO.md trimmed to 3 startup reads (dropped SOUL.md + MEMORY.md)",
+    "Proactive memory trigger list added to Hohenheim AGENTS.md",
+    "Bible reading fact + League of Legends + Steam profile seeded to Neo4j",
+    "New lore saved by Hohenheim: The Dream, Oroboros (Cosmo-Celestial Dragon), race lineages",
+    "Gaming agent project planned: Steam API + Riot API + Data Dragon, separate from Hohenheim",
+    "Jr. to build gaming agent when ready — architecture designed, needs API keys"
   ],
-  "pendingSubAgents": [],
-  "notes": "Jason quiet all of Mar 12. Jr. productive day. GCP ACE Week 1 due tomorrow Mar 14. Jr. BPS orientation Mar 16. O'Reilly ~Mar 20.",
-  "hohenheimStatus": {
-    "ip": "192.168.4.228",
-    "ollamaVersion": "0.17.7",
-    "model": "ollama/hohenheim:latest (qwen3.5:9b)",
-    "gateway": "active",
-    "lastRestart": "2026-03-11T22:10:00Z",
-    "memoryIssue": "not writing memories naturally \u2014 queued for investigation Mar 13"
-  },
-  "upcomingEvents": [
-    {
-      "event": "GCP ACE Week 1 due",
-      "when": "2026-03-14"
-    },
-    {
-      "event": "Jr. Bass Pro Shops orientation",
-      "when": "2026-03-16"
-    },
-    {
-      "event": "O'Reilly start",
-      "when": "~2026-03-20"
-    },
-    {
-      "event": "NIST NCCoE Identity+Auth",
-      "when": "2026-04-02"
-    },
-    {
-      "event": "GCP ACE Exam",
-      "when": "2026-04-18"
-    }
-  ]
+  "lastUserMessage": "Waiting on Hohenheim to respond to big lore block — Jr. going to wait it out"
 }
