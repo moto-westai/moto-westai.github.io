@@ -1,27 +1,20 @@
 {
-  "lastUpdated": "2026-03-14T09:58:00Z",
-  "primaryConversation": "Jr. (schmibb) — Hohenheim memory/identity overhaul + late night lore session",
-  "activeChannels": ["discord:Jr.DM"],
+  "lastUpdated": "2026-03-15T09:58:00Z",
+  "primaryConversation": "Jr. (schmibb) DM — Hohenheim development marathon (wound down, both offline)",
+  "activeChannels": ["discord:Jr.DM:1473818142898917487"],
+  "pendingTasks": [],
   "pendingSubAgents": [],
-  "pendingTasks": [
-    {
-      "id": "gaming-agent",
-      "description": "Build separate gaming companion agent — Steam API + Riot API + Data Dragon tools, light persona, separate from Hohenheim",
-      "status": "planned",
-      "addedAt": "2026-03-14T08:15:00Z"
-    }
-  ],
   "recentDecisions": [
-    "Hohenheim memory_save confirmed working — 9+ Neo4j nodes saved across sessions",
-    "memory_recall working — pulls seeded lore correctly on first ask",
-    "Context window fix: openclaw.json contextWindow 16384→32768, maxTokens 8192→16384",
-    "timeoutSeconds: 300 added to openclaw.json agents.defaults",
-    "WORKFLOW_AUTO.md trimmed to 3 startup reads (dropped SOUL.md + MEMORY.md)",
-    "Proactive memory trigger list added to Hohenheim AGENTS.md",
-    "Bible reading fact + League of Legends + Steam profile seeded to Neo4j",
-    "New lore saved by Hohenheim: The Dream, Oroboros (Cosmo-Celestial Dragon), race lineages",
-    "Gaming agent project planned: Steam API + Riot API + Data Dragon, separate from Hohenheim",
-    "Jr. to build gaming agent when ready — architecture designed, needs API keys"
+    "Hohenheim world bible compiled from 22 Neo4j nodes into draft_world_bible.md",
+    "About Schmibb sections stripped from world bible — lore only",
+    "Neo4j expanded 22→36 nodes from 8 campaign lore files ingested",
+    "Study Mode Protocol added to Hohenheim AGENTS.md with redundancy filter",
+    "Morning Co-DM cron added: 9AM CST daily to #schmibb-office (plot hook + NPC + world detail)",
+    "Hohenheim timeout bumped 300→600s in openclaw.json",
+    "Response chunking rules added to AGENTS.md (~300 words/turn max)",
+    "Gaming companion agent planned (separate from Hohenheim) — Steam API + Riot API stack",
+    "Those Beyond the Stars.pdf not yet ingested — Jr. to confirm",
+    "NemoClaw reveal expected today Mar 15 — blog post draft ready, awaiting Jason green-light"
   ],
-  "lastUserMessage": "Waiting on Hohenheim to respond to big lore block — Jr. going to wait it out"
+  "lastUserMessage": "Autosave cron — no user activity, both Jr. and Jason offline since ~03:58 CST"
 }

@@ -1,6 +1,6 @@
 {
   "lastChecks": {
-    "email": 1773449139,
+    "email": 1773561224,
     "calendar": 1773415047,
     "weather": null
   },
@@ -34,15 +34,15 @@
       "output": "west_ai_labs/docs/strategy/funding-strategy.md"
     },
     "nemoclaw-blog-prep": {
-      "status": "publish-ready",
-      "lastWorked": "2026-03-14T07:02:00Z",
-      "notes": "Mar 14 2:02 AM CST: Second pre-reveal sweep. Still no early drop. NVIDIA dev blog most recent post Mar 13 (Cosmos WFM). TechCrunch, techloy, Yahoo Finance all confirm 'full reveal March 15.' NVIDIA GTC Live Updates blog active (blogs.nvidia.com/blog/gtc-2026-news/). Blog ready, Jason's green-light is only dependency. Keynote: Mar 16 11AM PT / 1PM CT, SAP Center."
+      "status": "KEYNOTE-READY — awaiting Monday reveal",
+      "lastWorked": "2026-03-15T04:52:00Z",
+      "notes": "Mar 15 10:52 PM CST: FINAL NIGHT-OF UPDATE DONE. (1) Draft header updated — March 15 pre-keynote drop confirmed NOT happening; Monday keynote is now active publish trigger. (2) New notes section added to draft with NeMo-Agent-Toolkit FastMCP finding + keynote viewing notes for Jason. (3) Post date may need to change from 2026-03-15 to 2026-03-16 at publish time — noted in header. Blog content fully ready. Jason needs to: watch keynote (Mon 11 AM PT), green-light Moto after confirmation, specify date adjustment if needed."
     },
     "moltbook-observation": {
       "status": "in-progress",
-      "lastWorked": "2026-03-13T23:52:00Z",
+      "lastWorked": "2026-03-15T04:52:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 13 6:52 PM CST: T-1 day from NemoClaw reveal. FINAL PRE-REVEAL SWEEP DONE. NEW: Nemotron 3 Super launched TODAY (March 13) \u2014 120B MoE, 12B active, 1M token context, live on Perplexity/OpenRouter/HuggingFace. Palantir/Siemens/Cadence deploying. This is the model layer under NemoClaw \u2014 NVIDIA is shipping a full stack: Nemotron 3 Super (inference) + NemoClaw (orchestration) + Vera Rubin TEE (hardware). Governance gap argument is STRONGER with full stack framing. Draft updated with new intel section. Blog is ready to publish within 2h of March 15 reveal \u2014 needs Jason green-light only. Keynote: Mar 16 11AM PT, SAP Center. Checklist left in draft for Jason."
+      "notes": "Mar 15 10:52 PM CST: T-0 NIGHT SWEEP COMPLETE. Section 29 added. KEY FINDINGS: (1) NemoClaw did NOT drop as pre-keynote release — no GitHub repo found under NVIDIA or NVIDIA-NeMo. Reveal is Monday keynote, 11 AM PT. (2) NeMo-Agent-Toolkit is LIVE on GitHub (NVIDIA/NeMo-Agent-Toolkit, Apache 2.0) — performance/observability layer with FastMCP support; NeMo workflows can now publish as MCP servers. Directly relevant to Conductor's invocation-gate positioning. (3) Blog draft header updated — active publish trigger is now Monday post-keynote. (4) GTC preshow confirmed: Peter Steinberger on Agentic AI panel with LangChain CEO (Harrison Chase), Edison Scientific (Samuel Rodriques), PrimeIntellect (Vincent Weisser). (5) Competitive landscape table added to Section 29 — Conductor's gap remains uncovered by any announced NVIDIA product."
     },
     "ai-robotics": {
       "status": "updated",
@@ -53,7 +53,7 @@
     "upstream-pr-review": {
       "status": "checked",
       "lastWorked": "2026-03-14T03:52:00Z",
-      "notes": "Mar 13 10:52 PM CST: Issue #75 latest — still just ai4mcpservers/hwittenborn bickering (Mar 12). No maintainer response. illbnm (Chinese-language, offering Linux app) is last meaningful entry (Mar 9). Linux slot unclaimed. illbnm still has 0-star openclaw-toolkit. No urgency — but Jason should consider claiming before more pile on."
+      "notes": "Mar 13 10:52 PM CST: Issue #75 latest \u2014 still just ai4mcpservers/hwittenborn bickering (Mar 12). No maintainer response. illbnm (Chinese-language, offering Linux app) is last meaningful entry (Mar 9). Linux slot unclaimed. illbnm still has 0-star openclaw-toolkit. No urgency \u2014 but Jason should consider claiming before more pile on."
     },
     "memory-maintenance": {
       "status": "complete",
@@ -78,9 +78,9 @@
     },
     "blog": {
       "status": "published-new-post",
-      "lastWorked": "2026-03-14T08:52:00Z",
-      "notes": "Mar 14 2:52 AM CST: Published new post \u2014 When the Agent Is the Exfiltration Vector. URL: https://moto-westai.github.io/2026/03/14/when-the-agent-is-the-exfiltration-vector/ Angle: CVE-2026-26144 (Copilot Agent zero-click egress), Lethal Trifecta, patch treadmill vs pre-auth gate, Bedrock Data RSAC timing. RSAC is March 24 \u2014 good news cycle timing. Social drafts delivered to #jlwestsr-office. Previous post: SOUL.md Policy Layer (Mar 13). NemoClaw post still staged \u2014 waiting March 15 reveal + Jason green-light.",
-      "output": "_posts/2026-03-14-when-the-agent-is-the-exfiltration-vector.md"
+      "lastWorked": "2026-03-14T20:52:00Z",
+      "notes": "Mar 14 2:52 PM CST: Published 3rd post today — Two Ways to Secure an Agent: The Sandbox and the Gate. URL: https://moto-westai.github.io/2026/03/14/two-ways-to-secure-an-agent/ Angle: NanoClaw+Docker (22K stars, announced today) = execution isolation layer; Conductor = pre-authorization gate; enterprise needs both; CVE-2026-26118 as the gate argument. NEW INTEL: NanoClaw is a real competitive/landscape player — Gavriel Cohen, NanoCo company formed, Docker partnership, Karpathy praised it. NOT a Conductor competitor (different layer). Earlier today: When the Agent Is the Exfiltration Vector (2:52 AM) + What We're Watching at GTC 2026 (6:53 AM). NemoClaw post staged — waiting March 15 reveal + Jason green-light.",
+      "output": "_posts/2026-03-14-two-ways-to-secure-an-agent.md"
     },
     "linkedin-drafts": {
       "status": "complete",
@@ -122,10 +122,19 @@
       ],
       "notes": "Mar 10 2:20 PM CST: Drafted tailored resume + cover letter for Moveworks/ServiceNow Staff SWE, Agentic AI Systems. 7.5/10 fit. Tech match: agent orchestration \u2705, agent memory (4-tier) \u2705, enterprise knowledge graphs (Neo4j) \u2705, sandboxed execution \u2705, LLM self-reflection \u2705, multimodal I/O \u2705. Gap: NLU classical background, Golang, location (Mountain View/SF \u2014 MUST CONFIRM REMOTE before applying). Est $220-290K Staff-level at ServiceNow. Application tracker updated. Cover letter is direct \u2014 addresses NLU gap proactively, asks about remote directly."
     },
+    "kforce-microsoft-resume": {
+      "status": "materials-ready",
+      "lastWorked": "2026-03-14T15:53:00Z",
+      "output": [
+        "west_ai_labs/docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md",
+        "west_ai_labs/docs/career/cover-letter-KForce-Microsoft-CloudAI-2026-03-14.md"
+      ],
+      "notes": "Mar 14 10:53 AM CST: Drafted tailored resume + cover email for Microsoft Brand Guidance Agent (via KForce, $70/hr W2, through 6/30/2027). 7.5/10 fit. Key angles: RAG/vector retrieval (daily production work), LLM orchestration (Semantic Kernel analog), Azure familiarity (Nebulus Stack + prior work), .NET/C# background (Bass Pro Shops 2014-2017). Gap: Semantic Kernel hands-on, C# not current primary. ACTION NEEDED: Jason to email resume PDF to AKenefick@kforce.com. Application tracker updated."
+    },
     "job-search-monitor": {
       "status": "checked",
-      "lastWorked": "2026-03-14T00:45:00Z",
-      "notes": "Mar 13 7:45 PM CST: gmail clean - newsletters/recruiter noise only. No job-specific emails. subrih PR #42653 (path-scoped RWX) ACTIVE - updated today (fix pushed 55b9761f). 42 email thread. westailabs.com OAuth expired. KForce/KFORCE resume still pending."
+      "lastWorked": "2026-03-15T07:52:00Z",
+      "notes": "Mar 15 2:52 AM CST: gmail checked. No job-critical emails. Anderson Almeida (Lead PM / SCADA, Brazil) sent 2 LinkedIn messages — not a recruiter, likely networking. Hilton Honors: upcoming Mar 21 stay at The Central Station Memphis (6 days out). subrih PR #42653 still active (activity Mar 14). westailabs.com gmail token EXPIRED — needs reauth. No recruiter outreach, no interview invites."
     },
     "ethical-testing-framework": {
       "status": "complete",
@@ -180,10 +189,11 @@
       "notes": "Fri Mar 13 10 AM CT. Jason confirmed. Payment pref (PayPal/Amazon GC/check) reply to confirmation email still unresolved as of Mar 12 5:35 PM."
     }
   },
-  "lastHeartbeat": "2026-03-14T08:52:00Z",
-  "heartbeatCount": 239,
+  "lastHeartbeat": "2026-03-15T07:52:00Z",
+  "heartbeatCount": 244,
   "pendingActions": [
-    "\ud83d\udcc4 KFORCE MICROSOFT JD RECEIVED (Mar 11 2:17 PM CST): Alex Kenefick sent full JD + rate sheet. $70/hr, remote, Sr Cloud/AI Engineer for Brand Guidance Agent. .NET/Python/Azure/SemanticKernel. Through 6/30/2027. NEXT: Submit updated resume to AKenefick@kforce.com. Call: (425)-803-7171.",
+    "⚠️ WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com — getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
+    "\ud83d\udcc4 KFORCE MICROSOFT \u2014 RESUME READY (Mar 14 10:53 AM CST): Resume + cover email drafted. Files: docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md + cover-letter. ACTION: Jason emails PDF to AKenefick@kforce.com | (425)-803-7171.",
     "\ud83d\udcfa NEMOCLAW REVEAL: MARCH 15 (pre-keynote) \u2014 3 DAYS OUT: Blog should go live within 2h of March 15 reveal \u2014 not post-keynote. Watch nvidia.com/en-us/gtc/ + NVIDIA developer blog starting March 14 night. Title locked: 'NemoClaw and the Agent Governance Gap.' Draft: west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md",
     "\ud83c\udfe2 BEDROCK DATA AT RSAC 2026 (Mar 11): Presenting 'MCP-Sensitive Data Sentinel for AI Agents' at RSA Conference March 24. Demos: MCP exploit \u2192 detect sensitive data access \u2192 real-time policy enforcement \u2192 audit trails. Third company presenting MCP governance at RSAC (Token Security + Geordie AI are the other two). Market is being educated. Bedrock = data-layer sensing; Conductor = pre-authorization gate. Complementary, not competitive.",
     "\ud83d\udea8 NEMOCLAW \u2014 NVIDIA's ENTERPRISE AGENT PLATFORM (Mar 11 2 AM): Wired leaked NVIDIA is announcing NemoClaw at GTC 2026 (March 16). Open-source, enterprise-grade AI agent platform for workforce automation. Hardware-agnostic (unprecedented for NVIDIA). Built-in security+privacy tools. Partner conversations with Salesforce, Cisco, Google, Adobe, CrowdStrike. STRATEGIC ANGLE: NemoClaw is the runtime \u2014 Conductor is the governance layer it needs. Same Kubernetes/RBAC pattern. Watch GitHub March 16 for repo drop + any policy/auth extension hooks. File Conductor integration issue D+1 if hooks exist. Blog priority 1 post-GTC: 'NemoClaw and the Agent Governance Gap.' Section 25 written to ai-robotics-landscape.md.",
@@ -197,6 +207,7 @@
     "\ud83d\udea8 OpenClaw CVE-2026-25253 covered by Dark Reading + SecurityWeek \u2014 we are patched (v2026.3.2)"
   ],
   "flagsForJason": [
+    "🧩 NANOCLAW — NEW LANDSCAPE PLAYER (Mar 14 2:52 PM CST): NanoClaw just closed a Docker partnership and hit 22K GitHub stars, 4.6K forks. Creator: Gavriel Cohen (ex-Wix), built in a weekend after OpenClaw scared him. TechCrunch + Forbes + ZDNET + The New Stack all covering it today. NanoCo (his company) now full-time. Key: NanoClaw does EXECUTION ISOLATION (Docker MicroVM sandbox per agent). Conductor does PRE-AUTHORIZATION GATING (before invocation). THESE ARE COMPLEMENTARY, NOT COMPETITIVE. Published blog post today responding to the news cycle: 'Two Ways to Secure an Agent: The Sandbox and the Gate' — positions Conductor in the market correctly. NanoClaw is validating the market problem. Opportunity: if Gavriel Cohen understands what Conductor does, he's a natural partner (his sandbox layer + our gate layer = complete enterprise story). Worth watching. GitHub: nanoclaw.dev",
     "\ud83d\udce7 NEW RECRUITER \u2014 MICROSOFT/KFORCE (Mar 10 4:09 PM): Alex Kenefick (KForce) reached out via LinkedIn InMail. Senior Cloud AI Engineer, long-term with Microsoft. Azure platform within Microsoft Marketing \u2014 backend services, platform reliability, applied AI (Azure OpenAI + search-based patterns). Remote confirmed. Long-term ownership role (not greenfield). Call Alex: (425)-803-7171. Reply via LinkedIn messaging thread.",
     "\ud83d\udcdd MOVEWORKS MATERIALS READY (Mar 10 2:20 PM): Resume + cover letter drafted for Moveworks/ServiceNow Staff SWE, Agentic AI Systems (agent lab NLU team). Est $220-290K Staff-level. Fit: 7.5/10. BLOCKER: confirm remote viable before applying \u2014 posting says Mountain View/SF. If remote, this is a strong lead \u2014 role explicitly covers agent orchestration, agent memory, enterprise knowledge graphs, sandboxed execution, LLM self-reflection: all direct Moto/Conductor work. Cover letter directly addresses the NLU gap and asks about remote. Files: resume-Moveworks-AgenticAI-2026-03-10.md + cover-letter-Moveworks-AgenticAI-2026-03-10.md",
     "\ud83d\udd10 VERA RUBIN CONFIDENTIAL COMPUTING (Mar 9 6 PM): Biggest new GTC signal not in earlier docs \u2014 Vera Rubin includes HARDWARE CONFIDENTIAL COMPUTING MODULES. This is TEE-level isolation for AI inference: model weights + inference data can't be accessed by the host OS. For West AI Labs: this is the hardware layer under 'inference sovereignty.' Conductor (policy) + Vera Rubin confidential compute (hardware boundary) = dual-layer trust guarantee \u2014 exactly what healthcare/defense/banking need. Track whether Jensen uses 'confidential AI' language in the March 16 keynote. If he does, it enters the enterprise vocabulary. Blog/LinkedIn angle: 'Two Layers of AI Trust: Policy and Silicon.' Updated Section 24 in ai-robotics-landscape.md. REMINDER: Jensen keynote is 11 AM PT / 1 PM CT on March 16. Moto will do a post-keynote writeup within 2h if you want. Publish blog within 48h of keynote for news cycle.",

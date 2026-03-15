@@ -58,8 +58,11 @@
     "2533757653/clawflow",
     "beita6969/FlowSteer",
     "docxology/codomyrmex",
-    "XenFuji/openclaw-gateway"
+    "XenFuji/openclaw-gateway",
+    "ncasfl/Pyrit-MCP",
+    "noncelogic/cortex-plane",
+    "alexjaniak/DACL"
   ],
-  "lastRun": "2026-03-13",
+  "lastRun": "2026-03-14",
   "notes": "Repos already researched — skip in daily scout"
 }
