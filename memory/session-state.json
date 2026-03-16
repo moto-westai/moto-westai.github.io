@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-15T09:58:00Z",
-  "primaryConversation": "Jr. (schmibb) DM — Hohenheim development marathon (wound down, both offline)",
+  "lastUpdated": "2026-03-16T09:58:00Z",
+  "primaryConversation": "Jr. (schmibb) DM — Hohenheim DMG study check",
   "activeChannels": ["discord:Jr.DM:1473818142898917487"],
   "pendingTasks": [],
   "pendingSubAgents": [],
@@ -13,8 +13,8 @@
     "Hohenheim timeout bumped 300→600s in openclaw.json",
     "Response chunking rules added to AGENTS.md (~300 words/turn max)",
     "Gaming companion agent planned (separate from Hohenheim) — Steam API + Riot API stack",
-    "Those Beyond the Stars.pdf not yet ingested — Jr. to confirm",
-    "NemoClaw reveal expected today Mar 15 — blog post draft ready, awaiting Jason green-light"
+    "DMG extracted to plain text (DMG-5e.txt) — Hohenheim directed to study it via read_campaign_file tool",
+    "NemoClaw reveal day (Mar 15) — blog post draft ready, awaiting Jason green-light"
   ],
-  "lastUserMessage": "Autosave cron — no user activity, both Jr. and Jason offline since ~03:58 CST"
+  "lastUserMessage": "yeah (Jr. approving ping to Hohenheim for DMG study status)"
 }
