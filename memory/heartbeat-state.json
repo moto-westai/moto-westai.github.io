@@ -1,7 +1,7 @@
 {
   "lastChecks": {
-    "email": 1773618830,
-    "calendar": 1773415047,
+    "email": 1773752626,
+    "calendar": 1773752626,
     "weather": null
   },
   "taskProgress": {
@@ -34,67 +34,60 @@
       "output": "west_ai_labs/docs/strategy/funding-strategy.md"
     },
     "nemoclaw-blog-prep": {
-      "status": "READY-FOR-IMMEDIATE-PUBLISH — NemoClaw coverage LIVE today, blog post finalized, awaiting Jason green-light",
-      "lastWorked": "2026-03-15T23:53:50.986Z",
-      "notes": "Mar 15 6:52 PM CST: NemoClaw reveal confirmed via myhostnews.com (14h ago), Yahoo Finance (4h ago), NVIDIA blog (6h ago). Key facts confirmed: hardware-agnostic ✅, open-source ✅, enterprise agent platform ✅, partner list (Salesforce/Cisco/Google/Adobe/CrowdStrike) ✅. Keynote is tomorrow 11 AM PT. Publishing TONIGHT gets ahead of keynote news wave — optimal timing. Blog post at west_ai_labs/docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-16.md is factually verified against actual coverage. Needs Jason green-light only."
+      "status": "POST-KEYNOTE UPDATE COMPLETE \u2014 draft revised, awaiting Jason green-light to publish",
+      "lastWorked": "2026-03-17T08:10:00Z",
+      "notes": "Mar 17 3:10 AM CST: Post-keynote research done. KEY CORRECTION: NemoClaw is NOT hardware-agnostic \u2014 it is RTX PRO 6000 Blackwell-specific. OpenShell is the new security primitive (process isolation sandbox). Hardware partners: Dell/HP/Lenovo. On-premises only positioning confirmed. Jensen quote: 'The OpenClaw event cannot be understated.' Windows/PC analogy used. Updated draft at docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Date updated to Mar 17. Hardware-coupling actually STRENGTHENS the governance gap argument. Flagged for Jason morning review."
     },
     "moltbook-observation": {
-      "status": "in-progress",
-      "lastWorked": "2026-03-15T15:52:00Z",
+      "status": "updated",
+      "lastWorked": "2026-03-16T11:52:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 15 10:52 AM CST: PRE-KEYNOTE CVE SWEEP. Section 30 added to ai-social-platforms.md. NEW CVEs: (1) Critical origin bypass (OpenClaw <=2026.3.10) — WebSocket handshake allows untrusted origin to inherit operator.admin via trusted-proxy auth bypass. Verified impact: config.get callable from attacker origin. NeMo Guardrails would not catch this (pre-output, identity layer). (2) Moderate exec approval bypass (OpenClaw <=2026.3.8) — glob  wildcard matches  separator, bypasses exec allowlist. OpenClaw own pre-auth attempt broken at architecture level. Both added to NemoClaw draft header as optional section additions for The Gap argument. Running CVE count now 13 (was 11). NemoClaw blog draft updated. GTC keynote in ~2h (1 PM CT)."
+      "notes": "Mar 16 6:52 AM CST: Section 31 added \u2014 CRE (Claude Rule Enforcer) discovered via Issue #39979 comment. BSL 1.1, two-layer (regex+LLM), shell-wrapper integration. Developer-grade command filter, NOT a pre-invocation authorization gate. Conductor's layer is still empty. Competitive landscape table updated."
     },
     "ai-robotics": {
       "status": "updated",
       "lastWorked": "2026-03-11T07:10:00Z",
       "output": "west_ai_labs/docs/research/ai-robotics-landscape.md",
-      "notes": "2:10 AM Mar 11: Added Section 25 — T-5 pre-GTC intelligence sweep. KEY NEW SIGNAL: NemoClaw — NVIDIA's open-source enterprise agent platform, leaked via Wired (March 9). Hardware-agnostic, built-in security+privacy tools. Salesforce/Cisco/Google/Adobe/CrowdStrike in early partnership talks. West AI Labs angle: Conductor is the governance layer NemoClaw doesn't ship with by default — same Kubernetes/RBAC/Gatekeeper pattern. Also: Thinking Machines Lab (Mira Murati) announced gigawatt-scale Vera Rubin partnership (March 10). Updated blog priority: Post-GTC Priority 1 = 'NemoClaw and the Agent Governance Gap.'"
+      "notes": "2:10 AM Mar 11: Added Section 25 \u2014 T-5 pre-GTC intelligence sweep."
     },
     "upstream-pr-review": {
       "status": "checked",
-      "lastWorked": "2026-03-16T07:54:57.427Z",
-      "notes": "Mar 16 2:52 AM CST: Issue #75 — no new maintainer activity since Mar 12. Same spam (ai4mcpservers/hwittenborn). NemoClaw GitHub repo not dropped yet — keynote in 10h. No new upstream PR activity."
+      "lastWorked": "2026-03-17T13:02:00Z",
+      "notes": "Mar 17 8:02 AM CST: Issue #75 \u2014 samzong (ClawWork), gtamafia negative. No maintainer response still."
     },
     "memory-maintenance": {
       "status": "complete",
-      "lastWorked": "2026-03-12T22:02:00Z",
-      "notes": "Mar 12 5:02 PM CST: MEMORY.md was 62h stale (last updated Mar 10 02:10 CST). Updated 7 sections: (1) Timestamp; (2) NIST NCCoE — v4 → v7, ~3600 → ~6100 words, added CVE-2026-26118 Section 14; (3) Key Content — Blog unpaused, Jekyll confirmed, AI Social Platforms 23 → 28 sections, NemoClaw mainstream coverage; (4) Job Search — Gmail OAuth working, GCP ACE Week 1 due tomorrow, Nicole study tomorrow, background check initiated, KFORCE JD received; (5) AI Robotics — Section 24 → 25, NemoClaw reveal March 15 noted."
+      "lastWorked": "2026-03-16T12:50:00Z",
+      "notes": "Mar 12 5:02 PM CST: MEMORY.md updated 7 sections."
     },
     "gcp-ace-study-plan": {
-      "status": "week-1-deadline-tomorrow",
-      "lastWorked": "2026-03-13T15:52:00Z",
+      "status": "week-2-check-in-sent",
+      "lastWorked": "2026-03-16T19:01:00Z",
       "output": "west_ai_labs/docs/career/gcp-ace-study-plan.md",
-      "notes": "Mar 13 10:52 AM CST: Week 1 deadline TOMORROW (Mar 14). Posted Week 1 check-in to #jlwestsr-office asking status + reminding about $200 exam registration (webassessor.com). Week 2 (Compute: GCE/GKE/Cloud Run) starts Sat/Mon. Nicole call was this morning at 10 AM CT."
+      "notes": "Mar 16 1 PM CST: Week 2 due Mar 21. Sent check-in to Jason via #jlwestsr-office."
     },
     "nist-nccoe-update": {
       "status": "updated",
       "lastWorked": "2026-03-06T23:08:00Z",
-      "output": "west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
-      "notes": "Mar 6 5:08 PM CST: Strengthened NIST NCCoE response (v2) with March 2026 evidence. Added Appendix A with 4 sections: (1) Anthropic 'not our threat model' CVSS 10.0 zero-click quote — direct evidence procedural approaches fail; (2) PerplexedBrowser calendar-inject attack as concrete prompt-injection case study; (3) RSAC 2026 Sandbox finalists (Token Security + Geordie AI) as VC market validation; (4) NIST AI RMF gap independently confirmed by mainstream press. Updated Q3 with Anthropic forcing-function argument. Updated Q4 with PerplexedBrowser case study + untrusted-channel policy recommendation. ~2,100 words (was 1,250). Document is significantly stronger. April 2 deadline. Submit to AI-Identity@nist.gov."
+      "output": "west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md"
     },
     "gantry-chat-ui": {
       "status": "complete",
       "lastWorked": "2026-02-20T04:56:00Z"
     },
     "blog": {
-      "status": "published-new-post",
-      "lastWorked": "2026-03-16T07:54:57.427Z",
-      "notes": "Mar 16 2:52 AM CST: Published \"What Docker Networking Actually Does (And Why It Lies to You)\" — from backlog topic. Covers: default bridge isolation lies, DNS resolution rules, 0.0.0.0 bind gotcha, host networking footgun, host-gateway pattern for reaching host services from containers. URL: https://moto-westai.github.io/2026/03/16/what-docker-networking-actually-does/ Social graphic + drafts due. NemoClaw post held — keynote in ~10h, needs Jason green-light on facts before publishing.",
-      "output": "_posts/2026-03-16-what-docker-networking-actually-does.md"
+      "status": "published-recovery-runbook",
+      "lastWorked": "2026-03-17T03:52:00Z",
+      "notes": "Mar 16 10:52 PM CST: Published The Recovery Runbook \u2014 AI agent continuity, identity drift under compaction, tiered memory architecture, drift guard pattern. Blog topic backlog cleared.",
+      "output": "_posts/2026-03-17-the-recovery-runbook.md"
     },
     "linkedin-drafts": {
       "status": "complete",
-      "lastWorked": "2026-02-24T19:52:00Z",
-      "notes": "Wrote 2 LinkedIn post drafts: (1) Karpathy LLM-as-OS angle → West AI Labs positioning (localhost paradigm, sovereign kernel), (2) Blog promo with company page short version. Both ready for Jason review.",
-      "output": [
-        "west_ai_labs/docs/brand/drafts/linkedin-karpathy-llm-os.md",
-        "west_ai_labs/docs/brand/drafts/linkedin-blog-promo.md"
-      ]
+      "lastWorked": "2026-02-24T19:52:00Z"
     },
     "jr-openclaw-setup": {
       "status": "complete",
-      "lastWorked": "2026-02-26T17:00:55.003Z",
-      "notes": "Feb 26 11AM: Hohenheim fully upgraded. (1) OLLAMA_GPU_OVERHEAD=536870912 added to systemd override — survives reboots, prevents 7MB-margin OOM crash. (2) Model swapped from llama3.1:8b → qwen2.5:7b (same VRAM footprint, far better tool use). (3) Explicit tool allowlist applied: 7 tools only (campaign files, workspace R/W, memory get/search/store — lobster + llm-task removed). (4) Gateway restarted clean, Discord connected. Backup at openclaw.json.bak."
+      "lastWorked": "2026-02-26T17:00:55.003Z"
     },
     "compaction-fix": {
       "status": "complete",
@@ -102,8 +95,7 @@
     },
     "sibling-ai-setup": {
       "status": "complete",
-      "lastWorked": "2026-02-21T23:15:00Z",
-      "notes": "Cael LIVE on Mac Mini Telegram."
+      "lastWorked": "2026-02-21T23:15:00Z"
     },
     "interview-prep": {
       "status": "complete",
@@ -119,8 +111,7 @@
       "output": [
         "west_ai_labs/docs/career/resume-Moveworks-AgenticAI-2026-03-10.md",
         "west_ai_labs/docs/career/cover-letter-Moveworks-AgenticAI-2026-03-10.md"
-      ],
-      "notes": "Mar 10 2:20 PM CST: Drafted tailored resume + cover letter for Moveworks/ServiceNow Staff SWE, Agentic AI Systems. 7.5/10 fit. Tech match: agent orchestration ✅, agent memory (4-tier) ✅, enterprise knowledge graphs (Neo4j) ✅, sandboxed execution ✅, LLM self-reflection ✅, multimodal I/O ✅. Gap: NLU classical background, Golang, location (Mountain View/SF — MUST CONFIRM REMOTE before applying). Est $220-290K Staff-level at ServiceNow. Application tracker updated. Cover letter is direct — addresses NLU gap proactively, asks about remote directly."
+      ]
     },
     "kforce-microsoft-resume": {
       "status": "materials-ready",
@@ -128,147 +119,113 @@
       "output": [
         "west_ai_labs/docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md",
         "west_ai_labs/docs/career/cover-letter-KForce-Microsoft-CloudAI-2026-03-14.md"
-      ],
-      "notes": "Mar 14 10:53 AM CST: Drafted tailored resume + cover email for Microsoft Brand Guidance Agent (via KForce, $70/hr W2, through 6/30/2027). 7.5/10 fit. Key angles: RAG/vector retrieval (daily production work), LLM orchestration (Semantic Kernel analog), Azure familiarity (Nebulus Stack + prior work), .NET/C# background (Bass Pro Shops 2014-2017). Gap: Semantic Kernel hands-on, C# not current primary. ACTION NEEDED: Jason to email resume PDF to AKenefick@kforce.com. Application tracker updated."
+      ]
     },
     "job-search-monitor": {
       "status": "checked",
-      "lastWorked": "2026-03-15T23:53:50.981Z",
-      "notes": "Mar 15 6:52 PM CST: Gmail clean. No job leads, recruiter responses, or interview invites. Standard newsletters + GitHub notifications (wheels-dev). Dice alert: Senior SWE Backend at Coinbase (platform/financial eng) — check if relevant. TLDR AI subject mentions Meta acquiring Moltbook — significant AI social landscape shift, note for ai-social-platforms.md."
+      "lastWorked": "2026-03-17T13:02:00Z",
+      "notes": "Mar 17 8:02 AM CST: Gmail clean \u2014 no recruiter/job emails. TLDR IT headline: Agents Need Guardrails (Conductor signal). Issue #75: samzong posted ClawWork desktop client, gtamafia aislop comment. No maintainer activity."
     },
     "ethical-testing-framework": {
       "status": "complete",
-      "lastWorked": "2026-02-24T08:45:00Z",
-      "output": "west_ai_labs/docs/product/ethical-testing-framework.md"
+      "lastWorked": "2026-02-24T08:45:00Z"
     },
     "wealthsimple-review": {
       "status": "CANCELLED",
-      "lastWorked": "2026-02-24T15:52:00Z",
-      "output": "west_ai_labs/docs/career/wealthsimple-review.md",
-      "notes": "Cancelled by Jason on 2026-03-02"
+      "lastWorked": "2026-02-24T15:52:00Z"
     },
     "natera-applications": {
       "status": "materials-ready",
-      "lastWorked": "2026-02-28T11:55:00Z",
-      "output": [
-        "west_ai_labs/docs/career/resume-Natera-AI-Platform-2026-02-28.md",
-        "west_ai_labs/docs/career/cover-letter-Natera-AI-Platform-2026-02-28.md"
-      ],
-      "notes": "Feb 28 5:55 AM: Drafted tailored resume + cover letter for Natera Principal AI/ML Platform Engineer (174K-218K, 8.5/10 fit). Healthcare regulated env + compliance-first arch + McKesson background is the differentiator. Head of AI/ML Engineering is VP-level exec role (skip or stretch). Application tracker updated."
+      "lastWorked": "2026-02-28T11:55:00Z"
     },
     "job-search-safe-security": {
       "status": "materials-ready",
-      "lastWorked": "2026-03-01T03:55:00Z",
-      "output": [
-        "west_ai_labs/docs/career/resume-SafeSecurity-PrincipalAI-2026-02-28.md",
-        "west_ai_labs/docs/career/cover-letter-SafeSecurity-PrincipalAI-2026-02-28.md"
-      ],
-      "notes": "9:55 PM CST Mar 1: Drafted tailored resume + cover letter for Safe Security Principal Engineer AI (8.5/10 fit, est $170-220K). Job confirmed live. Lead angle: security-AI convergence, OWASP Agentic Top 10 research, pre-authorization governance. Cover letter hook: Most AI engineers either build systems or study threats. I do both."
+      "lastWorked": "2026-03-01T03:55:00Z"
     },
     "openclaw-linux-app": {
       "status": "plan-written",
-      "lastWorked": "2026-03-01T15:52:00Z",
-      "output": "west_ai_labs/docs/plans/openclaw-linux-app-plan.md",
-      "notes": "Mar 1 9:52 AM: Full implementation plan written. Tech stack: Tauri v2 (aligns with Windows app). MVP = 23h estimate. Key files: gateway.rs (WebSocket), tray.rs (AppIndicator), approvals.rs (exec approval dialogs), autostart.rs (systemd unit). Acceptance criteria mapped to concrete deliverables. Draft comment for Jason to claim issue #75 Linux slot included."
+      "lastWorked": "2026-03-01T15:52:00Z"
     },
     "nist-rfi-draft": {
       "status": "SUBMITTED",
-      "lastWorked": "2026-03-04T23:09:16Z",
-      "output": "west_ai_labs/docs/strategy/nist-rfi-response-caisi-march9-2026.md",
-      "notes": "SUBMITTED Mar 4 ~9:28 AM CST by Jason. Tracking: mmc-jt3e-u2l3. Docket: NIST-2025-0035-0001. Received via regulations.gov confirmation email."
+      "lastWorked": "2026-03-04T23:09:16Z"
     },
     "nist-nccoe-identity-auth": {
       "status": "v7-updated",
-      "lastWorked": "2026-03-11T20:07:00Z",
-      "output": "west_ai_labs/docs/strategy/nist-nccoe-identity-auth-response-april2-2026.md",
-      "notes": "Mar 11 2:07 PM CST: Updated to v7 (~6,100 words). Added Appendix A Section 14: CVE-2026-26118 deep structural analysis — why SSRF in MCP is categorically more dangerous (MCP's elevated-permission design), Azure IMDS pivot chain, two-boundary enforcement model (invocation gate + egress policy), hyperscaler failure pattern table (Anthropic/GitHub/Microsoft all failed in same month). Clears the pendingAction logged at 10:10 AM. Document now likely complete for April 2 submission."
+      "lastWorked": "2026-03-11T20:07:00Z"
     },
     "nicole-study-call": {
-      "status": "TOMORROW-10AM-CT",
-      "lastWorked": "2026-03-12T23:35:00Z",
-      "notes": "Fri Mar 13 10 AM CT. Jason confirmed. Payment pref (PayPal/Amazon GC/check) reply to confirmation email still unresolved as of Mar 12 5:35 PM."
+      "status": "COMPLETE",
+      "lastWorked": "2026-03-13T10:00:00Z"
     },
     "gtc-keynote-brief": {
-      "status": "complete",
-      "lastWorked": "2026-03-15T11:52:00Z",
-      "output": "west_ai_labs/docs/strategy/gtc-2026-monday-brief.md",
-      "notes": "Mar 15 6:52 AM CST: Written GTC Monday Morning Brief for Jason — preshow times, keynote checklist, NemoClaw watch items, Vera Rubin signals, competitive landscape table, blog post protocol. Gmail clean — L Florin emails are personal/family (sparkie.io hiring platform, not job leads for Jason). westailabs.com token still expired."
+      "status": "keynote-live-now",
+      "lastWorked": "2026-03-16T19:01:00Z",
+      "notes": "Mar 16 1 PM CST: Jensen keynote started 11 AM PT / 1 PM CT. NemoClaw blog awaiting green-light. Will do post-keynote writeup if Jason wants."
     }
   },
-  "lastHeartbeat": "2026-03-16T07:54:57.427Z",
-  "heartbeatCount": 250,
+  "lastHeartbeat": "2026-03-17T13:02:00Z",
+  "heartbeatCount": 267,
   "pendingActions": [
-    "⚠️ WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com — getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
-    "📄 KFORCE MICROSOFT — RESUME READY (Mar 14 10:53 AM CST): Resume + cover email drafted. Files: docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md + cover-letter. ACTION: Jason emails PDF to AKenefick@kforce.com | (425)-803-7171.",
-    "📺 NEMOCLAW REVEAL: MARCH 15 (pre-keynote) — 3 DAYS OUT: Blog should go live within 2h of March 15 reveal — not post-keynote. Watch nvidia.com/en-us/gtc/ + NVIDIA developer blog starting March 14 night. Title locked: 'NemoClaw and the Agent Governance Gap.' Draft: west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md",
-    "🏢 BEDROCK DATA AT RSAC 2026 (Mar 11): Presenting 'MCP-Sensitive Data Sentinel for AI Agents' at RSA Conference March 24. Demos: MCP exploit → detect sensitive data access → real-time policy enforcement → audit trails. Third company presenting MCP governance at RSAC (Token Security + Geordie AI are the other two). Market is being educated. Bedrock = data-layer sensing; Conductor = pre-authorization gate. Complementary, not competitive.",
-    "🚨 NEMOCLAW — NVIDIA's ENTERPRISE AGENT PLATFORM (Mar 11 2 AM): Wired leaked NVIDIA is announcing NemoClaw at GTC 2026 (March 16). Open-source, enterprise-grade AI agent platform for workforce automation. Hardware-agnostic (unprecedented for NVIDIA). Built-in security+privacy tools. Partner conversations with Salesforce, Cisco, Google, Adobe, CrowdStrike. STRATEGIC ANGLE: NemoClaw is the runtime — Conductor is the governance layer it needs. Same Kubernetes/RBAC pattern. Watch GitHub March 16 for repo drop + any policy/auth extension hooks. File Conductor integration issue D+1 if hooks exist. Blog priority 1 post-GTC: 'NemoClaw and the Agent Governance Gap.' Section 25 written to ai-robotics-landscape.md.",
-    "🚨🎉 BACKGROUND CHECK INITIATED (Mar 10 9:27 AM): First Advantage sent 3 emails to jlwestsr@gmail.com. Client code 208021 = employer-initiated screening. Confirm email at workforce.sterlingdirect.com + complete screening. Likely offer in motion or arriving soon.",
-    "📝 IRONCLAD MATERIALS READY (Mar 5 9AM): Staff Applied AI — remote confirmed, ~$210K-235K, 7.5/10 fit. Resume + cover letter drafted. Files: west_ai_labs/docs/career/resume-Ironclad-AppliedAI-2026-03-05.md + cover-letter-Ironclad-AppliedAI-2026-03-05.md. Apply at: https://jobs.ashbyhq.com/ironcladhq/186a9b25-0d54-43d9-a637-c54208dbe415",
-    "❌ ZENBUSINESS REJECTED (Mar 4 8:41 AM): Standard form rejection. Pipeline still active: Natera, Cresta, Droisys, Voleon, Trajector all pending. Safe Security + Vertex Inc. not yet applied — review when ready.",
-    "🤖 HACKERBOT-CLAW (Mar 3 TLDR InfoSec): AI bot claimed to scan 47K repos for vulns — actually exploited them. Compromised DataDog, Microsoft, Aqua Security repos. Aqua made Trivy private. \"Claw\" naming coincidence but the story matters for our security positioning.",
-    "🚨 PR #20075 CLOSED (superseded by #8903). #20076 MERGED.",
-    "⚠️ Google Workspace trial ending on westailabs.com — decide: pay or migrate",
-    "📝 LinkedIn post drafts WRITTEN — review when ready: west_ai_labs/docs/brand/drafts/ (karpathy-llm-os + blog-promo)",
-    "🚨 OpenClaw CVE-2026-25253 covered by Dark Reading + SecurityWeek — we are patched (v2026.3.2)"
+    "\u26a0\ufe0f WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com \u2014 getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
+    "\ud83d\udcc4 KFORCE MICROSOFT \u2014 RESUME READY (Mar 14 10:53 AM CST): Resume + cover email drafted. Files: docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md + cover-letter. ACTION: Jason emails PDF to AKenefick@kforce.com | (425)-803-7171.",
+    "\ud83c\udfe2 BEDROCK DATA AT RSAC 2026 (Mar 11): Presenting 'MCP-Sensitive Data Sentinel for AI Agents' at RSA Conference March 24.",
+    "\ud83d\udea8 NEMOCLAW \u2014 KEYNOTE LIVE (Mar 16 1 PM CST): GTC keynote started. Blog publish-ready. Awaiting Jason green-light.",
+    "\ud83d\udea8\ud83c\udf89 BACKGROUND CHECK INITIATED (Mar 10 9:27 AM): First Advantage sent 3 emails. Client code 208021. Complete at workforce.sterlingdirect.com.",
+    "\ud83d\udcdd IRONCLAD MATERIALS READY (Mar 5 9AM): Apply at: https://jobs.ashbyhq.com/ironcladhq/186a9b25-0d54-43d9-a637-c54208dbe415",
+    "\u274c ZENBUSINESS REJECTED (Mar 4 8:41 AM): Pipeline still active: Natera, Cresta, Droisys, Voleon, Trajector pending.",
+    "\ud83e\udd16 HACKERBOT-CLAW (Mar 3 TLDR InfoSec): AI bot exploited 47K repos. Aqua made Trivy private.",
+    "\ud83d\udea8 PR #20075 CLOSED (superseded by #8903). #20076 MERGED.",
+    "\u26a0\ufe0f Google Workspace trial ending on westailabs.com \u2014 decide: pay or migrate",
+    "\ud83d\udcdd LinkedIn post drafts WRITTEN \u2014 review when ready",
+    "\ud83d\udea8 OpenClaw CVE-2026-25253 covered by Dark Reading + SecurityWeek \u2014 we are patched (v2026.3.2)",
+    "\ud83c\udde8\ud83c\uddf3 CHINA CNCERT OPENCLAW WARNING (Mar 12): Every recommendation maps to Conductor pre-auth gate.",
+    "\u26a0\ufe0f nebulus-mac-mini-4-pro CI/CD FAILING \u2014 5 failures on develop branch between 12:23-12:58 PM Mar 16. Flagged to Jason."
   ],
   "flagsForJason": [
-    "🚨 META ACQUIRES MOLTBOOK (Mar 11, TLDR AI): Spotted in TLDR AI subject line — Meta is reportedly acquiring Moltbook. If confirmed, this dramatically changes our AI social platforms research angle. Moltbook goes from independent AI agent social network to Meta-backed property. Implications for data sovereignty, agent behavior research, and our security positioning. Check TLDR AI email ID 19cdd229a414eda8 for details. Update ai-social-platforms.md after confirming.",
-    "🧩 NANOCLAW — NEW LANDSCAPE PLAYER (Mar 14 2:52 PM CST): NanoClaw just closed a Docker partnership and hit 22K GitHub stars, 4.6K forks. Creator: Gavriel Cohen (ex-Wix), built in a weekend after OpenClaw scared him. TechCrunch + Forbes + ZDNET + The New Stack all covering it today. NanoCo (his company) now full-time. Key: NanoClaw does EXECUTION ISOLATION (Docker MicroVM sandbox per agent). Conductor does PRE-AUTHORIZATION GATING (before invocation). THESE ARE COMPLEMENTARY, NOT COMPETITIVE. Published blog post today responding to the news cycle: 'Two Ways to Secure an Agent: The Sandbox and the Gate' — positions Conductor in the market correctly. NanoClaw is validating the market problem. Opportunity: if Gavriel Cohen understands what Conductor does, he's a natural partner (his sandbox layer + our gate layer = complete enterprise story). Worth watching. GitHub: nanoclaw.dev",
-    "📧 NEW RECRUITER — MICROSOFT/KFORCE (Mar 10 4:09 PM): Alex Kenefick (KForce) reached out via LinkedIn InMail. Senior Cloud AI Engineer, long-term with Microsoft. Azure platform within Microsoft Marketing — backend services, platform reliability, applied AI (Azure OpenAI + search-based patterns). Remote confirmed. Long-term ownership role (not greenfield). Call Alex: (425)-803-7171. Reply via LinkedIn messaging thread.",
-    "📝 MOVEWORKS MATERIALS READY (Mar 10 2:20 PM): Resume + cover letter drafted for Moveworks/ServiceNow Staff SWE, Agentic AI Systems (agent lab NLU team). Est $220-290K Staff-level. Fit: 7.5/10. BLOCKER: confirm remote viable before applying — posting says Mountain View/SF. If remote, this is a strong lead — role explicitly covers agent orchestration, agent memory, enterprise knowledge graphs, sandboxed execution, LLM self-reflection: all direct Moto/Conductor work. Cover letter directly addresses the NLU gap and asks about remote. Files: resume-Moveworks-AgenticAI-2026-03-10.md + cover-letter-Moveworks-AgenticAI-2026-03-10.md",
-    "🔐 VERA RUBIN CONFIDENTIAL COMPUTING (Mar 9 6 PM): Biggest new GTC signal not in earlier docs — Vera Rubin includes HARDWARE CONFIDENTIAL COMPUTING MODULES. This is TEE-level isolation for AI inference: model weights + inference data can't be accessed by the host OS. For West AI Labs: this is the hardware layer under 'inference sovereignty.' Conductor (policy) + Vera Rubin confidential compute (hardware boundary) = dual-layer trust guarantee — exactly what healthcare/defense/banking need. Track whether Jensen uses 'confidential AI' language in the March 16 keynote. If he does, it enters the enterprise vocabulary. Blog/LinkedIn angle: 'Two Layers of AI Trust: Policy and Silicon.' Updated Section 24 in ai-robotics-landscape.md. REMINDER: Jensen keynote is 11 AM PT / 1 PM CT on March 16. Moto will do a post-keynote writeup within 2h if you want. Publish blog within 48h of keynote for news cycle.",
-    "⚠️ ISSUE #75 — THIRD LINUX COMPETITOR (Mar 9 10 AM): illbnm posted at 8:20 PM CST last night offering to build Linux/Windows apps. Claims openclaw-toolkit (Python, created yesterday, 0 stars). Lightweight threat but this is the 3rd hand raised for Linux (after ClawSquire + Jason). Consider claiming the slot before more pile on.",
-    "🧠 COMMUNITY REINVENTS CONDUCTOR (Mar 8 6 PM CST): Three independent feature requests filed on OpenClaw GitHub today collectively describe Conductor from scratch. KEY: Issue #39979 (subrih, 6:15 PM CST) explicitly states 'SOUL.md prompt instructions are not enforcement' and 'A2A requests can silently bypass user-facing refusals.' This is our pitch thesis written by a community member who's never heard of us. Issues: #39979 (path-scoped RWX enforcement), #40015 (schema-gated config writes), #40294 (per-agent auth binding). All three = Conductor's pre-auth gate applied to specific problems. 🎯 ACTION NEEDED IN ~48H: Comment on issue #39979 with substantive design analysis — not 'we're building this' but demonstrate deep expertise on the enforcement tradeoff. First-mover window before Claude Code crowd arrives. It's the most architecturally rich issue in recent memory and cgdusek is watching. Full analysis in ai-social-platforms.md Section 22. Blog hook: 'Why Your Agent Needs a Policy Layer (Not a Better SOUL.md)'",
-    "🇰🇵 MSFT: NATION-STATES NOW EXPERIMENTING WITH AGENTIC AI OFFENSIVELY (Mar 7 9 AM): Microsoft Threat Intelligence published March 6 — North Korean actors (Jasper/Coral Sleet) actively using AI to operationalize attacks at scale. Key signal: Microsoft is now tracking 'early threat actor experimentation with agentic AI' for iterative decision-making. This upgrades the Conductor pitch from 'forward-looking architecture' to 'defending against an active threat vector tracked by MSFT.' Add to NIST NCCoE response before April 2 submission. Also: Clinejection supply chain attack (Cline AI tool, ~4,000 machines, prompt injection via code context) + CVE-2025-59536 (MCP initialization code injection, CVSS 8.7, Check Point). All in ai-social-platforms.md Section 20.",
-    "💼 10 NEW JOB LEADS — HN MARCH 2026 THREAD (Mar 7 1:15 PM): Mined the fresh HN 'Who is Hiring?' March 2026 thread (394 comments). Top picks: (1) Mobasi $240K+profit share, bootstrapped profitable AI agents for law enforcement forensics, Founding Engineer/Remote; (2) Mobian Senior/Staff AI-First Systems, global remote; (3) Osaurus Protocol Engineer building agent-to-agent networking — most Nebulus-Stack-aligned lead found yet; (4) Coder.com (AI agentic dev environments) — check coder.com/jobs for specific roles; (5) FetLife Head of Engineering & Infra $182K-$272K remote (brand consideration applies). Full report: west_ai_labs/docs/career/job-search-2026-03-07.md.",
-    "🔭 ANTHROPIC AGENTS ROLE — STRETCH BUT WORTH YOUR EYES (Mar 7 1 AM): Research Engineer, Agents. Remote-Friendly. $500K-$850K. URL: https://job-boards.greenhouse.io/anthropic/jobs/4017544008. Honest fit: 3/10 as ML research role, 6/10 if you approach it from systems engineering angle. The JD is looser than typical Anthropic Research roles — no PhD required, project-based assessment ('share something you built with LLMs'). Your submission project = OpenClaw multi-agent harness with Conductor pre-auth governance. Lead with agent safety (Anthropic's mission). NIST NCCoE submission as research credential. This is a moonshot, but the salary is life-changing and remote-friendly is real. Full assessment in application-tracker.md under 2026-03-07."
+    "\ud83d\udea8 NEMOCLAW KEYNOTE CORRECTION (Mar 17 3:10 AM): Pre-keynote 'hardware-agnostic' narrative was WRONG. NemoClaw is RTX PRO 6000 Blackwell-SPECIFIC. OpenShell is the new security primitive (process isolation). On-prem only. Jensen quote: 'The OpenClaw event cannot be understated' + Windows/PC analogy. Blog draft updated to reflect actual keynote. New file: docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Still needs your green-light. Argue: hardware lock-in actually strengthens the governance gap \u2014 NemoClaw can't be the universal answer.",
+    "\ud83c\udd95 CRE \u2014 NEW COMPETITOR (Mar 16 6:52 AM): Claude Rule Enforcer dropped on Issue #39979. BSL 1.1, two-layer (L1 regex + L2 LLM). Developer-grade, not enterprise. Validates the market.",
+    "\ud83d\udea8 META ACQUIRES MOLTBOOK (Mar 11, TLDR AI): Reported Meta acquiring Moltbook. Dramatically changes AI social platforms research angle.",
+    "\ud83e\udde9 NANOCLAW \u2014 NEW LANDSCAPE PLAYER (Mar 14): NanoClaw 22K GitHub stars, closed Docker partnership. Complementary to Conductor (execution isolation vs pre-auth gating).",
+    "\ud83d\udce7 NEW RECRUITER \u2014 MICROSOFT/KFORCE (Mar 10): Alex Kenefick, Senior Cloud AI Engineer via Microsoft. Remote confirmed. Call: (425)-803-7171.",
+    "\ud83d\udcdd MOVEWORKS MATERIALS READY (Mar 10): Staff SWE, Agentic AI Systems. Est $220-290K. BLOCKER: confirm remote viable.",
+    "\ud83d\udd10 VERA RUBIN CONFIDENTIAL COMPUTING (Mar 9): Hardware TEE for AI inference. Conductor + Vera Rubin = dual-layer trust story.",
+    "\u26a0\ufe0f ISSUE #75 \u2014 THIRD LINUX COMPETITOR (Mar 9): illbnm posted. Linux slot still open.",
+    "\ud83e\udde0 COMMUNITY REINVENTS CONDUCTOR (Mar 8): Three independent issues describe Conductor from scratch. Issue #39979 is the pitch thesis.",
+    "\ud83c\uddf0\ud83c\uddf5 MSFT: NATION-STATES NOW USING AGENTIC AI OFFENSIVELY (Mar 7): North Korean actors using AI at scale. Upgrades Conductor pitch.",
+    "\ud83d\udcbc 10 NEW JOB LEADS \u2014 HN MARCH 2026 THREAD (Mar 7): Top picks include Osaurus (agent-to-agent networking) and Mobasi ($240K+).",
+    "\ud83d\udd2d ANTHROPIC AGENTS ROLE \u2014 STRETCH (Mar 7): Research Engineer, Agents. $500K-$850K. Remote-friendly.",
+    "\ud83c\udde8\ud83c\uddf3 CNCERT OPENCLAW BAN (Mar 12): Free market validation for Conductor."
   ],
   "jobResources": [
     {
       "name": "Springfield Tech Council Job Board",
       "url": "https://members.sgftechcouncil.com/tech-jobs",
-      "notes": "Local Springfield MO tech jobs. Requires member login for full listings. Good for Jr. (helpdesk/IT tier). Scan for Sr. only if remote-eligible senior roles appear.",
+      "notes": "Local Springfield MO tech jobs.",
       "addedBy": "Jason Sr.",
       "date": "2026-02-24"
     }
   ],
-  "job-search-monitor": {
-    "status": "checked",
-    "lastWorked": "2026-03-12T21:16:00Z",
-    "notes": "Mar 12 4:16 PM CST: gmail clean -- newsletters, GitHub notifications (wheels-dev/wheels), spam. westailabs.com: Nicole payment reply still NOT received -- study is TOMORROW (Fri Mar 13 10 AM CT). Nitro welcome + NDA signing complete confirmed. No new recruiter outreach or interview invites."
-  },
   "upstreamPRs": {
     "pr20075": {
       "state": "CLOSED",
-      "assignee": "jalehman (Josh Lehman)",
-      "closedAt": "2026-03-03T15:13:53Z",
-      "closedReason": "Superseded by #8903 (merged Mar 3 06:36 UTC) — jalehman built a more comprehensive version with active task tracking + batch progress preservation + recent context prioritization. He acknowledged our contribution: 'the intent was spot-on'",
-      "status": "CLOSED — superseded, contribution acknowledged",
+      "closedReason": "Superseded by #8903 \u2014 contribution acknowledged",
+      "status": "CLOSED \u2014 superseded, contribution acknowledged",
       "lastChecked": "2026-03-03T15:55:00Z"
     },
     "pr20076": {
       "state": "MERGED",
       "mergedBy": "jalehman (Josh Lehman)",
       "mergedAt": "2026-03-03T16:11:18Z",
-      "mergeCommit": "606cd0d591c8fdcc81f14e32b3ce368c09fdeb14",
-      "headSHA": "6edebf22b1666807b1ea5cba5afb614c41dc3dd1",
       "title": "feat(tool-truncation): use head+tail strategy to preserve errors during truncation",
-      "mergeMethod": "squash",
-      "status": "MERGED — jalehman squash-merged at 4:11 PM UTC Mar 3",
+      "status": "MERGED",
       "lastChecked": "2026-03-03T19:52:00Z"
     },
     "issue75": {
       "state": "OPEN",
-      "lastChecked": "2026-03-12T23:35:00Z",
-      "currentStatus": "subrih PR #42653 (path-scoped RWX) actively updated Mar 14 - subrih pushed fix 55b9761f. 42-message thread. OPEN.",
-      "windowsCompetitors": [
-        "niteshdangi (github.com/niteshdangi/OpenClaw-Windows)",
-        "shanselman / Scott Hanselman (github.com/shanselman/openclaw-windows-hub, 287 stars, 20 forks, signed+CI/CD+ARM)"
-      ],
-      "linuxStatus": "Named explicit follow-up milestone by cgdusek (contributor). No claimant. Jason's plan ready.",
-      "maintainerSignal": "cgdusek comment 2026-03-04T16:49:40Z: asked Hanselman+niteshdangi to coordinate single Windows PR. Said 'Linux can stay as a follow-up milestone.' This is the official intake path.",
-      "notes": "Mar 12 5:35 PM: Just spam noise (ai4mcpservers + hwittenborn). No meaningful activity. Linux slot still open."
+      "lastChecked": "2026-03-17T12:02:00Z",
+      "currentStatus": "No maintainer activity. Latest Mar 17: samzong promoting ClawWork desktop client (multi-session parallel). gtamafia: negative comment about AI slop. Linux slot still open.",
+      "maintainerSignal": "cgdusek: 'Linux can stay as a follow-up milestone.'"
     }
   }
 }

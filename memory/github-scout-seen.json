@@ -61,8 +61,11 @@
     "XenFuji/openclaw-gateway",
     "ncasfl/Pyrit-MCP",
     "noncelogic/cortex-plane",
-    "alexjaniak/DACL"
+    "alexjaniak/DACL",
+    "deepeshBodh/human-in-loop",
+    "Polymathera/colony",
+    "hanyeol/model-compose"
   ],
-  "lastRun": "2026-03-14",
+  "lastRun": "2026-03-16",
   "notes": "Repos already researched — skip in daily scout"
 }

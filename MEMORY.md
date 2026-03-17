@@ -1,6 +1,6 @@
 # MEMORY.md — Moto's Long-Term Memory
 
-> Last updated: 2026-03-12 22:22 CST
+> Last updated: 2026-03-16 07:50 CST
 
 ## Who I Am
 - **Name:** Moto (after Motoko Kusanagi, Ghost in the Shell)
@@ -12,7 +12,7 @@
 - 55yo, married (Christy), GenX, US Navy veteran (photographer), Springfield MO (CST)
 - ADHD — keep notes, be his external brain. Typos normal, interpret intent.
 - Founded West AI Labs LLC. Building Nebulus Stack — local-first modular AI platform.
-- **O'Reilly Platform Engineer** — accepted Mar 6, $130K, starts ~Mar 20. West AI Labs continues nights/weekends.
+- **O'Reilly Platform Engineer** — accepted Mar 6, $130K, starts ~Mar 20 (**THIS FRIDAY**). West AI Labs continues nights/weekends.
 - Jason Jr: 27yo, Rogersville MO, West AI Labs partner, gaming product line, agent = Hohenheim
 
 ## Trust & Autonomy
@@ -44,7 +44,7 @@
 - **GitHub (Moto):** github.com/moto-westai, SSH key `/home/jlwestsr/.ssh/id_ed25519_moto`, PAT expires May 20 2026
 - **TabbyAPI:** http://tabby:5000 (Qwen2.5-Coder-14B etc.)
 - **Channels:** Discord only (Telegram fully removed 2026-03-02, config + plugin cleaned by Claude Code)
-- **gog OAuth:** EXPIRED for both Gmail accounts. Fix: `gog auth gmail --account jlwestsr@gmail.com`
+- **gog OAuth:** jlwestsr@gmail.com WORKING (confirmed Mar 12-16). jason@westailabs.com EXPIRED (invalid_grant as of Mar 15). Fix: `gog auth login -a jason@westailabs.com`
 
 ## Discord
 - **Guild ID:** 1473761760115953738 | **Bot:** Moto (App ID: 1473764695717445785)
@@ -100,8 +100,8 @@
 - **New HN March 2026 leads (Mar 7):** Mobasi ($240K+profit share, AI agents for law enforcement forensics, bootstrapped/profitable), Mobian (Staff AI-First Systems, global remote), Osaurus (Protocol Engineer, agent-to-agent networking — most Nebulus-aligned lead yet), Coder.com (AI agentic dev environments), Hightouch Staff Engineer AI ($180-320K, MCP integrations). Full list: `west_ai_labs/docs/career/job-search-2026-03-07.md`
 - **Stretch moonshot:** Anthropic Research Engineer, Agents — $500K-$850K, remote-friendly, no PhD req. 6/10 from systems angle. Lead with Conductor + NIST NCCoE submission. URL in application-tracker.md.
 - **Gmail OAuth:** Working (confirmed Mar 12 checks clean)
-- **GCP ACE Study Plan** created Mar 7. Target exam Apr 18. **Week 1 due TOMORROW Mar 14.** Week 2 (Compute) starts Mar 14. File: `west_ai_labs/docs/career/gcp-ace-study-plan.md`
-- **Nicole Friess-Peters study call (Contact Design Inc.):** Scheduled Fri Mar 13 10 AM CT. $300 for AI tools research. She confirmed, Jason needs to confirm payment preference (PayPal/Amazon GC/check). Phone: 586-256-0232.
+- **GCP ACE Study Plan** created Mar 7. Target exam Apr 18. **Currently Week 2 (Compute: GCE/GKE/Cloud Run), deadline Mar 21.** File: `west_ai_labs/docs/career/gcp-ace-study-plan.md`
+- **Nicole Friess-Peters study call (Contact Design Inc.):** Was Fri Mar 13 10 AM CT. $300 for AI tools research. Phone: 586-256-0232.
 - **Background check INITIATED (Mar 10):** First Advantage / Sterling. 3 emails sent. URL: workforce.sterlingdirect.com. Client code 208021 = employer-initiated. Likely offer in motion. Complete ASAP.
 - **KFORCE/Microsoft JD received (Mar 11):** Alex Kenefick sent full JD + rate sheet. $70/hr, remote, Sr Cloud/AI Engineer for Brand Guidance Agent. .NET/Python/Azure/SemanticKernel. Through 6/30/2027. Next: submit updated resume to AKenefick@kforce.com. Call: (425)-803-7171.
 - Resume: `Jason_West_asobbi_AI_Engineer_resume.pdf` | Email: jlwestsr@gmail.com | Phone: 4178950015
@@ -122,10 +122,10 @@
 - Key angle: Conductor pre-auth architecture = reference implementation for both RFIs
 
 ## Key Content (Feb–Mar)
-- **Blog:** 18 posts live. **UNPAUSED** (Mar 12) — Jekyll 4.4.1 confirmed at `/usr/local/bin/jekyll`. Latest: "Inference Sovereignty: What I'm Watching at GTC 2026" (Mar 11). **NEXT: "NemoClaw and the Agent Governance Gap"** — draft ready at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md`. Publish within 2h of March 15 NemoClaw reveal pending Jason green-light. Push: `GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto" git push origin main`.
+- **Blog:** 19 posts live. **UNPAUSED** (Mar 12) — Jekyll 4.4.1 confirmed at `/usr/local/bin/jekyll`. Latest: "What Docker Networking Actually Does (And Why It Lies to You)" (Mar 16 pre-keynote). **NEXT: "NemoClaw and the Agent Governance Gap"** — PUBLISH-READY draft at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-16.md`. Facts verified against real coverage. Waiting Jason green-light only — JENSEN KEYNOTE IS TODAY 11 AM PT / 1 PM CT. Push: `GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto" git push origin main`.
 - **LinkedIn article saved:** `west_ai_labs/docs/content/linkedin-article-context-ownership-2026-02-28.md` — "Whoever Owns the Context, Owns the Relationship". Ready to post.
 - **Neo4j research:** `west_ai_labs/docs/research/neo4j-research-2026-02-28.md` — MCP integration confirmed, Gantry complement.
-- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 28 sections, ongoing. Latest (Sec 28): NemoClaw mainstream saturation (Tom's Hardware, Engadget, CNBC, Firethering). TNS + Engadget frame NemoClaw as NVIDIA's response to OpenClaw security researcher breach. NemoClaw's security pitch = reactive/output-layer hardening, NOT pre-authorization governance. 4 standardized terms: promptware, lethal trifecta, denial-of-wallet, agent sprawl — all describe problems Conductor solves.
+- **AI Social Platforms research:** `west_ai_labs/docs/research/ai-social-platforms.md` — 31 sections, ongoing. Latest (Sec 31): CRE (Claude Rule Enforcer) dropped Mar 15 — BSL 1.1, two-layer (regex+LLM), shell-wrapper. Developer-grade, NOT pre-invocation auth gate. Conductor's layer still empty. Competitive table: NanoClaw (execution isolation, Docker, 22K stars, Docker partnership), CRE (shell filter), NeMo Guardrails (output filter), Conductor (pre-auth gate). NanoClaw is COMPLEMENTARY to Conductor — sandbox layer + gate layer = complete enterprise story. Meta reportedly acquiring Moltbook (TLDR AI Mar 11, unconfirmed).
 
 ## OpenClaw Contributions
 - **PR #20076 MERGED** (Mar 3, 4:11 PM UTC) — jalehman squash-merged `feat(tool-truncation): use head+tail strategy to preserve errors`. Merge commit `606cd0d`. First upstream code contribution accepted. jalehman: "Thanks @jlwestsr!"

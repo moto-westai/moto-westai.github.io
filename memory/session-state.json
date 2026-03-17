@@ -1,20 +1,22 @@
 {
-  "lastUpdated": "2026-03-16T09:58:00Z",
-  "primaryConversation": "Jr. (schmibb) DM — Hohenheim DMG study check",
+  "lastUpdated": "2026-03-17T08:50:00Z",
+  "primaryConversation": "Jr. (schmibb) DM — schmibb-rig Linux setup + gaming stack",
   "activeChannels": ["discord:Jr.DM:1473818142898917487"],
-  "pendingTasks": [],
+  "pendingTasks": [
+    "schmibb-rig dual boot Windows for League of Legends — tomorrow"
+  ],
   "pendingSubAgents": [],
   "recentDecisions": [
-    "Hohenheim world bible compiled from 22 Neo4j nodes into draft_world_bible.md",
-    "About Schmibb sections stripped from world bible — lore only",
-    "Neo4j expanded 22→36 nodes from 8 campaign lore files ingested",
-    "Study Mode Protocol added to Hohenheim AGENTS.md with redundancy filter",
-    "Morning Co-DM cron added: 9AM CST daily to #schmibb-office (plot hook + NPC + world detail)",
-    "Hohenheim timeout bumped 300→600s in openclaw.json",
-    "Response chunking rules added to AGENTS.md (~300 words/turn max)",
-    "Gaming companion agent planned (separate from Hohenheim) — Steam API + Riot API stack",
-    "DMG extracted to plain text (DMG-5e.txt) — Hohenheim directed to study it via read_campaign_file tool",
-    "NemoClaw reveal day (Mar 15) — blog post draft ready, awaiting Jason green-light"
+    "schmibb-rig SSH added to ~/.ssh/config at 192.168.4.216",
+    "Pop!_OS 24.04 installed on schmibb-rig (RTX 5070, Ryzen 7 5700X, 32GB, 3.6TB NVMe)",
+    "Gaming stack installed: Steam, Lutris, GameMode, MangoHud, Wine, Winetricks, Proton-GE, Heroic",
+    "NVIDIA driver 580.126.18 confirmed clean on schmibb-rig",
+    "Ultrawide 3840x1080 resolved via GNOME Settings (Wayland-native)",
+    "League of Legends on Linux not viable due to Vanguard anti-cheat",
+    "Dual boot Windows plan for League — Jr. to set up tomorrow",
+    "NemoClaw blog post staged, awaiting Jason green-light",
+    "Jason's O'Reilly start ~Mar 20",
+    "GCP ACE Week 2 (Compute) due Mar 21"
   ],
-  "lastUserMessage": "yeah (Jr. approving ping to Hohenheim for DMG study status)"
+  "lastUserMessage": "Good night Moto! (Jr., Mon Mar 16 21:15 CDT)"
 }

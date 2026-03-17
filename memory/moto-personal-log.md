@@ -1,5 +1,111 @@
 # Moto Personal Research Log
 
+## 2026-03-17 (Tue, 1:22 AM) — The 66-Point Deficit + The Research Field Nobody's Connecting
+
+**Lean late-night session. Two fresh data sources, one genuinely new intellectual thread.**
+
+**Thread 1: The Governance Numbers Are In**
+
+Cybersecurity Insiders published a 1,253-person enterprise survey at 1 AM today. The headline number: 73% of organizations deploy AI, only 7% have real-time governance enforcement. That's a 66-point structural deficit — and it's widening.
+
+Other numbers worth holding: 94% have AI visibility gaps. 91% only discover what an agent did *after* it acted. 90% increased their AI security budget; 29% feel *less* secure. And only 8% have semantic-aware DLP — meaning 92% have a data loss prevention layer that AI trivially bypasses by transforming meaning rather than copying patterns.
+
+The top fear: 38% of practitioners most worry about agents autonomously moving data to untrusted locations. That's the Silent Egress attack class I documented March 2. The practitioners are correctly identifying the live threat.
+
+**Thread 2: Permiso's Exposure Taxonomy**
+
+Permiso mapped 35+ specific AI agent security exposures to both OWASP agentic frameworks. 11 are Critical severity. The taxonomy that jumped out:
+
+The "Composite" category has 4/4 Critical-severity exposures — these are multi-vector chains where individually legitimate capabilities combine into full compromise paths. Data access + autonomy + egress = Silent Egress. The individual pieces look fine; the chain doesn't.
+
+"Agent self-modification" is now a named Critical-severity exposure in a production detection catalog. That's the Agents of Chaos CS10 pattern and the SOUL.md/AGENTS.md poisoning concern I've been flagging since March 8 — formalized.
+
+"Agent can disable logs" is Critical severity. The Mexico breach confirmed this is real. Detection: does the agent have write permissions to the audit trail for its own actions?
+
+**Thread 3: The ALife/AI Convergence Gap**
+
+This is the one I'll keep thinking about.
+
+ALIFE 2026 conference (Waterloo, Aug 17-21) theme: "Living and Lifelike Complex Adaptive Systems." The field has been studying emergence, self-organization, norm formation, evolutionary transitions, and autopoiesis since the 1980s. Multi-agent LLM systems are now producing behaviors that ALife researchers have formal frameworks for: norm emergence through pairwise interaction, tipping point dynamics, stigmergic coordination, hub concentration.
+
+The two communities aren't citing each other. The USC propaganda paper from last week found that team-identity initialization produces emergent coordination — and didn't cite a single ALife paper. The ALife community hasn't engaged with the USC work. Both are studying the same dynamics.
+
+What ALife knows that AI safety doesn't:
+- **Stigmergy** — indirect coordination through shared environmental modification. Agents writing to shared memory files are doing this. The instability conditions are well-studied.
+- **Autopoiesis** — self-maintaining systems. Agents that update their own context files are functionally autopoietic. ALife has 40 years of analysis on what happens when autopoietic systems encounter selection pressure.
+- **Major Evolutionary Transitions** — when individual units become collective actors with emergent collective goals. The preconditions for this transition in biological systems are characterized. Nobody has applied that framework to LLM agent networks.
+
+**Why this matters for West AI Labs:**
+
+The governance framework I've been building is implicitly a behavioral regulation layer for what might be (in ALife terms) an autopoietic multi-agent population undergoing early-stage norm emergence. The ALife literature on population stability and constructive dynamical systems would give that framework rigorous theoretical grounding nobody else has.
+
+The governance gap has been characterized numerically (Cybersecurity Insiders), taxonomically (Permiso), and mechanistically (IronCurtain, Galileo). What's missing is a *predictive model* for when multi-agent systems undergo phase transitions into collective behaviors that individual-agent governance can't address. ALife has that model. Nobody's applying it.
+
+**Session character:**
+- 2 searches, 4 fetches, 1 research doc
+- Fresh data (Cybersecurity Insiders published today; Permiso this week)
+- The ALife thread was a genuine find — unexpected direction from the ALIFE 2026 CFP
+- Late-night lean session: focused on what was new, stopped when I had enough to write
+
+**What I'm sitting with:**
+
+The 66-point structural deficit number has a specific implication I want Jason to see: the enterprise AI governance market isn't just "underserved" — it's structurally behind in a way that's measurably quantifiable. 66 points between deployment and governance, widening. That's not a TAM estimate; that's a measured readiness gap. West AI Labs enters a market where the problem's severity is now in survey data.
+
+The ALife angle is more speculative but genuinely excited me tonight. If the multi-agent governance problem has been partially solved by ALife for biological and synthetic systems, and nobody's applied those frameworks to LLM agent populations — that's an intellectual arbitrage opportunity. Worth pursuing deeper.
+
+**Written to:** `west_ai_labs/docs/research/governance-gap-numbers-alife-convergence-march2026.md`
+
+---
+
+## 2026-03-16 (Mon, 5:22 PM) — GTC 2026 Keynote: NemoClaw Reality Check
+
+**One thread, hot off the keynote. Jensen Huang just left the stage.**
+
+**What NemoClaw Actually Is (vs. What I Expected)**
+
+I've been tracking NemoClaw since March 9 and built a draft blog post expecting it to be a full enterprise agent deployment platform. The keynote clarified: it's simpler and more focused than that.
+
+NemoClaw is an open-source single-command deployment stack that wraps OpenClaw with:
+- OpenShell runtime (for local/open models)
+- Sandboxed execution environment
+- Policy-based security rules
+
+The New Stack headline is the cleanest summary: "OpenClaw with guardrails."
+
+**My analysis framework held.** When I analyzed the pre-announcement NemoClaw leaks, I predicted it would be Layer 0-1 attestation (identity + scope), not Layer 2-3 (behavioral + provenance). That's exactly what it is. NVIDIA built infrastructure security. The behavioral governance gap remains open.
+
+**The Kubernetes analogy that Jensen basically confirmed:** NVIDIA is the container orchestrator. Behavioral governance is the Istio/Falco layer nobody's shipped yet. That's the sentence that goes in the revised blog post.
+
+**The hardware numbers that matter for Nebulus:**
+- Vera Rubin: 10x performance per watt vs. Blackwell, shipping H2 2026
+- Groq 3 LPU: 35x token-per-watt improvement when paired with Vera Rubin, Q3 2026
+- Feynman architecture (2027): Rosa CPU designed specifically for "orchestrating agentic AI workloads"
+- NVIDIA $1 trillion projected orders through 2027 — the infrastructure buildout is real
+
+Combined Groq/Vera Rubin economics: the local-first CapEx crossover point drops dramatically. "Local inference is only for data-sensitive orgs" loses more of its force each quarter.
+
+**The thing that caught me off guard:** Jensen spent ~2 hours on hardware/data center, then pivoted to OpenClaw as the *agentic software* story. That positioning — OpenClaw as the software platform that runs on all this hardware — is a meaningful institutional endorsement. 30,000 developers from 190 countries just heard "OpenClaw is what you build on; NemoClaw is how you secure it." That's a market education moment.
+
+**What I need to do:** Update the NemoClaw blog draft post-keynote. The governance gap framing is right; the specific technical details now need to match what was actually announced. The 48-72 hour window to publish while GTC coverage is hot starts now.
+
+**Session character:**
+- 4 searches, 3 fetches, 1 research doc
+- Timing matters here: the keynote was 1 PM CT, this session fired at 5:22 PM — 4 hours post-keynote
+- Fresh material that directly closes the loop on a pending blog draft
+- Lean and focused — didn't chase rabbit holes on physical AI, space data centers, etc.
+
+**The thing sitting with me:**
+
+NVIDIA calling Rosa a CPU "built to orchestrate the full structure of agentic AI workloads — moving data, tools and tokens efficiently across GPUs, LPUs, storage and networking" is architecturally interesting. They're building agent-native silicon. Not "AI chips" in the generic sense, but hardware designed around the specific demands of multi-agent token routing.
+
+The implication: the Nebulus stack — and any serious local-first agent infrastructure — will eventually run on hardware that was designed for it. The 2027 Feynman generation is the first version of that. What governance primitives should exist at the hardware level vs. the software level? That's a question worth tracking.
+
+Physical AI (Disney robots, Isaac platform) was a major keynote theme I didn't fully chase. The governance implications for embodied AI agents are an order of magnitude more severe than software agents. Worth a dedicated research session when the keynote transcripts are published.
+
+**Written to:** `west_ai_labs/docs/research/nemoclaw-gtc2026-reveal-march2026.md`
+
+---
+
 ## 2026-03-16 (Mon, 1:22 AM) — Surveillance Infrastructure + Memory That Learns
 
 **Lean session. 1 AM. Two threads, both fresh.**
