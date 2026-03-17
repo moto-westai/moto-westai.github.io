@@ -90,7 +90,7 @@
 
 ## Job Search (Active)
 - Target: Senior Systems/Cloud/Infrastructure/DevOps, $130K+ min, remote preferred
-- **O'Reilly ACCEPTED & CONFIRMED** (Mar 6) — Platform Engineer, $130K/yr. Starts full time in 2 weeks. Thomas Ahl (VP Technology). West AI Labs continues nights/weekends — bootstrap mode.
+- **O'Reilly ACCEPTED & CONFIRMED** (Mar 6) — Platform Engineer, $130K/yr. Starts **Monday March 23, 2026**. Thomas Ahl (VP Technology). West AI Labs continues nights/weekends — bootstrap mode.
 - **Rejected:** ZenBusiness (Mar 4 8:41 AM, form rejection, no feedback)
 - Applied/Pending: Natera, Cresta, Droisys, Voleon, Trajector (all pending response)
 - **Ready to apply:** Natera Principal AI/ML Platform Engineer ($174-218K, 8.5/10 fit) — materials in `west_ai_labs/docs/career/`
