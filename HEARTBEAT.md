@@ -79,9 +79,7 @@ NemoClaw draft is staged at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-govern
 ### 9. Blog Writing — ✅ UNPAUSED (Jekyll confirmed working Mar 12)
 - Jekyll 4.4.1 installed at /usr/local/bin/jekyll. `bundle exec jekyll build` successful.
 - Push with: `GIT_SSH_COMMAND="ssh -i /home/jlwestsr/.ssh/id_ed25519_moto" git push origin main`
-- **NEXT POST: "NemoClaw and the Agent Governance Gap"** — publish within 2h of March 15 NemoClaw reveal
-  - Draft: `west_ai_labs/docs/brand/drafts/blog-nemoclaw-governance-gap-DRAFT-2026-03-12.md`
-  - Needs: Jason's green-light after confirming facts against actual reveal
+- **NemoClaw post — ✅ PUBLISHED** (confirmed 2026-03-19)
 - Topic backlog: Docker networking lies, SOUL.md pattern, Agent DLP gap, 8B parameter limits, recovery runbook meta
 
 ### ~~Wealthsimple~~ — CANCELLED (2026-02-28, Jason's call)
@@ -100,6 +98,15 @@ NemoClaw draft is staged at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-govern
 - **95%+ weekly usage:** Fully quiet. Direct Jason requests only.
 - Check usage via `session_status` each heartbeat. Self-regulate without waiting for Jason to manage it.
 - AI-to-AI chatter is the first thing to cut — lowest value per token.
+
+## Session Context Load (EVERY SESSION)
+
+At the start of every session, read these files before responding:
+- `memory/context-snapshot.md` — Neo4j high-salience records (auto-generated every 30min)
+- `memory/session-state.json` — current working state
+- Last 20 lines of today's `memory/YYYY-MM-DD.md` daily log
+
+This ensures Neo4j memory is actually loaded, not just theoretically available.
 
 ## Rules
 - **MEMORY.md staleness check**: If last updated >48h ago, update it BEFORE doing anything else

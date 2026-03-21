@@ -1,0 +1,26 @@
+id: rec-0042
+created_at: '2026-03-18T21:57:19Z'
+category: decision
+subcategory: ''
+title: Sub-agents must use local models only — no cloud API calls
+content: 'Jason directive 2026-03-18: All sub-agents must route to local models only.
+  On nebulus: MLX (Qwen2.5-32B, port 8080) or Ollama. On shurtugal-lnx: Ollama. Cloud
+  APIs (Anthropic, Gemini) are reserved for main agent sessions only. Sub-agent spawns
+  falling back to cloud caused Gemini rate limit burn (544K tokens in one hour on
+  Nebulus 2 GCP project). This needs to be enforced in HEARTBEAT.md and agent config
+  for both Moto and Cael.'
+linked_concepts:
+- sub-agents
+- local-models
+- mlx
+- ollama
+- gemini
+- rate-limiting
+- cael
+- nebulus
+- policy
+salience: 0.9
+decay_class: permanent
+compaction_hint: preserve
+last_reinforced: '2026-03-18T21:57:19Z'
+source: graph-add 2026-03-18T21:57:19Z

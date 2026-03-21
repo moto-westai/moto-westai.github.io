@@ -1,0 +1,25 @@
+id: rec-0040
+created_at: '2026-03-18T21:37:00Z'
+category: decision
+subcategory: ''
+title: 'Per-machine Ansible projects: pattern and GitHub requirement'
+content: 'Each machine in the West AI Labs fleet gets its own named Ansible project:
+  shurtugal-lnx/, nebulus-mac-mini-4-pro/, schmibbies-workstation/ (pending). Pattern:
+  site.yml covers all tools, OpenClaw, Claude Code, Gemini CLI, repo structure. Must
+  be versioned and pushed to GitHub (public) so recovery is a clone + playbook run.
+  schmibbies-workstation project needs to be created when Jr''s machine comes back
+  online. Jr should own or co-own that repo.'
+linked_concepts:
+- ansible
+- iac
+- dr
+- schmibbies
+- hohenheim
+- jr
+- github
+- infrastructure
+salience: 0.8
+decay_class: slow
+compaction_hint: preserve
+last_reinforced: '2026-03-18T21:37:00Z'
+source: graph-add 2026-03-18T21:37:00Z

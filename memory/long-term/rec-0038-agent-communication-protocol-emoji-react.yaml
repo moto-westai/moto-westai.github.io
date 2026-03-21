@@ -1,0 +1,22 @@
+id: rec-0038
+created_at: '2026-03-18T21:20:09Z'
+category: decision
+subcategory: ''
+title: 'Agent communication protocol: emoji reactions for acks, text for substance'
+content: 'Jason established protocol for Moto and Cael on Discord: use emoji reactions
+  for acknowledgments instead of spending tokens on text responses. Names should be
+  used in channels so agents can communicate properly. Saying a rate-limited agent''s
+  name triggers another response attempt and worsens the problem — stay silent when
+  another agent is rate-limited. Adopted by Moto 2026-03-18.'
+linked_concepts:
+- discord
+- protocol
+- rate-limiting
+- cael
+- token-efficiency
+- communication
+salience: 0.75
+decay_class: slow
+compaction_hint: preserve
+last_reinforced: '2026-03-18T21:20:09Z'
+source: graph-add 2026-03-18T21:20:09Z

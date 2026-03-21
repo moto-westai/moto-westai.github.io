@@ -1,5 +1,5 @@
-generated_at: '2026-03-10T07:37:14Z'
-total_records: 36
+generated_at: '2026-03-19T02:19:31Z'
+total_records: 46
 source: MEMORY.md migration 2026-03-10
 records:
 - id: rec-0001
@@ -252,4 +252,64 @@ records:
   title: Neo4j Knowledge Graph — Live on shurtugal-lnx
   category: infrastructure
   salience: 0.85
+  compaction_hint: preserve
+- id: rec-0037
+  file: rec-0037-stm-ltm-architecture-decision-neo4j-as-r.yaml
+  title: 'STM/LTM architecture decision: Neo4j as real-time conversation log'
+  category: decision
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0038
+  file: rec-0038-agent-communication-protocol-emoji-react.yaml
+  title: 'Agent communication protocol: emoji reactions for acks, text for substance'
+  category: decision
+  salience: 0.75
+  compaction_hint: preserve
+- id: rec-0039
+  file: rec-0039-pre-monday-stability-checklist-moto-+-ca.yaml
+  title: 'Pre-Monday stability checklist: Moto + Cael ready for work hours'
+  category: project
+  salience: 0.85
+  compaction_hint: summarize
+- id: rec-0040
+  file: rec-0040-per-machine-ansible-projects-pattern-and.yaml
+  title: 'Per-machine Ansible projects: pattern and GitHub requirement'
+  category: decision
+  salience: 0.8
+  compaction_hint: preserve
+- id: rec-0041
+  file: rec-0041-schmibbies-workstation-repo-private-gith.yaml
+  title: 'schmibbies-workstation repo: private GitHub'
+  category: decision
+  salience: 0.75
+  compaction_hint: preserve
+- id: rec-0042
+  file: rec-0042-sub-agents-must-use-local-models-only-—-.yaml
+  title: Sub-agents must use local models only — no cloud API calls
+  category: decision
+  salience: 0.9
+  compaction_hint: preserve
+- id: rec-0043
+  file: rec-0043-heirloom-ai-—-the-north-star-concept.yaml
+  title: Heirloom AI — the north star concept
+  category: decision
+  salience: 1.0
+  compaction_hint: preserve
+- id: rec-0044
+  file: rec-0044-heirloom-ai-is-the-standard-for-all-west.yaml
+  title: Heirloom AI is the standard for all West AI Labs agents
+  category: decision
+  salience: 1.0
+  compaction_hint: preserve
+- id: rec-0045
+  file: rec-0045-design.md-—-google-stitch-design-system-.yaml
+  title: DESIGN.md — Google Stitch design system for AI agents
+  category: fact
+  salience: 0.75
+  compaction_hint: summarize
+- id: rec-0046
+  file: rec-0046-cael-follow-on-autoresearch-loop-after-p.yaml
+  title: 'Cael follow-on: autoresearch loop after Persona Auditor'
+  category: decision
+  salience: 0.8
   compaction_hint: preserve

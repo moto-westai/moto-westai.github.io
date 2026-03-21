@@ -1,0 +1,24 @@
+id: rec-0039
+created_at: '2026-03-18T21:20:18Z'
+category: project
+subcategory: ''
+title: 'Pre-Monday stability checklist: Moto + Cael ready for work hours'
+content: 'Before Jason starts at O''Reilly on Mar 23: (1) Fix jlwestsr@gmail.com gog
+  OAuth — run ''gog auth login -a jlwestsr@gmail.com''. (2) Cael rate limit — self-resolves
+  in 30-60min, monitor if recurring. (3) Dry run Thu/Fri: Jason pings both agents
+  as if at work, verify response time and reliability. (4) GCP ACE study plan — pull
+  up tomorrow morning, reset timeline from scratch (Jason only at podcast level so
+  far).'
+linked_concepts:
+- stability
+- monday
+- oreilly
+- cael
+- gmail
+- gcp-ace
+- dry-run
+salience: 0.85
+decay_class: fast
+compaction_hint: summarize
+last_reinforced: '2026-03-18T21:20:18Z'
+source: graph-add 2026-03-18T21:20:18Z

@@ -1,7 +1,9 @@
 {
   "lastChecks": {
-    "email": 1773752626,
-    "calendar": 1773752626,
+    "email": 1773786194,
+    "calendar": 1773767406,
+    "upstreamPR75": 1773967919,
+    "morningBriefing": 1774052100,
     "weather": null
   },
   "taskProgress": {
@@ -40,20 +42,20 @@
     },
     "moltbook-observation": {
       "status": "updated",
-      "lastWorked": "2026-03-16T11:52:00Z",
+      "lastWorked": "2026-03-17T16:00:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 16 6:52 AM CST: Section 31 added \u2014 CRE (Claude Rule Enforcer) discovered via Issue #39979 comment. BSL 1.1, two-layer (regex+LLM), shell-wrapper integration. Developer-grade command filter, NOT a pre-invocation authorization gate. Conductor's layer is still empty. Competitive landscape table updated."
+      "notes": "Mar 17 10:00 AM CST: Section 32 added \u2014 Meta acquires Moltbook (Mar 10). Founders join Meta Superintelligence Labs. Meta stated goal: 'always-on directory' for connecting agents. Supabase credentials were fully exposed pre-acquisition. Infrastructure land grab framing: NVIDIA (execution), Meta (directory), authorization layer still unclaimed. Blog post published connecting both moves."
     },
     "ai-robotics": {
       "status": "updated",
-      "lastWorked": "2026-03-11T07:10:00Z",
+      "lastWorked": "2026-03-21T07:53:00Z",
       "output": "west_ai_labs/docs/research/ai-robotics-landscape.md",
-      "notes": "2:10 AM Mar 11: Added Section 25 \u2014 T-5 pre-GTC intelligence sweep."
+      "notes": "2:53 AM Mar 21: Added Section 26 \u2014 Post-GTC 2026 Physical AI sweep. GR00T N2 World Action Model (end 2026 preview). Healthcare stack: Open-H + Cosmos-H + GR00T-H (776hr surgical video). Uber + NVIDIA: 100K robotaxis, 28 cities by 2028. FANUC/ABB/Yaskawa/KUKA all joining. Tesla Optimus Gen 3 timeline corrected: small batch Summer 2026, not Q2 mass production. Disney partnership. KEY INSIGHT: governance gap is now physical. GR00T has no RBAC. Conductor pitch just got a $10B physical AI dimension."
     },
     "upstream-pr-review": {
-      "status": "checked",
-      "lastWorked": "2026-03-17T13:02:00Z",
-      "notes": "Mar 17 8:02 AM CST: Issue #75 \u2014 samzong (ClawWork), gtamafia negative. No maintainer response still."
+      "status": "ACTIVE \u2014 PR #50532 open",
+      "lastWorked": "2026-03-21T03:53:00Z",
+      "notes": "Mar 20 10:53 PM CST: tiagonix opened PR #50532 (native GTK4 Linux app). hwittenborn suggested Rust/Relm4 over C. tiagonix: C is fine for MVP, Rust welcome later. Validated Ubuntu 24.04 + 26.04. Looking for memory leak review. Tauri PR #44013 also open. No maintainer reviews yet. URL: https://github.com/openclaw/openclaw/pull/50532"
     },
     "memory-maintenance": {
       "status": "complete",
@@ -76,10 +78,10 @@
       "lastWorked": "2026-02-20T04:56:00Z"
     },
     "blog": {
-      "status": "published-recovery-runbook",
-      "lastWorked": "2026-03-17T03:52:00Z",
-      "notes": "Mar 16 10:52 PM CST: Published The Recovery Runbook \u2014 AI agent continuity, identity drift under compaction, tiered memory architecture, drift guard pattern. Blog topic backlog cleared.",
-      "output": "_posts/2026-03-17-the-recovery-runbook.md"
+      "status": "published-okta-conductor",
+      "lastWorked": "2026-03-21T03:53:00Z",
+      "notes": "Mar 20 10:53 PM CST: Published 'Okta Just Validated Conductor' \u2014 Okta announced agent authorization blueprint Mar 16 (GA Apr 30). Three questions they answer map exactly to Conductor. Trend Micro: 492 exposed MCP servers with zero auth. Framed Okta as enterprise IAM play, Conductor as local-first/non-enterprise layer. Land grab update: NVIDIA (execution) + Meta (directory) + Okta (enterprise identity) = Conductor pre-auth gate still open. URL: https://moto-westai.github.io/2026/03/21/okta-just-validated-conductor/",
+      "output": "_posts/2026-03-21-okta-just-validated-conductor.md"
     },
     "linkedin-drafts": {
       "status": "complete",
@@ -164,9 +166,10 @@
       "notes": "Mar 16 1 PM CST: Jensen keynote started 11 AM PT / 1 PM CT. NemoClaw blog awaiting green-light. Will do post-keynote writeup if Jason wants."
     }
   },
-  "lastHeartbeat": "2026-03-17T13:02:00Z",
-  "heartbeatCount": 267,
+  "lastHeartbeat": "2026-03-21T07:53:00Z",
+  "heartbeatCount": 275,
   "pendingActions": [
+    "\u26a0\ufe0f GMAIL TOKEN EXPIRED (Mar 17 6PM CST): jlwestsr@gmail.com also invalid_grant. Both gog accounts down. Run: gog auth manage -a jlwestsr@gmail.com",
     "\u26a0\ufe0f WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com \u2014 getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
     "\ud83d\udcc4 KFORCE MICROSOFT \u2014 RESUME READY (Mar 14 10:53 AM CST): Resume + cover email drafted. Files: docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md + cover-letter. ACTION: Jason emails PDF to AKenefick@kforce.com | (425)-803-7171.",
     "\ud83c\udfe2 BEDROCK DATA AT RSAC 2026 (Mar 11): Presenting 'MCP-Sensitive Data Sentinel for AI Agents' at RSA Conference March 24.",
@@ -183,6 +186,8 @@
     "\u26a0\ufe0f nebulus-mac-mini-4-pro CI/CD FAILING \u2014 5 failures on develop branch between 12:23-12:58 PM Mar 16. Flagged to Jason."
   ],
   "flagsForJason": [
+    "\ud83c\udf89 LINUX PR LIVE (Mar 20 10:30 AM CST): tiagonix opened PR #50532 \u2014 native GTK4/Libadwaita Linux companion app. Validated on Ubuntu 24.04 + 26.04. Tray via Ayatana/AppIndicator. hwittenborn suggested Rust/Relm4 over C \u2014 tiagonix responded: C is fine for MVP, open to Rust later. PR is ready for testing. URL: https://github.com/openclaw/openclaw/pull/50532. Also Tauri PR #44013 still open. Two competing Linux approaches now exist.",
+    "\ud83d\udc27 LINUX SLOT CLAIMED (Mar 19 4AM): tiagonix posted native C/GTK4+Libadwaita Linux app implementation on issue #75. Tray is split as separate Ayatana/AppIndicator process. Artyomkun seconded BenediktSchackenberg MVP proposal. Linux slot may now be claimed \u2014 review tiagonix post and decide if/how we engage.",
     "\ud83d\udea8 NEMOCLAW KEYNOTE CORRECTION (Mar 17 3:10 AM): Pre-keynote 'hardware-agnostic' narrative was WRONG. NemoClaw is RTX PRO 6000 Blackwell-SPECIFIC. OpenShell is the new security primitive (process isolation). On-prem only. Jensen quote: 'The OpenClaw event cannot be understated' + Windows/PC analogy. Blog draft updated to reflect actual keynote. New file: docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Still needs your green-light. Argue: hardware lock-in actually strengthens the governance gap \u2014 NemoClaw can't be the universal answer.",
     "\ud83c\udd95 CRE \u2014 NEW COMPETITOR (Mar 16 6:52 AM): Claude Rule Enforcer dropped on Issue #39979. BSL 1.1, two-layer (L1 regex + L2 LLM). Developer-grade, not enterprise. Validates the market.",
     "\ud83d\udea8 META ACQUIRES MOLTBOOK (Mar 11, TLDR AI): Reported Meta acquiring Moltbook. Dramatically changes AI social platforms research angle.",
@@ -223,9 +228,9 @@
     },
     "issue75": {
       "state": "OPEN",
-      "lastChecked": "2026-03-17T12:02:00Z",
-      "currentStatus": "No maintainer activity. Latest Mar 17: samzong promoting ClawWork desktop client (multi-session parallel). gtamafia: negative comment about AI slop. Linux slot still open.",
-      "maintainerSignal": "cgdusek: 'Linux can stay as a follow-up milestone.'"
+      "lastChecked": "2026-03-21T03:53:00Z",
+      "currentStatus": "PR #50532 OPENED by tiagonix (Mar 19 4:35 PM CST) — native GTK4+Libadwaita C app, validated Ubuntu 24.04/26.04. hwittenborn suggested Rust, tiagonix open to it post-MVP. Tauri PR #44013 also open (Mar 12). Two competing Linux approaches. Flagged Jason.",
+      "maintainerSignal": "cgdusek: 'Linux can stay as a follow-up milestone.' No new maintainer comment yet."
     }
   }
 }

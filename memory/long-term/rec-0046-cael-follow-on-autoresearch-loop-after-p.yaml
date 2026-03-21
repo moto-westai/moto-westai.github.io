@@ -1,0 +1,25 @@
+id: rec-0046
+created_at: '2026-03-19T02:19:31Z'
+category: decision
+subcategory: ''
+title: 'Cael follow-on: autoresearch loop after Persona Auditor'
+content: 'After Persona Auditor ships, Cael''s next task is implementing autoresearch
+  — an agent loop that auto-improves SOUL.md adherence. Based on Karpathy''s autoresearch
+  method (via Ole Lehmann, 886K views). Concept: run skill → score against yes/no
+  checklist → make one small change → keep if better, revert if worse → repeat until
+  95%+ three times. Persona Auditor provides the scoring layer; autoresearch provides
+  the auto-improve loop. Reference: https://x.com/itsolelehmann/status/2033919415771713715
+  | GitHub: https://github.com/olelehmann100kMRR/autoresearch-skill'
+linked_concepts:
+- cael
+- persona-auditor
+- autoresearch
+- soul-md
+- self-improvement
+- karpathy
+- nebulus
+salience: 0.8
+decay_class: slow
+compaction_hint: preserve
+last_reinforced: '2026-03-19T02:19:31Z'
+source: graph-add 2026-03-19T02:19:31Z

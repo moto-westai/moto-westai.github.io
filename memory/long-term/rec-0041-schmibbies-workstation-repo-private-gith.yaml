@@ -1,0 +1,18 @@
+id: rec-0041
+created_at: '2026-03-18T21:37:28Z'
+category: decision
+subcategory: ''
+title: 'schmibbies-workstation repo: private GitHub'
+content: schmibbies-workstation Ansible repo must be private on GitHub, not public.
+  Same treatment as sensitive infra repos.
+linked_concepts:
+- ansible
+- schmibbies
+- github
+- infrastructure
+- jr
+salience: 0.75
+decay_class: slow
+compaction_hint: preserve
+last_reinforced: '2026-03-18T21:37:28Z'
+source: graph-add 2026-03-18T21:37:28Z

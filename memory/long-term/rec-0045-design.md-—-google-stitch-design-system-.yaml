@@ -1,0 +1,24 @@
+id: rec-0045
+created_at: '2026-03-18T23:13:58Z'
+category: fact
+subcategory: ''
+title: DESIGN.md — Google Stitch design system for AI agents
+content: 'Google Stitch introduced DESIGN.md: a plain-text design system document
+  that AI agents read to generate consistent UI. Analogous to AGENTS.md/CLAUDE.md
+  but for visual identity. Contains: color palette, typography, spacing, component
+  styles, do''s and don''ts. Three creation paths: agent-generated from prompt, derived
+  from existing brand URL/image, or hand-authored. Should be added to Nebulus projects
+  alongside AGENTS.md and CLAUDE.md. Docs: https://stitch.withgoogle.com/docs/design-md/overview'
+linked_concepts:
+- design-md
+- stitch
+- google
+- nebulus
+- ai-agents
+- design-system
+- ui
+salience: 0.75
+decay_class: slow
+compaction_hint: summarize
+last_reinforced: '2026-03-18T23:13:58Z'
+source: graph-add 2026-03-18T23:13:58Z

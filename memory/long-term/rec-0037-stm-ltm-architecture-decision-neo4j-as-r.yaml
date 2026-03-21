@@ -1,0 +1,23 @@
+id: rec-0037
+created_at: '2026-03-18T21:19:59Z'
+category: decision
+subcategory: ''
+title: 'STM/LTM architecture decision: Neo4j as real-time conversation log'
+content: 'Jason and Moto agreed: Neo4j should be used as both STM (real-time conversation
+  events tagged by channel/timestamp) and LTM (durable important memories). The infrastructure
+  is already there. Moto needs to write conversation events to the graph in real time
+  using graph-add.py, not just when something feels ''important enough''. Goal: cross-channel
+  context continuity — any session in any channel can query what was discussed elsewhere.'
+linked_concepts:
+- neo4j
+- memory
+- stm
+- ltm
+- cross-channel
+- architecture
+- discord
+salience: 0.8
+decay_class: slow
+compaction_hint: preserve
+last_reinforced: '2026-03-18T21:19:59Z'
+source: graph-add 2026-03-18T21:19:59Z
