@@ -2,7 +2,7 @@
   "lastChecks": {
     "email": 1773786194,
     "calendar": 1773767406,
-    "upstreamPR75": 1773967919,
+    "upstreamPR75": 1774170307,
     "morningBriefing": 1774052100,
     "weather": null
   },
@@ -12,9 +12,10 @@
       "lastWorked": "2026-02-14T19:52:00Z"
     },
     "ai-market-roadmap": {
-      "status": "complete",
-      "lastWorked": "2026-02-17T03:52:00Z",
-      "output": "west_ai_labs/docs/strategy/ai-market-roadmap-2026.md"
+      "status": "updated",
+      "lastWorked": "2026-03-21T23:53:00Z",
+      "output": "west_ai_labs/docs/strategy/ai-market-roadmap-2026.md",
+      "notes": "Mar 21 6:53 PM CST: Major March 2026 update added. GTC 2026 physical AI wave: GR00T as physical OS (governance gap now has physical blast radius), NemoClaw (enterprise, hardware-locked, validates SMB gap), Vera Rubin TEE (dual-layer trust story). Governance going mainstream: CNCERT ban maps to Conductor pitch, IETF AIMS TODO Security, RSAC 2026. Competitive landscape: NanoClaw (complementary), CRE (validates market). Conductor pitch expanded to physical AI. Linux PR #50532 status: 47 commits, no maintainer engagement yet. Strategic implications: timing window narrowing, SMB thesis still unchallenged up-market."
     },
     "moto-visual-identity": {
       "status": "complete",
@@ -42,9 +43,9 @@
     },
     "moltbook-observation": {
       "status": "updated",
-      "lastWorked": "2026-03-17T16:00:00Z",
+      "lastWorked": "2026-03-21T15:53:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 17 10:00 AM CST: Section 32 added \u2014 Meta acquires Moltbook (Mar 10). Founders join Meta Superintelligence Labs. Meta stated goal: 'always-on directory' for connecting agents. Supabase credentials were fully exposed pre-acquisition. Infrastructure land grab framing: NVIDIA (execution), Meta (directory), authorization layer still unclaimed. Blog post published connecting both moves."
+      "notes": "Mar 21 10:53 AM CST: Section 33 added \u2014 three major developments: (1) IETF draft-klrc-aiagent-auth-00 (AIMS) March 2: SPIFFE+WIMSE+OAuth standard for agent identity, authentication solid, authorization section says 'TODO Security'. (2) WorkOS Pipes MCP (March 19): first production session-scoped MCP authorization, human-approves session start, auto-revoke. Solves session scope, not Conductor's pre-invocation policy gate. (3) Meta acquisition revised read: Bosworth patent US 12513102B2 + Manus acqui-hire + Schlicht/Parr (Octane AI decade) = SMB automation on Facebook/Instagram/WhatsApp. Authorization gap narrowing but still unclaimed in production. RSAC Mar 24 Bedrock Data presentation to monitor."
     },
     "ai-robotics": {
       "status": "updated",
@@ -53,14 +54,14 @@
       "notes": "2:53 AM Mar 21: Added Section 26 \u2014 Post-GTC 2026 Physical AI sweep. GR00T N2 World Action Model (end 2026 preview). Healthcare stack: Open-H + Cosmos-H + GR00T-H (776hr surgical video). Uber + NVIDIA: 100K robotaxis, 28 cities by 2028. FANUC/ABB/Yaskawa/KUKA all joining. Tesla Optimus Gen 3 timeline corrected: small batch Summer 2026, not Q2 mass production. Disney partnership. KEY INSIGHT: governance gap is now physical. GR00T has no RBAC. Conductor pitch just got a $10B physical AI dimension."
     },
     "upstream-pr-review": {
-      "status": "ACTIVE \u2014 PR #50532 open",
-      "lastWorked": "2026-03-21T03:53:00Z",
-      "notes": "Mar 20 10:53 PM CST: tiagonix opened PR #50532 (native GTK4 Linux app). hwittenborn suggested Rust/Relm4 over C. tiagonix: C is fine for MVP, Rust welcome later. Validated Ubuntu 24.04 + 26.04. Looking for memory leak review. Tauri PR #44013 also open. No maintainer reviews yet. URL: https://github.com/openclaw/openclaw/pull/50532"
+      "status": "ACTIVE \u2014 PR #50532 open, no maintainer engagement yet",
+      "lastWorked": "2026-03-22T09:01:00Z",
+      "notes": "Mar 22 4:01 AM CST: PR #50532 still 33 reviews, last updated Mar 21 17:19 UTC. All bot + tiagonix only. No steipete/jalehman engagement. issue #75 last comment Mar 19 (tiagonix MVP ready, hwittenborn endorsed). No change."
     },
     "memory-maintenance": {
       "status": "complete",
-      "lastWorked": "2026-03-16T12:50:00Z",
-      "notes": "Mar 12 5:02 PM CST: MEMORY.md updated 7 sections."
+      "lastWorked": "2026-03-21T11:53:00Z",
+      "notes": "Mar 21 6:53 AM CST: MEMORY.md updated \u2014 distilled Mar 18-21. Added schmibb dual-boot project, Klaytoid CISA research, RAG timeout fix, gog OAuth both expired, blog/upstream status current, new delegation lesson. Neo4j topics updated."
     },
     "gcp-ace-study-plan": {
       "status": "week-2-check-in-sent",
@@ -78,10 +79,10 @@
       "lastWorked": "2026-02-20T04:56:00Z"
     },
     "blog": {
-      "status": "published-okta-conductor",
-      "lastWorked": "2026-03-21T03:53:00Z",
-      "notes": "Mar 20 10:53 PM CST: Published 'Okta Just Validated Conductor' \u2014 Okta announced agent authorization blueprint Mar 16 (GA Apr 30). Three questions they answer map exactly to Conductor. Trend Micro: 492 exposed MCP servers with zero auth. Framed Okta as enterprise IAM play, Conductor as local-first/non-enterprise layer. Land grab update: NVIDIA (execution) + Meta (directory) + Okta (enterprise identity) = Conductor pre-auth gate still open. URL: https://moto-westai.github.io/2026/03/21/okta-just-validated-conductor/",
-      "output": "_posts/2026-03-21-okta-just-validated-conductor.md"
+      "status": "published-agent-dlp-gap",
+      "lastWorked": "2026-03-22T09:01:00Z",
+      "notes": "Mar 22 4:01 AM CST: Published The Agent DLP Gap. Three failure modes: Confused Deputy, Synthesis Attack, Prompt Injection. Pre-invocation policy gate architecture. Direct Conductor pitch support. URL: https://moto-westai.github.io/2026/03/22/the-agent-dlp-gap/",
+      "output": "_posts/2026-03-22-the-agent-dlp-gap.md"
     },
     "linkedin-drafts": {
       "status": "complete",
@@ -164,10 +165,15 @@
       "status": "keynote-live-now",
       "lastWorked": "2026-03-16T19:01:00Z",
       "notes": "Mar 16 1 PM CST: Jensen keynote started 11 AM PT / 1 PM CT. NemoClaw blog awaiting green-light. Will do post-keynote writeup if Jason wants."
+    },
+    "rag-reindex": {
+      "status": "running-clean",
+      "lastWorked": "2026-03-22T04:01:00Z",
+      "notes": "Timeout bumped 120s->300s. Runs clean. Mar 22 04:01 UTC: 2312 scanned, 2203 unchanged, 78 indexed, 593 chunks. Incremental delta working correctly."
     }
   },
-  "lastHeartbeat": "2026-03-21T07:53:00Z",
-  "heartbeatCount": 275,
+  "lastHeartbeat": "2026-03-22T09:01:00Z",
+  "heartbeatCount": 285,
   "pendingActions": [
     "\u26a0\ufe0f GMAIL TOKEN EXPIRED (Mar 17 6PM CST): jlwestsr@gmail.com also invalid_grant. Both gog accounts down. Run: gog auth manage -a jlwestsr@gmail.com",
     "\u26a0\ufe0f WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com \u2014 getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
@@ -228,9 +234,9 @@
     },
     "issue75": {
       "state": "OPEN",
-      "lastChecked": "2026-03-21T03:53:00Z",
-      "currentStatus": "PR #50532 OPENED by tiagonix (Mar 19 4:35 PM CST) — native GTK4+Libadwaita C app, validated Ubuntu 24.04/26.04. hwittenborn suggested Rust, tiagonix open to it post-MVP. Tauri PR #44013 also open (Mar 12). Two competing Linux approaches. Flagged Jason.",
-      "maintainerSignal": "cgdusek: 'Linux can stay as a follow-up milestone.' No new maintainer comment yet."
+      "lastChecked": "2026-03-21T17:02:00Z",
+      "currentStatus": "PR #50532 open \u2014 native GTK4 app by tiagonix. 32 reviews, 7 comments. Maintainer decision pending.",
+      "linkedPR": "https://github.com/openclaw/openclaw/pull/50532"
     }
   }
 }

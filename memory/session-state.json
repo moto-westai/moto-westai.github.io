@@ -1,30 +1,29 @@
 {
-  "lastUpdated": "2026-03-21T06:06:00Z",
-  "primaryConversation": "Mar 20-21: Long session with Jr. (schmibb) on Dark Messiah RTX Remix project. Gathered schmibb-rig specs (RTX 5070, 32GB, 3.6TB NVMe, Pop!_OS 24.04). Decided to dual-boot Windows+PopOS for RTX Remix (Windows-only). Plan: wipe NVMe, 2TB each. Flashed Ventoy onto SanDisk 14.6GB USB. Pop!_OS ISO (3.4GB) being copied to Ventoy drive. Jr. has Win11_25H2 ISO (7.7GB) in Downloads ready to drag onto Ventoy. HARD LESSON: burned ~6% context doing direct SSH exec loops instead of delegating to sub-agents. Jr. called it out directly. Lesson stored in memory.",
+  "lastUpdated": "2026-03-22T06:06:00Z",
+  "primaryConversation": "Mar 21-22: Long session with Jr. (schmibb) on Dark Messiah RTX Remix setup. Windows 11 fresh install complete (dual-boot with Pop!_OS planned). SSH access established (jok3r@192.168.4.216). RTX Remix runtime confirmed hooking (splash banner visible). Installed: Unlimited Edition 1.4.1, Advanced SDK Base, RTX Base Files, Lite Edition content (13,523 files across 7 parts). Game crashing in NvRemixBridge.exe (Exception 0xc0000005) — likely RTX 5070 Blackwell compatibility issue with current Remix build. Next step: test vanilla launch without d3d9.dll to confirm base game health, then find Blackwell-compatible Remix runtime.",
   "activeChannels": ["discord"],
   "pendingTasks": [
     "jlwestsr@gmail.com + jason@westailabs.com gog OAuth expired — both need reauth",
     "NemoClaw blog — publish-ready since Mar 17, awaiting Jason green-light",
-    "GCP ACE Week 2 due Mar 21 — today",
     "O'Reilly starts Monday Mar 23 — onboarding prep",
-    "schmibb-rig: Pop!_OS ISO copy to Ventoy USB in progress — verify completion",
-    "schmibb-rig: Jr. to drag Win11_25H2.iso onto Ventoy USB when PopOS copy done",
-    "schmibb-rig: dual-boot install guide provided — Jr. to execute when ready",
-    "schmibb-rig: Ansible rebuild after reinstall (clone schmibb-rig repo, run playbook)",
-    "Dark Messiah RTX Remix: Phase 0 (get game launching) — on hold pending dual-boot"
+    "KFORCE/Microsoft — resume ready, Jason to email PDF to AKenefick@kforce.com",
+    "NIST NCCoE response v7 — submit before April 2 to AI-Identity@nist.gov",
+    "OpenClaw issue #39979 — comment draft v2 ready, post ASAP",
+    "schmibb Dark Messiah RTX — crashing in NvRemixBridge.exe, needs Blackwell-compatible Remix runtime or base game test",
+    "schmibb Pop!_OS dual-boot — Jr. has ISOs + guide, executing when ready"
   ],
   "pendingSubAgents": [],
   "recentDecisions": [
-    "01:06 CDT Mar 21 — Autosave: schmibb session wrapping up, Ventoy USB nearly ready",
-    "00:18 CDT Mar 21 — Jr. confirmed Win11_25H2 ISO (7.7GB) already in Downloads, ready to use",
-    "00:15 CDT Mar 21 — Pop!_OS copy at 59% (2.0GB/3.4GB), still running",
-    "23:24 CDT Mar 20 — Killed stalled Windows download sub-agent, gave Jr. manual guide instead",
-    "22:49 CDT Mar 20 — HARD LESSON stored: use sub-agents, don't loop exec. Jr. called out 6% context burn.",
-    "22:41 CDT Mar 20 — Jr. ran Option B sudoers NOPASSWD for cp/mv/rm/chown",
-    "22:17 CDT Mar 20 — Ventoy 1.1.10 installed on SanDisk USB successfully",
-    "21:36 CDT Mar 20 — Decided: wipe NVMe, install Windows first then Pop!_OS (Option B, no LUKS)",
-    "21:25 CDT Mar 20 — RTX Remix is Windows-only; platform decision needed before Phase 1",
-    "21:13 CDT Mar 20 — PROJECT.md committed to Schmibb/schmibb-rig GitHub repo"
+    "01:06 CDT Mar 22 — Autosave: Dark Messiah RTX crashing, likely Blackwell GPU issue",
+    "20:03 CDT Mar 21 — Game crashing before main menu, NvRemixBridge.exe access violation",
+    "19:56 CDT Mar 21 — Installed Lite Edition content (13,523 files from 7 parts)",
+    "19:37 CDT Mar 21 — Jr. downloaded all Lite Edition RAR parts, extracted 3 of 7",
+    "18:51 CDT Mar 21 — Jr. going to play BAR, Lite Edition download in progress",
+    "18:31 CDT Mar 21 — Game crashing CTD, spawned sub-agent to check logs",
+    "18:17 CDT Mar 21 — Spawned sub-agent for Lite Edition install",
+    "17:42 CDT Mar 21 — RTX Remix confirmed working! Green splash banner visible",
+    "17:26 CDT Mar 21 — Runtime not hooking, spawned research sub-agent",
+    "17:20 CDT Mar 21 — Dark Messiah launched, RTX Remix confirmed active (Alt+X menu)"
   ],
-  "lastUserMessage": "2026-03-21T05:18:00Z — Jr. confirmed Win11 ISO in Downloads (7.7GB), ready"
+  "lastUserMessage": "2026-03-21T20:03:00Z — Tried again, crashed before main menu"
 }
