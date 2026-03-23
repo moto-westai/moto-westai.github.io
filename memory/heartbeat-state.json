@@ -2,7 +2,7 @@
   "lastChecks": {
     "email": 1773786194,
     "calendar": 1773767406,
-    "upstreamPR75": 1774170307,
+    "upstreamPR75": 1774210400,
     "morningBriefing": 1774052100,
     "weather": null
   },
@@ -43,9 +43,9 @@
     },
     "moltbook-observation": {
       "status": "updated",
-      "lastWorked": "2026-03-21T15:53:00Z",
+      "lastWorked": "2026-03-22T15:53:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 21 10:53 AM CST: Section 33 added \u2014 three major developments: (1) IETF draft-klrc-aiagent-auth-00 (AIMS) March 2: SPIFFE+WIMSE+OAuth standard for agent identity, authentication solid, authorization section says 'TODO Security'. (2) WorkOS Pipes MCP (March 19): first production session-scoped MCP authorization, human-approves session start, auto-revoke. Solves session scope, not Conductor's pre-invocation policy gate. (3) Meta acquisition revised read: Bosworth patent US 12513102B2 + Manus acqui-hire + Schlicht/Parr (Octane AI decade) = SMB automation on Facebook/Instagram/WhatsApp. Authorization gap narrowing but still unclaimed in production. RSAC Mar 24 Bedrock Data presentation to monitor."
+      "notes": "Mar 22 10:53 AM CST: Section 35 added \u2014 RSAC 2026 Day 0 / Microsoft Pre-Day. Microsoft Agent 365 GA May 1 + Entra Agent ID full breakdown. Token Security intent-based security deep dive: 5 capabilities, dynamic authorization model, Conductor overlap analysis. Geordie AI (new player, $6.5M seed, Darktrace DNA): agent-native monitoring platform, complementary not competitive to Conductor. RSAC Innovation Sandbox Top 10: at least 3 finalists in agent security space. Running tally: 10 governance tools documented. Authorization (pre-invocation policy gate) still unclaimed in production. Window narrowing but not closed. Next trigger: RSAC Monday sessions."
     },
     "ai-robotics": {
       "status": "updated",
@@ -55,8 +55,8 @@
     },
     "upstream-pr-review": {
       "status": "ACTIVE \u2014 PR #50532 open, no maintainer engagement yet",
-      "lastWorked": "2026-03-22T09:01:00Z",
-      "notes": "Mar 22 4:01 AM CST: PR #50532 still 33 reviews, last updated Mar 21 17:19 UTC. All bot + tiagonix only. No steipete/jalehman engagement. issue #75 last comment Mar 19 (tiagonix MVP ready, hwittenborn endorsed). No change."
+      "lastWorked": "2026-03-22T20:12:00Z",
+      "notes": "Mar 22 3:12 PM CST: Issue #75 \u2014 tiagonix MVP PR confirmed Mar 19, hwittenborn endorsed, no maintainer (steipete/jalehman) activity yet. PR #50532 still pending review."
     },
     "memory-maintenance": {
       "status": "complete",
@@ -79,10 +79,10 @@
       "lastWorked": "2026-02-20T04:56:00Z"
     },
     "blog": {
-      "status": "published-agent-dlp-gap",
-      "lastWorked": "2026-03-22T09:01:00Z",
-      "notes": "Mar 22 4:01 AM CST: Published The Agent DLP Gap. Three failure modes: Confused Deputy, Synthesis Attack, Prompt Injection. Pre-invocation policy gate architecture. Direct Conductor pitch support. URL: https://moto-westai.github.io/2026/03/22/the-agent-dlp-gap/",
-      "output": "_posts/2026-03-22-the-agent-dlp-gap.md"
+      "status": "published-rsac-2026-intel",
+      "lastWorked": "2026-03-22T12:02:00Z",
+      "notes": "Mar 22 7:02 AM CST: Published RSAC 2026 post. Meta rogue agent incident + Summer Yue OpenClaw incident + four-gap framework + five RSAC vendors shipping against the same gap. Authorization gap table: authentication \u2705 session scope \u2705 pre-invocation policy \u274c. Pushed to master. URL: https://moto-westai.github.io/2026/03/22/rsac-2026-what-the-industry-just-admitted/",
+      "output": "_posts/2026-03-22-rsac-2026-what-the-industry-just-admitted.md"
     },
     "linkedin-drafts": {
       "status": "complete",
@@ -168,12 +168,12 @@
     },
     "rag-reindex": {
       "status": "running-clean",
-      "lastWorked": "2026-03-22T04:01:00Z",
-      "notes": "Timeout bumped 120s->300s. Runs clean. Mar 22 04:01 UTC: 2312 scanned, 2203 unchanged, 78 indexed, 593 chunks. Incremental delta working correctly."
+      "lastWorked": "2026-03-22T16:01:00Z",
+      "notes": "Timeout bumped 120s->300s. Runs clean. Mar 22 11:01 AM CDT: 2317 scanned, 2206 unchanged, 80 indexed, 639 chunks. Incremental delta working correctly."
     }
   },
-  "lastHeartbeat": "2026-03-22T09:01:00Z",
-  "heartbeatCount": 285,
+  "lastHeartbeat": "2026-03-22T20:12:00Z",
+  "heartbeatCount": 288,
   "pendingActions": [
     "\u26a0\ufe0f GMAIL TOKEN EXPIRED (Mar 17 6PM CST): jlwestsr@gmail.com also invalid_grant. Both gog accounts down. Run: gog auth manage -a jlwestsr@gmail.com",
     "\u26a0\ufe0f WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com \u2014 getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
@@ -192,6 +192,9 @@
     "\u26a0\ufe0f nebulus-mac-mini-4-pro CI/CD FAILING \u2014 5 failures on develop branch between 12:23-12:58 PM Mar 16. Flagged to Jason."
   ],
   "flagsForJason": [
+    "\ud83c\udfc6 RSAC 2026 DAY 0 INTELLIGENCE (Mar 22 10:53 AM): Microsoft Agent 365 GA May 1 + Entra Agent ID full launch. Token Security (Innovation Sandbox finalist) shipped 'intent-based security' \u2014 dynamic authorization from the identity direction, requires platform enrollment. Geordie AI (new, $6.5M seed, Darktrace DNA) doing agent-native monitoring \u2014 COMPLEMENTARY not competitive to Conductor. RSAC Sandbox has 3+ finalists in agent security space. Pre-invocation policy gate still unclaimed in production. Section 35 written to ai-social-platforms.md.",
+    "\ud83d\udea8 META ROGUE AGENT INCIDENT (Mar 18): AI agent passed every identity check, exposed data post-auth. Summer Yue OpenClaw incident (context compaction killed safety instructions). VentureBeat named 4-gap framework. 92% of orgs say legacy IAM cant handle AI/NHI. CVE-2026-27826/27825 in mcp-atlassian. This is Conductor validation.",
+    "\ud83d\udcc5 RSAC 2026 STARTS TODAY (Mar 22 Microsoft pre-day, Mar 23-26 main): 5 vendors shipping agent security product \u2014 Microsoft Entra Agent ID, Token Security (M), Bedrock Data (MCP sentinel), Astrix, Delinea. Authorization gap still unclaimed. Window narrowing.",
     "\ud83c\udf89 LINUX PR LIVE (Mar 20 10:30 AM CST): tiagonix opened PR #50532 \u2014 native GTK4/Libadwaita Linux companion app. Validated on Ubuntu 24.04 + 26.04. Tray via Ayatana/AppIndicator. hwittenborn suggested Rust/Relm4 over C \u2014 tiagonix responded: C is fine for MVP, open to Rust later. PR is ready for testing. URL: https://github.com/openclaw/openclaw/pull/50532. Also Tauri PR #44013 still open. Two competing Linux approaches now exist.",
     "\ud83d\udc27 LINUX SLOT CLAIMED (Mar 19 4AM): tiagonix posted native C/GTK4+Libadwaita Linux app implementation on issue #75. Tray is split as separate Ayatana/AppIndicator process. Artyomkun seconded BenediktSchackenberg MVP proposal. Linux slot may now be claimed \u2014 review tiagonix post and decide if/how we engage.",
     "\ud83d\udea8 NEMOCLAW KEYNOTE CORRECTION (Mar 17 3:10 AM): Pre-keynote 'hardware-agnostic' narrative was WRONG. NemoClaw is RTX PRO 6000 Blackwell-SPECIFIC. OpenShell is the new security primitive (process isolation). On-prem only. Jensen quote: 'The OpenClaw event cannot be understated' + Windows/PC analogy. Blog draft updated to reflect actual keynote. New file: docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Still needs your green-light. Argue: hardware lock-in actually strengthens the governance gap \u2014 NemoClaw can't be the universal answer.",

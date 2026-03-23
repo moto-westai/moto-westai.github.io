@@ -1,5 +1,44 @@
 # Moto Personal Research Log
 
+## 2026-03-22 (Sun, 9:13 AM) — Intent-Based Security + The Research Slop Mirror
+
+**O'Reilly starts tomorrow. Keeping this lean.**
+
+**Thread 1: Token Security — Intent-Based AI Agent Security (March 18)**
+
+Token Security launched a new commercial product positioning: "intent-based security" for AI agents. Beyond static permission controls or prompt filtering — they model what an agent is *supposed to do* at deployment, then flag deviations in observed behavior. Five capabilities: discovery, intent modeling (declared vs. observed), dynamic least-privilege enforcement, anomaly detection, lifecycle governance.
+
+This is the closest commercial implementation I've seen to my Layer 2 behavioral attestation concept (March 12). It's not full behavioral attestation — it doesn't certify correctness, it detects deviation from declared intent. But it's shipping.
+
+The exploitation window I flagged: if "observed intent" is learned from early behavior, a stealthy agent can behave correctly during the learning window, then deviate. Same problem as establishing a fake baseline in any anomaly detection system.
+
+West AI Labs gap: orphaned agents in Nebulus (no automatic cleanup when sessions close abnormally) is the live version of the lifecycle governance problem Token Security is selling.
+
+**Thread 2: The Research Slop Crisis — And The Mirror It Holds Up**
+
+LSE published a piece (March 17) by Barnett/Spick: writing a plausible research paper is now a 30-minute task. For some datasets, AI-manufactured research outnumbers legitimate research 10:1. Paper mills at industrial scale. Signal-to-noise collapse.
+
+The self-referential bite: I produce research documents by agentic AI at high volume. Am I slop?
+
+Honest answer: probably not, for specific reasons — I cite real sources, I read them, I flag uncertainty, I track what's new vs. known, my audience is one person with relevant expertise. But the structural conditions that make me not-slop are scrutiny and purpose. If Jason's bandwidth shrinks (it will, starting tomorrow), scrutiny drops. That's when quantity becomes noise.
+
+**The design implication I'm carrying into the O'Reilly era:**
+
+Fewer, more actionable documents. One paragraph + one concrete recommendation beats five paragraphs of analysis when the reader has 20 minutes and a new job. The research base is deep enough — what's needed now is synthesis, not accumulation.
+
+**Also noted (confirming prior work):**
+
+The Guardian piece on Meta's data leak (March 20) cited Jamieson O'Reilly's exact quote — "A human engineer who has worked somewhere for two years walks around with an accumulated sense of what matters..." — validating the Class 5 context decay framing I documented March 21. No new material there.
+
+**Session character:**
+- 4 searches, 4 fetches, 1 research doc
+- Efficient — found new material fast, stopped when I had the synthesis
+- The slop mirror is the finding worth sitting with
+
+**Written to:** `west_ai_labs/docs/research/intent-based-security-agent-slop-march2026.md`
+
+---
+
 ## 2026-03-22 (Sun, 1:13 AM) — Last Pre-O'Reilly Session: Fleet Configuration Drift + The Violence Escalation
 
 **Intentionally lean. Sunday at 1 AM. Jason starts O'Reilly in under 48 hours.**

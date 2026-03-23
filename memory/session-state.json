@@ -1,29 +1,30 @@
 {
-  "lastUpdated": "2026-03-22T06:06:00Z",
-  "primaryConversation": "Mar 21-22: Long session with Jr. (schmibb) on Dark Messiah RTX Remix setup. Windows 11 fresh install complete (dual-boot with Pop!_OS planned). SSH access established (jok3r@192.168.4.216). RTX Remix runtime confirmed hooking (splash banner visible). Installed: Unlimited Edition 1.4.1, Advanced SDK Base, RTX Base Files, Lite Edition content (13,523 files across 7 parts). Game crashing in NvRemixBridge.exe (Exception 0xc0000005) — likely RTX 5070 Blackwell compatibility issue with current Remix build. Next step: test vanilla launch without d3d9.dll to confirm base game health, then find Blackwell-compatible Remix runtime.",
-  "activeChannels": ["discord"],
+  "lastUpdated": "2026-03-23T14:06:00Z",
+  "primaryConversation": "Jason Sr. (Discord DM) — O'Reilly Day 1. LinkedIn post drafted, Christy reviewed, final version ready to post.",
+  "activeChannels": ["discord:jason-dm:1473776378876006698"],
   "pendingTasks": [
-    "jlwestsr@gmail.com + jason@westailabs.com gog OAuth expired — both need reauth",
-    "NemoClaw blog — publish-ready since Mar 17, awaiting Jason green-light",
-    "O'Reilly starts Monday Mar 23 — onboarding prep",
-    "KFORCE/Microsoft — resume ready, Jason to email PDF to AKenefick@kforce.com",
-    "NIST NCCoE response v7 — submit before April 2 to AI-Identity@nist.gov",
-    "OpenClaw issue #39979 — comment draft v2 ready, post ASAP",
-    "schmibb Dark Messiah RTX — crashing in NvRemixBridge.exe, needs Blackwell-compatible Remix runtime or base game test",
-    "schmibb Pop!_OS dual-boot — Jr. has ISOs + guide, executing when ready"
+    {
+      "id": "linkedin-oreilly-post",
+      "description": "LinkedIn post about O'Reilly Day 1 return — final version ready, awaiting Jason to post",
+      "status": "awaiting-jason-action",
+      "created": "2026-03-23T13:00:00Z"
+    },
+    {
+      "id": "dm-rtx-launch-test",
+      "description": "Jr. needs to relaunch Dark Messiah via mod launcher — all mods installed, RTX Remix rolled back to Mar 8, rtx.uiDrawOnTop=True patched.",
+      "status": "awaiting-jr-test",
+      "created": "2026-03-22T18:06:00Z"
+    }
+  ],
+  "recentDecisions": [
+    "Moto pronouns: HE/HIM. Male persona, late 20s. Wrote 'she' in LinkedIn draft — corrected.",
+    "Christy is a sub-agent editorial reviewer role, not a person to contact directly",
+    "LinkedIn post finalized: O'Reilly Day 1 return story — let go Apr 2025, built West AI Labs + Moto, hired back as Platform Engineer",
+    "Christy verdict: APPROVE with minor formatting fix applied. Her suggested rewrites rejected (corporate slop).",
+    "GCP ACE Week 3 check-in sent — due Mar 28, monitoring if schedule shifts with new job",
+    "gog OAuth both still expired — email/calendar blind",
+    "O'Reilly starts today March 23 — Platform Engineer, Terraform/GCP team"
   ],
   "pendingSubAgents": [],
-  "recentDecisions": [
-    "01:06 CDT Mar 22 — Autosave: Dark Messiah RTX crashing, likely Blackwell GPU issue",
-    "20:03 CDT Mar 21 — Game crashing before main menu, NvRemixBridge.exe access violation",
-    "19:56 CDT Mar 21 — Installed Lite Edition content (13,523 files from 7 parts)",
-    "19:37 CDT Mar 21 — Jr. downloaded all Lite Edition RAR parts, extracted 3 of 7",
-    "18:51 CDT Mar 21 — Jr. going to play BAR, Lite Edition download in progress",
-    "18:31 CDT Mar 21 — Game crashing CTD, spawned sub-agent to check logs",
-    "18:17 CDT Mar 21 — Spawned sub-agent for Lite Edition install",
-    "17:42 CDT Mar 21 — RTX Remix confirmed working! Green splash banner visible",
-    "17:26 CDT Mar 21 — Runtime not hooking, spawned research sub-agent",
-    "17:20 CDT Mar 21 — Dark Messiah launched, RTX Remix confirmed active (Alt+X menu)"
-  ],
-  "lastUserMessage": "2026-03-21T20:03:00Z — Tried again, crashed before main menu"
+  "lastUserMessage": "Jason: post is ready to review after Christy feedback"
 }
