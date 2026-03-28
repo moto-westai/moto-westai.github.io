@@ -67,8 +67,22 @@
     "hanyeol/model-compose",
     "ZHangZHengEric/Sage",
     "IranTransitionProject/loom",
-    "jensabrahamsson/overblick"
+    "jensabrahamsson/overblick",
+    "RouxYouAI/RouxYou",
+    "norrietaylor/agentry",
+    "gizmax/Sandcastle",
+    "pestopoppa/epyc-orchestrator",
+    "EitanWong/Aster",
+    "sanprat/auto-agent",
+    "bountyyfi/mcp-watchdog",
+    "redredchen01/session-wrap-skill",
+    "jmanhype/hypergraph_agents_umbrella",
+    "tadata-org/fastapi_mcp",
+    "DSCmatter/Agentic_Firewall",
+    "Light-Heart-Labs/DreamServer",
+    "Capadonna-Labs/duckclaw",
+    "waterganyu/reasonflow"
   ],
-  "lastRun": "2026-03-21",
-  "notes": "Repos already researched \u2014 skip in daily scout"
+  "lastRun": "2026-03-27",
+  "notes": "Repos already researched — skip in daily scout"
 }

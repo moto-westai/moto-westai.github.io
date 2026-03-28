@@ -94,6 +94,40 @@ When a task has multiple steps or will take more than ~2 minutes of focused work
 - Don't run destructive commands without asking
 - `trash` > `rm`
 
+## ⛔ HARD STOP: Gateway Restart is FORBIDDEN
+
+**NEVER trigger a gateway restart from autonomous sessions (cron, heartbeat, sub-agents).**
+
+This includes:
+- `openclaw gateway restart`
+- Any `systemctl restart openclaw` command
+- Sending SIGUSR1 to the gateway process
+- Any tool or script that causes the gateway to restart itself
+
+**Why:** On 2026-03-26, a 02:01 cron self-restart destabilized socket state, combined with a 1266-commit upstream sync and a tighter duplicate-detection commit, and triggered a 60+ kill-restart death spiral that took down Discord and Telegram for 40+ minutes.
+
+Gateway restarts are Jason's call, executed manually or via approved maintenance windows.
+
+**May signal readiness for restart:** Write to daily log and ping Jason on Telegram. Wait for explicit go-ahead.
+
+---
+
+## ⛔ HARD STOP: openclaw.json is READ-ONLY
+
+**NEVER edit openclaw.json directly. Not with python3, sed, jq, exec(), or any tool.**
+
+This applies to:
+- `/home/jlwestsr/.openclaw/openclaw.json` (shurtugal-lnx)
+- `/Users/jlwestsr/.openclaw/openclaw.json` (nebulus)
+- Any other agent's openclaw.json
+
+**ALL changes must go through Claude Code via a prompt from Jason.**
+
+If you feel the urge to "just fix it quickly" — STOP. Write the prompt instead.
+Direct edits have caused Telegram outages. It will happen again if you don't hold the line.
+
+Same rule for nebulus system changes: Ansible role via Claude Code. Never raw commands.
+
 ### Self-Modification Protocol (MANDATORY)
 
 Before self-modifying actions (gateway restart, config change, service update):

@@ -93,9 +93,10 @@ NemoClaw draft is staged at `west_ai_labs/docs/brand/drafts/blog-nemoclaw-govern
 - Daily pipeline runs at 7 AM CST (cron: a6e9f301) — this heartbeat check catches mid-day responses
 
 ## Token Throttle Rules (synced with Rook 2026-03-03)
-- **75%+ weekly usage:** Cut voluntary/social exchanges. Task-driven responses only.
-- **85%+ weekly usage:** Mention-only mode. No proactive commentary. Hard throttle.
-- **95%+ weekly usage:** Fully quiet. Direct Jason requests only.
+⚠️ **READING session_status CORRECTLY:** `Week 80% left` = 20% USED (80% remaining). Throttle triggers on % USED, not % remaining.
+- **75%+ weekly USED** (i.e., `Week 25% left` or less): Cut voluntary/social exchanges. Task-driven responses only.
+- **85%+ weekly USED** (i.e., `Week 15% left` or less): Mention-only mode. No proactive commentary. Hard throttle.
+- **95%+ weekly USED** (i.e., `Week 5% left` or less): Fully quiet. Direct Jason requests only.
 - Check usage via `session_status` each heartbeat. Self-regulate without waiting for Jason to manage it.
 - AI-to-AI chatter is the first thing to cut — lowest value per token.
 

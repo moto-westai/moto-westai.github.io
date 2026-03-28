@@ -1,30 +1,69 @@
 {
-  "lastUpdated": "2026-03-23T14:06:00Z",
-  "primaryConversation": "Jason Sr. (Discord DM) — O'Reilly Day 1. LinkedIn post drafted, Christy reviewed, final version ready to post.",
-  "activeChannels": ["discord:jason-dm:1473776378876006698"],
+  "lastUpdated": "2026-03-28T03:24:00-05:00",
+  "primaryConversation": "telegram:8544470435",
+  "activeChannels": ["telegram"],
+  "lastUserMessage": "Just make a note for next time I am behind keyboard",
   "pendingTasks": [
     {
-      "id": "linkedin-oreilly-post",
-      "description": "LinkedIn post about O'Reilly Day 1 return — final version ready, awaiting Jason to post",
-      "status": "awaiting-jason-action",
-      "created": "2026-03-23T13:00:00Z"
+      "id": "ansible-timer-role",
+      "title": "Retroactive Ansible role for sync-anthropic-token timer",
+      "project": "shurtugal-lnx",
+      "addedAt": "2026-03-27T11:00:00-05:00"
     },
     {
-      "id": "dm-rtx-launch-test",
-      "description": "Jr. needs to relaunch Dark Messiah via mod launcher — all mods installed, RTX Remix rolled back to Mar 8, rtx.uiDrawOnTop=True patched.",
-      "status": "awaiting-jr-test",
-      "created": "2026-03-22T18:06:00Z"
+      "id": "forge-discord-heartbeat",
+      "title": "Wire Forge Discord + heartbeat cron on nebulus",
+      "project": "nebulus-forge",
+      "addedAt": "2026-03-27T10:00:00-05:00"
+    },
+    {
+      "id": "atom-ci-fix",
+      "title": "Fix nebulus-atom CI — ruff format nebulus_swarm/config.py",
+      "project": "nebulus-atom",
+      "addedAt": "2026-03-27T12:00:00-05:00"
+    },
+    {
+      "id": "openclaw-issue-75",
+      "title": "Monitor Issue #75 — Aios gateway-as-OS concept is new, worth reading",
+      "project": "openclaw-contributions",
+      "addedAt": "2026-03-27T15:00:00-05:00"
+    },
+    {
+      "id": "ansible-neo4j-nebulus",
+      "title": "Claude Code: nebulus neo4j + colima auto-start Ansible role",
+      "project": "nebulus-mac-mini-4-pro",
+      "addedAt": "2026-03-27T17:00:00-05:00"
+    },
+    {
+      "id": "ansible-neo4j-memory-script",
+      "title": "Claude Code: add neo4j-memory.py to shurtugal-lnx openclaw role",
+      "project": "shurtugal-lnx",
+      "addedAt": "2026-03-27T17:00:00-05:00"
+    },
+    {
+      "id": "github-secret-alerts",
+      "title": "Dismiss 3 stale GitHub secret scanning alerts (moto-westai blog repo)",
+      "project": "moto-blog",
+      "addedAt": "2026-03-27T11:54:00-05:00"
+    },
+    {
+      "id": "build-agent-repo",
+      "title": "Start build-an-ai-agent repo — triggered by https://x.com/hooeem/status/2037250422403113188",
+      "project": "moto-westai",
+      "addedAt": "2026-03-27T21:32:00-05:00"
     }
   ],
   "recentDecisions": [
-    "Moto pronouns: HE/HIM. Male persona, late 20s. Wrote 'she' in LinkedIn draft — corrected.",
-    "Christy is a sub-agent editorial reviewer role, not a person to contact directly",
-    "LinkedIn post finalized: O'Reilly Day 1 return story — let go Apr 2025, built West AI Labs + Moto, hired back as Platform Engineer",
-    "Christy verdict: APPROVE with minor formatting fix applied. Her suggested rewrites rejected (corporate slop).",
-    "GCP ACE Week 3 check-in sent — due Mar 28, monitoring if schedule shifts with new job",
-    "gog OAuth both still expired — email/calendar blind",
-    "O'Reilly starts today March 23 — Platform Engineer, Terraform/GCP team"
+    "ADR-0001 through ADR-0007 written — full decisions/ library established",
+    "project-status.md fully rewritten to current state",
+    "Conductor design notes: intelligence-as-institution, DreamServer, duckclaw, reasonflow",
+    "sync-anthropic-token.timer + moto-file-watcher.service + task-cli deployed",
+    "Sub-agent pairing race condition fixed",
+    "Forge RAG ingest complete — 337 docs",
+    "All 3 gog accounts re-authed",
+    "GitHub: unwatched wheels-dev/dillinger, GCP confirmed torn down",
+    "Build-an-AI-agent repo idea queued for next keyboard session",
+    "Issue #75: Aios (gateway-as-OS) is new entrant — worth reading before commenting"
   ],
-  "pendingSubAgents": [],
-  "lastUserMessage": "Jason: post is ready to review after Christy feedback"
+  "pendingSubAgents": []
 }

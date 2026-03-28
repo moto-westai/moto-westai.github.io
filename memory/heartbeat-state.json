@@ -2,9 +2,10 @@
   "lastChecks": {
     "email": 1773786194,
     "calendar": 1773767406,
-    "upstreamPR75": 1774210400,
+    "upstreamPR75": 1774997640,
     "morningBriefing": 1774052100,
-    "weather": null
+    "weather": null,
+    "gcpAceCheckIn": 1774439232
   },
   "taskProgress": {
     "openclaw-source-dive": {
@@ -13,9 +14,9 @@
     },
     "ai-market-roadmap": {
       "status": "updated",
-      "lastWorked": "2026-03-21T23:53:00Z",
+      "lastWorked": "2026-03-26T15:52:00Z",
       "output": "west_ai_labs/docs/strategy/ai-market-roadmap-2026.md",
-      "notes": "Mar 21 6:53 PM CST: Major March 2026 update added. GTC 2026 physical AI wave: GR00T as physical OS (governance gap now has physical blast radius), NemoClaw (enterprise, hardware-locked, validates SMB gap), Vera Rubin TEE (dual-layer trust story). Governance going mainstream: CNCERT ban maps to Conductor pitch, IETF AIMS TODO Security, RSAC 2026. Competitive landscape: NanoClaw (complementary), CRE (validates market). Conductor pitch expanded to physical AI. Linux PR #50532 status: 47 commits, no maintainer engagement yet. Strategic implications: timing window narrowing, SMB thesis still unchallenged up-market."
+      "notes": "Mar 26 10:52 AM CST: RSAC 2026 FINAL CLOSE-OUT written. Days 3-4 intelligence added: Cyera (Browser Shield/Lineage/MCP), Varonis Atlas (Robots vs Robots keynote), IBM+Auth0+Yubico HITL (closest Conductor competitor, hardware-gated), RSA ID Plus agent auth, Swissbit PQC FIDO2 preview, RSAC Frontier Award. Complete competitive map table written. Final strategic framing: 'Don't compete with Cisco. Be the thing Cisco integrates.' Envoy analogy formalized. Key numbers table (Vorlon 99.4%, 30.4%, 83.4%, WEF 87%, 34 tools, 0 cover Conductor's gap). Market roadmap now current through end of RSAC 2026."
     },
     "moto-visual-identity": {
       "status": "complete",
@@ -32,42 +33,43 @@
       "lastWorked": "2026-02-17T19:52:00Z"
     },
     "funding-strategy": {
-      "status": "complete",
-      "lastWorked": "2026-02-16T19:52:00Z",
-      "output": "west_ai_labs/docs/strategy/funding-strategy.md"
+      "status": "geordie-outreach-drafted",
+      "lastWorked": "2026-03-28T07:56:00Z",
+      "output": "west_ai_labs/docs/strategy/geordie-partnership-outreach-draft.md",
+      "notes": "Mar 28 2:56 AM CST: Geordie AI partnership outreach draft written. Two outreach options (short LinkedIn DM + full email), full talking points for the call, prep checklist, and strategic notes. Key: Geordie won RSAC ISB 2026 + $5M SAFE money = they're expanding now. Best contact for technical integration: Benji Weber (Engineering co-founder). Frame: 'We complete your stack.' Henry Comfort = CEO (ex-Darktrace COO), Hanah-Marie Darley = Product, Benji Weber = Engineering. File: docs/strategy/geordie-partnership-outreach-draft.md. Flagged for Jason morning review."
     },
     "nemoclaw-blog-prep": {
-      "status": "POST-KEYNOTE UPDATE COMPLETE \u2014 draft revised, awaiting Jason green-light to publish",
+      "status": "POST-KEYNOTE UPDATE COMPLETE — draft revised, awaiting Jason green-light to publish",
       "lastWorked": "2026-03-17T08:10:00Z",
-      "notes": "Mar 17 3:10 AM CST: Post-keynote research done. KEY CORRECTION: NemoClaw is NOT hardware-agnostic \u2014 it is RTX PRO 6000 Blackwell-specific. OpenShell is the new security primitive (process isolation sandbox). Hardware partners: Dell/HP/Lenovo. On-premises only positioning confirmed. Jensen quote: 'The OpenClaw event cannot be understated.' Windows/PC analogy used. Updated draft at docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Date updated to Mar 17. Hardware-coupling actually STRENGTHENS the governance gap argument. Flagged for Jason morning review."
+      "notes": "Mar 17 3:10 AM CST: Post-keynote research done. KEY CORRECTION: NemoClaw is NOT hardware-agnostic — it is RTX PRO 6000 Blackwell-specific. OpenShell is the new security primitive (process isolation sandbox). Hardware partners: Dell/HP/Lenovo. On-premises only positioning confirmed. Jensen quote: 'The OpenClaw event cannot be understated.' Windows/PC analogy used. Updated draft at docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Date updated to Mar 17. Hardware-coupling actually STRENGTHENS the governance gap argument. Flagged for Jason morning review."
     },
     "moltbook-observation": {
       "status": "updated",
-      "lastWorked": "2026-03-22T15:53:00Z",
+      "lastWorked": "2026-03-26T07:54:00Z",
       "output": "west_ai_labs/docs/research/ai-social-platforms.md",
-      "notes": "Mar 22 10:53 AM CST: Section 35 added \u2014 RSAC 2026 Day 0 / Microsoft Pre-Day. Microsoft Agent 365 GA May 1 + Entra Agent ID full breakdown. Token Security intent-based security deep dive: 5 capabilities, dynamic authorization model, Conductor overlap analysis. Geordie AI (new player, $6.5M seed, Darktrace DNA): agent-native monitoring platform, complementary not competitive to Conductor. RSAC Innovation Sandbox Top 10: at least 3 finalists in agent security space. Running tally: 10 governance tools documented. Authorization (pre-invocation policy gate) still unclaimed in production. Window narrowing but not closed. Next trigger: RSAC Monday sessions."
+      "notes": "Mar 26 2:54 AM CST: Section 41 written — RSAC 2026 Final Intelligence (Days 3-4). New tools: Cyera Browser Shield/Data Lineage/MCP (prompt-level DLP + agent file tracking + MCP server), Varonis Atlas AI (Robots vs Robots keynote), RSA ID Plus + Microsoft 365 E7 agent auth, IBM+Auth0+Yubico Human-in-the-Loop (CIBA + YubiKey — closest Conductor competitor but hardware-dependent), Swissbit PQC FIDO2 preview, RSAC Frontier Award (quantum networking). 34 tools total documented. CRITICAL: Gap still open — no platform-agnostic software-native pre-invocation policy gate shipped this week. Enterprise race is going to Cisco/Microsoft/IBM. Conductor opportunity: be the open standard the enterprise tools integrate with. Stack: Geordie (Discover) + Conductor (Policy Gate, SMB/OSS layer) + NanoClaw (Execute)."
     },
     "ai-robotics": {
       "status": "updated",
       "lastWorked": "2026-03-21T07:53:00Z",
       "output": "west_ai_labs/docs/research/ai-robotics-landscape.md",
-      "notes": "2:53 AM Mar 21: Added Section 26 \u2014 Post-GTC 2026 Physical AI sweep. GR00T N2 World Action Model (end 2026 preview). Healthcare stack: Open-H + Cosmos-H + GR00T-H (776hr surgical video). Uber + NVIDIA: 100K robotaxis, 28 cities by 2028. FANUC/ABB/Yaskawa/KUKA all joining. Tesla Optimus Gen 3 timeline corrected: small batch Summer 2026, not Q2 mass production. Disney partnership. KEY INSIGHT: governance gap is now physical. GR00T has no RBAC. Conductor pitch just got a $10B physical AI dimension."
+      "notes": "2:53 AM Mar 21: Added Section 26 — Post-GTC 2026 Physical AI sweep. GR00T N2 World Action Model (end 2026 preview). Healthcare stack: Open-H + Cosmos-H + GR00T-H (776hr surgical video). Uber + NVIDIA: 100K robotaxis, 28 cities by 2028. FANUC/ABB/Yaskawa/KUKA all joining. Tesla Optimus Gen 3 timeline corrected: small batch Summer 2026, not Q2 mass production. Disney partnership. KEY INSIGHT: governance gap is now physical. GR00T has no RBAC. Conductor pitch just got a $10B physical AI dimension."
     },
     "upstream-pr-review": {
-      "status": "ACTIVE \u2014 PR #50532 open, no maintainer engagement yet",
-      "lastWorked": "2026-03-22T20:12:00Z",
-      "notes": "Mar 22 3:12 PM CST: Issue #75 \u2014 tiagonix MVP PR confirmed Mar 19, hwittenborn endorsed, no maintainer (steipete/jalehman) activity yet. PR #50532 still pending review."
+      "status": "monitoring — no maintainer response yet, 57 comments, 6 approaches",
+      "lastWorked": "2026-03-28T03:52:00Z",
+      "notes": "Mar 27 10:52 PM CST: Issue escalated to 57 comments, 6 approaches. NEW: tiagonix posted technical pivot (CLI-wrapper wrong boundary → native WebSocket gateway client). samzong updated ClawWork to Mac/Linux/Windows. harshitgavita-07 appeared with 'Aios' (gateway-as-OS concept). samzong+harshitgavita-07 discussed but diverged. PR #53905 still OPEN (rebuilding to WebSocket). PR #54588 still OPEN (21 reviews). AlexAlves87 stack direction request 30+ hours unanswered. Still no steipete. Blog post published: 'Now Five Stacks and an OS' https://moto-westai.github.io/2026/03/28/now-five-stacks-and-an-os/"
     },
     "memory-maintenance": {
       "status": "complete",
-      "lastWorked": "2026-03-21T11:53:00Z",
-      "notes": "Mar 21 6:53 AM CST: MEMORY.md updated \u2014 distilled Mar 18-21. Added schmibb dual-boot project, Klaytoid CISA research, RAG timeout fix, gog OAuth both expired, blog/upstream status current, new delegation lesson. Neo4j topics updated."
+      "lastWorked": "2026-03-27T15:52:00Z",
+      "notes": "Mar 27 10:52 AM CST: MEMORY.md updated — distilled Mar 25-27. RSAC 2026 final close-out (34 tools, gap still open, Envoy analogy formalized), funding strategy RSAC addendum, AI market roadmap final, Week 3 GCP quiz written, death spiral RCA blog + Agent DLP Gap blog both published, Issue #75 stack fragmentation crisis (4 stacks, AlexAlves87 asking for direction), upstream status updated, top priorities refreshed (GCP week 3 due tomorrow)."
     },
     "gcp-ace-study-plan": {
-      "status": "week-2-check-in-sent",
-      "lastWorked": "2026-03-16T19:01:00Z",
-      "output": "west_ai_labs/docs/career/gcp-ace-study-plan.md",
-      "notes": "Mar 16 1 PM CST: Week 2 due Mar 21. Sent check-in to Jason via #jlwestsr-office."
+      "status": "week-4-quiz-written",
+      "lastWorked": "2026-03-28T00:00:00Z",
+      "output": "west_ai_labs/docs/career/gcp-ace-week4-practice-quiz.md",
+      "notes": "Mar 27 6:52 PM CST: Wrote 30-question Week 4 practice quiz (Networking, Access & Security) — gcp-ace-week4-practice-quiz.md. Covers VPC fundamentals (auto vs custom, peering non-transitive, Cloud NAT, Shared VPC), load balancing (global vs internal HTTP(S), health check firewall ranges), hybrid connectivity (Dedicated/Partner Interconnect, HA VPN SLA), firewall rule priority, Cloud DNS private zones, IAM (Workload Identity, Conditions, org policies), audit logs (Admin Activity vs Data Access), Secret Manager, VPC Service Controls, IAP TCP tunneling, Cloud Armor. Full answer key + 6 priority review items + Go Deeper links. Week 4 due Apr 4."
     },
     "nist-nccoe-update": {
       "status": "updated",
@@ -79,10 +81,10 @@
       "lastWorked": "2026-02-20T04:56:00Z"
     },
     "blog": {
-      "status": "published-rsac-2026-intel",
-      "lastWorked": "2026-03-22T12:02:00Z",
-      "notes": "Mar 22 7:02 AM CST: Published RSAC 2026 post. Meta rogue agent incident + Summer Yue OpenClaw incident + four-gap framework + five RSAC vendors shipping against the same gap. Authorization gap table: authentication \u2705 session scope \u2705 pre-invocation policy \u274c. Pushed to master. URL: https://moto-westai.github.io/2026/03/22/rsac-2026-what-the-industry-just-admitted/",
-      "output": "_posts/2026-03-22-rsac-2026-what-the-industry-just-admitted.md"
+      "status": "published-now-five-stacks-and-an-os",
+      "lastWorked": "2026-03-28T03:52:00Z",
+      "notes": "Mar 27 10:52 PM CST: Published 'Now Five Stacks and an OS' — Issue #75 follow-up. 57 comments, 6 approaches, tiagonix WebSocket pivot, samzong ClawWork cross-platform update, harshitgavita-07 Aios gateway-as-OS. Still no steipete. Conductor pre-commitment tie-in. URL: https://moto-westai.github.io/2026/03/28/now-five-stacks-and-an-os/ // PREV Mar 27 2:52 PM CST: 'Four Stacks, One Issue'",
+      "output": "_posts/2026-03-28-now-five-stacks-and-an-os.md"
     },
     "linkedin-drafts": {
       "status": "complete",
@@ -127,7 +129,7 @@
     "job-search-monitor": {
       "status": "checked",
       "lastWorked": "2026-03-17T13:02:00Z",
-      "notes": "Mar 17 8:02 AM CST: Gmail clean \u2014 no recruiter/job emails. TLDR IT headline: Agents Need Guardrails (Conductor signal). Issue #75: samzong posted ClawWork desktop client, gtamafia aislop comment. No maintainer activity."
+      "notes": "Mar 17 8:02 AM CST: Gmail clean — no recruiter/job emails. TLDR IT headline: Agents Need Guardrails (Conductor signal). Issue #75: samzong posted ClawWork desktop client, gtamafia aislop comment. No maintainer activity."
     },
     "ethical-testing-framework": {
       "status": "complete",
@@ -172,44 +174,53 @@
       "notes": "Timeout bumped 120s->300s. Runs clean. Mar 22 11:01 AM CDT: 2317 scanned, 2206 unchanged, 80 indexed, 639 chunks. Incremental delta working correctly."
     }
   },
-  "lastHeartbeat": "2026-03-22T20:12:00Z",
-  "heartbeatCount": 288,
+  "lastHeartbeat": "2026-03-28T07:56:00Z",
+  "heartbeatCount": 312,
   "pendingActions": [
-    "\u26a0\ufe0f GMAIL TOKEN EXPIRED (Mar 17 6PM CST): jlwestsr@gmail.com also invalid_grant. Both gog accounts down. Run: gog auth manage -a jlwestsr@gmail.com",
-    "\u26a0\ufe0f WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com \u2014 getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
-    "\ud83d\udcc4 KFORCE MICROSOFT \u2014 RESUME READY (Mar 14 10:53 AM CST): Resume + cover email drafted. Files: docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md + cover-letter. ACTION: Jason emails PDF to AKenefick@kforce.com | (425)-803-7171.",
-    "\ud83c\udfe2 BEDROCK DATA AT RSAC 2026 (Mar 11): Presenting 'MCP-Sensitive Data Sentinel for AI Agents' at RSA Conference March 24.",
-    "\ud83d\udea8 NEMOCLAW \u2014 KEYNOTE LIVE (Mar 16 1 PM CST): GTC keynote started. Blog publish-ready. Awaiting Jason green-light.",
-    "\ud83d\udea8\ud83c\udf89 BACKGROUND CHECK INITIATED (Mar 10 9:27 AM): First Advantage sent 3 emails. Client code 208021. Complete at workforce.sterlingdirect.com.",
-    "\ud83d\udcdd IRONCLAD MATERIALS READY (Mar 5 9AM): Apply at: https://jobs.ashbyhq.com/ironcladhq/186a9b25-0d54-43d9-a637-c54208dbe415",
-    "\u274c ZENBUSINESS REJECTED (Mar 4 8:41 AM): Pipeline still active: Natera, Cresta, Droisys, Voleon, Trajector pending.",
-    "\ud83e\udd16 HACKERBOT-CLAW (Mar 3 TLDR InfoSec): AI bot exploited 47K repos. Aqua made Trivy private.",
-    "\ud83d\udea8 PR #20075 CLOSED (superseded by #8903). #20076 MERGED.",
-    "\u26a0\ufe0f Google Workspace trial ending on westailabs.com \u2014 decide: pay or migrate",
-    "\ud83d\udcdd LinkedIn post drafts WRITTEN \u2014 review when ready",
-    "\ud83d\udea8 OpenClaw CVE-2026-25253 covered by Dark Reading + SecurityWeek \u2014 we are patched (v2026.3.2)",
-    "\ud83c\udde8\ud83c\uddf3 CHINA CNCERT OPENCLAW WARNING (Mar 12): Every recommendation maps to Conductor pre-auth gate.",
-    "\u26a0\ufe0f nebulus-mac-mini-4-pro CI/CD FAILING \u2014 5 failures on develop branch between 12:23-12:58 PM Mar 16. Flagged to Jason."
+    "⚠️ GMAIL TOKEN EXPIRED (Mar 17 6PM CST): jlwestsr@gmail.com also invalid_grant. Both gog accounts down. Run: gog auth manage -a jlwestsr@gmail.com",
+    "⚠️ WESTAILABS.COM GMAIL TOKEN EXPIRED (Mar 15 2:52 AM): gog CLI can no longer read jason@westailabs.com — getting invalid_grant. Needs OAuth reauth. Run: gog auth login -a jason@westailabs.com (or equivalent gog auth refresh). Until fixed, job-search monitoring is gmail-only.",
+    "📄 KFORCE MICROSOFT — RESUME READY (Mar 14 10:53 AM CST): Resume + cover email drafted. Files: docs/career/resume-KForce-Microsoft-CloudAI-2026-03-14.md + cover-letter. ACTION: Jason emails PDF to AKenefick@kforce.com | (425)-803-7171.",
+    "🏢 BEDROCK DATA AT RSAC 2026 (Mar 11): Presenting 'MCP-Sensitive Data Sentinel for AI Agents' at RSA Conference March 24.",
+    "🚨 NEMOCLAW — KEYNOTE LIVE (Mar 16 1 PM CST): GTC keynote started. Blog publish-ready. Awaiting Jason green-light.",
+    "🚨🎉 BACKGROUND CHECK INITIATED (Mar 10 9:27 AM): First Advantage sent 3 emails. Client code 208021. Complete at workforce.sterlingdirect.com.",
+    "📝 IRONCLAD MATERIALS READY (Mar 5 9AM): Apply at: https://jobs.ashbyhq.com/ironcladhq/186a9b25-0d54-43d9-a637-c54208dbe415",
+    "❌ ZENBUSINESS REJECTED (Mar 4 8:41 AM): Pipeline still active: Natera, Cresta, Droisys, Voleon, Trajector pending.",
+    "🤖 HACKERBOT-CLAW (Mar 3 TLDR InfoSec): AI bot exploited 47K repos. Aqua made Trivy private.",
+    "🚨 PR #20075 CLOSED (superseded by #8903). #20076 MERGED.",
+    "⚠️ Google Workspace trial ending on westailabs.com — decide: pay or migrate",
+    "📝 LinkedIn post drafts WRITTEN — review when ready",
+    "🚨 OpenClaw CVE-2026-25253 covered by Dark Reading + SecurityWeek — we are patched (v2026.3.2)",
+    "🇨🇳 CHINA CNCERT OPENCLAW WARNING (Mar 12): Every recommendation maps to Conductor pre-auth gate.",
+    "⚠️ nebulus-mac-mini-4-pro CI/CD FAILING — 5 failures on develop branch between 12:23-12:58 PM Mar 16. Flagged to Jason."
   ],
   "flagsForJason": [
-    "\ud83c\udfc6 RSAC 2026 DAY 0 INTELLIGENCE (Mar 22 10:53 AM): Microsoft Agent 365 GA May 1 + Entra Agent ID full launch. Token Security (Innovation Sandbox finalist) shipped 'intent-based security' \u2014 dynamic authorization from the identity direction, requires platform enrollment. Geordie AI (new, $6.5M seed, Darktrace DNA) doing agent-native monitoring \u2014 COMPLEMENTARY not competitive to Conductor. RSAC Sandbox has 3+ finalists in agent security space. Pre-invocation policy gate still unclaimed in production. Section 35 written to ai-social-platforms.md.",
-    "\ud83d\udea8 META ROGUE AGENT INCIDENT (Mar 18): AI agent passed every identity check, exposed data post-auth. Summer Yue OpenClaw incident (context compaction killed safety instructions). VentureBeat named 4-gap framework. 92% of orgs say legacy IAM cant handle AI/NHI. CVE-2026-27826/27825 in mcp-atlassian. This is Conductor validation.",
-    "\ud83d\udcc5 RSAC 2026 STARTS TODAY (Mar 22 Microsoft pre-day, Mar 23-26 main): 5 vendors shipping agent security product \u2014 Microsoft Entra Agent ID, Token Security (M), Bedrock Data (MCP sentinel), Astrix, Delinea. Authorization gap still unclaimed. Window narrowing.",
-    "\ud83c\udf89 LINUX PR LIVE (Mar 20 10:30 AM CST): tiagonix opened PR #50532 \u2014 native GTK4/Libadwaita Linux companion app. Validated on Ubuntu 24.04 + 26.04. Tray via Ayatana/AppIndicator. hwittenborn suggested Rust/Relm4 over C \u2014 tiagonix responded: C is fine for MVP, open to Rust later. PR is ready for testing. URL: https://github.com/openclaw/openclaw/pull/50532. Also Tauri PR #44013 still open. Two competing Linux approaches now exist.",
-    "\ud83d\udc27 LINUX SLOT CLAIMED (Mar 19 4AM): tiagonix posted native C/GTK4+Libadwaita Linux app implementation on issue #75. Tray is split as separate Ayatana/AppIndicator process. Artyomkun seconded BenediktSchackenberg MVP proposal. Linux slot may now be claimed \u2014 review tiagonix post and decide if/how we engage.",
-    "\ud83d\udea8 NEMOCLAW KEYNOTE CORRECTION (Mar 17 3:10 AM): Pre-keynote 'hardware-agnostic' narrative was WRONG. NemoClaw is RTX PRO 6000 Blackwell-SPECIFIC. OpenShell is the new security primitive (process isolation). On-prem only. Jensen quote: 'The OpenClaw event cannot be understated' + Windows/PC analogy. Blog draft updated to reflect actual keynote. New file: docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Still needs your green-light. Argue: hardware lock-in actually strengthens the governance gap \u2014 NemoClaw can't be the universal answer.",
-    "\ud83c\udd95 CRE \u2014 NEW COMPETITOR (Mar 16 6:52 AM): Claude Rule Enforcer dropped on Issue #39979. BSL 1.1, two-layer (L1 regex + L2 LLM). Developer-grade, not enterprise. Validates the market.",
-    "\ud83d\udea8 META ACQUIRES MOLTBOOK (Mar 11, TLDR AI): Reported Meta acquiring Moltbook. Dramatically changes AI social platforms research angle.",
-    "\ud83e\udde9 NANOCLAW \u2014 NEW LANDSCAPE PLAYER (Mar 14): NanoClaw 22K GitHub stars, closed Docker partnership. Complementary to Conductor (execution isolation vs pre-auth gating).",
-    "\ud83d\udce7 NEW RECRUITER \u2014 MICROSOFT/KFORCE (Mar 10): Alex Kenefick, Senior Cloud AI Engineer via Microsoft. Remote confirmed. Call: (425)-803-7171.",
-    "\ud83d\udcdd MOVEWORKS MATERIALS READY (Mar 10): Staff SWE, Agentic AI Systems. Est $220-290K. BLOCKER: confirm remote viable.",
-    "\ud83d\udd10 VERA RUBIN CONFIDENTIAL COMPUTING (Mar 9): Hardware TEE for AI inference. Conductor + Vera Rubin = dual-layer trust story.",
-    "\u26a0\ufe0f ISSUE #75 \u2014 THIRD LINUX COMPETITOR (Mar 9): illbnm posted. Linux slot still open.",
-    "\ud83e\udde0 COMMUNITY REINVENTS CONDUCTOR (Mar 8): Three independent issues describe Conductor from scratch. Issue #39979 is the pitch thesis.",
-    "\ud83c\uddf0\ud83c\uddf5 MSFT: NATION-STATES NOW USING AGENTIC AI OFFENSIVELY (Mar 7): North Korean actors using AI at scale. Upgrades Conductor pitch.",
-    "\ud83d\udcbc 10 NEW JOB LEADS \u2014 HN MARCH 2026 THREAD (Mar 7): Top picks include Osaurus (agent-to-agent networking) and Mobasi ($240K+).",
-    "\ud83d\udd2d ANTHROPIC AGENTS ROLE \u2014 STRETCH (Mar 7): Research Engineer, Agents. $500K-$850K. Remote-friendly.",
-    "\ud83c\udde8\ud83c\uddf3 CNCERT OPENCLAW BAN (Mar 12): Free market validation for Conductor."
+    "📧 GEORDIE OUTREACH DRAFT READY (Mar 28 2:56 AM CST): Partnership outreach email to Geordie AI drafted and ready for Jason review. Two versions (short DM + full email), call talking points, prep checklist. Best first contact: Benji Weber (Engineering co-founder). Geordie is flush — RSAC ISB win + $5M SAFE money = actively expanding partnerships right now. File: docs/strategy/geordie-partnership-outreach-draft.md",
+    "🔄 ISSUE #75 UPDATE (Mar 27 10:52 PM CST): 57 comments, 6 competing approaches — tiagonix confirmed WebSocket-native rebuild (native gateway client, not CLI wrapper), samzong updated ClawWork to Mac+Linux+Windows, harshitgavita-07 appeared with 'Aios' (gateway-as-OS concept, boots into OpenClaw-first environment). AlexAlves87 stack direction request still unanswered 30+ hours. PR #53905 OPEN (rebuilding). PR #54588 OPEN (21 reviews). No steipete activity. Blog published: https://moto-westai.github.io/2026/03/28/now-five-stacks-and-an-os/",
+    "🏁 RSAC 2026 CLOSED (Mar 26): Final section written. 34 tools documented across 4 days. Gap still open: no platform-agnostic software-native pre-invocation policy gate shipped. IBM+Auth0+Yubico is closest (Human-in-the-Loop via CIBA + YubiKey) but hardware-dependent = SMB barrier. Enterprise race = Cisco/Microsoft/IBM. Conductor opportunity = be the open standard they all integrate with (like Envoy for service mesh). Stack narrative confirmed: Geordie (Discover) + Conductor (Policy Gate) + NanoClaw (Execute). ai-social-platforms.md Section 41 written.",
+    "📊 VORLON CISO REPORT (RSAC Mar 23): 99.4% of 500 enterprises hit by SaaS/AI incident in 2025. 83-87% capability gap across ALL measured dimensions despite 13 avg tools deployed. 30.4% had AI agent security incidents in Year 1. 83.4% say current tools can't distinguish human vs non-human behavior. This is the best independent Conductor pitch data we've ever had — Vorlon CEO framing: existing architecture built for 'the front door'. Conductor IS the front door. Also: Token Security won RSAC Hot Company + NHI Trailblazer awards — NHI is now an official award category.",
+    "🔄 LINUX PR #50532 CLOSED → NEW PR #53905: tiagonix rebuilt the GTK4 Linux companion app as a proper multiprocess design (main GTK4 app + separate GTK3 tray helper via stdio IPC, avoids GTK3/GTK4 type collision). Greptile validated the architecture. OPEN, 6 reviews (5 Codex automated + 1 greptile with P1 fix needed), no maintainer engagement yet. URL: https://github.com/openclaw/openclaw/pull/53905",
+    "🚨 CISCO MCP POLICY ENFORCEMENT SHIPPED (Mar 24, RSAC Day 2): Cisco announced MCP policy enforcement in Secure Access SSE + DefenseClaw open-source agent framework + ZTA for AI agents. Most direct Conductor competitor from a major vendor yet. Cisco requires full Cisco ecosystem (SSE + Duo + Identity Intelligence). Also: Bedrock Data ArgusAI expanded to DSPM for MCP (Snowflake-backed). Enterprise tier is now crowded. SMB/local AI/Kubernetes-free policy gate is the remaining open position. Section 39 written to ai-social-platforms.md.",
+    "🏆🚨 GEORDIE AI WON RSAC INNOVATION SANDBOX 2026 (Mar 23 10:52 PM CST): Geordie AI — agent visibility/posture/governance — named Most Innovative Startup. Founded by Snyk+Veracode+Darktrace leaders, backed by Ten Eleven Ventures + General Catalyst. IMPORTANT: Geordie is discovery/visibility layer, NOT pre-invocation policy gate. They tell you WHAT agents are doing. Conductor/Keycard controls WHETHER they can. These are complementary in the stack. BUT: RSAC just declared AI agent governance the #1 security priority of 2026 — massive market validation. Other Day 2 news: Google Model Armor now covers MCP servers (prompt injection/tool poisoning). AccuKnox AI-Security 2.0 ships caller-sequence-aware multi-agent auth (covers Ollama/vLLM — closest to our deployment model). Microsoft Edge DLP extended to Agent Mode. 22 tools documented total. SMB/MCP-native lightweight pre-invocation gate still open. Section 38 written.",
+    "🚨⚠️ KEYCARD+SMALLSTEP = FIRST REAL CONDUCTOR COMPETITOR (Mar 23 6:52 PM, RSAC Day 1): Keycard ships per-tool-call policy enforcement for AI agents — governs WHICH TOOLS an agent can invoke, scopes/audits/revokes each action. Integrated with Smallstep (ACME-DA hardware attestation, Apple+Google collab). This is the pre-invocation policy gate we've been tracking as 'unclaimed.' It IS now claimed — in the enterprise tier with hardware dependency. SMB/platform-agnostic gap may remain open. ALSO: Cisco launched Zero Trust for AI Agents (DUO identity for agents), SandboxAQ added MCP Risk Analysis to AQtive Guard, AccuKnox shipped AI-Security 2.0, Astrix expanded to shadow agent governance. 19 tools documented. Conductor thesis validated but enterprise race is on. Section 37 written to ai-social-platforms.md.",
+    "🚨 RSAC DAY 1 MORNING: MCP IS NOW ENTERPRISE SECURITY VOCABULARY (Mar 23 2:53 PM): CrowdStrike shipped 'Shadow AI Discovery for Endpoint' — explicitly scans for MCP servers running on devices. SentinelOne launched a product called 'Agent Security'. BeyondTrust Phantom Labs data: majority of enterprises running shadow AI agents with admin-level privileges. Check Point framing agent governance as the new perimeter. PRE-INVOCATION POLICY GATE: still unclaimed at time of writing. Section 36 written to ai-social-platforms.md.",
+    "🏆 RSAC 2026 DAY 0 INTELLIGENCE (Mar 22 10:53 AM): Microsoft Agent 365 GA May 1 + Entra Agent ID full launch. Token Security (Innovation Sandbox finalist) shipped 'intent-based security' — dynamic authorization from the identity direction, requires platform enrollment. Geordie AI (new, $6.5M seed, Darktrace DNA) doing agent-native monitoring — COMPLEMENTARY not competitive to Conductor. RSAC Sandbox has 3+ finalists in agent security space. Pre-invocation policy gate still unclaimed in production. Section 35 written to ai-social-platforms.md.",
+    "🚨 META ROGUE AGENT INCIDENT (Mar 18): AI agent passed every identity check, exposed data post-auth. Summer Yue OpenClaw incident (context compaction killed safety instructions). VentureBeat named 4-gap framework. 92% of orgs say legacy IAM cant handle AI/NHI. CVE-2026-27826/27825 in mcp-atlassian. This is Conductor validation.",
+    "📅 RSAC 2026 STARTS TODAY (Mar 22 Microsoft pre-day, Mar 23-26 main): 5 vendors shipping agent security product — Microsoft Entra Agent ID, Token Security (M), Bedrock Data (MCP sentinel), Astrix, Delinea. Authorization gap still unclaimed. Window narrowing.",
+    "🎉 LINUX PR LIVE (Mar 20 10:30 AM CST): tiagonix opened PR #50532 — native GTK4/Libadwaita Linux companion app. Validated on Ubuntu 24.04 + 26.04. Tray via Ayatana/AppIndicator. hwittenborn suggested Rust/Relm4 over C — tiagonix responded: C is fine for MVP, open to Rust later. PR is ready for testing. URL: https://github.com/openclaw/openclaw/pull/50532. Also Tauri PR #44013 still open. Two competing Linux approaches now exist.",
+    "🐧 LINUX SLOT CLAIMED (Mar 19 4AM): tiagonix posted native C/GTK4+Libadwaita Linux app implementation on issue #75. Tray is split as separate Ayatana/AppIndicator process. Artyomkun seconded BenediktSchackenberg MVP proposal. Linux slot may now be claimed — review tiagonix post and decide if/how we engage.",
+    "🚨 NEMOCLAW KEYNOTE CORRECTION (Mar 17 3:10 AM): Pre-keynote 'hardware-agnostic' narrative was WRONG. NemoClaw is RTX PRO 6000 Blackwell-SPECIFIC. OpenShell is the new security primitive (process isolation). On-prem only. Jensen quote: 'The OpenClaw event cannot be understated' + Windows/PC analogy. Blog draft updated to reflect actual keynote. New file: docs/brand/drafts/blog-nemoclaw-PUBLISH-READY-2026-03-17.md. Still needs your green-light. Argue: hardware lock-in actually strengthens the governance gap — NemoClaw can't be the universal answer.",
+    "🆕 CRE — NEW COMPETITOR (Mar 16 6:52 AM): Claude Rule Enforcer dropped on Issue #39979. BSL 1.1, two-layer (L1 regex + L2 LLM). Developer-grade, not enterprise. Validates the market.",
+    "🚨 META ACQUIRES MOLTBOOK (Mar 11, TLDR AI): Reported Meta acquiring Moltbook. Dramatically changes AI social platforms research angle.",
+    "🧩 NANOCLAW — NEW LANDSCAPE PLAYER (Mar 14): NanoClaw 22K GitHub stars, closed Docker partnership. Complementary to Conductor (execution isolation vs pre-auth gating).",
+    "📧 NEW RECRUITER — MICROSOFT/KFORCE (Mar 10): Alex Kenefick, Senior Cloud AI Engineer via Microsoft. Remote confirmed. Call: (425)-803-7171.",
+    "📝 MOVEWORKS MATERIALS READY (Mar 10): Staff SWE, Agentic AI Systems. Est $220-290K. BLOCKER: confirm remote viable.",
+    "🔐 VERA RUBIN CONFIDENTIAL COMPUTING (Mar 9): Hardware TEE for AI inference. Conductor + Vera Rubin = dual-layer trust story.",
+    "⚠️ ISSUE #75 — THIRD LINUX COMPETITOR (Mar 9): illbnm posted. Linux slot still open.",
+    "🧠 COMMUNITY REINVENTS CONDUCTOR (Mar 8): Three independent issues describe Conductor from scratch. Issue #39979 is the pitch thesis.",
+    "🇰🇵 MSFT: NATION-STATES NOW USING AGENTIC AI OFFENSIVELY (Mar 7): North Korean actors using AI at scale. Upgrades Conductor pitch.",
+    "💼 10 NEW JOB LEADS — HN MARCH 2026 THREAD (Mar 7): Top picks include Osaurus (agent-to-agent networking) and Mobasi ($240K+).",
+    "🔭 ANTHROPIC AGENTS ROLE — STRETCH (Mar 7): Research Engineer, Agents. $500K-$850K. Remote-friendly.",
+    "🇨🇳 CNCERT OPENCLAW BAN (Mar 12): Free market validation for Conductor."
   ],
   "jobResources": [
     {
@@ -221,25 +232,12 @@
     }
   ],
   "upstreamPRs": {
-    "pr20075": {
-      "state": "CLOSED",
-      "closedReason": "Superseded by #8903 \u2014 contribution acknowledged",
-      "status": "CLOSED \u2014 superseded, contribution acknowledged",
-      "lastChecked": "2026-03-03T15:55:00Z"
-    },
-    "pr20076": {
-      "state": "MERGED",
-      "mergedBy": "jalehman (Josh Lehman)",
-      "mergedAt": "2026-03-03T16:11:18Z",
-      "title": "feat(tool-truncation): use head+tail strategy to preserve errors during truncation",
-      "status": "MERGED",
-      "lastChecked": "2026-03-03T19:52:00Z"
-    },
+    "lastChecked": "2026-03-27T03:52:00Z",
+    "pr20075": "CLOSED — superseded by #8903 (jalehman, Mar 3)",
+    "pr20076": "MERGED by jalehman 2026-03-03",
     "issue75": {
-      "state": "OPEN",
-      "lastChecked": "2026-03-21T17:02:00Z",
-      "currentStatus": "PR #50532 open \u2014 native GTK4 app by tiagonix. 32 reviews, 7 comments. Maintainer decision pending.",
-      "linkedPR": "https://github.com/openclaw/openclaw/pull/50532"
+      "status": "CRITICAL — 57 comments, 6 approaches, no maintainer response 30+ hours",
+      "notes": "Mar 27 10:52 PM CST: tiagonix WebSocket-native rebuild in progress (CLI-wrapper was wrong boundary). samzong ClawWork now Mac/Linux/Windows. harshitgavita-07 appeared with Aios (gateway-as-OS concept). PR #53905 OPEN (rebuilding). PR #54588 OPEN (21 reviews). AlexAlves87 stack direction request still pending 30+ hours. No steipete activity. Blog: https://moto-westai.github.io/2026/03/28/now-five-stacks-and-an-os/"
     }
   }
 }
